@@ -44,7 +44,7 @@ public class TimeLine : MonoBehaviour
         PauseScene();
         currentTime = 0;
         ApplyTimelinePosition(currentTime);
-        MovePointerHeadX(leftEdgeXvalue);
+        PositionPointerHead(leftEdgeXvalue);
     }
     
     public void PlayScene()
@@ -108,6 +108,15 @@ public class TimeLine : MonoBehaviour
             track.ApplyTrackPosition(time);
         }
     }
+    
+    private void PositionPointerHead(float xValue)
+    {
+        CancelInteractions();
+        MovePointerHeadX(xValue);
+        // Convert the clicked X position back to time
+        currentTime = (xValue - leftEdgeXvalue) / trackLengthFor1Second;
+        ApplyTimelinePosition(currentTime);
+    }
 
     private void OnMouseDown()
     {
@@ -121,14 +130,19 @@ public class TimeLine : MonoBehaviour
         if(clickXPos < leftEdgeXvalue || clickXPos > maxXValue)
             return;
         
-        MovePointerHeadX(clickXPos);
-        // Convert the clicked X position back to time
-        currentTime = (clickXPos - leftEdgeXvalue) / trackLengthFor1Second;
-        ApplyTimelinePosition(currentTime);
+        PositionPointerHead(clickXPos);
     }
 
     private void MovePointerHeadX(float xValue)
     {
         pointerHead.transform.position = new Vector3(xValue, pointerHead.transform.position.y, pointerHead.transform.position.z);
+    }
+
+    private void CancelInteractions()
+    {
+        foreach (var track in tracks)
+        {
+            track.CancelObjectInteraction();
+        }
     }
 }

@@ -17,11 +17,6 @@ public class TrackSegment : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void Start()
-    {
-        Init(spriteRenderer.color, duration, startTime, endTime);
-    }
-
     public void Init(Color color, float duration, float startTime, float endTime)
     {
         spriteRenderer.color = color;
