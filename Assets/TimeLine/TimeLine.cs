@@ -9,9 +9,12 @@ public class TimeLine : MonoBehaviour
     [SerializeField] private GameObject pointerHead;
     
     public float trackLengthFor1Second = 5f;
+    public float minSegmentPace = 0.5f;
+    public float maxSegmentPace = 2f;
     
     private float currentTime = 0;
-    private bool isPlaying = false;
+    private float maxTrackLength = 0;
+    public bool isPlaying = false;
     private Coroutine sceneCoroutine;
     
     private SpriteRenderer spriteRenderer;
@@ -32,13 +35,15 @@ public class TimeLine : MonoBehaviour
     private void Start()
     {
         leftEdgeXvalue = spriteRenderer.bounds.min.x;
+        UpdateMaxTrackLength();
         ResetTimeLine();
     }
     
-    private void ResetTimeLine()
+    public void ResetTimeLine()
     {
-        isPlaying = false;
+        PauseScene();
         currentTime = 0;
+        ApplyTimelinePosition(currentTime);
         MovePointerHeadX(leftEdgeXvalue);
     }
     
@@ -47,38 +52,81 @@ public class TimeLine : MonoBehaviour
         if(isPlaying)
             return;
         isPlaying = true;
+        UIManager.Instance.ChangeToPauseSprite();
         sceneCoroutine = StartCoroutine(RunScene());
     }
     
     public void PauseScene()
     {
+        if(!isPlaying)
+            return;
+        UIManager.Instance.ChangeToPlaySprite();
         StopCoroutine(sceneCoroutine);
-        ResetTimeLine();
+        isPlaying = false;
+        
     }
 
-    private IEnumerator RunScene()
+    public void SegmentStretched()
     {
-        float maxTrackLength = 0;
+        UpdateMaxTrackLength();
+        ApplyTimelinePosition(currentTime);
+    }
+    
+    private void UpdateMaxTrackLength()
+    {
+        maxTrackLength = 0;
         foreach (var track in tracks)
         {
             float trackLength = track.GetTrackLength();
             if (trackLength > maxTrackLength)
                 maxTrackLength = trackLength;
         }
-        currentTime = 0;
+        if (currentTime > maxTrackLength)
+        {
+            currentTime = maxTrackLength;
+            MovePointerHeadX(leftEdgeXvalue + (currentTime * trackLengthFor1Second));
+        }
+    }
+
+    private IEnumerator RunScene()
+    {
         while (currentTime < maxTrackLength)
         {
             MovePointerHeadX(leftEdgeXvalue + (currentTime * trackLengthFor1Second));
             currentTime += Time.deltaTime;
-            foreach (var track in tracks)
-            {
-                track.ApplyTrackPosition(currentTime);
-            }
+            ApplyTimelinePosition(currentTime);
             yield return null;
         }
         isPlaying = false;
+        UIManager.Instance.ChangeToPlaySprite();
     }
     
+    private void ApplyTimelinePosition(float time)
+    {
+        foreach (var track in tracks)
+        {
+            track.ApplyTrackPosition(time);
+        }
+    }
+
+    private void OnMouseDown()
+    {
+        if(isPlaying)
+            return;
+        
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        float clickXPos = mouseWorldPos.x;
+        
+        float maxXValue = leftEdgeXvalue + (maxTrackLength * trackLengthFor1Second);
+        if(clickXPos < leftEdgeXvalue || clickXPos > maxXValue)
+            return;
+        
+        MovePointerHeadX(clickXPos);
+        // Convert the clicked X position back to time
+        currentTime = (clickXPos - leftEdgeXvalue) / trackLengthFor1Second;
+        ApplyTimelinePosition(currentTime);
+    }
+
     private void MovePointerHeadX(float xValue)
     {
         pointerHead.transform.position = new Vector3(xValue, pointerHead.transform.position.y, pointerHead.transform.position.z);
