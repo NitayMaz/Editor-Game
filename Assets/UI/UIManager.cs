@@ -5,10 +5,6 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
-    
-    [SerializeField] private Button playAndPauseButton;
-    [SerializeField] private Sprite playSprite;
-    [SerializeField] private Sprite pauseSprite;
 
     private void Awake()
     {
@@ -17,33 +13,18 @@ public class UIManager : MonoBehaviour
             Debug.LogError("Trying to Initialize Multiple UIManagers");
             Destroy(this.gameObject);
         }
+
         Instance = this;
     }
 
-    public void PlayAndPauseClicked()
+    public void PlayClicked()
     {
-        if (TimeLine.Instance.isPlaying)
-        {
-            TimeLine.Instance.PauseScene();
-        }
-        else
-        {
-            TimeLine.Instance.PlayScene();
-        }
+        TimeLine.Instance.PlayScene();
     }
     
-    public void ChangeToPauseSprite()
-    {
-        playAndPauseButton.image.sprite = pauseSprite;
-    }
-    
-    public void ChangeToPlaySprite()
-    {
-        playAndPauseButton.image.sprite = playSprite;
-    }
 
     public void StopButtonClicked()
     {
-        TimeLine.Instance.ResetTimeLine();
+        TimeLine.Instance.StopPlaying();
     }
 }

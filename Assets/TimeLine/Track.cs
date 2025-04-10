@@ -52,6 +52,8 @@ public class Track : MonoBehaviour
     {
         if (!connectedObject)
             return;
-        connectedObject.TurnAnimatorOff();
+        connectedObject.StopInteraction();
     }
+    
+    
 }

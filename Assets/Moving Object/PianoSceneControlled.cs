@@ -10,7 +10,7 @@ public class PianoSceneControlled : TrackControlled
             return;
         if (other.CompareTag("Player"))
         {
-            TurnAnimatorOn();
+            StartInteraction();
         }
         if (other.CompareTag("Piano"))
         {

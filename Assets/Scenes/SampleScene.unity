@@ -562,9 +562,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 819146ee19978b24dbcff0fd117bc432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playAndPauseButton: {fileID: 775920720}
-  playSprite: {fileID: 3794550611322748858, guid: 7017061e7e5f88b419667e16b92d45e2, type: 3}
-  pauseSprite: {fileID: -7204144517845718354, guid: 3c0c65f51178f734d8eadb0157c66294, type: 3}
 --- !u!1001 &322067226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1031,7 +1028,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 256608292}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: PlayAndPauseClicked
+        m_MethodName: PlayClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

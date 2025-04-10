@@ -38,12 +38,18 @@ public class TimeLine : MonoBehaviour
         UpdateMaxTrackLength();
         ResetTimeLine();
     }
+
+    public void StopPlaying()
+    {
+        isPlaying = false;
+        if (sceneCoroutine != null)
+            StopCoroutine(sceneCoroutine);
+        ResetTimeLine();
+    }
     
     public void ResetTimeLine()
     {
-        PauseScene();
         currentTime = 0;
-        ApplyTimelinePosition(currentTime);
         PositionPointerHead(leftEdgeXvalue);
     }
     
@@ -52,18 +58,8 @@ public class TimeLine : MonoBehaviour
         if(isPlaying)
             return;
         isPlaying = true;
-        UIManager.Instance.ChangeToPauseSprite();
+        ResetTimeLine();
         sceneCoroutine = StartCoroutine(RunScene());
-    }
-    
-    public void PauseScene()
-    {
-        if(!isPlaying)
-            return;
-        UIManager.Instance.ChangeToPlaySprite();
-        StopCoroutine(sceneCoroutine);
-        isPlaying = false;
-        
     }
 
     public void SegmentStretched()
@@ -92,13 +88,16 @@ public class TimeLine : MonoBehaviour
     {
         while (currentTime < maxTrackLength)
         {
-            MovePointerHeadX(leftEdgeXvalue + (currentTime * trackLengthFor1Second));
             currentTime += Time.deltaTime;
+            MovePointerHeadX(leftEdgeXvalue + (currentTime * trackLengthFor1Second));
             ApplyTimelinePosition(currentTime);
             yield return null;
         }
+        //make sure it is at the final position at the end(since it would likely miss by a little)
+        currentTime = maxTrackLength;
+        MovePointerHeadX(leftEdgeXvalue + (currentTime * trackLengthFor1Second));
+        ApplyTimelinePosition(currentTime);
         isPlaying = false;
-        UIManager.Instance.ChangeToPlaySprite();
     }
     
     private void ApplyTimelinePosition(float time)

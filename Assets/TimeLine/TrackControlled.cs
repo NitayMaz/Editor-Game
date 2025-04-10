@@ -25,13 +25,13 @@ public class TrackControlled : MonoBehaviour
         controlledAnimation.SampleAnimation(this.gameObject, animationSecond);
     }
 
-    public void TurnAnimatorOn()
+    public void StartInteraction()
     {
         controlledByTimeLine = false;
         animator.enabled = true;
     }
     
-    public void TurnAnimatorOff()
+    public void StopInteraction()
     {
         controlledByTimeLine = true;
         animator.enabled = false;
