@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Track : MonoBehaviour
 {
@@ -11,9 +12,25 @@ public class Track : MonoBehaviour
 
     private void Start()
     {
+        float segmentStartTime = 0;
         foreach (var segment in segments)
         {
-            segment.Init(segmentColor, segment.duration, segment.startTime, segment.endTime);
+            segment.Init(Random.ColorHSV(), segment.duration, segmentStartTime, this);
+            segmentStartTime += segment.duration;
+        }
+    }
+
+    public void OrganizeSegments()
+    {
+        float xPos = 0;
+        float segmentStartTime = 0;
+        foreach (var segment in segments)
+        {
+            segment.transform.position =
+                new Vector3(transform.position.x + xPos, transform.position.y, transform.position.z);
+            segment.startTime = segmentStartTime;
+            xPos += segment.width;
+            segmentStartTime += segment.duration;
         }
     }
 
@@ -29,7 +46,7 @@ public class Track : MonoBehaviour
 
     public void ApplyTrackPosition(float time)
     {
-        if(!connectedObject)
+        if (!connectedObject)
             return;
         //if the timeline handle is beyond this track, stay on the last frame of the track
         if (time > GetTrackLength())
@@ -37,6 +54,7 @@ public class Track : MonoBehaviour
             TrackSegment lastSegment = segments[segments.Count - 1];
             connectedObject.SetAnimationFrame(lastSegment.GetAnimationSpot(time));
         }
+
         foreach (var segment in segments)
         {
             if (segment.IsActive(time))
@@ -45,7 +63,6 @@ public class Track : MonoBehaviour
                 break;
             }
         }
-        
     }
 
     public void CancelObjectInteraction()
@@ -54,6 +71,4 @@ public class Track : MonoBehaviour
             return;
         connectedObject.StopInteraction();
     }
-    
-    
 }

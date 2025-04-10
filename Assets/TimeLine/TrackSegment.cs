@@ -3,26 +3,31 @@ using UnityEngine;
 
 public class TrackSegment : MonoBehaviour
 {
-    [HideInInspector]public float startTime;
-    [HideInInspector]public float endTime;
+    public float startTime;
+    [HideInInspector]public float width;
     public float duration = 1f;
+    private float originalDuration;
     public float segmentAnimationStartPoint = 0f;
     public float segmentAnimationEndPoint = 1f;
+    private Track parentTrack;
     
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private SegmentHandle segmentHandle;
+    private Vector2 handleOriginalScale;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        handleOriginalScale = segmentHandle.transform.lossyScale;
     }
 
-    public void Init(Color color, float duration, float startTime, float endTime)
+    public void Init(Color color, float duration, float startTime, Track parentTrack)
     {
         spriteRenderer.color = color;
-        SetDurationByParameter(duration);
         this.startTime = startTime;
-        this.endTime = endTime;
+        this.parentTrack = parentTrack;
+        this.originalDuration = duration;
+        SetDurationByParameter(duration);
     }
     
     private void SetDurationByParameter(float newDuration)
@@ -30,21 +35,27 @@ public class TrackSegment : MonoBehaviour
         duration = newDuration;
         float spriteWidth = spriteRenderer.sprite.bounds.size.x;
         float currentWidth = spriteWidth * (transform.lossyScale.x/transform.localScale.x);
-        float newWidth = duration * TimeLine.Instance.trackLengthFor1Second;
+        width = duration * TimeLine.Instance.trackLengthFor1Second;
         Vector2 scale = transform.localScale;
-        scale.x = newWidth / currentWidth;
+        scale.x = width / currentWidth;
         transform.localScale = scale;
+        
+        Vector2 parentScale = transform.lossyScale;
+        segmentHandle.transform.localScale = new Vector2(
+            handleOriginalScale.x / parentScale.x,
+            handleOriginalScale.y / parentScale.y
+        );
+        parentTrack.OrganizeSegments();
     }
 
     public void SetDurationByPosition(float xPosition)
     {
         // x of right edge minus x of left edge divided by length for 1 sec gives us the duration
         float newDuration = (xPosition - spriteRenderer.bounds.min.x) / TimeLine.Instance.trackLengthFor1Second;
-        float newPace = CalculatePace(newDuration);
-        if(newPace < TimeLine.Instance.minSegmentPace || newPace > TimeLine.Instance.maxSegmentPace)
-        {
-            return;
-        }
+        if(newDuration < TimeLine.Instance.minDurationMultiplier * originalDuration)
+            newDuration = TimeLine.Instance.minDurationMultiplier * originalDuration;
+        if(newDuration > TimeLine.Instance.maxDurationMultiplier * originalDuration)
+            newDuration = TimeLine.Instance.maxDurationMultiplier * originalDuration;
         SetDurationByParameter(newDuration);
         TimeLine.Instance.SegmentStretched();
     }
@@ -58,11 +69,6 @@ public class TrackSegment : MonoBehaviour
     {
         float segmentPercentPassed = (currentTime - startTime) / duration;
         return Mathf.Lerp(segmentAnimationStartPoint, segmentAnimationEndPoint, segmentPercentPassed);
-    }
-
-    private float CalculatePace(float segmentDuration)
-    {
-        return (segmentAnimationEndPoint - segmentAnimationStartPoint) / segmentDuration;
     }
     
     private void OnMouseEnter()

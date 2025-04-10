@@ -9,8 +9,8 @@ public class TimeLine : MonoBehaviour
     [SerializeField] private GameObject pointerHead;
     
     public float trackLengthFor1Second = 5f;
-    public float minSegmentPace = 0.5f;
-    public float maxSegmentPace = 2f;
+    public float minDurationMultiplier = 0.5f;
+    public float maxDurationMultiplier = 1.5f;
     
     private float currentTime = 0;
     private float maxTrackLength = 0;
