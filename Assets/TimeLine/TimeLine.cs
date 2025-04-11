@@ -20,6 +20,7 @@ public class TimeLine : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private float leftEdgeXvalue;
     
+    private TrackSegment selectedSegment;
     
     private void Awake()
     {
@@ -143,5 +144,11 @@ public class TimeLine : MonoBehaviour
         {
             track.CancelObjectInteraction();
         }
+    }
+
+    public void SelectTrackSegment(TrackSegment segment) // called from segment outline
+    {
+        selectedSegment?.GetComponent<SegmentOutline>().ResetOutline();
+        selectedSegment = segment;
     }
 }

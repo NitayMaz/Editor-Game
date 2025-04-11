@@ -1,14 +1,14 @@
-using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class TrackSegment : MonoBehaviour
 {
-    public float startTime;
+    [HideInInspector]public float startTime;
     [HideInInspector]public float width;
-    public float duration = 1f;
+    [HideInInspector]public float duration;
     private float originalDuration;
-    public float segmentAnimationStartPoint = 0f;
-    public float segmentAnimationEndPoint = 1f;
+    private float segmentAnimationStartPoint;
+    private float segmentAnimationEndPoint;
     private Track parentTrack;
     
     [SerializeField] private SpriteRenderer spriteRenderer;
@@ -21,12 +21,17 @@ public class TrackSegment : MonoBehaviour
         handleOriginalScale = segmentHandle.transform.lossyScale;
     }
 
-    public void Init(Color color, float duration, float startTime, Track parentTrack)
+    public void Init(Color color, float initialDuration, float segmentStartTime, 
+                        float animationStartPoint, float animationEndPoint, Track parentTrack)
     {
+        color.a = Random.Range(0.5f, 1f); //temporary solution to tell segments apart
         spriteRenderer.color = color;
-        this.startTime = startTime;
+        this.startTime = segmentStartTime;
         this.parentTrack = parentTrack;
-        this.originalDuration = duration;
+        this.originalDuration = initialDuration;
+        this.duration = initialDuration;
+        segmentAnimationStartPoint = animationStartPoint;
+        segmentAnimationEndPoint = animationEndPoint;
         SetDurationByParameter(duration);
     }
     

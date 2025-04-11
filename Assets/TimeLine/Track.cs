@@ -7,21 +7,29 @@ public class Track : MonoBehaviour
 {
     [SerializeField] private Color segmentColor = Color.cyan;
     [SerializeField] private TrackControlled connectedObject;
-    [SerializeField] private List<TrackSegment> segments;
+    private List<TrackSegment> segments = new List<TrackSegment>();
+    [SerializeField] private GameObject segmentPrefab;
+    [SerializeField] private List<TrackSegmentInitData> segmentsInitData;
 
 
     private void Start()
     {
         float segmentStartTime = 0;
-        foreach (var segment in segments)
+        foreach (var segmentData in segmentsInitData)
         {
-            segment.Init(Random.ColorHSV(), segment.duration, segmentStartTime, this);
-            segmentStartTime += segment.duration;
+            GameObject segmentObject = Instantiate(segmentPrefab, transform);
+            TrackSegment segment = segmentObject.GetComponent<TrackSegment>();
+            segments.Add(segment);
+            segment.Init(segmentColor, segmentData.duration, segmentStartTime, 
+                            segmentData.animationStartPoint, segmentData.animationEndPoint, this);
+            segmentStartTime += segmentData.duration;
         }
     }
 
     public void OrganizeSegments()
     {
+        if (segments.Count == 0)
+            return;
         float xPos = 0;
         float segmentStartTime = 0;
         foreach (var segment in segments)
@@ -46,8 +54,6 @@ public class Track : MonoBehaviour
 
     public void ApplyTrackPosition(float time)
     {
-        if (!connectedObject)
-            return;
         //if the timeline handle is beyond this track, stay on the last frame of the track
         if (time > GetTrackLength())
         {
@@ -71,4 +77,12 @@ public class Track : MonoBehaviour
             return;
         connectedObject.StopInteraction();
     }
+}
+
+[Serializable]
+public class TrackSegmentInitData
+{
+    public float duration;
+    [Range(0,1)] public float animationStartPoint;
+    [Range(0,1)] public float animationEndPoint;
 }

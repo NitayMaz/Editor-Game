@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour
         if (Instance != null)
         {
             Debug.LogError("Trying to Initialize Multiple UIManagers");
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
 
         Instance = this;
