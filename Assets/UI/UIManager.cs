@@ -27,4 +27,9 @@ public class UIManager : MonoBehaviour
     {
         TimeLine.Instance.StopPlaying();
     }
+    
+    public void CutButtonClicked()
+    {
+        TimeLine.Instance.CutSelectedSegment();
+    }
 }

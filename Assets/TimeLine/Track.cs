@@ -77,6 +77,27 @@ public class Track : MonoBehaviour
             return;
         connectedObject.StopInteraction();
     }
+
+    public void ReplaceCutSegment(TrackSegment replacedSegment, TrackSegmentInitData firstPart, TrackSegmentInitData secondPart)
+    {
+        int segmentInd = segments.IndexOf(replacedSegment);
+        if (segmentInd < 0)
+        {
+            Debug.LogError("The Segment We're trying to cut is not in the track segments list!");
+            return;
+        }
+        segments.RemoveAt(segmentInd);
+        TrackSegment firstPartSegment = Instantiate(segmentPrefab, transform).GetComponent<TrackSegment>();
+        firstPartSegment.Init(segmentColor, firstPart.duration, replacedSegment.startTime,
+            firstPart.animationStartPoint, firstPart.animationEndPoint, this);
+        TrackSegment secondPartSegment = Instantiate(segmentPrefab, transform).GetComponent<TrackSegment>();
+        secondPartSegment.Init(segmentColor, secondPart.duration, replacedSegment.startTime + firstPart.duration,
+            secondPart.animationStartPoint, secondPart.animationEndPoint, this);
+        segments.InsertRange(segmentInd, new[] { firstPartSegment, secondPartSegment });
+        Destroy(replacedSegment.gameObject);
+        OrganizeSegments();
+        TimeLine.Instance.SelectTrackSegment(null);
+    }
 }
 
 [Serializable]

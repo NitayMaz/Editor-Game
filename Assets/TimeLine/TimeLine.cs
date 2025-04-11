@@ -21,6 +21,7 @@ public class TimeLine : MonoBehaviour
     private float leftEdgeXvalue;
     
     private TrackSegment selectedSegment;
+    public float minDurationForSegment = 1;
     
     private void Awake()
     {
@@ -127,8 +128,10 @@ public class TimeLine : MonoBehaviour
         float clickXPos = mouseWorldPos.x;
         
         float maxXValue = leftEdgeXvalue + (maxTrackLength * trackLengthFor1Second);
-        if(clickXPos < leftEdgeXvalue || clickXPos > maxXValue)
+        if(clickXPos < leftEdgeXvalue)
             return;
+        if(clickXPos > maxXValue)
+            clickXPos = maxXValue;
         
         PositionPointerHead(clickXPos);
     }
@@ -150,5 +153,12 @@ public class TimeLine : MonoBehaviour
     {
         selectedSegment?.GetComponent<SegmentOutline>().ResetOutline();
         selectedSegment = segment;
+    }
+
+    public void CutSelectedSegment()
+    {
+        if (!selectedSegment || !selectedSegment.IsActive(currentTime))
+            return;
+        selectedSegment.CutSegment(currentTime);
     }
 }

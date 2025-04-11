@@ -5,10 +5,10 @@ public class TrackSegment : MonoBehaviour
 {
     [HideInInspector]public float startTime;
     [HideInInspector]public float width;
-    [HideInInspector]public float duration;
+    public float duration;
     private float originalDuration;
-    private float segmentAnimationStartPoint;
-    private float segmentAnimationEndPoint;
+    [SerializeField]private float segmentAnimationStartPoint;
+    [SerializeField]private float segmentAnimationEndPoint;
     private Track parentTrack;
     
     [SerializeField] private SpriteRenderer spriteRenderer;
@@ -74,6 +74,34 @@ public class TrackSegment : MonoBehaviour
     {
         float segmentPercentPassed = (currentTime - startTime) / duration;
         return Mathf.Lerp(segmentAnimationStartPoint, segmentAnimationEndPoint, segmentPercentPassed);
+    }
+
+    public void CutSegment(float currentTime)
+    {
+        float firstPartDuration = currentTime - startTime;
+        if (firstPartDuration < TimeLine.Instance.minDurationForSegment ||
+            duration - firstPartDuration < TimeLine.Instance.minDurationForSegment)
+        {
+            Debug.Log("Segment is too short to cut, you can change it under the timeline object");
+            TimeLine.Instance.SelectTrackSegment(null);
+            return;
+        }
+
+        float secondPartAnimationStartPoint = 
+            segmentAnimationStartPoint + (segmentAnimationEndPoint - segmentAnimationStartPoint) * (firstPartDuration / duration);
+        TrackSegmentInitData firstPartData = new TrackSegmentInitData
+        {
+            duration = firstPartDuration,
+            animationStartPoint = segmentAnimationStartPoint,
+            animationEndPoint = secondPartAnimationStartPoint
+        };
+        TrackSegmentInitData secondPartData = new TrackSegmentInitData
+        {
+            duration = duration - firstPartDuration,
+            animationStartPoint = secondPartAnimationStartPoint,
+            animationEndPoint = segmentAnimationEndPoint
+        };
+        parentTrack.ReplaceCutSegment(this, firstPartData, secondPartData);
     }
     
     private void OnMouseEnter()
