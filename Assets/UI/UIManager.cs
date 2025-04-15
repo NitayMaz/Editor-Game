@@ -21,15 +21,21 @@ public class UIManager : MonoBehaviour
     {
         TimeLine.Instance.PlayScene();
     }
-    
+
 
     public void StopButtonClicked()
     {
         TimeLine.Instance.StopPlaying();
     }
-    
+
     public void CutButtonClicked()
     {
         TimeLine.Instance.CutSelectedSegment();
     }
+    
+    public void DeleteButtonClicked()
+    {
+        TimeLine.Instance.DeleteSelectedSegment();
+    }
+
 }

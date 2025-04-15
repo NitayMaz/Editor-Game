@@ -157,8 +157,14 @@ public class TimeLine : MonoBehaviour
 
     public void CutSelectedSegment()
     {
-        if (!selectedSegment || !selectedSegment.IsActive(currentTime))
+        if (!selectedSegment || !selectedSegment.IsActive(currentTime) || isPlaying)
             return;
         selectedSegment.CutSegment(currentTime);
+    }
+
+    public void DeleteSelectedSegment()
+    {
+        selectedSegment?.DeleteSegment();
+        SelectTrackSegment(null);
     }
 }

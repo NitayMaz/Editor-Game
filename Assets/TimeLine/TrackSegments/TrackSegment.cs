@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -44,12 +45,7 @@ public class TrackSegment : MonoBehaviour
         Vector2 scale = transform.localScale;
         scale.x = width / currentWidth;
         transform.localScale = scale;
-        
-        Vector2 parentScale = transform.lossyScale;
-        segmentHandle.transform.localScale = new Vector2(
-            handleOriginalScale.x / parentScale.x,
-            handleOriginalScale.y / parentScale.y
-        );
+        ScaleHandle();
         parentTrack.OrganizeSegments();
     }
 
@@ -63,6 +59,15 @@ public class TrackSegment : MonoBehaviour
             newDuration = TimeLine.Instance.maxDurationMultiplier * originalDuration;
         SetDurationByParameter(newDuration);
         TimeLine.Instance.SegmentStretched();
+    }
+
+    private void ScaleHandle()
+    {
+        Vector2 parentScale = transform.lossyScale;
+        segmentHandle.transform.localScale = new Vector2(
+            handleOriginalScale.x / parentScale.x,
+            handleOriginalScale.y / parentScale.y
+        );
     }
     
     public bool IsActive(float currentTime)
@@ -102,6 +107,11 @@ public class TrackSegment : MonoBehaviour
             animationEndPoint = segmentAnimationEndPoint
         };
         parentTrack.ReplaceCutSegment(this, firstPartData, secondPartData);
+    }
+    
+    public void DeleteSegment()
+    {
+        parentTrack.DeleteSelectedSegment(this);
     }
     
     private void OnMouseEnter()

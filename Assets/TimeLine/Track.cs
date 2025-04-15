@@ -98,6 +98,18 @@ public class Track : MonoBehaviour
         OrganizeSegments();
         TimeLine.Instance.SelectTrackSegment(null);
     }
+    
+    public void DeleteSelectedSegment(TrackSegment segment)
+    {
+        if (segments.Count == 1)
+        {
+            Debug.Log("You can't delete the last segment of a track");
+            return;
+        }
+        segments.Remove(segment);
+        Destroy(segment.gameObject);
+        OrganizeSegments();
+    }
 }
 
 [Serializable]

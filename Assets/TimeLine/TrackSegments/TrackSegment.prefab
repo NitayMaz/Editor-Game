@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.1}
-  m_LocalScale: {x: 0.09936514, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.9376378, y: 0.23128, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3338601982939362708}
@@ -110,6 +110,8 @@ MonoBehaviour:
   segmentAnimationEndPoint: 0
   spriteRenderer: {fileID: 145922678439505512}
   segmentHandle: {fileID: 5615730897152414009}
+  durationText: {fileID: 0}
+  textPadding: 0
 --- !u!114 &-2643867059100734984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,8 +202,8 @@ Transform:
   m_GameObject: {fileID: 6868418923562729219}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0002, y: 0, z: -0.3}
-  m_LocalScale: {x: 0.1, y: 0.8122, z: 1}
+  m_LocalPosition: {x: 1, y: 0, z: -0.3}
+  m_LocalScale: {x: 0.017077824, y: 0.8122, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8176257179001629479}
