@@ -106,6 +106,8 @@ MonoBehaviour:
   startTime: 0
   width: 0
   duration: 5
+  segmentAnimationStartPoint: 0
+  segmentAnimationEndPoint: 0
   spriteRenderer: {fileID: 145922678439505512}
   segmentHandle: {fileID: 5615730897152414009}
 --- !u!114 &-2643867059100734984
@@ -121,9 +123,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineColor: {r: 0.13207549, g: 0.12397652, b: 0.12397652, a: 1}
-  outlineWidth: 3
+  outlineWidth: 2
   outlineColorClicked: {r: 1, g: 0, b: 0, a: 1}
-  outlineWidthClicked: 8
+  outlineWidthClicked: 2
 --- !u!61 &8732922753395711897
 BoxCollider2D:
   m_ObjectHideFlags: 0
