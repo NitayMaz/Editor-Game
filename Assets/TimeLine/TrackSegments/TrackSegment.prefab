@@ -77,9 +77,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -108118519
+  m_SortingLayer: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: 487126884872600859, guid: 76dc43a0966bcd74a8620354d5411ee8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -110,8 +110,6 @@ MonoBehaviour:
   segmentAnimationEndPoint: 0
   spriteRenderer: {fileID: 145922678439505512}
   segmentHandle: {fileID: 5615730897152414009}
-  durationText: {fileID: 0}
-  textPadding: 0
 --- !u!114 &-2643867059100734984
 MonoBehaviour:
   m_ObjectHideFlags: 0
