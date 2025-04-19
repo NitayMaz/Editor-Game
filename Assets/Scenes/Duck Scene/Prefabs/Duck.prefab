@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4052822036512585691}
+  - component: {fileID: 986873886731561870}
+  - component: {fileID: 1737169422639301446}
   m_Layer: 0
   m_Name: Duck
   m_TagString: Untagged
@@ -32,6 +34,65 @@ Transform:
   - {fileID: 4847778613204633179}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &986873886731561870
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7183302497290693604}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 4.4, y: 2.1358712}
+  m_Size: {x: 0.0001, y: 1.67}
+  m_Direction: 1
+--- !u!95 &1737169422639301446
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7183302497290693604}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2a3a9fd94ebb744a7bead7dac501f8f3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &8682165054774486725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83,6 +144,26 @@ PrefabInstance:
     - target: {fileID: 4268282049186029726, guid: 7e46b67c54b8d4649802209a7203b90b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725346114878495671, guid: 7e46b67c54b8d4649802209a7203b90b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.4131336
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725346114878495671, guid: 7e46b67c54b8d4649802209a7203b90b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.1522088
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725346114878495671, guid: 7e46b67c54b8d4649802209a7203b90b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99256414
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725346114878495671, guid: 7e46b67c54b8d4649802209a7203b90b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.12172296
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725346114878495671, guid: 7e46b67c54b8d4649802209a7203b90b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -13.983
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
