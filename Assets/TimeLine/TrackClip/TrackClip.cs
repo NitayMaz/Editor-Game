@@ -78,7 +78,7 @@ public class TrackClip : MonoBehaviour
         TimeLine.Instance.SegmentStretched();
     }
 
-    private void PositionHandle()
+    public void PositionHandle()
     {
         clipHandle.transform.position = new Vector3(spriteRenderer.bounds.max.x, spriteRenderer.transform.position.y,
             spriteRenderer.transform.position.z);

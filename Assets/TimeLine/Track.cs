@@ -42,6 +42,7 @@ public class Track : MonoBehaviour
             segment.startTime = segmentStartTime;
             xPos += segment.width;
             segmentStartTime += segment.duration;
+            segment.GetComponent<TrackClip>().PositionHandle();
         }
     }
 
