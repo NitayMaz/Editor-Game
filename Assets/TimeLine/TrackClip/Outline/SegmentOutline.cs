@@ -32,7 +32,7 @@ public class SegmentOutline : MonoBehaviour
         }
         isClicked = true;
         outlineMaterial.SetFloat("_Clicked", 1f); // Set clicked state
-        TimeLine.Instance.SelectTrackSegment(GetComponent<TrackSegment>());
+        TimeLine.Instance.SelectTrackSegment(GetComponent<TrackClip>());
     }
     
     public void ResetOutline()

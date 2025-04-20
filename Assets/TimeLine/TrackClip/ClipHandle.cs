@@ -1,9 +1,10 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class SegmentHandle : MonoBehaviour
+public class ClipHandle : MonoBehaviour
 {
-    [SerializeField] private TrackSegment parentSegment;
+    [FormerlySerializedAs("parentSegment")] [SerializeField] private TrackClip parentClip;
     [SerializeField] private SpriteRenderer spriteRenderer;
     private bool segmentHovered = false;
     private bool handleHovered = false;
@@ -26,7 +27,7 @@ public class SegmentHandle : MonoBehaviour
         if (TimeLine.Instance.isPlaying)
             return;
         float mousePositionX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
-        parentSegment.SetDurationByPosition(mousePositionX);
+        parentClip.SetDurationByPosition(mousePositionX);
     }
 
     //corresponds to hover method on the segment

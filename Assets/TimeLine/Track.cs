@@ -6,10 +6,12 @@ using Random = UnityEngine.Random;
 public class Track : MonoBehaviour
 {
     [SerializeField] private Color segmentColor = Color.cyan;
+    [SerializeField] private float TrackHeight;
     [SerializeField] private TrackControlled connectedObject;
-    private List<TrackSegment> segments = new List<TrackSegment>();
+    private List<TrackClip> segments = new List<TrackClip>();
     [SerializeField] private GameObject segmentPrefab;
     [SerializeField] private List<TrackSegmentInitData> segmentsInitData;
+    
 
 
     private void Start()
@@ -18,12 +20,13 @@ public class Track : MonoBehaviour
         foreach (var segmentData in segmentsInitData)
         {
             GameObject segmentObject = Instantiate(segmentPrefab, transform);
-            TrackSegment segment = segmentObject.GetComponent<TrackSegment>();
-            segments.Add(segment);
-            segment.Init(segmentColor, segmentData.duration, segmentStartTime, 
-                            segmentData.animationStartPoint, segmentData.animationEndPoint, this);
+            TrackClip clip = segmentObject.GetComponentInChildren<TrackClip>();
+            segments.Add(clip);
+            clip.Init(segmentColor, segmentData.duration, segmentStartTime, 
+                            segmentData.animationStartPoint, segmentData.animationEndPoint,TrackHeight, this);
             segmentStartTime += segmentData.duration;
         }
+        ApplyTrackPosition(0);
     }
 
     public void OrganizeSegments()
@@ -57,8 +60,8 @@ public class Track : MonoBehaviour
         //if the timeline handle is beyond this track, stay on the last frame of the track
         if (time > GetTrackLength())
         {
-            TrackSegment lastSegment = segments[segments.Count - 1];
-            connectedObject.SetAnimationFrame(lastSegment.GetAnimationSpot(time));
+            TrackClip lastClip = segments[segments.Count - 1];
+            connectedObject.SetAnimationFrame(lastClip.GetAnimationSpot(time));
         }
 
         foreach (var segment in segments)
@@ -78,36 +81,36 @@ public class Track : MonoBehaviour
         connectedObject.StopInteraction();
     }
 
-    public void ReplaceCutSegment(TrackSegment replacedSegment, TrackSegmentInitData firstPart, TrackSegmentInitData secondPart)
+    public void ReplaceCutSegment(TrackClip replacedClip, TrackSegmentInitData firstPart, TrackSegmentInitData secondPart)
     {
-        int segmentInd = segments.IndexOf(replacedSegment);
+        int segmentInd = segments.IndexOf(replacedClip);
         if (segmentInd < 0)
         {
             Debug.LogError("The Segment We're trying to cut is not in the track segments list!");
             return;
         }
         segments.RemoveAt(segmentInd);
-        TrackSegment firstPartSegment = Instantiate(segmentPrefab, transform).GetComponent<TrackSegment>();
-        firstPartSegment.Init(segmentColor, firstPart.duration, replacedSegment.startTime,
-            firstPart.animationStartPoint, firstPart.animationEndPoint, this);
-        TrackSegment secondPartSegment = Instantiate(segmentPrefab, transform).GetComponent<TrackSegment>();
-        secondPartSegment.Init(segmentColor, secondPart.duration, replacedSegment.startTime + firstPart.duration,
-            secondPart.animationStartPoint, secondPart.animationEndPoint, this);
-        segments.InsertRange(segmentInd, new[] { firstPartSegment, secondPartSegment });
-        Destroy(replacedSegment.gameObject);
+        TrackClip firstPartClip = Instantiate(segmentPrefab, transform).GetComponentInChildren<TrackClip>();
+        firstPartClip.Init(segmentColor, firstPart.duration, replacedClip.startTime,
+            firstPart.animationStartPoint, firstPart.animationEndPoint, TrackHeight, this);
+        TrackClip secondPartClip = Instantiate(segmentPrefab, transform).GetComponentInChildren<TrackClip>();
+        secondPartClip.Init(segmentColor, secondPart.duration, replacedClip.startTime + firstPart.duration,
+            secondPart.animationStartPoint, secondPart.animationEndPoint, TrackHeight, this);
+        segments.InsertRange(segmentInd, new[] { firstPartClip, secondPartClip });
+        Destroy(replacedClip.gameObject);
         OrganizeSegments();
         TimeLine.Instance.SelectTrackSegment(null);
     }
     
-    public void DeleteSelectedSegment(TrackSegment segment)
+    public void DeleteSelectedSegment(TrackClip clip)
     {
         if (segments.Count == 1)
         {
             Debug.Log("You can't delete the last segment of a track");
             return;
         }
-        segments.Remove(segment);
-        Destroy(segment.gameObject);
+        segments.Remove(clip);
+        Destroy(clip.gameObject);
         OrganizeSegments();
     }
 }

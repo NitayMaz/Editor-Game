@@ -38,4 +38,9 @@ public class UIManager : MonoBehaviour
         TimeLine.Instance.DeleteSelectedSegment();
     }
 
+    public void ResetClicked()
+    {
+        TimeLine.Instance.ResetTimeLine();
+    }
+
 }

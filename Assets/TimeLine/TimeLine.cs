@@ -20,7 +20,7 @@ public class TimeLine : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private float leftEdgeXvalue;
     
-    private TrackSegment selectedSegment;
+    private TrackClip selectedClip;
     public float minDurationForSegment = 1;
     
     private void Awake()
@@ -119,7 +119,7 @@ public class TimeLine : MonoBehaviour
         ApplyTimelinePosition(currentTime);
     }
 
-    private void OnMouseDown()
+    private void OnMouseDrag()
     {
         if(isPlaying)
             return;
@@ -149,22 +149,22 @@ public class TimeLine : MonoBehaviour
         }
     }
 
-    public void SelectTrackSegment(TrackSegment segment) // called from segment outline
+    public void SelectTrackSegment(TrackClip clip) // called from segment outline
     {
-        selectedSegment?.GetComponent<SegmentOutline>().ResetOutline();
-        selectedSegment = segment;
+        selectedClip?.GetComponent<SegmentOutline>().ResetOutline();
+        selectedClip = clip;
     }
 
     public void CutSelectedSegment()
     {
-        if (!selectedSegment || !selectedSegment.IsActive(currentTime) || isPlaying)
+        if (!selectedClip || !selectedClip.IsActive(currentTime) || isPlaying)
             return;
-        selectedSegment.CutSegment(currentTime);
+        selectedClip.CutSegment(currentTime);
     }
 
     public void DeleteSelectedSegment()
     {
-        selectedSegment?.DeleteSegment();
+        selectedClip?.DeleteSegment();
         SelectTrackSegment(null);
     }
 }
