@@ -4,11 +4,16 @@ using UnityEngine.SceneManagement;
 
 public class Duck_DuckScene : TrackControlled
 {
+    [SerializeField] ParticleSystem duckExplodes;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(!TimeLine.Instance.isPlaying)
             return;
-        //particle!
+        duckExplodes.transform.position = transform.position;
+
+        duckExplodes.Play(); //particle!
+       
         StartInteraction();
     }
 
