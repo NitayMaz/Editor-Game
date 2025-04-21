@@ -865,7 +865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7005942206633265545, guid: 4da2c9c9118ffa74d977eda27b3f6a7a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DeleteButtonClicked
+      value: ResetClicked
       objectReference: {fileID: 0}
     - target: {fileID: 8502015653368842939, guid: 4da2c9c9118ffa74d977eda27b3f6a7a, type: 3}
       propertyPath: m_LocalScale.x

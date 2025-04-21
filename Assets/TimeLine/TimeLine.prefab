@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 2069876580620765885}
   - component: {fileID: 6209945566533504545}
   m_Layer: 5
-  m_Name: TimeLineBG
+  m_Name: TimeLineBG(script here!)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -328,5 +328,6 @@ MonoBehaviour:
   segmentPrefab: {fileID: 7732691730566119981, guid: 5a076e322cd09ed4280a7110ab1963c9, type: 3}
   segmentsInitData:
   - duration: 5
+    durationMultiplier: 0
     animationStartPoint: 0
     animationEndPoint: 1

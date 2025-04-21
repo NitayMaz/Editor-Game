@@ -40,7 +40,7 @@ public class UIManager : MonoBehaviour
 
     public void ResetClicked()
     {
-        TimeLine.Instance.ResetTimeLine();
+        TimeLine.Instance.ResetLevel();
     }
 
 }

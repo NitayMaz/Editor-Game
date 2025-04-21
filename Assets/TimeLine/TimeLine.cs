@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimeLine : MonoBehaviour
 {
@@ -38,7 +39,7 @@ public class TimeLine : MonoBehaviour
     {
         leftEdgeXvalue = spriteRenderer.bounds.min.x;
         UpdateMaxTrackLength();
-        ResetTimeLine();
+        ResetTime();
     }
 
     public void StopPlaying()
@@ -46,13 +47,7 @@ public class TimeLine : MonoBehaviour
         isPlaying = false;
         if (sceneCoroutine != null)
             StopCoroutine(sceneCoroutine);
-        ResetTimeLine();
-    }
-    
-    public void ResetTimeLine()
-    {
-        currentTime = 0;
-        PositionPointerHead(leftEdgeXvalue);
+        ResetTime();
     }
     
     public void PlayScene()
@@ -60,10 +55,21 @@ public class TimeLine : MonoBehaviour
         if(isPlaying)
             return;
         isPlaying = true;
-        ResetTimeLine();
+        ResetTime();
         sceneCoroutine = StartCoroutine(RunScene());
     }
 
+    private void ResetTime()
+    {
+        currentTime = 0;
+        PositionPointerHead(leftEdgeXvalue);
+    }
+    
+    public void ResetLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    
     public void SegmentStretched()
     {
         UpdateMaxTrackLength();

@@ -22,7 +22,7 @@ public class Track : MonoBehaviour
             GameObject segmentObject = Instantiate(segmentPrefab, transform);
             TrackClip clip = segmentObject.GetComponentInChildren<TrackClip>();
             segments.Add(clip);
-            clip.Init(segmentColor, segmentData.duration, segmentStartTime, 
+            clip.Init(segmentColor, segmentData.duration, 1, segmentStartTime, 
                             segmentData.animationStartPoint, segmentData.animationEndPoint,TrackHeight, this);
             segmentStartTime += segmentData.duration;
         }
@@ -42,7 +42,7 @@ public class Track : MonoBehaviour
             segment.startTime = segmentStartTime;
             xPos += segment.width;
             segmentStartTime += segment.duration;
-            segment.GetComponent<TrackClip>().PositionHandle();
+            segment.GetComponent<TrackClip>().UpdateTextAndHandle(); // it's important this happen here because the positions are messed up if it happens in init.
         }
     }
 
@@ -90,16 +90,15 @@ public class Track : MonoBehaviour
             Debug.LogError("The Segment We're trying to cut is not in the track segments list!");
             return;
         }
-        segments.RemoveAt(segmentInd);
+        //ugly ass code, but it's better than starting to separate the init function rn
         TrackClip firstPartClip = Instantiate(segmentPrefab, transform).GetComponentInChildren<TrackClip>();
-        firstPartClip.Init(segmentColor, firstPart.duration, replacedClip.startTime,
+        firstPartClip.Init(segmentColor, firstPart.duration, firstPart.durationMultiplier, replacedClip.startTime,
             firstPart.animationStartPoint, firstPart.animationEndPoint, TrackHeight, this);
         TrackClip secondPartClip = Instantiate(segmentPrefab, transform).GetComponentInChildren<TrackClip>();
-        secondPartClip.Init(segmentColor, secondPart.duration, replacedClip.startTime + firstPart.duration,
+        secondPartClip.Init(segmentColor, secondPart.duration, firstPart.durationMultiplier, replacedClip.startTime + firstPart.duration,
             secondPart.animationStartPoint, secondPart.animationEndPoint, TrackHeight, this);
         segments.InsertRange(segmentInd, new[] { firstPartClip, secondPartClip });
-        Destroy(replacedClip.gameObject);
-        OrganizeSegments();
+        DeleteSelectedSegment(replacedClip);
         TimeLine.Instance.SelectTrackSegment(null);
     }
     
@@ -111,7 +110,7 @@ public class Track : MonoBehaviour
             return;
         }
         segments.Remove(clip);
-        Destroy(clip.gameObject);
+        Destroy(clip.transform.parent.gameObject);
         OrganizeSegments();
     }
 }
@@ -120,6 +119,8 @@ public class Track : MonoBehaviour
 public class TrackSegmentInitData
 {
     public float duration;
+    public float durationMultiplier;
     [Range(0,1)] public float animationStartPoint;
     [Range(0,1)] public float animationEndPoint;
+    
 }
