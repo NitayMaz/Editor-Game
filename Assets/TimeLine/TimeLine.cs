@@ -116,30 +116,21 @@ public class TimeLine : MonoBehaviour
         }
     }
     
-    private void PositionPointerHead(float xValue)
+    public void PositionPointerHead(float xValue)
     {
-        CancelInteractions();
+        //check input validity
+        float maxXValue = leftEdgeXvalue + (maxTrackLength * trackLengthFor1Second);
+        if(xValue < leftEdgeXvalue)
+            return;
+        if(xValue > maxXValue)
+            xValue = maxXValue;
+        
+        //move the pointer head and change time accordingly
+        CancelInteractions(); //returns all objects to being controlled by the timeline
         MovePointerHeadX(xValue);
         // Convert the clicked X position back to time
         currentTime = (xValue - leftEdgeXvalue) / trackLengthFor1Second;
         ApplyTimelinePosition(currentTime);
-    }
-
-    private void OnMouseDrag()
-    {
-        if(isPlaying)
-            return;
-        
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        float clickXPos = mouseWorldPos.x;
-        
-        float maxXValue = leftEdgeXvalue + (maxTrackLength * trackLengthFor1Second);
-        if(clickXPos < leftEdgeXvalue)
-            return;
-        if(clickXPos > maxXValue)
-            clickXPos = maxXValue;
-        
-        PositionPointerHead(clickXPos);
     }
 
     private void MovePointerHeadX(float xValue)
