@@ -161,7 +161,6 @@ GameObject:
   - component: {fileID: 3680315632811487726}
   - component: {fileID: 6592362008829428561}
   - component: {fileID: 432371537136355994}
-  - component: {fileID: 4700025939570269184}
   m_Layer: 0
   m_Name: handle
   m_TagString: Untagged
@@ -227,7 +226,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -108118519
   m_SortingLayer: 4
-  m_SortingOrder: 7
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 8c8c0a51ca2fb43c78d35348e81c0dda, type: 3}
   m_Color: {r: 1, g: 0.9452023, b: 0.5518868, a: 1}
   m_FlipX: 0
@@ -269,11 +268,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0627448, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.8, y: 0.5}
@@ -283,7 +282,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.34444445, y: 0.75555557}
+  m_Size: {x: 0.4699341, y: 0.75555557}
   m_EdgeRadius: 0
 --- !u!114 &432371537136355994
 MonoBehaviour:
@@ -299,22 +298,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentClip: {fileID: 8713234255133472900}
   spriteRenderer: {fileID: 3680315632811487726}
---- !u!114 &4700025939570269184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2989377450286902329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cd6ec502ec2bc14797f6a036a83453d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 0.1
-  outlineColorClicked: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidthClicked: 5
 --- !u!1 &4399793714618771316
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +530,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 0e68e1f6681141a458820f2dfd9c4e2f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -567,7 +550,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -108118519
   m_SortingLayer: 4
-  m_SortingOrder: 6
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7705603414746653456, guid: b1df2d160df584dc8ba53215e8934a01, type: 3}
   m_Color: {r: 1, g: 0.5518868, b: 0.5518868, a: 1}
   m_FlipX: 0
@@ -631,11 +614,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 2.4611259, y: 0}
+  m_Offset: {x: 2.5768116, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0.5}
@@ -645,7 +628,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.9222517, y: 0.6333333}
+  m_Size: {x: 5.153623, y: 0.6333333}
   m_EdgeRadius: 0
 --- !u!114 &61466845664329956
 MonoBehaviour:
@@ -659,9 +642,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd6ec502ec2bc14797f6a036a83453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 5
-  outlineColorClicked: {r: 1, g: 1, b: 1, a: 1}
+  outlineColor: {r: 0.084905684, g: 0.082102194, b: 0.082102194, a: 1}
+  outlineWidth: 1
+  outlineColorClicked: {r: 0.9528302, g: 0.53624564, b: 0.20225172, a: 1}
   outlineWidthClicked: 5
 --- !u!1 &7732691730566119981
 GameObject:
@@ -779,7 +762,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -108118519
   m_SortingLayer: 4
-  m_SortingOrder: 6
+  m_SortingOrder: 4
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5911023362259718490
 MonoBehaviour:
