@@ -16,6 +16,12 @@ public class Track : MonoBehaviour
 
     private void Start()
     {
+        InitTrack();
+    }
+
+    [ContextMenu("Populate Clips")]
+    private void InitTrack()
+    {
         float segmentStartTime = 0;
         foreach (var segmentData in segmentsInitData)
         {
@@ -23,12 +29,11 @@ public class Track : MonoBehaviour
             TrackClip clip = segmentObject.GetComponentInChildren<TrackClip>();
             segments.Add(clip);
             clip.Init(segmentColor, segmentData.duration, 1, segmentStartTime, 
-                            segmentData.animationStartPoint, segmentData.animationEndPoint,TrackHeight, this);
+                segmentData.animationStartPoint, segmentData.animationEndPoint,TrackHeight, this);
             segmentStartTime += segmentData.duration;
         }
         ApplyTrackPosition(0);
     }
-
     public void OrganizeSegments()
     {
         if (segments.Count == 0)
@@ -113,6 +118,7 @@ public class Track : MonoBehaviour
         Destroy(clip.transform.parent.gameObject);
         OrganizeSegments();
     }
+    
 }
 
 [Serializable]
