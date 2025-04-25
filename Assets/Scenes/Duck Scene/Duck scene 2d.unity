@@ -2575,6 +2575,26 @@ PrefabInstance:
       propertyPath: 'tracks.Array.data[1]'
       value: 
       objectReference: {fileID: 165104009}
+    - target: {fileID: 2148409979667155660, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.553
+      objectReference: {fileID: 0}
+    - target: {fileID: 2148409979667155660, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823859293713786670, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: tracks.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2823859293713786670, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: 'tracks.Array.data[1]'
+      value: 
+      objectReference: {fileID: 165104009}
+    - target: {fileID: 4336054644565003797, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4576881891721299343, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.87
@@ -2618,6 +2638,10 @@ PrefabInstance:
     - target: {fileID: 6064262006282851385, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_Name
       value: TimeLine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067399993389365667, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: TrackHeight
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 9067399993389365667, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: connectedObject
