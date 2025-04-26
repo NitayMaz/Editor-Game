@@ -55,9 +55,11 @@ public class TimeRuler : MonoBehaviour
     private void OnMouseDrag()
     {
         Debug.Log("Dragging ruler");
-        if(TimeLine.Instance.isPlaying)
+        if (TimeLine.Instance.isPlaying)
+        {
+            Debug.Log("trying to use ruler while scene playing");
             return;
-        
+        }
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float clickXPos = mouseWorldPos.x;
         

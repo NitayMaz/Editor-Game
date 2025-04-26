@@ -30,12 +30,12 @@ public class UIManager : MonoBehaviour
 
     public void CutButtonClicked()
     {
-        TimeLine.Instance.CutSelectedSegment();
+        TimeLine.Instance.CutSelectedClip();
     }
     
     public void DeleteButtonClicked()
     {
-        TimeLine.Instance.DeleteSelectedSegment();
+        TimeLine.Instance.DeleteSelectedClip();
     }
 
     public void ResetClicked()

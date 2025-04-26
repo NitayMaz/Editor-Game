@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class SegmentOutline : MonoBehaviour
+public class ClipOutline : MonoBehaviour
 {
     [SerializeField] private Color outlineColor = Color.white;
     [SerializeField] private float outlineWidth = 0.1f;
@@ -27,12 +27,12 @@ public class SegmentOutline : MonoBehaviour
         {
             isClicked = false;
             outlineMaterial.SetFloat("_Clicked", 0f); // Reset clicked state
-            TimeLine.Instance.SelectTrackSegment(null);
+            TimeLine.Instance.SelectTrackClip(null);
             return;
         }
         isClicked = true;
         outlineMaterial.SetFloat("_Clicked", 1f); // Set clicked state
-        TimeLine.Instance.SelectTrackSegment(GetComponent<TrackClip>());
+        TimeLine.Instance.SelectTrackClip(GetComponent<TrackClip>());
     }
     
     public void ResetOutline()

@@ -9,41 +9,42 @@ public class TrackClip : MonoBehaviour
     [HideInInspector] public float width;
     public float duration;
     private float durationMultiplier = 1; //this means how much the current duration is from the original duration
-    [SerializeField] private float segmentAnimationStartPoint;
-    [SerializeField] private float segmentAnimationEndPoint;
+    [SerializeField] private float clipAnimationStartPoint;
+    [SerializeField] private float clipAnimationEndPoint;
     private Track parentTrack;
 
-    [SerializeField] private SpriteRenderer spriteRenderer;
-    [FormerlySerializedAs("segmentHandle")] [SerializeField] private ClipHandle clipHandle;
+    private SpriteRenderer spriteRenderer;
+    [SerializeField] private ClipHandle clipHandle;
 
     [SerializeField] private TextMeshPro text;
     [SerializeField] [Range(0, 1)] private float textHeight;
+    private float textOffsetLeft;
     private float originaltextWidth;
 
     public bool applyColor = true;
-    private float segmentHeight;
+    private float clipHeight;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    public void Init(Color color, float duration, float durationMultiplier, float segmentStartTime,
-        float animationStartPoint, float animationEndPoint, float segmentHeight, Track parentTrack)
+    public void Init(Color color, float duration, float durationMultiplier, float clipStartTime,
+        float animationStartPoint, float animationEndPoint, float clipHeight, Track parentTrack)
     {
         if (applyColor)
         {
             spriteRenderer.color = color;
         }
 
-        this.startTime = segmentStartTime;
+        this.startTime = clipStartTime;
         this.parentTrack = parentTrack;
         this.duration = duration;
         this.durationMultiplier = durationMultiplier;
-        this.segmentHeight = segmentHeight;
-        segmentAnimationStartPoint = animationStartPoint;
-        segmentAnimationEndPoint = animationEndPoint;
-        SetHeight(segmentHeight);
+        this.clipHeight = clipHeight;
+        clipAnimationStartPoint = animationStartPoint;
+        clipAnimationEndPoint = animationEndPoint;
+        SetHeight(clipHeight);
         InitalizeTextHeight();
         SetDurationByParameter(duration);
     }
@@ -55,8 +56,17 @@ public class TrackClip : MonoBehaviour
         transform.localScale = scale;
         Vector2 handleScale = clipHandle.transform.localScale;
         handleScale.y = scale.y;
+        clipHandle.transform.localScale = handleScale;
     }
-
+    private void InitalizeTextHeight()
+    {
+        text.ForceMeshUpdate();
+        float targetHeight = textHeight * clipHeight;
+        float currentHeight = text.bounds.size.y;
+        text.transform.localScale *= targetHeight / currentHeight;
+        textOffsetLeft = spriteRenderer.bounds.max.x - text.transform.position.x;
+        text.ForceMeshUpdate(); 
+    }
     private void SetDurationByParameter(float newDuration)
     {
         duration = newDuration;
@@ -66,7 +76,7 @@ public class TrackClip : MonoBehaviour
         Vector2 scale = transform.localScale;
         scale.x = width / currentWidth;
         transform.localScale = scale;
-        parentTrack.OrganizeSegments();
+        parentTrack.OrganizeClips();
         UpdateTextAndHandle();
     }
 
@@ -80,7 +90,7 @@ public class TrackClip : MonoBehaviour
                                                                         TimeLine.Instance.maxDurationMultiplier);
         durationMultiplier = newDurationMultiplier;
         SetDurationByParameter(originalDuration * durationMultiplier);
-        TimeLine.Instance.SegmentStretched();
+        TimeLine.Instance.ClipUpdated();
     }
 
     public void UpdateTextAndHandle()
@@ -88,20 +98,12 @@ public class TrackClip : MonoBehaviour
         clipHandle.transform.position = new Vector3(spriteRenderer.bounds.max.x, spriteRenderer.transform.position.y,
             spriteRenderer.transform.position.z);
         text.ForceMeshUpdate();
-        text.transform.position = spriteRenderer.bounds.center;
+        text.transform.position = new Vector2(spriteRenderer.bounds.max.x - textOffsetLeft, transform.position.y);
         text.text = "X" + (1f / durationMultiplier).ToString("0.##"); //show up to 2 decimal spots, don't irrelevant 0s
-        //only show the text if the segment is long enough
-        text.enabled = spriteRenderer.bounds.size.x > text.bounds.size.x;
+        //only show the text if the clip is long enough
+        text.enabled = (spriteRenderer.bounds.size.x > text.bounds.size.x);
     }
 
-    private void InitalizeTextHeight()
-    {
-        text.ForceMeshUpdate();
-        float targetHeight = textHeight * segmentHeight;
-        float currentHeight = text.bounds.size.y;
-        text.transform.localScale *= targetHeight / currentHeight;
-        text.ForceMeshUpdate(); 
-    }
 
     public bool IsActive(float currentTime)
     {
@@ -110,8 +112,8 @@ public class TrackClip : MonoBehaviour
 
     public float GetAnimationSpot(float currentTime)
     {
-        float segmentPercentPassed = (currentTime - startTime) / duration;
-        float lerpedVal = Mathf.Lerp(segmentAnimationStartPoint, segmentAnimationEndPoint, segmentPercentPassed);
+        float clipPercentPassed = (currentTime - startTime) / duration;
+        float lerpedVal = Mathf.Lerp(clipAnimationStartPoint, clipAnimationEndPoint, clipPercentPassed);
         if (lerpedVal <= 0)
         {
             return 0;
@@ -125,49 +127,49 @@ public class TrackClip : MonoBehaviour
         return lerpedVal % 1f;
     }
 
-    public void CutSegment(float currentTime)
+    public void CutClip(float currentTime)
     {
         float firstPartDuration = currentTime - startTime;
-        if (firstPartDuration < TimeLine.Instance.minDurationForSegment ||
-            duration - firstPartDuration < TimeLine.Instance.minDurationForSegment)
+        if (firstPartDuration < TimeLine.Instance.minDurationForClip ||
+            duration - firstPartDuration < TimeLine.Instance.minDurationForClip)
         {
-            Debug.Log("Segment is too short to cut, you can change it under the timeline object");
-            TimeLine.Instance.SelectTrackSegment(null);
+            Debug.Log("clip is too short to cut, you can change it under the timeline object");
+            TimeLine.Instance.SelectTrackClip(null);
             return;
         }
 
         float secondPartAnimationStartPoint =
-            segmentAnimationStartPoint + (segmentAnimationEndPoint - segmentAnimationStartPoint) *
+            clipAnimationStartPoint + (clipAnimationEndPoint - clipAnimationStartPoint) *
             (firstPartDuration / duration);
-        TrackSegmentInitData firstPartData = new TrackSegmentInitData
+        TrackClipInitData firstPartData = new TrackClipInitData
         {
             duration = firstPartDuration,
             durationMultiplier = durationMultiplier,
-            animationStartPoint = segmentAnimationStartPoint,
+            animationStartPoint = clipAnimationStartPoint,
             animationEndPoint = secondPartAnimationStartPoint
         };
-        TrackSegmentInitData secondPartData = new TrackSegmentInitData
+        TrackClipInitData secondPartData = new TrackClipInitData
         {
             duration = duration - firstPartDuration,
             durationMultiplier = durationMultiplier,
             animationStartPoint = secondPartAnimationStartPoint,
-            animationEndPoint = segmentAnimationEndPoint
+            animationEndPoint = clipAnimationEndPoint
         };
-        parentTrack.ReplaceCutSegment(this, firstPartData, secondPartData);
+        parentTrack.ReplaceCutClip(this, firstPartData, secondPartData);
     }
 
-    public void DeleteSegment()
+    public void DeleteClip()
     {
-        parentTrack.DeleteSelectedSegment(this);
+        parentTrack.DeleteSelectedClip(this);
     }
 
     private void OnMouseEnter()
     {
-        clipHandle.SegmentStartHover();
+        clipHandle.ClipStartHover();
     }
 
     private void OnMouseExit()
     {
-        clipHandle.SegmentEndHover();
+        clipHandle.ClipEndHover();
     }
 }

@@ -4,15 +4,15 @@ using UnityEngine.Serialization;
 
 public class ClipHandle : MonoBehaviour
 {
-    [FormerlySerializedAs("parentSegment")] [SerializeField] private TrackClip parentClip;
+    [SerializeField] private TrackClip parentClip;
     [SerializeField] private SpriteRenderer spriteRenderer;
-    private bool segmentHovered = false;
+    private bool clipHovered = false;
     private bool handleHovered = false;
     private bool handleClicked = false;
 
     private void Update()
     {
-        if((segmentHovered || handleHovered || handleClicked) && !TimeLine.Instance.isPlaying)
+        if((clipHovered || handleHovered || handleClicked) && !TimeLine.Instance.isPlaying)
         {
             spriteRenderer.enabled = true;
         }
@@ -30,15 +30,15 @@ public class ClipHandle : MonoBehaviour
         parentClip.SetDurationByPosition(mousePositionX);
     }
 
-    //corresponds to hover method on the segment
-    public void SegmentStartHover()
+    //corresponds to hover method on the clip
+    public void ClipStartHover()
     {
-        segmentHovered = true;
+        clipHovered = true;
     }
     
-    public void SegmentEndHover()
+    public void ClipEndHover()
     {
-        segmentHovered = false;
+        clipHovered = false;
     }
 
     private void OnMouseDown()

@@ -18,11 +18,11 @@ public class TimeLine : MonoBehaviour
     public bool isPlaying = false;
     private Coroutine sceneCoroutine;
     
-    private SpriteRenderer spriteRenderer;
+    [SerializeField] private SpriteRenderer BGSpriteRenderer;
     private float leftEdgeXvalue;
     
     private TrackClip selectedClip;
-    public float minDurationForSegment = 1;
+    public float minDurationForClip = 1;
     
     private void Awake()
     {
@@ -32,14 +32,36 @@ public class TimeLine : MonoBehaviour
             Destroy(this.gameObject);
         }
         Instance = this;
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     private void Start()
     {
-        leftEdgeXvalue = spriteRenderer.bounds.min.x;
+        leftEdgeXvalue = BGSpriteRenderer.bounds.min.x;
         UpdateMaxTrackLength();
         ResetTime();
+    }
+    
+    private void UpdateMaxTrackLength()
+    {
+        maxTrackLength = 0;
+        foreach (var track in tracks)
+        {
+            float trackLength = track.GetTrackDuration();
+            if (trackLength > maxTrackLength)
+                maxTrackLength = trackLength;
+        }
+        if (currentTime > maxTrackLength)
+        {
+            currentTime = maxTrackLength;
+            MovePointerHeadX(leftEdgeXvalue + (currentTime * trackLengthFor1Second));
+        }
+    }
+
+    
+    private void ResetTime()
+    {
+        currentTime = 0;
+        PositionPointerHead(leftEdgeXvalue);
     }
 
     public void StopPlaying()
@@ -58,40 +80,7 @@ public class TimeLine : MonoBehaviour
         ResetTime();
         sceneCoroutine = StartCoroutine(RunScene());
     }
-
-    private void ResetTime()
-    {
-        currentTime = 0;
-        PositionPointerHead(leftEdgeXvalue);
-    }
     
-    public void ResetLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-    
-    public void SegmentStretched()
-    {
-        UpdateMaxTrackLength();
-        ApplyTimelinePosition(currentTime);
-    }
-    
-    private void UpdateMaxTrackLength()
-    {
-        maxTrackLength = 0;
-        foreach (var track in tracks)
-        {
-            float trackLength = track.GetTrackLength();
-            if (trackLength > maxTrackLength)
-                maxTrackLength = trackLength;
-        }
-        if (currentTime > maxTrackLength)
-        {
-            currentTime = maxTrackLength;
-            MovePointerHeadX(leftEdgeXvalue + (currentTime * trackLengthFor1Second));
-        }
-    }
-
     private IEnumerator RunScene()
     {
         while (currentTime < maxTrackLength)
@@ -145,23 +134,34 @@ public class TimeLine : MonoBehaviour
             track.CancelObjectInteraction();
         }
     }
-
-    public void SelectTrackSegment(TrackClip clip) // called from segment outline
+    
+    public void ResetLevel()
     {
-        selectedClip?.GetComponent<SegmentOutline>().ResetOutline();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    
+    public void ClipUpdated()
+    {
+        UpdateMaxTrackLength();
+        ApplyTimelinePosition(currentTime);
+    }
+
+    public void SelectTrackClip(TrackClip clip) // called from clip outline
+    {
+        selectedClip?.GetComponent<ClipOutline>().ResetOutline();
         selectedClip = clip;
     }
 
-    public void CutSelectedSegment()
+    public void CutSelectedClip()
     {
         if (!selectedClip || !selectedClip.IsActive(currentTime) || isPlaying)
             return;
-        selectedClip.CutSegment(currentTime);
+        selectedClip.CutClip(currentTime);
     }
 
-    public void DeleteSelectedSegment()
+    public void DeleteSelectedClip()
     {
-        selectedClip?.DeleteSegment();
-        SelectTrackSegment(null);
+        selectedClip?.DeleteClip();
+        SelectTrackClip(null);
     }
 }
