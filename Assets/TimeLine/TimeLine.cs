@@ -1,11 +1,13 @@
-using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
+using UnityEngine.Timeline;
 
 public class TimeLine : MonoBehaviour
 {
     public static TimeLine Instance;
+    [SerializeField] private PlayableDirector timeLineDirector;
     [SerializeField] private Track[] tracks;
     [SerializeField] private GameObject pointerHead;
     
@@ -18,7 +20,7 @@ public class TimeLine : MonoBehaviour
     public bool isPlaying = false;
     private Coroutine sceneCoroutine;
     
-    [SerializeField] private SpriteRenderer BGSpriteRenderer;
+    [SerializeField] private SpriteRenderer bgSpriteRenderer;
     private float leftEdgeXvalue;
     
     private TrackClip selectedClip;
@@ -36,9 +38,38 @@ public class TimeLine : MonoBehaviour
 
     private void Start()
     {
-        leftEdgeXvalue = BGSpriteRenderer.bounds.min.x;
+        InitTracks();
+        leftEdgeXvalue = bgSpriteRenderer.bounds.min.x;
         UpdateMaxTrackLength();
         ResetTime();
+    }
+
+    private void InitTracks()
+    {
+        var timeline = timeLineDirector.playableAsset as TimelineAsset;
+        if (timeline == null)
+        {
+            Debug.LogError("No Timeline assigned to the timeline object in scene!");
+            return;
+        }
+        var UnityTLTracks = timeline.GetOutputTracks();
+        int i = 0;
+        foreach (var unityTrack in UnityTLTracks)
+        {
+            if(i>= tracks.Length)
+            {
+                Debug.LogError("More tracks in timeline than in scene");
+                break;
+            }
+            TrackControlled connectedObject = timeLineDirector.GetGenericBinding(unityTrack) as TrackControlled;
+            if (connectedObject == null)
+            {
+                Debug.LogWarning($"Track {unityTrack.name} has no connected TrackControlled object, skipping...");
+                continue;
+            }
+            tracks[i].InitTrack(connectedObject, unityTrack);
+            i++;
+        }
     }
     
     private void UpdateMaxTrackLength()
