@@ -126,7 +126,7 @@ public class TrackSegmentInitData
 {
     public float duration;
     public float durationMultiplier;
-    [Range(0,1)] public float animationStartPoint;
-    [Range(0,1)] public float animationEndPoint;
+    public float animationStartPoint;
+    public float animationEndPoint;
     
 }

@@ -33,7 +33,6 @@ public class TrackClip : MonoBehaviour
     {
         if (applyColor)
         {
-            color.a = Random.Range(0.5f, 1f); //temporary solution to tell segments apart
             spriteRenderer.color = color;
         }
 
@@ -90,7 +89,7 @@ public class TrackClip : MonoBehaviour
             spriteRenderer.transform.position.z);
         text.ForceMeshUpdate();
         text.transform.position = spriteRenderer.bounds.center;
-        text.text = "X" + durationMultiplier.ToString("0.##"); //show up to 2 decimal spots, don't irrelevant 0s
+        text.text = "X" + (1f / durationMultiplier).ToString("0.##"); //show up to 2 decimal spots, don't irrelevant 0s
         //only show the text if the segment is long enough
         text.enabled = spriteRenderer.bounds.size.x > text.bounds.size.x;
     }
@@ -112,7 +111,18 @@ public class TrackClip : MonoBehaviour
     public float GetAnimationSpot(float currentTime)
     {
         float segmentPercentPassed = (currentTime - startTime) / duration;
-        return Mathf.Lerp(segmentAnimationStartPoint, segmentAnimationEndPoint, segmentPercentPassed);
+        float lerpedVal = Mathf.Lerp(segmentAnimationStartPoint, segmentAnimationEndPoint, segmentPercentPassed);
+        if (lerpedVal <= 0)
+        {
+            return 0;
+        }
+
+        if (lerpedVal % 1f == 0f)
+        {
+            return 1f; //without this it goes back to the first frame after finishing the animation
+        }
+
+        return lerpedVal % 1f;
     }
 
     public void CutSegment(float currentTime)
