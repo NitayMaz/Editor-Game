@@ -6,12 +6,13 @@ public enum buttonType
 Play,
 Stop,
 Cut,
-Rerun
+Reset
 }
 
 public class MyButton : MonoBehaviour
 {
     public buttonType buttonType;
+    [SerializeField] private Animator animator;
     
     public void OnMouseDown()
     {
@@ -26,9 +27,11 @@ public class MyButton : MonoBehaviour
                 break;
             case buttonType.Cut:
                 UIManager.Instance.CutButtonClicked();
+             //   animator.SetTrigger("IsPressed");
                 break;
-            case buttonType.Rerun:
+            case buttonType.Reset:
                 UIManager.Instance.ResetClicked();
+             //   animator.SetTrigger("IsPressed");
                 break;
             default:
                 UIManager.Instance.PlayClicked();

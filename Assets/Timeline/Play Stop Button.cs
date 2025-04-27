@@ -13,14 +13,13 @@ public class SetTriggerAnimator : MonoBehaviour
         {
             anim.SetBool("IsStopped", true);
             isButtonStopped = true;
-            UIManager.Instance.StopButtonClicked();
-            
+            UIManager.Instance.PlayClicked();
         }
         else //(isButtonStopped == true)
         {
             anim.SetBool("IsStopped", false);
             isButtonStopped = false;
-            UIManager.Instance.PlayClicked();
+            UIManager.Instance.StopButtonClicked();
         }
     }
 

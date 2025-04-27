@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 8c8c0a51ca2fb43c78d35348e81c0dda, type: 3}
-  m_Color: {r: 1, g: 0.9452023, b: 0.5518868, a: 1}
+  m_Color: {r: 1, g: 0.8392157, b: 0.44705883, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -254,8 +254,8 @@ MonoBehaviour:
   startTime: 0
   width: 0
   duration: 5
-  segmentAnimationStartPoint: 0
-  segmentAnimationEndPoint: 0
+  clipAnimationStartPoint: 0
+  clipAnimationEndPoint: 0
   clipHandle: {fileID: 432371537136355994}
   text: {fileID: 5911023362259718490}
   textHeight: 0.3
@@ -318,10 +318,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd6ec502ec2bc14797f6a036a83453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineColor: {r: 0.084905684, g: 0.082102194, b: 0.082102194, a: 1}
-  outlineWidth: 1
-  outlineColorClicked: {r: 0.9528302, g: 0.53624564, b: 0.20225172, a: 1}
-  outlineWidthClicked: 5
+  outlineColor: {r: 0.6, g: 0.6666667, b: 0.70980394, a: 1}
+  outlineWidth: 0
+  outlineColorClicked: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidthClicked: 10
 --- !u!1 &7732691730566119981
 GameObject:
   m_ObjectHideFlags: 0
