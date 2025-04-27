@@ -27,7 +27,7 @@ public class MyButton : MonoBehaviour
                 break;
             case buttonType.Cut:
                 UIManager.Instance.CutButtonClicked();
-             //   animator.SetTrigger("IsPressed");
+               animator.SetTrigger("IsPressed");
                 break;
             case buttonType.Reset:
                 UIManager.Instance.ResetClicked();
