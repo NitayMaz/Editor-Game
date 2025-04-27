@@ -258,7 +258,7 @@ MonoBehaviour:
   clipAnimationEndPoint: 0
   clipHandle: {fileID: 432371537136355994}
   text: {fileID: 5911023362259718490}
-  textHeight: 0.3
+  textHeight: 0.35
   applyColor: 1
 --- !u!61 &2074126602498651617
 BoxCollider2D:
@@ -318,10 +318,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd6ec502ec2bc14797f6a036a83453d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineColor: {r: 0.6, g: 0.6666667, b: 0.70980394, a: 1}
-  outlineWidth: 0
+  outlineColor: {r: 0.35686275, g: 0.35686275, b: 0.35686275, a: 1}
+  outlineWidth: 3
   outlineColorClicked: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidthClicked: 10
+  outlineWidthClicked: 7
 --- !u!1 &7732691730566119981
 GameObject:
   m_ObjectHideFlags: 0
