@@ -31,7 +31,7 @@ public class MyButton : MonoBehaviour
                 break;
             case buttonType.Reset:
                 UIManager.Instance.ResetClicked();
-             //   animator.SetTrigger("IsPressed");
+                animator.SetTrigger("IsPressed");
                 break;
             default:
                 UIManager.Instance.PlayClicked();

@@ -3791,6 +3791,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4872435213630830448, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: bigTickFrequency
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872435213630830448, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: smallTickFrequency
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5568775703685376976, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_SpriteTilingProperty.drawMode
       value: 2
@@ -3801,7 +3809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5804044285595608607, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_Size.x
-      value: 1
+      value: 0.88
       objectReference: {fileID: 0}
     - target: {fileID: 5804044285595608607, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_DrawMode
