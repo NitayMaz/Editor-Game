@@ -37,9 +37,9 @@ public class TimeRuler : MonoBehaviour
             bigTickPositions.Add(tickXPos);
             Vector2 bigTickPos = new Vector2(tickXPos, rulerBottom);
             GameObject bigTick = Instantiate(bigTickPrefab, bigTickPos, Quaternion.identity, ticksSceneParent);
-            if(i == 0) 
-                bigTick.GetComponentInChildren<TextMeshPro>().enabled = false; // no text for first tick
-            bigTick.GetComponentInChildren<TextMeshPro>().text = i.ToString("0.00"); // format to 2 decimal places
+                //          if(i == 0) 
+//                bigTick.GetComponentInChildren<TextMeshPro>().enabled = false; // no text for first tick
+  //          bigTick.GetComponentInChildren<TextMeshPro>().text = i.ToString("0.00"); // format to 2 decimal places
         }
         // position small ticks
         for (float i = 0; i <= timeCovered; i += smallTickFrequency)
