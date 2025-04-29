@@ -61,6 +61,7 @@ public class TimeLine : MonoBehaviour
                 Debug.LogError("More tracks in timeline than in scene");
                 break;
             }
+            tracks[i].transform.position = new Vector2(bgSpriteRenderer.bounds.min.x, tracks[i].transform.position.y);
             Animator connectedAnimator = timeLineDirector.GetGenericBinding(unityTrack) as Animator;
             TrackControlled connectedObject = connectedAnimator?.GetComponent<TrackControlled>();
             if (connectedObject == null)
@@ -144,7 +145,7 @@ public class TimeLine : MonoBehaviour
         //check input validity
         float maxXValue = leftEdgeXvalue + (maxTrackLength * trackLengthFor1Second);
         if(xValue < leftEdgeXvalue)
-            return;
+            xValue = leftEdgeXvalue;
         if(xValue > maxXValue)
             xValue = maxXValue;
         
