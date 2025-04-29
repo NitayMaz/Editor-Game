@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Timeline;
 
@@ -15,7 +16,7 @@ public class Track : MonoBehaviour
     public void InitTrack(TrackControlled connectedObject, TrackAsset UnityTLTrack)
     {
         this.connectedObject = connectedObject;
-
+        Debug.Log($"Initializing track {UnityTLTrack.name} for {connectedObject.name} with {UnityTLTrack.GetClips().Count()} clips");
 
         List<TrackClipInitData> clipsInitData = new List<TrackClipInitData>();
         foreach (var clip in UnityTLTrack.GetClips())
@@ -38,9 +39,20 @@ public class Track : MonoBehaviour
             {
                 animationClip = animationClip,
                 duration = (float)clip.duration,
-                animationStartPoint = (float)clip.clipIn/animationClip.length,
-                animationEndPoint = (float)(clip.clipIn+clip.duration)/animationClip.length,
+                animationStartPoint = (float)(clip.clipIn*clip.timeScale)/animationClip.length,
+                animationEndPoint = (float)((clip.clipIn+clip.duration)*clip.timeScale)/animationClip.length,
             };
+            if (clipsInitData.Count != 0) // check if the following clip is a duplicate of the last one, if so extend the last one instead of adding.
+            {
+                TrackClipInitData lastClipData = clipsInitData[^1];
+                if (lastClipData.animationClip == animationClip && lastClipData.animationEndPoint % 1f == clipData.animationStartPoint % 1f)
+                {
+                    lastClipData.duration += clipData.duration;
+                    lastClipData.animationEndPoint += (clipData.animationEndPoint - clipData.animationStartPoint);
+                    continue;
+                }
+                
+            }
             clipsInitData.Add(clipData);
         }
 

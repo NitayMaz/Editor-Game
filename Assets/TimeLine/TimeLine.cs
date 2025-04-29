@@ -61,12 +61,15 @@ public class TimeLine : MonoBehaviour
                 Debug.LogError("More tracks in timeline than in scene");
                 break;
             }
-            TrackControlled connectedObject = timeLineDirector.GetGenericBinding(unityTrack) as TrackControlled;
+            Animator connectedAnimator = timeLineDirector.GetGenericBinding(unityTrack) as Animator;
+            TrackControlled connectedObject = connectedAnimator?.GetComponent<TrackControlled>();
             if (connectedObject == null)
             {
                 Debug.LogWarning($"Track {unityTrack.name} has no connected TrackControlled object, skipping...");
+                Debug.LogWarning($"getting: {timeLineDirector.GetGenericBinding(unityTrack)}");
                 continue;
             }
+            Debug.Log($"Initializing track {unityTrack.name} with object {connectedObject.name}");
             tracks[i].InitTrack(connectedObject, unityTrack);
             i++;
         }
