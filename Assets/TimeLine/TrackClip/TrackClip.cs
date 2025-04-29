@@ -103,6 +103,7 @@ public class TrackClip : MonoBehaviour
         text.transform.position = new Vector2(spriteRenderer.bounds.max.x - textOffsetLeft, transform.position.y);
         text.text = "X" + (1f / durationMultiplier).ToString("0.##"); //show up to 2 decimal spots, don't irrelevant 0s
         //only show the text if the clip is long enough
+        Debug.Log($"spriteRenderer.bounds.size.x: {spriteRenderer.bounds.size.x}, text.bounds.size.x: {text.bounds.size.x}");
         text.enabled = (spriteRenderer.bounds.size.x > text.bounds.size.x);
     }
 
