@@ -18,12 +18,10 @@ public class TrackClip : MonoBehaviour
     [SerializeField] private ClipHandle clipHandle;
 
     [SerializeField] private TextMeshPro text;
-    [SerializeField] [Range(0, 1)] private float textHeight;
+    private RectTransform textRectTransform;
     private float textOffsetLeft;
-    private float originaltextWidth;
 
     public bool applyColor = true;
-    private float clipHeight;
 
     private void Awake()
     {
@@ -31,7 +29,7 @@ public class TrackClip : MonoBehaviour
     }
 
     public void Init(AnimationClip animationClip, Color color, float duration, float durationMultiplier, float clipStartTime,
-        float animationStartPoint, float animationEndPoint, float clipHeight, Track parentTrack)
+        float animationStartPoint, float animationEndPoint, Track parentTrack)
     {
         this.animationClip = animationClip;
         if (applyColor)
@@ -43,32 +41,13 @@ public class TrackClip : MonoBehaviour
         this.parentTrack = parentTrack;
         this.duration = duration;
         this.durationMultiplier = durationMultiplier;
-        this.clipHeight = clipHeight;
         clipAnimationStartPoint = animationStartPoint;
         clipAnimationEndPoint = animationEndPoint;
-        SetHeight(clipHeight);
-        InitalizeTextHeight();
+        textOffsetLeft = spriteRenderer.bounds.max.x - text.transform.position.x;
+        textRectTransform = text.GetComponent<RectTransform>();
         SetDurationByParameter(duration);
     }
-
-    private void SetHeight(float newHeight)
-    {
-        Vector2 scale = transform.localScale;
-        scale.y = newHeight / spriteRenderer.sprite.bounds.size.y;
-        transform.localScale = scale;
-        Vector2 handleScale = clipHandle.transform.localScale;
-        handleScale.y = scale.y;
-        clipHandle.transform.localScale = handleScale;
-    }
-    private void InitalizeTextHeight()
-    {
-        text.ForceMeshUpdate();
-        float targetHeight = textHeight * clipHeight;
-        float currentHeight = text.bounds.size.y;
-        text.transform.localScale *= targetHeight / currentHeight;
-        textOffsetLeft = spriteRenderer.bounds.max.x - text.transform.position.x;
-        text.ForceMeshUpdate(); 
-    }
+    
     private void SetDurationByParameter(float newDuration)
     {
         duration = newDuration;
@@ -97,14 +76,13 @@ public class TrackClip : MonoBehaviour
 
     public void UpdateTextAndHandle()
     {
-        clipHandle.transform.position = new Vector3(spriteRenderer.bounds.max.x, spriteRenderer.transform.position.y,
-            spriteRenderer.transform.position.z);
-        text.ForceMeshUpdate();
+        clipHandle.transform.position = new Vector2(spriteRenderer.bounds.max.x, spriteRenderer.transform.position.y);
+        
         text.transform.position = new Vector2(spriteRenderer.bounds.max.x - textOffsetLeft, transform.position.y);
         text.text = "X" + (1f / durationMultiplier).ToString("0.##"); //show up to 2 decimal spots, don't irrelevant 0s
+        text.ForceMeshUpdate();
         //only show the text if the clip is long enough
-        Debug.Log($"spriteRenderer.bounds.size.x: {spriteRenderer.bounds.size.x}, text.bounds.size.x: {text.bounds.size.x}");
-        text.enabled = (spriteRenderer.bounds.size.x > text.bounds.size.x);
+        text.enabled = (spriteRenderer.bounds.size.x > textRectTransform.rect.width + textOffsetLeft/2);
     }
 
 

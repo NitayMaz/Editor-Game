@@ -24,6 +24,7 @@ public class ClipHandle : MonoBehaviour
     
     private void OnMouseDrag()
     {
+        Debug.Log("Dragging Handle");
         if (TimeLine.Instance.isPlaying)
             return;
         float mousePositionX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;

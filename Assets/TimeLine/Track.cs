@@ -7,7 +7,6 @@ using UnityEngine.Timeline;
 public class Track : MonoBehaviour
 {
     [SerializeField] private Color clipColor = Color.cyan;
-    [SerializeField] private float TrackHeight;
     private TrackControlled connectedObject;
     private List<TrackClip> clips = new List<TrackClip>();
     [SerializeField] private GameObject clipPrefab;
@@ -68,7 +67,7 @@ public class Track : MonoBehaviour
             TrackClip clip = clipObject.GetComponentInChildren<TrackClip>();
             clips.Add(clip);
             clip.Init(clipData.animationClip, clipColor, clipData.duration, 1, clipStartTime,
-                clipData.animationStartPoint, clipData.animationEndPoint, TrackHeight, this);
+                clipData.animationStartPoint, clipData.animationEndPoint, this);
             clipStartTime += clipData.duration;
         }
 
@@ -145,12 +144,12 @@ public class Track : MonoBehaviour
         TrackClip firstPartClip = Instantiate(clipPrefab, transform).GetComponentInChildren<TrackClip>();
         firstPartClip.Init(firstPart.animationClip, clipColor, firstPart.duration, firstPart.durationMultiplier,
             replacedClip.startTime,
-            firstPart.animationStartPoint, firstPart.animationEndPoint, TrackHeight, this);
+            firstPart.animationStartPoint, firstPart.animationEndPoint, this);
 
         TrackClip secondPartClip = Instantiate(clipPrefab, transform).GetComponentInChildren<TrackClip>();
         secondPartClip.Init(secondPart.animationClip, clipColor, secondPart.duration, firstPart.durationMultiplier,
             replacedClip.startTime + firstPart.duration,
-            secondPart.animationStartPoint, secondPart.animationEndPoint, TrackHeight, this);
+            secondPart.animationStartPoint, secondPart.animationEndPoint, this);
 
         clips.InsertRange(clipInd, new[] { firstPartClip, secondPartClip });
         DeleteSelectedClip(replacedClip);
