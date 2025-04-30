@@ -5,12 +5,13 @@ using Random = UnityEngine.Random;
 
 public class TrackClip : MonoBehaviour
 {
+    public AnimationClip animationClip;
+    [SerializeField] private float clipAnimationStartPoint;
+    [SerializeField] private float clipAnimationEndPoint;
     [HideInInspector] public float startTime;
     [HideInInspector] public float width;
     public float duration;
     private float durationMultiplier = 1; //this means how much the current duration is from the original duration
-    [SerializeField] private float clipAnimationStartPoint;
-    [SerializeField] private float clipAnimationEndPoint;
     private Track parentTrack;
 
     private SpriteRenderer spriteRenderer;
@@ -29,9 +30,10 @@ public class TrackClip : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    public void Init(Color color, float duration, float durationMultiplier, float clipStartTime,
+    public void Init(AnimationClip animationClip, Color color, float duration, float durationMultiplier, float clipStartTime,
         float animationStartPoint, float animationEndPoint, float clipHeight, Track parentTrack)
     {
+        this.animationClip = animationClip;
         if (applyColor)
         {
             spriteRenderer.color = color;
@@ -101,6 +103,7 @@ public class TrackClip : MonoBehaviour
         text.transform.position = new Vector2(spriteRenderer.bounds.max.x - textOffsetLeft, transform.position.y);
         text.text = "X" + (1f / durationMultiplier).ToString("0.##"); //show up to 2 decimal spots, don't irrelevant 0s
         //only show the text if the clip is long enough
+        Debug.Log($"spriteRenderer.bounds.size.x: {spriteRenderer.bounds.size.x}, text.bounds.size.x: {text.bounds.size.x}");
         text.enabled = (spriteRenderer.bounds.size.x > text.bounds.size.x);
     }
 
@@ -143,6 +146,7 @@ public class TrackClip : MonoBehaviour
             (firstPartDuration / duration);
         TrackClipInitData firstPartData = new TrackClipInitData
         {
+            animationClip = animationClip,
             duration = firstPartDuration,
             durationMultiplier = durationMultiplier,
             animationStartPoint = clipAnimationStartPoint,
@@ -150,6 +154,7 @@ public class TrackClip : MonoBehaviour
         };
         TrackClipInitData secondPartData = new TrackClipInitData
         {
+            animationClip = animationClip,
             duration = duration - firstPartDuration,
             durationMultiplier = durationMultiplier,
             animationStartPoint = secondPartAnimationStartPoint,

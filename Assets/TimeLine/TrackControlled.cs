@@ -4,25 +4,20 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class TrackControlled : MonoBehaviour
 {
-    [SerializeField]private AnimationClip controlledAnimation;
     private Animator animator;
     public bool controlledByTimeLine = true;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
-        if (controlledAnimation == null)
-        {
-            Debug.LogError("No Animation Clip assigned to the controlled object");
-        }
     }
 
-    public void SetAnimationFrame(float time)
+    public void SetAnimationFrame(AnimationClip animationClip, float time)
     {
         if (!controlledByTimeLine)
             return;
-        float animationSecond = controlledAnimation.length * time;
-        controlledAnimation.SampleAnimation(this.gameObject, animationSecond);
+        float animationSecond = animationClip.length * time;
+        animationClip.SampleAnimation(gameObject, animationSecond);
     }
 
     public virtual void StartInteraction()
