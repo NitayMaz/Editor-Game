@@ -93,7 +93,7 @@ public class TimeLine : MonoBehaviour
     }
 
     
-    private void ResetTime()
+    public void ResetTime()
     {
         currentTime = 0;
         PositionPointerHead(leftEdgeXvalue);
@@ -104,7 +104,7 @@ public class TimeLine : MonoBehaviour
         isPlaying = false;
         if (sceneCoroutine != null)
             StopCoroutine(sceneCoroutine);
-        ResetTime();
+        UIManager.Instance.ChangeToPlayButton();
     }
     
     public void PlayScene()

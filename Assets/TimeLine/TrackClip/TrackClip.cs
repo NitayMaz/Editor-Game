@@ -1,7 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
-using Random = UnityEngine.Random;
 
 public class TrackClip : MonoBehaviour
 {
@@ -84,7 +82,6 @@ public class TrackClip : MonoBehaviour
         //only show the text if the clip is long enough
         text.enabled = (spriteRenderer.bounds.size.x > textRectTransform.rect.width + textOffsetLeft/2);
     }
-
 
     public bool IsActive(float currentTime)
     {

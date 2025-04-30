@@ -745,6 +745,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &197172545 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 379537909822535824, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+  m_PrefabInstance: {fileID: 1241254238989562580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &197172549 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6030166424719671117, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+  m_PrefabInstance: {fileID: 1241254238989562580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &197172551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197172545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee41cb2e1fc58452b95a1dd9f064c723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  animator: {fileID: 197172549}
 --- !u!1 &204705109
 GameObject:
   m_ObjectHideFlags: 0
@@ -2808,6 +2832,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 379537909822535824, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: m_Name
+      value: play_pause button
+      objectReference: {fileID: 0}
     - target: {fileID: 7348700589209736244, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_Name
       value: TimeLine
@@ -2852,6 +2880,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7769797189466671580, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: playPauseButton
+      value: 
+      objectReference: {fileID: 197172545}
     - target: {fileID: 9107030733800979118, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 
@@ -2860,10 +2892,14 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[1].value
       value: 
       objectReference: {fileID: 94900172}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8701888735339746481, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 379537909822535824, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 197172551}
   m_SourcePrefab: {fileID: 100100000, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
 --- !u!1001 &1852123424330835728
 PrefabInstance:
