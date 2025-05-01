@@ -45,7 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clipColor: {r: 1, g: 0.91372555, b: 0.56078434, a: 1}
-  TrackHeight: 0.55
   clipPrefab: {fileID: 7732691730566119981, guid: 5a076e322cd09ed4280a7110ab1963c9, type: 3}
 --- !u!1 &379537909822535824
 GameObject:
@@ -57,9 +56,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6616657322607514377}
   - component: {fileID: 7277141028229426562}
+  - component: {fileID: 8169497481926123913}
   - component: {fileID: 6030166424719671117}
   - component: {fileID: 674196844764951521}
-  - component: {fileID: 8701888735339746481}
   m_Layer: 0
   m_Name: play button
   m_TagString: Untagged
@@ -138,6 +137,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8169497481926123913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379537909822535824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee41cb2e1fc58452b95a1dd9f064c723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: 0
+  animator: {fileID: 6030166424719671117}
 --- !u!95 &6030166424719671117
 Animator:
   serializedVersion: 7
@@ -196,20 +209,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.4722222
---- !u!114 &8701888735339746481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379537909822535824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d40d8722d07b49608c724e57f56b55d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 6030166424719671117}
-  isButtonStopped: 0
 --- !u!1 &519526713633664440
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,7 +341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clipColor: {r: 0.45376468, g: 0.9716981, b: 0.5919243, a: 1}
-  TrackHeight: 0.55
   clipPrefab: {fileID: 7732691730566119981, guid: 5a076e322cd09ed4280a7110ab1963c9, type: 3}
 --- !u!1 &1040066416486338067
 GameObject:
@@ -761,6 +759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 819146ee19978b24dbcff0fd117bc432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playPauseButton: {fileID: 379537909822535824}
 --- !u!1 &2787884000540518863
 GameObject:
   m_ObjectHideFlags: 0

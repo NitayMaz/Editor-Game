@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2989377450286902329}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.103, y: 0.236, z: -3}
+  m_LocalPosition: {x: 4.63, y: 0.236, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -123,17 +123,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.1683141, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.8, y: 0.5}
+    pivot: {x: 0.98, y: 0.5}
     oldSize: {x: 0.34444445, y: 0.75555557}
     newSize: {x: 0.31, y: 0.68}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.45, y: 0.75555557}
+  m_Size: {x: 0.33324838, y: 0.75555557}
   m_EdgeRadius: 0
 --- !u!114 &432371537136355994
 MonoBehaviour:
@@ -179,7 +179,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.5, y: 0.232, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.9, z: 1}
+  m_LocalScale: {x: 1, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1623261229305128124}
@@ -232,7 +232,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 0.5518868, b: 0.5518868, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
+  m_DrawMode: 1
   m_Size: {x: 5.1444445, y: 0.6333333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -294,17 +294,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 2.5768116, y: 0}
+  m_Offset: {x: 2.3990216, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0.5}
     oldSize: {x: 5.1444445, y: 0.6333333}
     newSize: {x: 5.1444445, y: 0.6333333}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.153623, y: 0.6333333}
+  m_Size: {x: 4.7980433, y: 0.6333333}
   m_EdgeRadius: 0
 --- !u!114 &61466845664329956
 MonoBehaviour:
@@ -390,7 +390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.5711, y: 0.216}
+  m_AnchoredPosition: {x: 4.0620003, y: 0.216}
   m_SizeDelta: {x: 0.6979, y: 0.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &3987165724552380498

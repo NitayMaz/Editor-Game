@@ -13,7 +13,9 @@ public class TrackClip : MonoBehaviour
     private Track parentTrack;
 
     private SpriteRenderer spriteRenderer;
+    private BoxCollider2D collider;
     [SerializeField] private ClipHandle clipHandle;
+    private BoxCollider2D clipHandleCollider;
 
     [SerializeField] private TextMeshPro text;
     private RectTransform textRectTransform;
@@ -24,6 +26,8 @@ public class TrackClip : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        collider = GetComponent<BoxCollider2D>();
+        clipHandleCollider = clipHandle.GetComponent<BoxCollider2D>();
     }
 
     public void Init(AnimationClip animationClip, Color color, float duration, float durationMultiplier, float clipStartTime,
@@ -45,19 +49,6 @@ public class TrackClip : MonoBehaviour
         textRectTransform = text.GetComponent<RectTransform>();
         SetDurationByParameter(duration);
     }
-    
-    private void SetDurationByParameter(float newDuration)
-    {
-        duration = newDuration;
-        float spriteWidth = spriteRenderer.sprite.bounds.size.x;
-        float currentWidth = spriteWidth * (transform.lossyScale.x / transform.localScale.x);
-        width = duration * TimeLine.Instance.trackLengthFor1Second;
-        Vector2 scale = transform.localScale;
-        scale.x = width / currentWidth;
-        transform.localScale = scale;
-        parentTrack.OrganizeClips();
-        UpdateTextAndHandle();
-    }
 
     public void SetDurationByPosition(float xPosition)
     {
@@ -71,6 +62,16 @@ public class TrackClip : MonoBehaviour
         SetDurationByParameter(originalDuration * durationMultiplier);
         TimeLine.Instance.ClipUpdated();
     }
+    
+    private void SetDurationByParameter(float newDuration)
+    {
+        duration = newDuration;
+        width = duration * TimeLine.Instance.trackLengthFor1Second;
+        spriteRenderer.size = new Vector2(width, spriteRenderer.size.y);
+        parentTrack.OrganizeClips();
+        UpdateTextAndHandle();
+        UpdateCollider();
+    }
 
     public void UpdateTextAndHandle()
     {
@@ -81,6 +82,14 @@ public class TrackClip : MonoBehaviour
         text.ForceMeshUpdate();
         //only show the text if the clip is long enough
         text.enabled = (spriteRenderer.bounds.size.x > textRectTransform.rect.width + textOffsetLeft/2);
+    }
+
+    private void UpdateCollider()
+    {
+        float handleColliderWidth = clipHandleCollider.bounds.size.x;
+        float colliderWidth = width - handleColliderWidth;
+        collider.size = new Vector2(colliderWidth, collider.size.y);
+        collider.offset = new Vector2(colliderWidth/2f, 0f);
     }
 
     public bool IsActive(float currentTime)
