@@ -16,6 +16,7 @@ public class TrackClip : MonoBehaviour
     private BoxCollider2D collider;
     [SerializeField] private ClipHandle clipHandle;
     private BoxCollider2D clipHandleCollider;
+    private SpriteRenderer clipHandleSpriteRenderer;
 
     [SerializeField] private TextMeshPro text;
     private RectTransform textRectTransform;
@@ -28,6 +29,7 @@ public class TrackClip : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         collider = GetComponent<BoxCollider2D>();
         clipHandleCollider = clipHandle.GetComponent<BoxCollider2D>();
+        clipHandleSpriteRenderer = clipHandle.GetComponent<SpriteRenderer>();
     }
 
     public void Init(AnimationClip animationClip, Color color, float duration, float durationMultiplier, float clipStartTime,
@@ -52,8 +54,10 @@ public class TrackClip : MonoBehaviour
 
     public void SetDurationByPosition(float xPosition)
     {
+        //make the CENTER of the handle go to the click position to avoid jarring jumps
+        float rightedgeX = xPosition + clipHandleSpriteRenderer.bounds.size.x / 2f; 
         // x of right edge minus x of left edge divided by length for 1 sec gives us the duration
-        float newDuration = (xPosition - spriteRenderer.bounds.min.x) / TimeLine.Instance.trackLengthFor1Second;
+        float newDuration = (rightedgeX - spriteRenderer.bounds.min.x) / TimeLine.Instance.trackLengthFor1Second;
         float originalDuration = duration / durationMultiplier;
         float newDurationMultiplier = newDuration / originalDuration;
         newDurationMultiplier = Mathf.Clamp(newDurationMultiplier, TimeLine.Instance.minDurationMultiplier,
