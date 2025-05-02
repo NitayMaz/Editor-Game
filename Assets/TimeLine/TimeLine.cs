@@ -129,6 +129,7 @@ public class TimeLine : MonoBehaviour
         currentTime = maxTrackLength;
         MovePointerHeadX(leftEdgeXvalue + (currentTime * trackLengthFor1Second));
         ApplyTimelinePosition(currentTime);
+        UIManager.Instance.ChangeToPlayButton();
         isPlaying = false;
     }
     
