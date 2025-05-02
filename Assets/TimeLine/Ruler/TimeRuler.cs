@@ -21,7 +21,7 @@ public class TimeRuler : MonoBehaviour
     private void PositionRuler()
     {
         Bounds backgroundBounds = timeLineBackground.GetComponent<SpriteRenderer>().bounds;
-        Vector2 backgroundTopLeft = new Vector2(backgroundBounds.min.x, backgroundBounds.max.y);
+        Vector3 backgroundTopLeft = new Vector3(backgroundBounds.min.x, backgroundBounds.max.y, transform.position.z);
         transform.position = backgroundTopLeft;
     }
 
@@ -35,7 +35,7 @@ public class TimeRuler : MonoBehaviour
         {
             float tickXPos = transform.position.x + i * TimeLine.Instance.trackLengthFor1Second;
             bigTickPositions.Add(tickXPos);
-            Vector2 bigTickPos = new Vector2(tickXPos, rulerBottom);
+            Vector3 bigTickPos = new Vector3(tickXPos, rulerBottom, transform.position.z);
             GameObject bigTick = Instantiate(bigTickPrefab, bigTickPos, Quaternion.identity, ticksSceneParent);
                 //          if(i == 0) 
 //                bigTick.GetComponentInChildren<TextMeshPro>().enabled = false; // no text for first tick
@@ -47,7 +47,7 @@ public class TimeRuler : MonoBehaviour
             float tickXPos = transform.position.x + i * TimeLine.Instance.trackLengthFor1Second;
             if (bigTickPositions.Contains(tickXPos))
                 continue;
-            Vector2 smallTickPos = new Vector2(tickXPos, rulerBottom);
+            Vector3 smallTickPos = new Vector3(tickXPos, rulerBottom, transform.position.z);
             Instantiate(smallTickPrefab, smallTickPos, Quaternion.identity, ticksSceneParent);
         }
     }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3680315632811487726}
   - component: {fileID: 6592362008829428561}
   - component: {fileID: 432371537136355994}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 8713234255133472900}
   - component: {fileID: 2074126602498651617}
   - component: {fileID: 61466845664329956}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: track rectangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1623261229305128124}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TrackClip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 5967287742514998680}
   - component: {fileID: 3987165724552380498}
   - component: {fileID: 5911023362259718490}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ClipDurationText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
