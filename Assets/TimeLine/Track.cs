@@ -15,7 +15,8 @@ public class Track : MonoBehaviour
     public void InitTrack(TrackControlled connectedObject, TrackAsset UnityTLTrack)
     {
         this.connectedObject = connectedObject;
-        Debug.Log($"Initializing track {UnityTLTrack.name} for {connectedObject.name} with {UnityTLTrack.GetClips().Count()} clips");
+        Debug.Log(
+            $"Initializing track {UnityTLTrack.name} for {connectedObject.name} with {UnityTLTrack.GetClips().Count()} clips");
 
         List<TrackClipInitData> clipsInitData = new List<TrackClipInitData>();
         foreach (var clip in UnityTLTrack.GetClips())
@@ -38,23 +39,27 @@ public class Track : MonoBehaviour
             {
                 animationClip = animationClip,
                 duration = (float)clip.duration,
-                animationStartPoint = (float)(clip.clipIn*clip.timeScale)/animationClip.length,
-                animationEndPoint = (float)((clip.clipIn+clip.duration)*clip.timeScale)/animationClip.length,
+                animationStartPoint = (float)(clip.clipIn * clip.timeScale) / animationClip.length,
+                animationEndPoint = (float)((clip.clipIn + clip.duration) * clip.timeScale) / animationClip.length,
+                startTime = (float)clip.start,
             };
-            if (clipsInitData.Count != 0) // check if the following clip is a duplicate of the last one, if so extend the last one instead of adding.
+            if (clipsInitData.Count !=
+                0) // check if the following clip is a duplicate of the last one, if so extend the last one instead of adding.
             {
                 TrackClipInitData lastClipData = clipsInitData[^1];
-                if (lastClipData.animationClip == animationClip && lastClipData.animationEndPoint % 1f == clipData.animationStartPoint % 1f)
+                if (lastClipData.animationClip == animationClip &&
+                    lastClipData.animationEndPoint % 1f == clipData.animationStartPoint % 1f)
                 {
                     lastClipData.duration += clipData.duration;
                     lastClipData.animationEndPoint += (clipData.animationEndPoint - clipData.animationStartPoint);
                     continue;
                 }
-                
             }
+
             clipsInitData.Add(clipData);
         }
 
+        Debug.Log("off to init clips");
         InitClips(clipsInitData);
     }
 
@@ -63,46 +68,26 @@ public class Track : MonoBehaviour
         float clipStartTime = 0;
         foreach (var clipData in clipsInitData)
         {
-            GameObject clipObject = Instantiate(clipPrefab, transform);
+            Debug.Log("start time: " + clipStartTime);
+            Vector2 clipPos = new Vector2(
+                transform.position.x + TimeLine.Instance.trackLengthFor1Second * clipData.startTime,
+                transform.position.y);
+            Debug.Log("clip pos: " + clipPos);
+            GameObject clipObject = Instantiate(clipPrefab, clipPos, Quaternion.identity, transform);
             TrackClip clip = clipObject.GetComponentInChildren<TrackClip>();
             clips.Add(clip);
-            clip.Init(clipData.animationClip, clipColor, clipData.duration, 1, clipStartTime,
+            clip.Init(clipData.animationClip, clipColor, clipData.duration, 1, clipData.startTime,
                 clipData.animationStartPoint, clipData.animationEndPoint, this);
-            clipStartTime += clipData.duration;
         }
 
         ApplyTrackPosition(0);
     }
 
-    public void OrganizeClips()
-    {
-        if (clips.Count == 0)
-            return;
-        float xPos = 0;
-        float clipStartTime = 0;
-        foreach (var clip in clips)
-        {
-            clip.transform.position =
-                new Vector3(transform.position.x + xPos, transform.position.y, transform.position.z);
-            clip.startTime = clipStartTime;
-            xPos += clip.width;
-            clipStartTime += clip.duration;
-            clip.GetComponent<TrackClip>()
-                .UpdateTextAndHandle(); // it's important this happen here because the positions are messed up if it happens in init.
-        }
-
-        TimeLine.Instance.ClipUpdated();
-    }
-
     public float GetTrackDuration()
     {
-        float trackDuration = 0;
-        foreach (var clip in clips)
-        {
-            trackDuration += clip.duration;
-        }
-
-        return trackDuration;
+        if (clips.Count == 0)
+            return 0;
+        return clips[^1].endTime; //last clip endtime
     }
 
     public void ApplyTrackPosition(float time)
@@ -143,12 +128,12 @@ public class Track : MonoBehaviour
         //ugly ass code, but it's better than starting to separate the init function rn
         TrackClip firstPartClip = Instantiate(clipPrefab, transform).GetComponentInChildren<TrackClip>();
         firstPartClip.Init(firstPart.animationClip, clipColor, firstPart.duration, firstPart.durationMultiplier,
-            replacedClip.startTime,
+            firstPart.startTime,
             firstPart.animationStartPoint, firstPart.animationEndPoint, this);
 
         TrackClip secondPartClip = Instantiate(clipPrefab, transform).GetComponentInChildren<TrackClip>();
-        secondPartClip.Init(secondPart.animationClip, clipColor, secondPart.duration, firstPart.durationMultiplier,
-            replacedClip.startTime + firstPart.duration,
+        secondPartClip.Init(secondPart.animationClip, clipColor, secondPart.duration, secondPart.durationMultiplier,
+            secondPart.startTime,
             secondPart.animationStartPoint, secondPart.animationEndPoint, this);
 
         clips.InsertRange(clipInd, new[] { firstPartClip, secondPartClip });
@@ -166,7 +151,7 @@ public class Track : MonoBehaviour
 
         clips.Remove(clip);
         Destroy(clip.transform.parent.gameObject);
-        OrganizeClips();
+        TimeLine.Instance.ClipUpdated();
     }
 }
 
@@ -177,4 +162,5 @@ public class TrackClipInitData
     public float durationMultiplier = 1;
     public float animationStartPoint;
     public float animationEndPoint;
+    public float startTime;
 }

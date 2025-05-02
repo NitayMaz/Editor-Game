@@ -10,13 +10,13 @@ public class TimeLine : MonoBehaviour
     [SerializeField] private PlayableDirector timeLineDirector;
     [SerializeField] private Track[] tracks;
     [SerializeField] private GameObject pointerHead;
-    
-    public float trackLengthFor1Second = 5f;
+
+    public float timeLineSeconds = 5f;
+    [HideInInspector]public float trackLengthFor1Second;
     public float minDurationMultiplier = 0.5f;
     public float maxDurationMultiplier = 1.5f;
     
     private float currentTime = 0;
-    private float maxTrackLength = 0;
     public bool isPlaying = false;
     private Coroutine sceneCoroutine;
     
@@ -34,13 +34,13 @@ public class TimeLine : MonoBehaviour
             Destroy(this.gameObject);
         }
         Instance = this;
+        trackLengthFor1Second = (bgSpriteRenderer.bounds.max.x - bgSpriteRenderer.bounds.min.x) / timeLineSeconds;
     }
 
     private void Start()
     {
         InitTracks();
         leftEdgeXvalue = bgSpriteRenderer.bounds.min.x;
-        UpdateMaxTrackLength();
         ResetTime();
     }
 
@@ -75,22 +75,6 @@ public class TimeLine : MonoBehaviour
             i++;
         }
     }
-    
-    private void UpdateMaxTrackLength()
-    {
-        maxTrackLength = 0;
-        foreach (var track in tracks)
-        {
-            float trackLength = track.GetTrackDuration();
-            if (trackLength > maxTrackLength)
-                maxTrackLength = trackLength;
-        }
-        if (currentTime > maxTrackLength)
-        {
-            currentTime = maxTrackLength;
-            MovePointerHeadX(leftEdgeXvalue + (currentTime * trackLengthFor1Second));
-        }
-    }
 
     
     public void ResetTime()
@@ -118,16 +102,17 @@ public class TimeLine : MonoBehaviour
     
     private IEnumerator RunScene()
     {
+        float maxTrackLength = GetMaxTrackLength();
         while (currentTime < maxTrackLength)
         {
             currentTime += Time.deltaTime;
-            MovePointerHeadX(leftEdgeXvalue + (currentTime * trackLengthFor1Second));
+            MovePointerHeadX(GetTimelinePositionForTime(currentTime));
             ApplyTimelinePosition(currentTime);
             yield return null;
         }
         //make sure it is at the final position at the end(since it would likely miss by a little)
         currentTime = maxTrackLength;
-        MovePointerHeadX(leftEdgeXvalue + (currentTime * trackLengthFor1Second));
+        MovePointerHeadX(GetTimelinePositionForTime(currentTime));
         ApplyTimelinePosition(currentTime);
         UIManager.Instance.ChangeToPlayButton();
         isPlaying = false;
@@ -144,7 +129,7 @@ public class TimeLine : MonoBehaviour
     public void PositionPointerHead(float xValue)
     {
         //check input validity
-        float maxXValue = leftEdgeXvalue + (maxTrackLength * trackLengthFor1Second);
+        float maxXValue = leftEdgeXvalue + (timeLineSeconds * trackLengthFor1Second);
         if(xValue < leftEdgeXvalue)
             xValue = leftEdgeXvalue;
         if(xValue > maxXValue)
@@ -163,12 +148,28 @@ public class TimeLine : MonoBehaviour
         pointerHead.transform.position = new Vector3(xValue, pointerHead.transform.position.y, pointerHead.transform.position.z);
     }
 
+    public float GetTimelinePositionForTime(float time)
+    {
+        return leftEdgeXvalue + (time * trackLengthFor1Second);
+    }
     private void CancelInteractions()
     {
         foreach (var track in tracks)
         {
             track.CancelObjectInteraction();
         }
+    }
+
+    private float GetMaxTrackLength()
+    {
+        float maxLength = 0;
+        foreach (var track in tracks)
+        {
+            float trackLength = track.GetTrackDuration();
+            if (trackLength > maxLength)
+                maxLength = trackLength;
+        }
+        return maxLength;
     }
     
     public void ResetLevel()
@@ -178,7 +179,6 @@ public class TimeLine : MonoBehaviour
     
     public void ClipUpdated()
     {
-        UpdateMaxTrackLength();
         ApplyTimelinePosition(currentTime);
     }
 

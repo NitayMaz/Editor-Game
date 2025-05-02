@@ -7,6 +7,7 @@ public class TrackClip : MonoBehaviour
     [SerializeField] private float clipAnimationStartPoint;
     [SerializeField] private float clipAnimationEndPoint;
     [HideInInspector] public float startTime;
+    [HideInInspector] public float endTime;
     [HideInInspector] public float width;
     public float duration;
     private float durationMultiplier = 1; //this means how much the current duration is from the original duration
@@ -44,6 +45,7 @@ public class TrackClip : MonoBehaviour
         this.startTime = clipStartTime;
         this.parentTrack = parentTrack;
         this.duration = duration;
+        this.endTime = clipStartTime + duration;
         this.durationMultiplier = durationMultiplier;
         clipAnimationStartPoint = animationStartPoint;
         clipAnimationEndPoint = animationEndPoint;
@@ -72,9 +74,9 @@ public class TrackClip : MonoBehaviour
         duration = newDuration;
         width = duration * TimeLine.Instance.trackLengthFor1Second;
         spriteRenderer.size = new Vector2(width, spriteRenderer.size.y);
-        parentTrack.OrganizeClips();
         UpdateTextAndHandle();
         UpdateCollider();
+        TimeLine.Instance.ClipUpdated();
     }
 
     public void UpdateTextAndHandle()
@@ -98,7 +100,7 @@ public class TrackClip : MonoBehaviour
 
     public bool IsActive(float currentTime)
     {
-        return currentTime >= startTime && currentTime < startTime + duration;
+        return currentTime >= startTime && currentTime < endTime;
     }
 
     public float GetAnimationSpot(float currentTime)
@@ -138,7 +140,8 @@ public class TrackClip : MonoBehaviour
             duration = firstPartDuration,
             durationMultiplier = durationMultiplier,
             animationStartPoint = clipAnimationStartPoint,
-            animationEndPoint = secondPartAnimationStartPoint
+            animationEndPoint = secondPartAnimationStartPoint,
+            startTime = startTime,
         };
         TrackClipInitData secondPartData = new TrackClipInitData
         {
@@ -146,7 +149,8 @@ public class TrackClip : MonoBehaviour
             duration = duration - firstPartDuration,
             durationMultiplier = durationMultiplier,
             animationStartPoint = secondPartAnimationStartPoint,
-            animationEndPoint = clipAnimationEndPoint
+            animationEndPoint = clipAnimationEndPoint,
+            startTime = startTime + firstPartDuration,
         };
         parentTrack.ReplaceCutClip(this, firstPartData, secondPartData);
     }
