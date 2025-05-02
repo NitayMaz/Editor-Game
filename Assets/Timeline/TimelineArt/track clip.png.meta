@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4bcac8356cb5d4d8b8c1d0237af8f5cb
+guid: fdd801516667842e4ae2f3f4fcf8a3eb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3887682786769468570
-    second: circle button_0
+      213: -4361896917894522373
+    second: track clip 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,8 +48,8 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
-  alignment: 0
+  spriteMeshType: 0
+  alignment: 4
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: circle button_0
+      name: track clip 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 84
-        height: 85
+        width: 462
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9c7bc095e2d3f530800000000000000
-      internalID: 3887682786769468570
+      spriteID: bf9960e0ddd6773c0800000000000000
+      internalID: -4361896917894522373
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      circle button_0: 3887682786769468570
+      track clip 1_0: -4361896917894522373
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

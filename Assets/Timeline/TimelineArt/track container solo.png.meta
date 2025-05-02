@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 579e8921f3d33432090775ef2fdf97a0
+guid: a3e0ba995cae145a8b88dd48f18a4faf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7120117722690682729
-    second: square button_0
+      213: -2755626756347663634
+    second: track container solo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,10 +48,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
-  alignment: 0
+  spriteMeshType: 0
+  alignment: 2
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: square button_0
+      name: track container solo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 105
-        height: 78
+        width: 1725
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96ff0f3485dbfc260800000000000000
-      internalID: 7120117722690682729
+      spriteID: eeae556a01c02c9d0800000000000000
+      internalID: -2755626756347663634
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      square button_0: 7120117722690682729
+      track container solo_0: -2755626756347663634
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
