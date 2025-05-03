@@ -29,6 +29,7 @@ public class TrackClip : MonoBehaviour
     private float startDragMouseXPosition;
     private float lastMouseXPosition; //for dragging
     private bool isDragging = false;
+    private bool clicked = false;
 
     public bool applyColor = true;
 
@@ -219,12 +220,16 @@ public class TrackClip : MonoBehaviour
     {
         if (TimeLine.Instance.isPlaying)
             return;
+        clicked = true;
         startDragMouseXPosition = TimeLine.Instance.timeLineCamera.ScreenToWorldPoint(Input.mousePosition).x;
         lastMouseXPosition = startDragMouseXPosition;
     }
 
     private void OnMouseDrag()
     {
+        if (TimeLine.Instance.isPlaying || !clicked)
+            return;
+        
         //so you basically have to go over a certain distance for it to count as dragging to differentiate it from clicking
         float mouseXPosition = TimeLine.Instance.timeLineCamera.ScreenToWorldPoint(Input.mousePosition).x;
         if (!isDragging && Mathf.Abs(mouseXPosition - startDragMouseXPosition) >= minMovementToDrag)
@@ -232,6 +237,7 @@ public class TrackClip : MonoBehaviour
             //here we switch to dragging mode
             clipHandle.ClipEndHover();
             isDragging = true;
+            MyCursor.Instance.SwitchToHoldingCursor();
         }
 
         if (!isDragging)
@@ -247,6 +253,9 @@ public class TrackClip : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (isDragging)
+            MyCursor.Instance.SwitchToNormalCursor();
+        clicked = false;
         isDragging = false;
     }
 }

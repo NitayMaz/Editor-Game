@@ -42,11 +42,13 @@ public class ClipHandle : MonoBehaviour
     private void OnMouseDown()
     {
         handleClicked = true;
+        MyCursor.Instance.SwitchToHoldingCursor();
     }
     
     private void OnMouseUp()
     {
         handleClicked = false;
+        MyCursor.Instance.SwitchToNormalCursor();
     }
     
     private void OnMouseEnter()
