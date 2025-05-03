@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Timeline;
 
@@ -68,11 +69,9 @@ public class Track : MonoBehaviour
         float clipStartTime = 0;
         foreach (var clipData in clipsInitData)
         {
-            Debug.Log("start time: " + clipStartTime);
             Vector2 clipPos = new Vector2(
                 transform.position.x + TimeLine.Instance.trackLengthFor1Second * clipData.startTime,
                 transform.position.y);
-            Debug.Log("clip pos: " + clipPos);
             GameObject clipObject = Instantiate(clipPrefab, clipPos, Quaternion.identity, transform);
             TrackClip clip = clipObject.GetComponentInChildren<TrackClip>();
             clips.Add(clip);
@@ -156,15 +155,22 @@ public class Track : MonoBehaviour
         }
 
         //ugly ass code, but it's better than starting to separate the init function rn
-        TrackClip firstPartClip = Instantiate(clipPrefab, transform).GetComponentInChildren<TrackClip>();
+        Vector2 firstClipPos = new Vector2(
+            transform.position.x + TimeLine.Instance.trackLengthFor1Second * firstPart.startTime,
+            transform.position.y);
+        TrackClip firstPartClip = Instantiate(clipPrefab, firstClipPos, quaternion.identity, transform).GetComponentInChildren<TrackClip>();
         firstPartClip.Init(firstPart.animationClip, clipColor, firstPart.duration, firstPart.pace,
             firstPart.startTime,
             firstPart.animationStartPoint, firstPart.animationEndPoint, this);
-
-        TrackClip secondPartClip = Instantiate(clipPrefab, transform).GetComponentInChildren<TrackClip>();
+        
+        Vector2 secClipPos = new Vector2(
+            transform.position.x + TimeLine.Instance.trackLengthFor1Second * secondPart.startTime,
+            transform.position.y);
+        TrackClip secondPartClip = Instantiate(clipPrefab, secClipPos, quaternion.identity, transform).GetComponentInChildren<TrackClip>();
         secondPartClip.Init(secondPart.animationClip, clipColor, secondPart.duration, secondPart.pace,
             secondPart.startTime,
             secondPart.animationStartPoint, secondPart.animationEndPoint, this);
+        
 
         clips.InsertRange(clipInd, new[] { firstPartClip, secondPartClip });
         DeleteSelectedClip(replacedClip);
