@@ -13,8 +13,8 @@ public class TimeLine : MonoBehaviour
 
     public float timeLineSeconds = 5f;
     [HideInInspector]public float trackLengthFor1Second;
-    public float minDurationMultiplier = 0.5f;
-    public float maxDurationMultiplier = 1.5f;
+    public float FastetAllowedPace = 0.5f;
+    public float SlowestAllowedPace = 2f;
     
     private float currentTime = 0;
     public bool isPlaying = false;

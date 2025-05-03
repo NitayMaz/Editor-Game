@@ -10,7 +10,8 @@ public class TrackClip : MonoBehaviour
     [HideInInspector] public float endTime;
     [HideInInspector] public float width;
     public float duration;
-    private float durationMultiplier = 1; //this means how much the current duration is from the original duration
+    private float pace = 1;
+    private float durationAtPace1;
     private Track parentTrack;
 
     private SpriteRenderer spriteRenderer;
@@ -33,7 +34,7 @@ public class TrackClip : MonoBehaviour
         clipHandleSpriteRenderer = clipHandle.GetComponent<SpriteRenderer>();
     }
 
-    public void Init(AnimationClip animationClip, Color color, float duration, float durationMultiplier, float clipStartTime,
+    public void Init(AnimationClip animationClip, Color color, float duration, float pace, float clipStartTime,
         float animationStartPoint, float animationEndPoint, Track parentTrack)
     {
         this.animationClip = animationClip;
@@ -46,7 +47,8 @@ public class TrackClip : MonoBehaviour
         this.parentTrack = parentTrack;
         this.duration = duration;
         this.endTime = clipStartTime + duration;
-        this.durationMultiplier = durationMultiplier;
+        this.pace = pace;
+        durationAtPace1 = duration / pace;
         clipAnimationStartPoint = animationStartPoint;
         clipAnimationEndPoint = animationEndPoint;
         textOffsetLeft = spriteRenderer.bounds.max.x - text.transform.position.x;
@@ -60,12 +62,19 @@ public class TrackClip : MonoBehaviour
         float rightedgeX = xPosition + clipHandleSpriteRenderer.bounds.size.x / 2f; 
         // x of right edge minus x of left edge divided by length for 1 sec gives us the duration
         float newDuration = (rightedgeX - spriteRenderer.bounds.min.x) / TimeLine.Instance.trackLengthFor1Second;
-        float originalDuration = duration / durationMultiplier;
-        float newDurationMultiplier = newDuration / originalDuration;
-        newDurationMultiplier = Mathf.Clamp(newDurationMultiplier, TimeLine.Instance.minDurationMultiplier,
-                                                                        TimeLine.Instance.maxDurationMultiplier);
-        durationMultiplier = newDurationMultiplier;
-        SetDurationByParameter(originalDuration * durationMultiplier);
+        
+        //first see that we're not running into the next clip, if so the duration is the maximum that won't run into the next clip
+        float newEndTime = startTime + newDuration;
+        if(newEndTime > parentTrack.GetNextClipStartTime(this))
+        {
+            newDuration = parentTrack.GetNextClipStartTime(this) - startTime;
+        }
+        
+        //pace is how fast we're going, if pace is 2 than the duration would be half the duration on pace one, meaning it is duration*(1/pace)
+        float newPace = 1 / (newDuration / durationAtPace1); 
+        newPace = Mathf.Clamp(newPace, TimeLine.Instance.FastetAllowedPace, TimeLine.Instance.SlowestAllowedPace);
+        pace = newPace;
+        SetDurationByParameter(durationAtPace1 * 1/pace);
         TimeLine.Instance.ClipUpdated();
     }
     
@@ -84,7 +93,7 @@ public class TrackClip : MonoBehaviour
         clipHandle.transform.position = new Vector2(spriteRenderer.bounds.max.x, spriteRenderer.transform.position.y);
         
         text.transform.position = new Vector2(spriteRenderer.bounds.max.x - textOffsetLeft, transform.position.y);
-        text.text = "X" + (1f / durationMultiplier).ToString("0.##"); //show up to 2 decimal spots, don't irrelevant 0s
+        text.text = "X" + pace.ToString("0.##"); //show up to 2 decimal spots, don't irrelevant 0s
         text.ForceMeshUpdate();
         //only show the text if the clip is long enough
         text.enabled = (spriteRenderer.bounds.size.x > textRectTransform.rect.width + textOffsetLeft/2);
@@ -138,7 +147,7 @@ public class TrackClip : MonoBehaviour
         {
             animationClip = animationClip,
             duration = firstPartDuration,
-            durationMultiplier = durationMultiplier,
+            pace = pace,
             animationStartPoint = clipAnimationStartPoint,
             animationEndPoint = secondPartAnimationStartPoint,
             startTime = startTime,
@@ -147,7 +156,7 @@ public class TrackClip : MonoBehaviour
         {
             animationClip = animationClip,
             duration = duration - firstPartDuration,
-            durationMultiplier = durationMultiplier,
+            pace = pace,
             animationStartPoint = secondPartAnimationStartPoint,
             animationEndPoint = clipAnimationEndPoint,
             startTime = startTime + firstPartDuration,

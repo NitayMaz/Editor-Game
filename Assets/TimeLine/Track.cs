@@ -108,6 +108,36 @@ public class Track : MonoBehaviour
             }
         }
     }
+    
+    public float GetNextClipStartTime(TrackClip currentClip)
+    {
+        int index = clips.IndexOf(currentClip);
+        if (index == -1)
+        {
+            Debug.LogError("Clip not found in track.");
+            return TimeLine.Instance.timeLineSeconds; // fallback value if not found
+        }
+
+        if (index + 1 >= clips.Count)
+            return TimeLine.Instance.timeLineSeconds;
+
+        return clips[index + 1].startTime;
+    }
+
+    public float GetPreviousClipEndTime(TrackClip currentClip)
+    {
+        int index = clips.IndexOf(currentClip);
+        if (index == -1)
+        {
+            Debug.LogError("Clip not found in track.");
+            return 0f; // fallback value if not found
+        }
+
+        if (index == 0)
+            return 0f;
+
+        return clips[index - 1].endTime;
+    }
 
     public void CancelObjectInteraction()
     {
@@ -127,12 +157,12 @@ public class Track : MonoBehaviour
 
         //ugly ass code, but it's better than starting to separate the init function rn
         TrackClip firstPartClip = Instantiate(clipPrefab, transform).GetComponentInChildren<TrackClip>();
-        firstPartClip.Init(firstPart.animationClip, clipColor, firstPart.duration, firstPart.durationMultiplier,
+        firstPartClip.Init(firstPart.animationClip, clipColor, firstPart.duration, firstPart.pace,
             firstPart.startTime,
             firstPart.animationStartPoint, firstPart.animationEndPoint, this);
 
         TrackClip secondPartClip = Instantiate(clipPrefab, transform).GetComponentInChildren<TrackClip>();
-        secondPartClip.Init(secondPart.animationClip, clipColor, secondPart.duration, secondPart.durationMultiplier,
+        secondPartClip.Init(secondPart.animationClip, clipColor, secondPart.duration, secondPart.pace,
             secondPart.startTime,
             secondPart.animationStartPoint, secondPart.animationEndPoint, this);
 
@@ -159,7 +189,7 @@ public class TrackClipInitData
 {
     public AnimationClip animationClip;
     public float duration;
-    public float durationMultiplier = 1;
+    public float pace;
     public float animationStartPoint;
     public float animationEndPoint;
     public float startTime;
