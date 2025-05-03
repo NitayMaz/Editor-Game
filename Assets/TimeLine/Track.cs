@@ -86,7 +86,7 @@ public class Track : MonoBehaviour
     {
         if (clips.Count == 0)
             return 0;
-        return clips[^1].endTime; //last clip endtime
+        return clips[^1].GetEndTime(); //last clip endtime
     }
 
     public void ApplyTrackPosition(float time)
@@ -135,7 +135,7 @@ public class Track : MonoBehaviour
         if (index == 0)
             return 0f;
 
-        return clips[index - 1].endTime;
+        return clips[index - 1].GetEndTime();
     }
 
     public void CancelObjectInteraction()

@@ -8,7 +8,6 @@ public class TrackClip : MonoBehaviour
     [SerializeField] private float clipAnimationStartPoint;
     [SerializeField] private float clipAnimationEndPoint;
     [HideInInspector] public float startTime;
-    [HideInInspector] public float endTime;
     [HideInInspector] public float width;
     public float duration;
     private float pace = 1;
@@ -53,7 +52,6 @@ public class TrackClip : MonoBehaviour
         this.startTime = clipStartTime;
         this.parentTrack = parentTrack;
         this.duration = duration;
-        this.endTime = clipStartTime + duration;
         this.pace = pace;
         durationAtPace1 = duration / pace;
         clipAnimationStartPoint = animationStartPoint;
@@ -65,6 +63,12 @@ public class TrackClip : MonoBehaviour
 
     public void SetDurationByPosition(float xPosition)
     {
+        //quick bug fix when pulling the handle all the way to the other side:
+        if(xPosition < spriteRenderer.bounds.min.x)
+        {
+            xPosition = spriteRenderer.bounds.min.x;
+        }
+        
         //make the CENTER of the handle go to the click position to avoid jarring jumps
         float rightedgeX = xPosition + clipHandleSpriteRenderer.bounds.size.x / 2f;
         // x of right edge minus x of left edge divided by length for 1 sec gives us the duration
@@ -124,20 +128,24 @@ public class TrackClip : MonoBehaviour
                      TimeLine.Instance.trackLengthFor1Second;
         }
 
-        float newEndTime = endTime + deltaX / TimeLine.Instance.trackLengthFor1Second;
+        float newEndTime = GetEndTime() + deltaX / TimeLine.Instance.trackLengthFor1Second;
         if (newEndTime > parentTrack.GetNextClipStartTime(this))
         {
-            deltaX = (parentTrack.GetNextClipStartTime(this) - endTime) * TimeLine.Instance.trackLengthFor1Second;
+            deltaX = (parentTrack.GetNextClipStartTime(this) - GetEndTime()) * TimeLine.Instance.trackLengthFor1Second;
         }
 
         entireClipTransform.position += new Vector3(deltaX, 0f, 0f);
         startTime += deltaX / TimeLine.Instance.trackLengthFor1Second;
-        endTime += deltaX / TimeLine.Instance.trackLengthFor1Second;
     }
 
     public bool IsActive(float currentTime)
     {
-        return currentTime >= startTime && currentTime < endTime;
+        return currentTime >= startTime && currentTime < GetEndTime();
+    }
+
+    public float GetEndTime()
+    {
+        return startTime + duration;
     }
 
     public float GetAnimationSpot(float currentTime)
