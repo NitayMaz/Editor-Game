@@ -258,8 +258,10 @@ MonoBehaviour:
   endTime: 0
   width: 0
   duration: 5
+  entireClipTransform: {fileID: 1623261229305128124}
   clipHandle: {fileID: 432371537136355994}
   text: {fileID: 5911023362259718490}
+  minMovementToDrag: 0.1
   applyColor: 1
 --- !u!61 &2074126602498651617
 BoxCollider2D:
@@ -391,7 +393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.562, y: 0}
+  m_AnchoredPosition: {x: 4.22, y: 0}
   m_SizeDelta: {x: 0.6979, y: 0.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &3987165724552380498

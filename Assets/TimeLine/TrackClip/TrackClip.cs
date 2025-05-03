@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -14,6 +15,7 @@ public class TrackClip : MonoBehaviour
     private float durationAtPace1;
     private Track parentTrack;
 
+    [SerializeField] private Transform entireClipTransform;
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D collider;
     [SerializeField] private ClipHandle clipHandle;
@@ -23,6 +25,11 @@ public class TrackClip : MonoBehaviour
     [SerializeField] private TextMeshPro text;
     private RectTransform textRectTransform;
     private float textOffsetLeft;
+
+    [SerializeField] private float minMovementToDrag = 0.1f;
+    private float startDragMouseXPosition;
+    private float lastMouseXPosition; //for dragging
+    private bool isDragging = false;
 
     public bool applyColor = true;
 
@@ -59,25 +66,25 @@ public class TrackClip : MonoBehaviour
     public void SetDurationByPosition(float xPosition)
     {
         //make the CENTER of the handle go to the click position to avoid jarring jumps
-        float rightedgeX = xPosition + clipHandleSpriteRenderer.bounds.size.x / 2f; 
+        float rightedgeX = xPosition + clipHandleSpriteRenderer.bounds.size.x / 2f;
         // x of right edge minus x of left edge divided by length for 1 sec gives us the duration
         float newDuration = (rightedgeX - spriteRenderer.bounds.min.x) / TimeLine.Instance.trackLengthFor1Second;
-        
+
         //first see that we're not running into the next clip, if so the duration is the maximum that won't run into the next clip
         float newEndTime = startTime + newDuration;
-        if(newEndTime > parentTrack.GetNextClipStartTime(this))
+        if (newEndTime > parentTrack.GetNextClipStartTime(this))
         {
             newDuration = parentTrack.GetNextClipStartTime(this) - startTime;
         }
-        
+
         //pace is how fast we're going, if pace is 2 than the duration would be half the duration on pace one, meaning it is duration*(1/pace)
-        float newPace = 1 / (newDuration / durationAtPace1); 
+        float newPace = 1 / (newDuration / durationAtPace1);
         newPace = Mathf.Clamp(newPace, TimeLine.Instance.FastetAllowedPace, TimeLine.Instance.SlowestAllowedPace);
         pace = newPace;
-        SetDurationByParameter(durationAtPace1 * 1/pace);
+        SetDurationByParameter(durationAtPace1 * 1 / pace);
         TimeLine.Instance.ClipUpdated();
     }
-    
+
     private void SetDurationByParameter(float newDuration)
     {
         duration = newDuration;
@@ -91,12 +98,12 @@ public class TrackClip : MonoBehaviour
     public void UpdateTextAndHandle()
     {
         clipHandle.transform.position = new Vector2(spriteRenderer.bounds.max.x, spriteRenderer.transform.position.y);
-        
+
         text.transform.position = new Vector2(spriteRenderer.bounds.max.x - textOffsetLeft, transform.position.y);
         text.text = "X" + pace.ToString("0.##"); //show up to 2 decimal spots, don't irrelevant 0s
         text.ForceMeshUpdate();
         //only show the text if the clip is long enough
-        text.enabled = (spriteRenderer.bounds.size.x > textRectTransform.rect.width + textOffsetLeft/2);
+        text.enabled = (spriteRenderer.bounds.size.x > textRectTransform.rect.width + textOffsetLeft / 2);
     }
 
     private void UpdateCollider()
@@ -104,7 +111,28 @@ public class TrackClip : MonoBehaviour
         float handleColliderWidth = clipHandleCollider.bounds.size.x;
         float colliderWidth = width - handleColliderWidth;
         collider.size = new Vector2(colliderWidth, collider.size.y);
-        collider.offset = new Vector2(colliderWidth/2f, 0f);
+        collider.offset = new Vector2(colliderWidth / 2f, 0f);
+    }
+
+    private void ClipDragged(float deltaX)
+    {
+        //first clamp so we're not overrunning neighboring clips/out of the timeline
+        float newStartTime = startTime + deltaX / TimeLine.Instance.trackLengthFor1Second;
+        if (newStartTime < parentTrack.GetPreviousClipEndTime(this))
+        {
+            deltaX = -1 * (startTime - parentTrack.GetPreviousClipEndTime(this)) *
+                     TimeLine.Instance.trackLengthFor1Second;
+        }
+
+        float newEndTime = endTime + deltaX / TimeLine.Instance.trackLengthFor1Second;
+        if (newEndTime > parentTrack.GetNextClipStartTime(this))
+        {
+            deltaX = (parentTrack.GetNextClipStartTime(this) - endTime) * TimeLine.Instance.trackLengthFor1Second;
+        }
+
+        entireClipTransform.position += new Vector3(deltaX, 0f, 0f);
+        startTime += deltaX / TimeLine.Instance.trackLengthFor1Second;
+        endTime += deltaX / TimeLine.Instance.trackLengthFor1Second;
     }
 
     public bool IsActive(float currentTime)
@@ -177,5 +205,40 @@ public class TrackClip : MonoBehaviour
     private void OnMouseExit()
     {
         clipHandle.ClipEndHover();
+    }
+
+    private void OnMouseDown()
+    {
+        if (TimeLine.Instance.isPlaying)
+            return;
+        startDragMouseXPosition = TimeLine.Instance.timeLineCamera.ScreenToWorldPoint(Input.mousePosition).x;
+        lastMouseXPosition = startDragMouseXPosition;
+    }
+
+    private void OnMouseDrag()
+    {
+        //so you basically have to go over a certain distance for it to count as dragging to differentiate it from clicking
+        float mouseXPosition = TimeLine.Instance.timeLineCamera.ScreenToWorldPoint(Input.mousePosition).x;
+        if (!isDragging && Mathf.Abs(mouseXPosition - startDragMouseXPosition) >= minMovementToDrag)
+        {
+            //here we switch to dragging mode
+            clipHandle.ClipEndHover();
+            isDragging = true;
+        }
+
+        if (!isDragging)
+        {
+            return;
+        }
+        //and here we're actually dragging
+        float deltaX = mouseXPosition - lastMouseXPosition;
+        ClipDragged(deltaX);
+        TimeLine.Instance.ClipUpdated();
+        lastMouseXPosition = mouseXPosition;
+    }
+
+    private void OnMouseUp()
+    {
+        isDragging = false;
     }
 }

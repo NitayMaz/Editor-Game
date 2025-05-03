@@ -382,6 +382,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7737031680851976569, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: timeLineCamera
+      value: 
+      objectReference: {fileID: 5354073441732779716}
+    - target: {fileID: 7737031680851976569, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: timeLineDirector
       value: 
       objectReference: {fileID: 4749929540604137261}

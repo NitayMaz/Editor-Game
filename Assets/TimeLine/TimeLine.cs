@@ -7,6 +7,7 @@ using UnityEngine.Timeline;
 public class TimeLine : MonoBehaviour
 {
     public static TimeLine Instance;
+    public Camera timeLineCamera;
     [SerializeField] private PlayableDirector timeLineDirector;
     [SerializeField] private Track[] tracks;
     [SerializeField] private GameObject pointerHead;
