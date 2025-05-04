@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class TrackControlled : MonoBehaviour
 {
-    private Animator animator;
+    protected Animator animator;
     public bool controlledByTimeLine = true;
 
     private void Awake()
