@@ -59,7 +59,8 @@ public class TimeRuler : MonoBehaviour
         {
             TimeLine.Instance.StopPlaying();
         }
-        MyCursor.Instance.SwitchToHoldingCursor();
+        if(MyCursor.Instance!=null)
+            MyCursor.Instance.SwitchToHoldingCursor();
         
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float clickXPos = mouseWorldPos.x;
@@ -69,7 +70,8 @@ public class TimeRuler : MonoBehaviour
     
     private void OnMouseUp()
     {
-        MyCursor.Instance.SwitchToNormalCursor();
+        if(MyCursor.Instance!=null)
+            MyCursor.Instance.SwitchToNormalCursor();
     }
 
     

@@ -91,11 +91,21 @@ public class Track : MonoBehaviour
 
     public void ApplyTrackPosition(float time)
     {
+        if(clips.Count == 0)
+            return;
         //if the timeline handle is beyond this track, stay on the last frame of the track
         if (time > GetTrackDuration())
         {
             TrackClip lastClip = clips[clips.Count - 1];
             connectedObject.SetAnimationFrame(lastClip.animationClip, lastClip.GetAnimationSpot(time));
+        }
+        
+        //if the timeline handle is before this track, stay on the first frame of the track
+        if (time < clips[0].startTime)
+        {
+            TrackClip firstClip = clips[0];
+            connectedObject.SetAnimationFrame(firstClip.animationClip, firstClip.GetAnimationSpot(time));
+            return;
         }
 
         foreach (var clip in clips)

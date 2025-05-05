@@ -237,7 +237,8 @@ public class TrackClip : MonoBehaviour
             //here we switch to dragging mode
             clipHandle.ClipEndHover();
             isDragging = true;
-            MyCursor.Instance.SwitchToHoldingCursor();
+            if(MyCursor.Instance != null)
+                MyCursor.Instance.SwitchToHoldingCursor();
         }
 
         if (!isDragging)
@@ -253,7 +254,7 @@ public class TrackClip : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (isDragging)
+        if (isDragging && MyCursor.Instance != null)
             MyCursor.Instance.SwitchToNormalCursor();
         clicked = false;
         isDragging = false;
