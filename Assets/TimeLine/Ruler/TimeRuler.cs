@@ -60,6 +60,7 @@ public class TimeRuler : MonoBehaviour
             TimeLine.Instance.StopPlaying();
         }
         MyCursor.Instance.SwitchToHoldingCursor();
+        
         Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float clickXPos = mouseWorldPos.x;
         
