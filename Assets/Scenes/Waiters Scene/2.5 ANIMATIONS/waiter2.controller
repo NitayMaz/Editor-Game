@@ -50,7 +50,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -1890003001103271426}
+  m_DefaultState: {fileID: -8689696686908618552}
 --- !u!1102 &-1890003001103271426
 AnimatorState:
   serializedVersion: 6
@@ -83,7 +83,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: waiter1
+  m_Name: waiter2
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
