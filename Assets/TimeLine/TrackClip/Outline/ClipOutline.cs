@@ -7,6 +7,7 @@ public class ClipOutline : MonoBehaviour
     [SerializeField] private float outlineWidth = 0.1f;
     [SerializeField] private Color outlineColorClicked = Color.red;
     [SerializeField] private float outlineWidthClicked = 0.2f;
+    [SerializeField] private Texture2D _mainTexture2D;
     
     private Material outlineMaterial;
     private bool isClicked = false;

@@ -7,6 +7,7 @@ Shader "Custom/OutlineShader"
         _OutlineThickness("Outline Thickness (Pixels)", Float) = 1
         _ClickedThickness("Clicked Outline Thickness (Pixels)", Float) = 2
         _Clicked("Clicked", Float) = 0
+        
     }
 
     SubShader

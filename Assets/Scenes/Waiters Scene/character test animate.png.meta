@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 20d084871bfa44e0685f22db046b54bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3350555983796577689
+    second: waiter scene test_0
+  - first:
+      213: 8927741318352193466
+    second: waiter scene test_1
+  - first:
+      213: -7944181500045060191
+    second: waiter scene test_2
+  - first:
+      213: -8426822238848299405
+    second: waiter scene test_3
+  - first:
+      213: -5441768007476842803
+    second: waiter scene test_4
+  - first:
+      213: -5575003986180589293
+    second: waiter scene test_5
+  - first:
+      213: 5066398691272713251
+    second: waiter scene test_6
+  - first:
+      213: 8286949840688512254
+    second: waiter scene test_7
+  - first:
+      213: -4206922329775027202
+    second: waiter scene test_8
+  - first:
+      213: 6800853041152901886
+    second: waiter scene test_9
+  - first:
+      213: -5895146876917889225
+    second: waiter scene test_10
+  - first:
+      213: 7569426448436003890
+    second: waiter scene test_11
+  - first:
+      213: -7345049487943130102
+    second: waiter scene test_12
+  - first:
+      213: 608079375399433864
+    second: waiter scene test_13
+  - first:
+      213: -8886428718833127781
+    second: waiter scene test_14
+  - first:
+      213: 8773180559756650489
+    second: waiter scene test_15
+  - first:
+      213: 789671078048558117
+    second: waiter scene test_16
+  - first:
+      213: -5392143386019819030
+    second: waiter scene test_17
+  - first:
+      213: 6513203599614813411
+    second: waiter scene test_18
+  - first:
+      213: -6544254735157555141
+    second: waiter scene test_19
+  - first:
+      213: -4822204001758742445
+    second: waiter scene test_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 90
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: waiter scene test_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 766
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995214e4ae09f7e20800000000000000
+      internalID: 3350555983796577689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 766
+        width: 115
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7c5f68d65b5eb70800000000000000
+      internalID: 8927741318352193466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 767
+        width: 115
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7959a040990c190800000000000000
+      internalID: -7944181500045060191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_3
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 771
+        width: 115
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ec51c22d9ed0b80800000000000000
+      internalID: -8426822238848299405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_4
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 764
+        width: 115
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcee14434d4fa74b0800000000000000
+      internalID: -5441768007476842803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_5
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 767
+        width: 115
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319b156896b91a2b0800000000000000
+      internalID: -5575003986180589293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_6
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 763
+        width: 115
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32460db44c67f4640800000000000000
+      internalID: 5066398691272713251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_7
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 502
+        width: 115
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efcf7b559f8210370800000000000000
+      internalID: 8286949840688512254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_8
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 499
+        width: 115
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbc9182e620e95c0800000000000000
+      internalID: -4206922329775027202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_9
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 504
+        width: 115
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2cd87fecb716e50800000000000000
+      internalID: 6800853041152901886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_10
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 511
+        width: 115
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7374e86362b303ea0800000000000000
+      internalID: -5895146876917889225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_11
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 511
+        width: 115
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234897410410c0960800000000000000
+      internalID: 7569426448436003890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_12
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 512
+        width: 115
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a042c7d0864211a90800000000000000
+      internalID: -7345049487943130102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_13
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 516
+        width: 115
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886bced58f4507800800000000000000
+      internalID: 608079375399433864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_14
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 248
+        width: 115
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e2f1c99201da480800000000000000
+      internalID: -8886428718833127781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 244
+        width: 115
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f768ae9c3990c970800000000000000
+      internalID: 8773180559756650489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_16
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 245
+        width: 115
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ceb7069a975fa00800000000000000
+      internalID: 789671078048558117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_17
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 243
+        width: 115
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae11152c8224b25b0800000000000000
+      internalID: -5392143386019819030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_18
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 240
+        width: 115
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e426d85a2c836a50800000000000000
+      internalID: 6513203599614813411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_19
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 238
+        width: 115
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b301447cdf22e25a0800000000000000
+      internalID: -6544254735157555141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waiter scene test_20
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 243
+        width: 115
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 358f3b07207141db0800000000000000
+      internalID: -4822204001758742445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      waiter scene test_0: 3350555983796577689
+      waiter scene test_1: 8927741318352193466
+      waiter scene test_10: -5895146876917889225
+      waiter scene test_11: 7569426448436003890
+      waiter scene test_12: -7345049487943130102
+      waiter scene test_13: 608079375399433864
+      waiter scene test_14: -8886428718833127781
+      waiter scene test_15: 8773180559756650489
+      waiter scene test_16: 789671078048558117
+      waiter scene test_17: -5392143386019819030
+      waiter scene test_18: 6513203599614813411
+      waiter scene test_19: -6544254735157555141
+      waiter scene test_2: -7944181500045060191
+      waiter scene test_20: -4822204001758742445
+      waiter scene test_3: -8426822238848299405
+      waiter scene test_4: -5441768007476842803
+      waiter scene test_5: -5575003986180589293
+      waiter scene test_6: 5066398691272713251
+      waiter scene test_7: 8286949840688512254
+      waiter scene test_8: -4206922329775027202
+      waiter scene test_9: 6800853041152901886
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
