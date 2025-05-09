@@ -24,6 +24,9 @@ public class TrackClip : MonoBehaviour
     [SerializeField] private TextMeshPro text;
     private RectTransform textRectTransform;
     private float textOffsetLeft;
+    
+    [SerializeField] private bool snapPace = true;
+    [SerializeField] private float paceJumps = 0.1f;
 
     [SerializeField] private float minMovementToDrag = 0.1f;
     private float startDragMouseXPosition;
@@ -84,6 +87,9 @@ public class TrackClip : MonoBehaviour
 
         //pace is how fast we're going, if pace is 2 than the duration would be half the duration on pace one, meaning it is duration*(1/pace)
         float newPace = 1 / (newDuration / durationAtPace1);
+        //snap pace by pace jumps
+        if(snapPace)
+            newPace = Mathf.Ceil(newPace / paceJumps) * paceJumps;
         newPace = Mathf.Clamp(newPace, TimeLine.Instance.FastetAllowedPace, TimeLine.Instance.SlowestAllowedPace);
         pace = newPace;
         SetDurationByParameter(durationAtPace1 * 1 / pace);
@@ -100,7 +106,7 @@ public class TrackClip : MonoBehaviour
         TimeLine.Instance.ClipUpdated();
     }
 
-    public void UpdateTextAndHandle()
+    private void UpdateTextAndHandle()
     {
         clipHandle.transform.position = new Vector2(spriteRenderer.bounds.max.x, spriteRenderer.transform.position.y);
 
