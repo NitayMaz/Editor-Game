@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ebec80e7a504c48a49af9dfe775336fc
+guid: 542c92fea994743c39edd3c31dd7eb4a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7811233536931098144
-    second: cursors- 09_0
+      213: -5391021835160237607
+    second: chair1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cursors- 09_0
+      name: chair1_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 8
-        width: 115
-        height: 105
+        x: 0
+        y: 93
+        width: 112
+        height: 163
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e19a9ddb7ce89390800000000000000
-      internalID: -7811233536931098144
+      spriteID: 9d946ea243e3f25b0800000000000000
+      internalID: -5391021835160237607
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cursors- 09_0: -7811233536931098144
+      chair1_0: -5391021835160237607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
