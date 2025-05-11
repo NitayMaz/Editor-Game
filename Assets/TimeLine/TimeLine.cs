@@ -117,6 +117,8 @@ public class TimeLine : MonoBehaviour
         ApplyTimelinePosition(currentTime);
         UIManager.Instance.ChangeToPlayButton();
         isPlaying = false;
+        if(StageManager.Instance)
+            StageManager.Instance.TimeLineDone();
     }
     
     private void ApplyTimelinePosition(float time)
@@ -149,10 +151,11 @@ public class TimeLine : MonoBehaviour
         pointerHead.transform.position = new Vector3(xValue, pointerHead.transform.position.y, pointerHead.transform.position.z);
     }
 
-    public float GetTimelinePositionForTime(float time)
+    private float GetTimelinePositionForTime(float time)
     {
         return leftEdgeXvalue + (time * trackLengthFor1Second);
     }
+    
     private void CancelInteractions()
     {
         foreach (var track in tracks)
