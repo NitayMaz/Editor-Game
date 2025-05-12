@@ -7,10 +7,12 @@ using UnityEngine.Timeline;
 
 public class Track : MonoBehaviour
 {
-    [SerializeField] private Color clipColor = Color.cyan;
     private TrackControlled connectedObject;
     private List<TrackClip> clips = new List<TrackClip>();
     [SerializeField] private GameObject clipPrefab;
+    [SerializeField] private Color defaultColor = Color.magenta;
+    [SerializeField] private List<Color> clipColors = new List<Color>();
+    
 
 
     public void InitTrack(TrackControlled connectedObject, TrackAsset UnityTLTrack)
@@ -67,14 +69,17 @@ public class Track : MonoBehaviour
     private void InitClips(List<TrackClipInitData> clipsInitData)
     {
         float clipStartTime = 0;
-        foreach (var clipData in clipsInitData)
+        for (int i = 0; i<clipsInitData.Count; i++)
         {
+            var clipData = clipsInitData[i];
             Vector2 clipPos = new Vector2(
                 transform.position.x + TimeLine.Instance.trackLengthFor1Second * clipData.startTime,
                 transform.position.y);
             GameObject clipObject = Instantiate(clipPrefab, clipPos, Quaternion.identity, transform);
             TrackClip clip = clipObject.GetComponentInChildren<TrackClip>();
             clips.Add(clip);
+            Color clipColor = clipColors.Count > i ? clipColors[i] : defaultColor;
+            Debug.Log(clipColor);
             clip.Init(clipData.animationClip, clipColor, clipData.duration, 1, clipData.startTime,
                 clipData.animationStartPoint, clipData.animationEndPoint, this);
         }
@@ -163,7 +168,7 @@ public class Track : MonoBehaviour
             Debug.LogError("The clip We're trying to cut is not in the track clips list!");
             return;
         }
-
+        Color clipColor = replacedClip.GetComponentInChildren<SpriteRenderer>().color;
         //ugly ass code, but it's better than starting to separate the init function rn
         Vector2 firstClipPos = new Vector2(
             transform.position.x + TimeLine.Instance.trackLengthFor1Second * firstPart.startTime,

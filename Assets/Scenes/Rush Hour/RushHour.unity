@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 32011308}
   - component: {fileID: 32011309}
   m_Layer: 0
-  m_Name: truck_0
+  m_Name: blue_truck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -516,7 +516,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360401042}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: f8532268d3b1a8b43b187a96cdee1bbc, type: 2}
   m_CullingMode: 0
@@ -595,9 +595,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeLineObjects
       objectReference: {fileID: 0}
+    - target: {fileID: 4438563039019873824, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: m_Name
+      value: TrackCars2
+      objectReference: {fileID: 0}
     - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].key
@@ -628,6 +632,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6443866816732214605, guid: bd181f198962140bbb44adccd4ab7ce7, type: 2}
     - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: m_SceneBindings.Array.data[7].key
+      value: 
+      objectReference: {fileID: 8213629619580389784, guid: bd181f198962140bbb44adccd4ab7ce7, type: 2}
+    - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: m_SceneBindings.Array.data[8].key
+      value: 
+      objectReference: {fileID: -4607984040411366562, guid: bd181f198962140bbb44adccd4ab7ce7, type: 2}
+    - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: m_SceneBindings.Array.data[9].key
+      value: 
+      objectReference: {fileID: -1632990534273852933, guid: bd181f198962140bbb44adccd4ab7ce7, type: 2}
+    - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
       propertyPath: m_SceneBindings.Array.data[4].value
       value: 
       objectReference: {fileID: 360401047}
@@ -639,6 +655,146 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[6].value
       value: 
       objectReference: {fileID: 1857798021}
+    - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: m_SceneBindings.Array.data[7].value
+      value: 
+      objectReference: {fileID: 360401047}
+    - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: m_SceneBindings.Array.data[8].value
+      value: 
+      objectReference: {fileID: 1664049813}
+    - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: m_SceneBindings.Array.data[9].value
+      value: 
+      objectReference: {fileID: 1857798021}
+    - target: {fileID: 5796029610700516460, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: m_Name
+      value: TrackCars1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[0].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[0].b
+      value: 0.5372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[0].g
+      value: 0.7137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[0].r
+      value: 0.3254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[1].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[1].b
+      value: 0.20000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[1].g
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[1].r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[2].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[2].b
+      value: 0.7686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[2].g
+      value: 0.8000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[2].r
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[3].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[3].b
+      value: 0.654902
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[3].g
+      value: 0.94117653
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[3].r
+      value: 0.9921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 6751519815025582333, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: m_Name
+      value: TrackRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827772465301938152, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: defaultColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[0].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[0].b
+      value: 0.6509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[0].g
+      value: 0.4431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[0].r
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[1].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[1].b
+      value: 0.8980393
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[1].g
+      value: 0.654902
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[2].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[2].b
+      value: 0.65882355
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[2].g
+      value: 0.4039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: clipColors.Array.data[2].r
+      value: 0.015686275
+      objectReference: {fileID: 0}
     - target: {fileID: 8438935315362704751, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.64
@@ -1553,6 +1709,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlledByTimeLine: 1
+--- !u!1001 &1671543956
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5998092922969939955, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.068831
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998092922969939955, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.9808111
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998092922969939955, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998092922969939955, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998092922969939955, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998092922969939955, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998092922969939955, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998092922969939955, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998092922969939955, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998092922969939955, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7781678444132716059, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
+      propertyPath: UICamera
+      value: 
+      objectReference: {fileID: 514697146}
+    - target: {fileID: 8795488037287717010, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
+      propertyPath: m_Name
+      value: Cursor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
 --- !u!1 &1857798019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1637,7 +1854,7 @@ GameObject:
   - component: {fileID: 2036270978}
   - component: {fileID: 2036270979}
   m_Layer: 0
-  m_Name: blue_0
+  m_Name: light_blue_car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1809,3 +2026,4 @@ SceneRoots:
   - {fileID: 1664049812}
   - {fileID: 1857798020}
   - {fileID: 2095751754}
+  - {fileID: 1671543956}
