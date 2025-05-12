@@ -159,12 +159,8 @@ public class TrackClip : MonoBehaviour
     {
         float clipPercentPassed = (currentTime - startTime) / duration;
         float lerpedVal = Mathf.Lerp(clipAnimationStartPoint, clipAnimationEndPoint, clipPercentPassed);
-        if (lerpedVal <= 0)
-        {
-            return 0;
-        }
-
-        if (lerpedVal % 1f == 0f)
+        lerpedVal = Mathf.Clamp(lerpedVal, clipAnimationStartPoint, clipAnimationEndPoint);
+        if (lerpedVal > 0 && lerpedVal % 1f == 0f)
         {
             return 1f; //without this it goes back to the first frame after finishing the animation
         }

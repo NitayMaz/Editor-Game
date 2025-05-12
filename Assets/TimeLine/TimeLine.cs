@@ -71,7 +71,6 @@ public class TimeLine : MonoBehaviour
                 Debug.LogWarning($"getting: {timeLineDirector.GetGenericBinding(unityTrack)}");
                 continue;
             }
-            Debug.Log($"Initializing track {unityTrack.name} with object {connectedObject.name}");
             tracks[i].InitTrack(connectedObject, unityTrack);
             i++;
         }
