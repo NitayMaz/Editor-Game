@@ -33,9 +33,7 @@ public class TrackClip : MonoBehaviour
     private float lastMouseXPosition; //for dragging
     private bool isDragging = false;
     private bool clicked = false;
-
-    public bool applyColor = true;
-
+    
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -48,10 +46,8 @@ public class TrackClip : MonoBehaviour
         float animationStartPoint, float animationEndPoint, Track parentTrack)
     {
         this.animationClip = animationClip;
-        if (applyColor)
-        {
-            spriteRenderer.color = color;
-        }
+        spriteRenderer.color = color;
+        
 
         this.startTime = clipStartTime;
         this.parentTrack = parentTrack;

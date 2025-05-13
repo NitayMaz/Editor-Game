@@ -394,7 +394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000649090205727427, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
       propertyPath: timeLineSeconds
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4000649090205727427, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
       propertyPath: FastetAllowedPace
@@ -464,9 +464,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: container - tracks lines (base)
       objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: defaultColor.b
+      value: 0.31764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: defaultColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308917973037303821, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: defaultColor.r
+      value: 0.49803925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827772465301938152, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: defaultColor.g
+      value: 0.7372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 6827772465301938152, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: defaultColor.r
+      value: 0.5137255
+      objectReference: {fileID: 0}
     - target: {fileID: 7204015416469255008, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.496
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: defaultColor.b
+      value: 0.3137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501783937705121295, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: defaultColor.g
+      value: 0.31764707
       objectReference: {fileID: 0}
     - target: {fileID: 8537150799095064801, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
       propertyPath: m_LocalScale.x

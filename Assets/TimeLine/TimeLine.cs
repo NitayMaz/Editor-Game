@@ -77,7 +77,7 @@ public class TimeLine : MonoBehaviour
     }
 
     
-    public void ResetTime()
+    private void ResetTime()
     {
         currentTime = 0;
         PositionPointerHead(leftEdgeXvalue);

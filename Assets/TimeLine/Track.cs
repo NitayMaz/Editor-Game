@@ -94,12 +94,15 @@ public class Track : MonoBehaviour
         //1.the track has multiple animation running the same object
         //2. the track has multiple animations running different objects which are children of the object with the animator(like rush hour)
         //for case 2 we need to run all animations, and if they're not active then put them at the first/last frame according to whether the given time is before/after them.
-        //for case 1 we need to check that we don't activate an animation for the same object twice.
-        //since if we have 2 upcoming clips for the same object, we would default to the start of the second one, skipping the first already.
+        //for case 1 we need to make sure run the end of the last animation played, or the beginning of the next animation that would play if we didn't play one yet.
+        // so we run every animation that start after the given time in reverse, then every animation that starts before(and in) the given time in order.
         //that's why this code looks awful.
-        HashSet<Transform> alreadyMovedTransforms = new HashSet<Transform>();
-        //basically we don't want to move a transform that was already moved, if the time is before the clip start time.
-        foreach (var clip in clips)
+        
+        foreach (var clip in clips.Where(c => c.startTime > time).OrderByDescending(c => c.startTime))
+        {
+            connectedObject.SetAnimationFrame(clip.animationClip, clip.GetAnimationSpot(time));
+        }
+        foreach (var clip in clips.Where(c => c.startTime <= time).OrderBy(c => c.startTime))
         {
             connectedObject.SetAnimationFrame(clip.animationClip, clip.GetAnimationSpot(time));
         }
