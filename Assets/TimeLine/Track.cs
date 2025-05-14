@@ -7,17 +7,17 @@ using UnityEngine.Timeline;
 
 public class Track : MonoBehaviour
 {
-    [SerializeField] private Color clipColor = Color.cyan;
     private TrackControlled connectedObject;
     private List<TrackClip> clips = new List<TrackClip>();
     [SerializeField] private GameObject clipPrefab;
+    [SerializeField] private Color defaultColor = Color.magenta;
+    [SerializeField] private List<Color> clipColors = new List<Color>();
+    
 
 
     public void InitTrack(TrackControlled connectedObject, TrackAsset UnityTLTrack)
     {
         this.connectedObject = connectedObject;
-        Debug.Log(
-            $"Initializing track {UnityTLTrack.name} for {connectedObject.name} with {UnityTLTrack.GetClips().Count()} clips");
 
         List<TrackClipInitData> clipsInitData = new List<TrackClipInitData>();
         foreach (var clip in UnityTLTrack.GetClips())
@@ -59,22 +59,21 @@ public class Track : MonoBehaviour
 
             clipsInitData.Add(clipData);
         }
-
-        Debug.Log("off to init clips");
         InitClips(clipsInitData);
     }
 
     private void InitClips(List<TrackClipInitData> clipsInitData)
     {
-        float clipStartTime = 0;
-        foreach (var clipData in clipsInitData)
+        for (int i = 0; i<clipsInitData.Count; i++)
         {
+            var clipData = clipsInitData[i];
             Vector2 clipPos = new Vector2(
                 transform.position.x + TimeLine.Instance.trackLengthFor1Second * clipData.startTime,
                 transform.position.y);
             GameObject clipObject = Instantiate(clipPrefab, clipPos, Quaternion.identity, transform);
             TrackClip clip = clipObject.GetComponentInChildren<TrackClip>();
             clips.Add(clip);
+            Color clipColor = clipColors.Count > i ? clipColors[i] : defaultColor;
             clip.Init(clipData.animationClip, clipColor, clipData.duration, 1, clipData.startTime,
                 clipData.animationStartPoint, clipData.animationEndPoint, this);
         }
@@ -91,30 +90,21 @@ public class Track : MonoBehaviour
 
     public void ApplyTrackPosition(float time)
     {
-        if(clips.Count == 0)
-            return;
-        //if the timeline handle is beyond this track, stay on the last frame of the track
-        if (time > GetTrackDuration())
-        {
-            TrackClip lastClip = clips[clips.Count - 1];
-            connectedObject.SetAnimationFrame(lastClip.animationClip, lastClip.GetAnimationSpot(time));
-        }
+        //k so there are 2 cases here:
+        //1.the track has multiple animation running the same object
+        //2. the track has multiple animations running different objects which are children of the object with the animator(like rush hour)
+        //for case 2 we need to run all animations, and if they're not active then put them at the first/last frame according to whether the given time is before/after them.
+        //for case 1 we need to make sure run the end of the last animation played, or the beginning of the next animation that would play if we didn't play one yet.
+        // so we run every animation that start after the given time in reverse, then every animation that starts before(and in) the given time in order.
+        //that's why this code looks awful.
         
-        //if the timeline handle is before this track, stay on the first frame of the track
-        if (time < clips[0].startTime)
+        foreach (var clip in clips.Where(c => c.startTime > time).OrderByDescending(c => c.startTime))
         {
-            TrackClip firstClip = clips[0];
-            connectedObject.SetAnimationFrame(firstClip.animationClip, firstClip.GetAnimationSpot(time));
-            return;
+            connectedObject.SetAnimationFrame(clip.animationClip, clip.GetAnimationSpot(time));
         }
-
-        foreach (var clip in clips)
+        foreach (var clip in clips.Where(c => c.startTime <= time).OrderBy(c => c.startTime))
         {
-            if (clip.IsActive(time))
-            {
-                connectedObject.SetAnimationFrame(clip.animationClip, clip.GetAnimationSpot(time));
-                break;
-            }
+            connectedObject.SetAnimationFrame(clip.animationClip, clip.GetAnimationSpot(time));
         }
     }
     
@@ -163,7 +153,7 @@ public class Track : MonoBehaviour
             Debug.LogError("The clip We're trying to cut is not in the track clips list!");
             return;
         }
-
+        Color clipColor = replacedClip.GetComponentInChildren<SpriteRenderer>().color;
         //ugly ass code, but it's better than starting to separate the init function rn
         Vector2 firstClipPos = new Vector2(
             transform.position.x + TimeLine.Instance.trackLengthFor1Second * firstPart.startTime,

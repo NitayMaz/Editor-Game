@@ -71,14 +71,13 @@ public class TimeLine : MonoBehaviour
                 Debug.LogWarning($"getting: {timeLineDirector.GetGenericBinding(unityTrack)}");
                 continue;
             }
-            Debug.Log($"Initializing track {unityTrack.name} with object {connectedObject.name}");
             tracks[i].InitTrack(connectedObject, unityTrack);
             i++;
         }
     }
 
     
-    public void ResetTime()
+    private void ResetTime()
     {
         currentTime = 0;
         PositionPointerHead(leftEdgeXvalue);
@@ -117,6 +116,8 @@ public class TimeLine : MonoBehaviour
         ApplyTimelinePosition(currentTime);
         UIManager.Instance.ChangeToPlayButton();
         isPlaying = false;
+        if(StageManager.Instance)
+            StageManager.Instance.TimeLineDone();
     }
     
     private void ApplyTimelinePosition(float time)
@@ -149,10 +150,11 @@ public class TimeLine : MonoBehaviour
         pointerHead.transform.position = new Vector3(xValue, pointerHead.transform.position.y, pointerHead.transform.position.z);
     }
 
-    public float GetTimelinePositionForTime(float time)
+    private float GetTimelinePositionForTime(float time)
     {
         return leftEdgeXvalue + (time * trackLengthFor1Second);
     }
+    
     private void CancelInteractions()
     {
         foreach (var track in tracks)

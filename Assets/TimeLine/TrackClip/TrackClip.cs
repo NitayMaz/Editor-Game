@@ -33,9 +33,7 @@ public class TrackClip : MonoBehaviour
     private float lastMouseXPosition; //for dragging
     private bool isDragging = false;
     private bool clicked = false;
-
-    public bool applyColor = true;
-
+    
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -48,10 +46,8 @@ public class TrackClip : MonoBehaviour
         float animationStartPoint, float animationEndPoint, Track parentTrack)
     {
         this.animationClip = animationClip;
-        if (applyColor)
-        {
-            spriteRenderer.color = color;
-        }
+        spriteRenderer.color = color;
+        
 
         this.startTime = clipStartTime;
         this.parentTrack = parentTrack;
@@ -159,12 +155,8 @@ public class TrackClip : MonoBehaviour
     {
         float clipPercentPassed = (currentTime - startTime) / duration;
         float lerpedVal = Mathf.Lerp(clipAnimationStartPoint, clipAnimationEndPoint, clipPercentPassed);
-        if (lerpedVal <= 0)
-        {
-            return 0;
-        }
-
-        if (lerpedVal % 1f == 0f)
+        lerpedVal = Mathf.Clamp(lerpedVal, clipAnimationStartPoint, clipAnimationEndPoint);
+        if (lerpedVal > 0 && lerpedVal % 1f == 0f)
         {
             return 1f; //without this it goes back to the first frame after finishing the animation
         }
