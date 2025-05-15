@@ -187,7 +187,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: waiter 3 walk_0
+      name: waiter3 walk_0
       rect:
         serializedVersion: 2
         x: 19
@@ -195,21 +195,21 @@ TextureImporter:
         width: 132
         height: 245
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 254bccd7427524000800000000000000
-      internalID: 18673162703909970
+      spriteID: 9e4ce08310e5d4fc7affe096547c9c7f
+      internalID: -1213466302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_1
+      name: waiter3 walk_1
       rect:
         serializedVersion: 2
         x: 170
@@ -217,21 +217,21 @@ TextureImporter:
         width: 132
         height: 240
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 39e7d78dcc8eb8bd0800000000000000
-      internalID: -2626749991137476973
+      spriteID: c5ce5dfd525f84cdba2edffbdbcf4a7e
+      internalID: 329729531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_2
+      name: waiter3 walk_2
       rect:
         serializedVersion: 2
         x: 320
@@ -239,21 +239,21 @@ TextureImporter:
         width: 134
         height: 237
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5c65eeecf9a0a6560800000000000000
-      internalID: 7307665026849855173
+      spriteID: 63a858907abbe4820bf2b5dee4fb9ab9
+      internalID: 1011782463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_3
+      name: waiter3 walk_3
       rect:
         serializedVersion: 2
         x: 473
@@ -261,21 +261,21 @@ TextureImporter:
         width: 135
         height: 236
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 85a13b0495d5bae40800000000000000
-      internalID: 5668727193894853208
+      spriteID: 223497f4545f14f26a72e057fd2ffe8b
+      internalID: 1459546766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_4
+      name: waiter3 walk_4
       rect:
         serializedVersion: 2
         x: 627
@@ -283,21 +283,21 @@ TextureImporter:
         width: 136
         height: 237
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 56dd2339714959560800000000000000
-      internalID: 7319919598335352165
+      spriteID: 67c6c81f82e8647e992457caa8815ebc
+      internalID: -1588369519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_5
+      name: waiter3 walk_5
       rect:
         serializedVersion: 2
         x: 782
@@ -305,21 +305,21 @@ TextureImporter:
         width: 137
         height: 237
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ad19df8ad8442a3c0800000000000000
-      internalID: -4349838914870210086
+      spriteID: f3f62fe28b89b49279a663286b46b652
+      internalID: 176550414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_6
+      name: waiter3 walk_6
       rect:
         serializedVersion: 2
         x: 939
@@ -327,21 +327,21 @@ TextureImporter:
         width: 137
         height: 237
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4694ceafbadb80900800000000000000
-      internalID: 650978692501883236
+      spriteID: ceefe31fd97634d93bb9c4dd644ddb3c
+      internalID: -153366272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_7
+      name: waiter3 walk_7
       rect:
         serializedVersion: 2
         x: 1095
@@ -349,21 +349,21 @@ TextureImporter:
         width: 138
         height: 237
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 95b3d2a8aeb7771f0800000000000000
-      internalID: -1047232141069567143
+      spriteID: 19824b6b496674a9789fae7a2195beaf
+      internalID: -451509480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_8
+      name: waiter3 walk_8
       rect:
         serializedVersion: 2
         x: 1253
@@ -371,21 +371,21 @@ TextureImporter:
         width: 137
         height: 237
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bc8abef614c1a3440800000000000000
-      internalID: 4916273010604484811
+      spriteID: 7a39309096806441f84a8bacd3e0f045
+      internalID: -1382487012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_9
+      name: waiter3 walk_9
       rect:
         serializedVersion: 2
         x: 1409
@@ -393,21 +393,21 @@ TextureImporter:
         width: 137
         height: 238
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3c20429d4dadc9d50800000000000000
-      internalID: 6745506949605098179
+      spriteID: 532d092fa425d4fd3a9414dbdfbe1baf
+      internalID: -1044377711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_10
+      name: waiter3 walk_10
       rect:
         serializedVersion: 2
         x: 1565
@@ -415,21 +415,21 @@ TextureImporter:
         width: 136
         height: 236
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d384bb106a259e8c0800000000000000
-      internalID: -3969550723603281859
+      spriteID: 144498f6cc5c141ebbe7efdc8874b372
+      internalID: -845070282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_11
+      name: waiter3 walk_11
       rect:
         serializedVersion: 2
         x: 1720
@@ -437,21 +437,21 @@ TextureImporter:
         width: 134
         height: 234
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 77ea6305b9dc5a600800000000000000
-      internalID: 479015002334211703
+      spriteID: 769ebd2fa92c5453ca03e4137a5d45d1
+      internalID: -1658666838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_12
+      name: waiter3 walk_12
       rect:
         serializedVersion: 2
         x: 1873
@@ -459,21 +459,21 @@ TextureImporter:
         width: 132
         height: 234
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8b2396c85ab161670800000000000000
-      internalID: 8509018943802389176
+      spriteID: ed68a1ee7a9d6469d8c2636313149190
+      internalID: 1697045201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_13
+      name: waiter3 walk_13
       rect:
         serializedVersion: 2
         x: 18
@@ -481,21 +481,21 @@ TextureImporter:
         width: 131
         height: 236
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: aa9f32ffb2a5f5f10800000000000000
-      internalID: 2260624682973919658
+      spriteID: 24f5b965fe86f40269ea81ec3d0cde93
+      internalID: 244538280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_14
+      name: waiter3 walk_14
       rect:
         serializedVersion: 2
         x: 168
@@ -503,21 +503,21 @@ TextureImporter:
         width: 129
         height: 240
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 88d5b0dd93a7a4ad0800000000000000
-      internalID: -2717225036224438904
+      spriteID: ce5bc17de904644ef9950cc69c044a4a
+      internalID: -808152984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_15
+      name: waiter3 walk_15
       rect:
         serializedVersion: 2
         x: 317
@@ -525,21 +525,21 @@ TextureImporter:
         width: 128
         height: 242
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e954f959c5c1e7a30800000000000000
-      internalID: 4214837485238175134
+      spriteID: 5124248f409eb4459b9975864f37ba57
+      internalID: 1474849916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_16
+      name: waiter3 walk_16
       rect:
         serializedVersion: 2
         x: 465
@@ -547,21 +547,21 @@ TextureImporter:
         width: 128
         height: 243
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cf6fb17ed22a01610800000000000000
-      internalID: 1589948986496382716
+      spriteID: da84d0823759746af9b52982d73fca00
+      internalID: -412446348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_17
+      name: waiter3 walk_17
       rect:
         serializedVersion: 2
         x: 613
@@ -569,21 +569,21 @@ TextureImporter:
         width: 128
         height: 244
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3b5db30f34d7da570800000000000000
-      internalID: 8479571404155246003
+      spriteID: 770a4e203f6a0483aa9cba4a0f0e5c22
+      internalID: 1262258682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_18
+      name: waiter3 walk_18
       rect:
         serializedVersion: 2
         x: 761
@@ -591,21 +591,21 @@ TextureImporter:
         width: 128
         height: 245
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dc60e2eb485848a90800000000000000
-      internalID: -7312573089769978163
+      spriteID: 1b6cb6895c0944c2fbf2a90fd92a5db1
+      internalID: 2046067366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_19
+      name: waiter3 walk_19
       rect:
         serializedVersion: 2
         x: 909
@@ -613,21 +613,21 @@ TextureImporter:
         width: 129
         height: 246
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 722ed39e879356b10800000000000000
-      internalID: 1974047203143836199
+      spriteID: 556229b0dfa6b4e4b83e2ca413472fc1
+      internalID: -63524870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_20
+      name: waiter3 walk_20
       rect:
         serializedVersion: 2
         x: 1057
@@ -635,21 +635,21 @@ TextureImporter:
         width: 130
         height: 247
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c900682bf3ae245e0800000000000000
-      internalID: -1926720131262185316
+      spriteID: 987af1281262246d3bb8c4f95382925c
+      internalID: -1588329666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_21
+      name: waiter3 walk_21
       rect:
         serializedVersion: 2
         x: 1206
@@ -657,21 +657,21 @@ TextureImporter:
         width: 130
         height: 248
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 95c7a4a296f9b2dc0800000000000000
-      internalID: -3662658597905859495
+      spriteID: 58f764f099baf45eaa0f8cacc5273cfd
+      internalID: 1143721334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_22
+      name: waiter3 walk_22
       rect:
         serializedVersion: 2
         x: 1356
@@ -679,21 +679,21 @@ TextureImporter:
         width: 130
         height: 249
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2af7750849de1e430800000000000000
-      internalID: 3810587981796310946
+      spriteID: 1656b5f668bfc4b49b570fceaf2a6836
+      internalID: 253347364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_23
+      name: waiter3 walk_23
       rect:
         serializedVersion: 2
         x: 1505
@@ -701,21 +701,21 @@ TextureImporter:
         width: 131
         height: 250
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 85c667d239836c410800000000000000
-      internalID: 1496946130921352280
+      spriteID: 4afb6b78bb28749a5ad46d13e42b1bc6
+      internalID: 1449643776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_24
+      name: waiter3 walk_24
       rect:
         serializedVersion: 2
         x: 1656
@@ -723,21 +723,21 @@ TextureImporter:
         width: 131
         height: 251
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9d9e8413e3a318660800000000000000
-      internalID: 7386248902653569497
+      spriteID: 53c3cd30c40e147e798587924235f638
+      internalID: -1950189358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_25
+      name: waiter3 walk_25
       rect:
         serializedVersion: 2
         x: 1805
@@ -745,21 +745,21 @@ TextureImporter:
         width: 133
         height: 251
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 84b578348a74d0200800000000000000
-      internalID: 147853150786116424
+      spriteID: 9e215b48e33b34ceeb7567e9866999d4
+      internalID: 1632580085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_26
+      name: waiter3 walk_26
       rect:
         serializedVersion: 2
         x: 19
@@ -767,21 +767,21 @@ TextureImporter:
         width: 133
         height: 249
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d8ad1e33045a433d0800000000000000
-      internalID: -3227773337750873459
+      spriteID: cd11b9fd3e51c42a7905088b6c2772a0
+      internalID: 103093058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_27
+      name: waiter3 walk_27
       rect:
         serializedVersion: 2
         x: 171
@@ -789,21 +789,21 @@ TextureImporter:
         width: 133
         height: 248
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 995044477846c8f00800000000000000
-      internalID: 1120380940242388377
+      spriteID: 3be46ca558f104c2ebc193dc25719507
+      internalID: 556940822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_28
+      name: waiter3 walk_28
       rect:
         serializedVersion: 2
         x: 322
@@ -811,21 +811,21 @@ TextureImporter:
         width: 134
         height: 246
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 52185b8c6f8dcf750800000000000000
-      internalID: 6340180929871708453
+      spriteID: 46b2d52d0d2e6469ba0f05d40d9a24d5
+      internalID: 2133526403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: waiter 3 walk_29
+      name: waiter3 walk_29
       rect:
         serializedVersion: 2
         x: 475
@@ -833,15 +833,15 @@ TextureImporter:
         width: 133
         height: 245
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.35, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8fd851cb01048d970800000000000000
-      internalID: 8779837914177965560
+      spriteID: 7d1330845c5b94aa0bbf4aeb916ee407
+      internalID: 872594231
       vertices: []
       indices: 
       edges: []
@@ -860,36 +860,36 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      waiter 3 walk_0: 18673162703909970
-      waiter 3 walk_1: -2626749991137476973
-      waiter 3 walk_10: -3969550723603281859
-      waiter 3 walk_11: 479015002334211703
-      waiter 3 walk_12: 8509018943802389176
-      waiter 3 walk_13: 2260624682973919658
-      waiter 3 walk_14: -2717225036224438904
-      waiter 3 walk_15: 4214837485238175134
-      waiter 3 walk_16: 1589948986496382716
-      waiter 3 walk_17: 8479571404155246003
-      waiter 3 walk_18: -7312573089769978163
-      waiter 3 walk_19: 1974047203143836199
-      waiter 3 walk_2: 7307665026849855173
-      waiter 3 walk_20: -1926720131262185316
-      waiter 3 walk_21: -3662658597905859495
-      waiter 3 walk_22: 3810587981796310946
-      waiter 3 walk_23: 1496946130921352280
-      waiter 3 walk_24: 7386248902653569497
-      waiter 3 walk_25: 147853150786116424
-      waiter 3 walk_26: -3227773337750873459
-      waiter 3 walk_27: 1120380940242388377
-      waiter 3 walk_28: 6340180929871708453
-      waiter 3 walk_29: 8779837914177965560
-      waiter 3 walk_3: 5668727193894853208
-      waiter 3 walk_4: 7319919598335352165
-      waiter 3 walk_5: -4349838914870210086
-      waiter 3 walk_6: 650978692501883236
-      waiter 3 walk_7: -1047232141069567143
-      waiter 3 walk_8: 4916273010604484811
-      waiter 3 walk_9: 6745506949605098179
+      waiter3 walk_0: -1213466302
+      waiter3 walk_1: 329729531
+      waiter3 walk_10: -845070282
+      waiter3 walk_11: -1658666838
+      waiter3 walk_12: 1697045201
+      waiter3 walk_13: 244538280
+      waiter3 walk_14: -808152984
+      waiter3 walk_15: 1474849916
+      waiter3 walk_16: -412446348
+      waiter3 walk_17: 1262258682
+      waiter3 walk_18: 2046067366
+      waiter3 walk_19: -63524870
+      waiter3 walk_2: 1011782463
+      waiter3 walk_20: -1588329666
+      waiter3 walk_21: 1143721334
+      waiter3 walk_22: 253347364
+      waiter3 walk_23: 1449643776
+      waiter3 walk_24: -1950189358
+      waiter3 walk_25: 1632580085
+      waiter3 walk_26: 103093058
+      waiter3 walk_27: 556940822
+      waiter3 walk_28: 2133526403
+      waiter3 walk_29: 872594231
+      waiter3 walk_3: 1459546766
+      waiter3 walk_4: -1588369519
+      waiter3 walk_5: 176550414
+      waiter3 walk_6: -153366272
+      waiter3 walk_7: -451509480
+      waiter3 walk_8: -1382487012
+      waiter3 walk_9: -1044377711
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

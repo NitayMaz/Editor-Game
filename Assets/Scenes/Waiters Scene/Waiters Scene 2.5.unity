@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 4892916}
   - component: {fileID: 4892915}
   m_Layer: 0
-  m_Name: Capsule green
+  m_Name: Capsule blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -596,7 +596,7 @@ GameObject:
   - component: {fileID: 229129100}
   - component: {fileID: 229129099}
   m_Layer: 0
-  m_Name: Capsule red
+  m_Name: Capsule green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3578,7 +3578,7 @@ GameObject:
   - component: {fileID: 1886687361}
   - component: {fileID: 1886687360}
   m_Layer: 0
-  m_Name: Capsule blue
+  m_Name: waiter red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3645,7 +3645,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -1931155600363257427, guid: 307d90c7ea6264117913d24e7ba7f906, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 2}
