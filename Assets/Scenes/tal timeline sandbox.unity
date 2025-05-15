@@ -475,8 +475,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cf6e96f10b4284d8bae315e30da120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipColor: {r: 0.39215687, g: 0.72156864, b: 0.9529412, a: 1}
   clipPrefab: {fileID: 7732691730566119981, guid: 5a076e322cd09ed4280a7110ab1963c9, type: 3}
+  defaultColor: {r: 1, g: 0, b: 1, a: 1}
+  clipColors: []
 --- !u!1 &50927303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,7 +1699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &363032348
 Transform:
   m_ObjectHideFlags: 0
@@ -2126,7 +2127,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &411318627
 Transform:
   m_ObjectHideFlags: 0
@@ -3673,8 +3674,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cf6e96f10b4284d8bae315e30da120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipColor: {r: 0.39215687, g: 0.72156864, b: 0.9529412, a: 1}
   clipPrefab: {fileID: 7732691730566119981, guid: 5a076e322cd09ed4280a7110ab1963c9, type: 3}
+  defaultColor: {r: 1, g: 0, b: 1, a: 1}
+  clipColors: []
 --- !u!1 &720783628
 GameObject:
   m_ObjectHideFlags: 0
@@ -3840,8 +3842,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cf6e96f10b4284d8bae315e30da120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipColor: {r: 0.42745098, g: 0.8784314, b: 0.42745098, a: 1}
   clipPrefab: {fileID: 7732691730566119981, guid: 5a076e322cd09ed4280a7110ab1963c9, type: 3}
+  defaultColor: {r: 1, g: 0, b: 1, a: 1}
+  clipColors: []
 --- !u!1 &772541114
 GameObject:
   m_ObjectHideFlags: 0
@@ -4531,8 +4534,9 @@ MonoBehaviour:
   entireClipTransform: {fileID: 1261551727}
   clipHandle: {fileID: 654579477}
   text: {fileID: 236473363}
+  snapPace: 1
+  paceJumps: 0.1
   minMovementToDrag: 0.1
-  applyColor: 1
 --- !u!114 &894382748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4797,8 +4801,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cf6e96f10b4284d8bae315e30da120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipColor: {r: 0.9607843, g: 0.5019608, b: 0.5411765, a: 1}
   clipPrefab: {fileID: 7732691730566119981, guid: 5a076e322cd09ed4280a7110ab1963c9, type: 3}
+  defaultColor: {r: 1, g: 0, b: 1, a: 1}
+  clipColors: []
 --- !u!1 &917149790
 GameObject:
   m_ObjectHideFlags: 0
@@ -5123,8 +5128,9 @@ MonoBehaviour:
   entireClipTransform: {fileID: 1236822186}
   clipHandle: {fileID: 1137617742}
   text: {fileID: 672094405}
+  snapPace: 1
+  paceJumps: 0.1
   minMovementToDrag: 0.1
-  applyColor: 1
 --- !u!114 &972587727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7090,7 +7096,7 @@ Transform:
   m_GameObject: {fileID: 1311272209}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.173, y: 0, z: -0.1}
+  m_LocalPosition: {x: 5.03, y: 0, z: -0.1}
   m_LocalScale: {x: 1.39, y: 1.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7415,8 +7421,9 @@ MonoBehaviour:
   entireClipTransform: {fileID: 1255047199}
   clipHandle: {fileID: 1938893169}
   text: {fileID: 1648436211}
+  snapPace: 1
+  paceJumps: 0.1
   minMovementToDrag: 0.1
-  applyColor: 1
 --- !u!114 &1351802833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7470,7 +7477,7 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 2.3990216, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.31111112, y: 0, z: 0.34444445, w: 0}
     pivot: {x: 0, y: 0.5}
     oldSize: {x: 19.166666, y: 0.62222224}
     newSize: {x: 5.12, y: 1.06}
@@ -7952,8 +7959,9 @@ MonoBehaviour:
   entireClipTransform: {fileID: 1462585669}
   clipHandle: {fileID: 1182003104}
   text: {fileID: 1184040836}
+  snapPace: 1
+  paceJumps: 0.1
   minMovementToDrag: 0.1
-  applyColor: 1
 --- !u!114 &1396568322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8847,8 +8855,9 @@ MonoBehaviour:
   entireClipTransform: {fileID: 984620712}
   clipHandle: {fileID: 1972728815}
   text: {fileID: 812901168}
+  snapPace: 1
+  paceJumps: 0.1
   minMovementToDrag: 0.1
-  applyColor: 1
 --- !u!114 &1480553011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8902,7 +8911,7 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 2.3990216, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.31111112, y: 0, z: 0.34444445, w: 0}
     pivot: {x: 0, y: 0.5}
     oldSize: {x: 19.166666, y: 0.62222224}
     newSize: {x: 4.8, y: 0.75}
@@ -9026,8 +9035,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cf6e96f10b4284d8bae315e30da120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipColor: {r: 0.42745098, g: 0.8784314, b: 0.42745098, a: 1}
   clipPrefab: {fileID: 7732691730566119981, guid: 5a076e322cd09ed4280a7110ab1963c9, type: 3}
+  defaultColor: {r: 1, g: 0, b: 1, a: 1}
+  clipColors: []
 --- !u!1 &1510791269
 GameObject:
   m_ObjectHideFlags: 0
@@ -9468,8 +9478,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cf6e96f10b4284d8bae315e30da120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipColor: {r: 0.39215687, g: 0.72156864, b: 0.9529412, a: 1}
   clipPrefab: {fileID: 7732691730566119981, guid: 5a076e322cd09ed4280a7110ab1963c9, type: 3}
+  defaultColor: {r: 1, g: 0, b: 1, a: 1}
+  clipColors: []
 --- !u!1 &1595573738
 GameObject:
   m_ObjectHideFlags: 0
@@ -9489,7 +9500,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1595573739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9511,8 +9522,9 @@ MonoBehaviour:
   entireClipTransform: {fileID: 330636156}
   clipHandle: {fileID: 372459643}
   text: {fileID: 1384111902}
+  snapPace: 1
+  paceJumps: 0.1
   minMovementToDrag: 0.1
-  applyColor: 1
 --- !u!114 &1595573740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9566,12 +9578,12 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 2.3990216, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.31111112, y: 0, z: 0.34444445, w: 0}
     pivot: {x: 0, y: 0.5}
     oldSize: {x: 19.166666, y: 0.62222224}
-    newSize: {x: 15.91, y: 0.6}
+    newSize: {x: 4.9, y: 0.6}
     adaptiveTilingThreshold: 0
-    drawMode: 2
+    drawMode: 1
     adaptiveTiling: 1
   m_AutoTiling: 0
   m_Size: {x: 4.7980433, y: 0.6333333}
@@ -9624,8 +9636,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 0.5518868, b: 0.5518868, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
-  m_Size: {x: 15.91, y: 0.6}
+  m_DrawMode: 1
+  m_Size: {x: 4.9, y: 0.6}
   m_AdaptiveModeThreshold: 0
   m_SpriteTileMode: 1
   m_WasSpriteAssigned: 1
@@ -9912,8 +9924,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cf6e96f10b4284d8bae315e30da120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipColor: {r: 0.42745098, g: 0.8784314, b: 0.42745098, a: 1}
   clipPrefab: {fileID: 7732691730566119981, guid: 5a076e322cd09ed4280a7110ab1963c9, type: 3}
+  defaultColor: {r: 1, g: 0, b: 1, a: 1}
+  clipColors: []
 --- !u!1 &1648436210
 GameObject:
   m_ObjectHideFlags: 0
@@ -10752,8 +10765,9 @@ MonoBehaviour:
   entireClipTransform: {fileID: 2128380737}
   clipHandle: {fileID: 1311272211}
   text: {fileID: 1911297451}
+  snapPace: 1
+  paceJumps: 0.1
   minMovementToDrag: 0.1
-  applyColor: 1
 --- !u!114 &1743430006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10807,7 +10821,7 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 2.3990216, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.31111112, y: 0, z: 0.34444445, w: 0}
     pivot: {x: 0, y: 0.5}
     oldSize: {x: 19.166666, y: 0.62222224}
     newSize: {x: 5.12, y: 1.06}
@@ -10928,8 +10942,9 @@ MonoBehaviour:
   entireClipTransform: {fileID: 1389610517}
   clipHandle: {fileID: 1692665865}
   text: {fileID: 1268905264}
+  snapPace: 1
+  paceJumps: 0.1
   minMovementToDrag: 0.1
-  applyColor: 1
 --- !u!114 &1747757202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10983,7 +10998,7 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 2.3990216, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.31111112, y: 0, z: 0.34444445, w: 0}
     pivot: {x: 0, y: 0.5}
     oldSize: {x: 19.166666, y: 0.62222224}
     newSize: {x: 4.8, y: 0.75}
@@ -11281,8 +11296,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cf6e96f10b4284d8bae315e30da120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipColor: {r: 0.9607843, g: 0.5019608, b: 0.5411765, a: 1}
   clipPrefab: {fileID: 7732691730566119981, guid: 5a076e322cd09ed4280a7110ab1963c9, type: 3}
+  defaultColor: {r: 1, g: 0, b: 1, a: 1}
+  clipColors: []
 --- !u!1 &1886687354
 GameObject:
   m_ObjectHideFlags: 0
@@ -12015,7 +12031,7 @@ Transform:
   m_GameObject: {fileID: 1938893167}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.36, y: 0, z: -0.1}
+  m_LocalPosition: {x: 5.07, y: 0, z: -0.1}
   m_LocalScale: {x: 1, y: 1.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12859,7 +12875,7 @@ Transform:
   m_GameObject: {fileID: 2036770933}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.306, y: 0, z: -0.1}
+  m_LocalPosition: {x: -0.09, y: 0, z: -0.1}
   m_LocalScale: {x: 1, y: 1.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13111,8 +13127,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cf6e96f10b4284d8bae315e30da120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipColor: {r: 0.9607843, g: 0.5019608, b: 0.5411765, a: 1}
   clipPrefab: {fileID: 7732691730566119981, guid: 5a076e322cd09ed4280a7110ab1963c9, type: 3}
+  defaultColor: {r: 1, g: 0, b: 1, a: 1}
+  clipColors: []
 --- !u!1 &2128380736
 GameObject:
   m_ObjectHideFlags: 0
@@ -19675,8 +19692,9 @@ MonoBehaviour:
   entireClipTransform: {fileID: 2477197799965549492}
   clipHandle: {fileID: 3667665837469633938}
   text: {fileID: 7416884692989810258}
+  snapPace: 1
+  paceJumps: 0.1
   minMovementToDrag: 0.1
-  applyColor: 1
 --- !u!1 &5486284587774660693
 GameObject:
   m_ObjectHideFlags: 0
