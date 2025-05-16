@@ -351,34 +351,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -403,6 +375,7 @@ PrefabInstance:
     - {fileID: 5662129741039413725, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
     - {fileID: 486638531502905951, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
     - {fileID: 8772964937419333456, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+    - {fileID: 915917703370291158, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       insertIndex: 0
