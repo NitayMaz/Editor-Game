@@ -204,16 +204,6 @@ public class TrackClip : MonoBehaviour
         parentTrack.DeleteSelectedClip(this);
     }
 
-    private void OnMouseEnter()
-    {
-        clipHandle.ClipStartHover();
-    }
-
-    private void OnMouseExit()
-    {
-        clipHandle.ClipEndHover();
-    }
-
     private void OnMouseDown()
     {
         if (TimeLine.Instance.isPlaying)
@@ -233,7 +223,6 @@ public class TrackClip : MonoBehaviour
         if (!isDragging && Mathf.Abs(mouseXPosition - startDragMouseXPosition) >= minMovementToDrag)
         {
             //here we switch to dragging mode
-            clipHandle.ClipEndHover();
             isDragging = true;
             if(MyCursor.Instance != null)
                 MyCursor.Instance.SwitchToHoldingCursor();
