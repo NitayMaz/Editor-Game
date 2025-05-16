@@ -4,10 +4,8 @@ public class MyCursor : MonoBehaviour
 {
     public static MyCursor Instance;
     [SerializeField] private Camera UICamera;
-    [SerializeField] private Sprite normalCursorSprite;
-    [SerializeField] private Sprite holdingCursorSprite;
+    private Animator animator;
     
-    private SpriteRenderer spriteRenderer;
     
     private void Awake()
     {
@@ -22,8 +20,7 @@ public class MyCursor : MonoBehaviour
         {
             Debug.LogError("Please assign UI/Timeline camera to the cursor or it will not work!");
         }
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = normalCursorSprite;
+        animator = GetComponent<Animator>();
     }
     
     private void Update()
@@ -35,12 +32,17 @@ public class MyCursor : MonoBehaviour
     
     public void SwitchToNormalCursor()
     {
-        spriteRenderer.sprite = normalCursorSprite;
+        animator.SetBool("Holding", false);
     }
     
     public void SwitchToHoldingCursor()
     {
-        spriteRenderer.sprite = holdingCursorSprite;
+        animator.SetBool("Holding", true);
+    }
+
+    public void ButtonClicked()
+    {
+        animator.SetTrigger("click");
     }
     
     
