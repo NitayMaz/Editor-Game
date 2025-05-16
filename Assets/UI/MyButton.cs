@@ -15,6 +15,7 @@ public class MyButton : MonoBehaviour
 
     public void OnMouseDown()
     {
+        MyCursor.Instance?.ButtonClicked();
         switch (buttonType)
         {
             case buttonType.PlayPause:
