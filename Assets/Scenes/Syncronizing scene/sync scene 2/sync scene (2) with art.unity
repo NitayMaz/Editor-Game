@@ -230,6 +230,30 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -3.4413
       objectReference: {fileID: 0}
+    - target: {fileID: 4006254966715190512, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: defaultColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006254966715190512, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: defaultColor.g
+      value: 0.76880145
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006254966715190512, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: defaultColor.r
+      value: 0.48584908
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527747321600973589, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: defaultColor.b
+      value: 0.66629606
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527747321600973589, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: defaultColor.g
+      value: 0.6096476
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527747321600973589, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: defaultColor.r
+      value: 0.9433962
+      objectReference: {fileID: 0}
     - target: {fileID: 6310103778778480190, guid: 2321c47dec3a243609778468e24c106e, type: 3}
       propertyPath: timeLineCamera
       value: 
