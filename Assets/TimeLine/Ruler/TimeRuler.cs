@@ -23,6 +23,14 @@ public class TimeRuler : MonoBehaviour
         Bounds backgroundBounds = timeLineBackground.GetComponent<SpriteRenderer>().bounds;
         Vector3 backgroundTopLeft = new Vector3(backgroundBounds.min.x, backgroundBounds.max.y, transform.position.z);
         transform.position = backgroundTopLeft;
+        
+        // Stretch ruler sprite to match the background width
+        float backgroundWidth = backgroundBounds.size.x;
+        float spriteOriginalWidth = GetComponent<SpriteRenderer>().sprite.bounds.size.x;
+
+        Vector3 scale = transform.localScale;
+        scale.x = backgroundWidth / spriteOriginalWidth;
+        transform.localScale = scale;
     }
 
     private void PositionTicks()
