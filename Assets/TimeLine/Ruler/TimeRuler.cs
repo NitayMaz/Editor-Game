@@ -9,13 +9,14 @@ public class TimeRuler : MonoBehaviour
 
     [SerializeField] private float smallTickFrequency;
     [SerializeField] private float bigTickFrequency;
-    
+
     [SerializeField] private GameObject timeLineBackground;
     [SerializeField] private Transform ticksSceneParent;
+
     void Start()
     {
-       PositionRuler();
-       PositionTicks();
+        PositionRuler();
+        PositionTicks();
     }
 
     private void PositionRuler()
@@ -23,7 +24,7 @@ public class TimeRuler : MonoBehaviour
         Bounds backgroundBounds = timeLineBackground.GetComponent<SpriteRenderer>().bounds;
         Vector3 backgroundTopLeft = new Vector3(backgroundBounds.min.x, backgroundBounds.max.y, transform.position.z);
         transform.position = backgroundTopLeft;
-        
+
         // Stretch ruler sprite to match the background width
         float backgroundWidth = backgroundBounds.size.x;
         float spriteOriginalWidth = GetComponent<SpriteRenderer>().sprite.bounds.size.x;
@@ -35,52 +36,51 @@ public class TimeRuler : MonoBehaviour
 
     private void PositionTicks()
     {
-       float timeCovered = TimeLine.Instance.timeLineSeconds;
-       // float timeCovered = gameObject.GetComponent<SpriteRenderer>().bounds.size.x / TimeLine.Instance.trackLengthFor1Second;
+        float timeCovered = TimeLine.Instance.timeLineSeconds;
         float rulerBottom = gameObject.GetComponent<SpriteRenderer>().bounds.min.y;
-        HashSet<float> bigTickPositions = new HashSet<float>();
-        // position large ticks
+        HashSet<float> bigTickIndices = new HashSet<float>();
         for (float i = bigTickFrequency; i < timeCovered; i += bigTickFrequency)
         {
-            float tickXPos = transform.position.x + i * TimeLine.Instance.trackLengthFor1Second;
-            bigTickPositions.Add(tickXPos);
+            float tickXPos = TimeLine.Instance.GetXPositionForTime(i);
+            // snapping is for floating point precision errors
+            bigTickIndices.Add(TimeLine.SnapTo(i, 0.01f)); 
             Vector3 bigTickPos = new Vector3(tickXPos, rulerBottom, transform.position.z);
-            GameObject bigTick = Instantiate(bigTickPrefab, bigTickPos, Quaternion.identity, ticksSceneParent);
-                //          if(i == 0) 
-         //                bigTick.GetComponentInChildren<TextMeshPro>().enabled = false; // no text for first tick
-            //          bigTick.GetComponentInChildren<TextMeshPro>().text = i.ToString("0.00"); // format to 2 decimal places
+            Instantiate(bigTickPrefab, bigTickPos, Quaternion.identity, ticksSceneParent);
         }
-        // position small ticks
-        for (float i = smallTickFrequency; i < timeCovered; i += smallTickFrequency)
+
+        // position small ticks, -0.001f is to avoid floating point precision errors
+        for (float i = smallTickFrequency; i < timeCovered - 0.001f; i += smallTickFrequency)
         {
-            float tickXPos = transform.position.x + i * TimeLine.Instance.trackLengthFor1Second;
-            if (bigTickPositions.Contains(tickXPos))
+            Debug.Log("small tick at " + i);
+            float tickXPos = TimeLine.Instance.GetXPositionForTime(i);
+            if (bigTickIndices.Contains(TimeLine.SnapTo(i, 0.01f)))
+            {
                 continue;
+            }
             Vector3 smallTickPos = new Vector3(tickXPos, rulerBottom, transform.position.z);
             Instantiate(smallTickPrefab, smallTickPos, Quaternion.identity, ticksSceneParent);
         }
     }
-    
+
     private void OnMouseDrag()
     {
         if (TimeLine.Instance.isPlaying)
         {
             TimeLine.Instance.StopPlaying();
         }
-        if(MyCursor.Instance!=null)
+
+        if (MyCursor.Instance != null)
             MyCursor.Instance.SwitchToHoldingCursor();
-        
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        Vector3 mouseWorldPos = TimeLine.Instance.timeLineCamera.ScreenToWorldPoint(Input.mousePosition);
         float clickXPos = mouseWorldPos.x;
-        
+
         TimeLine.Instance.PositionPointerHead(clickXPos);
     }
-    
+
     private void OnMouseUp()
     {
-        if(MyCursor.Instance!=null)
+        if (MyCursor.Instance != null)
             MyCursor.Instance.SwitchToNormalCursor();
     }
-
-    
 }
