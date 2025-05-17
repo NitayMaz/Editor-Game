@@ -3,7 +3,6 @@ using UnityEngine;
 public class MyCursor : MonoBehaviour
 {
     public static MyCursor Instance;
-    [SerializeField] private Camera UICamera;
     private Animator animator;
     
     
@@ -16,16 +15,16 @@ public class MyCursor : MonoBehaviour
         }
         Instance = this;
         Cursor.visible = false;
-        if (UICamera == null)
+        if (TimeLine.Instance.timeLineCamera == null)
         {
-            Debug.LogError("Please assign UI/Timeline camera to the cursor or it will not work!");
+            Debug.LogError("Please assign UI/Timeline camera to the Timeline");
         }
         animator = GetComponent<Animator>();
     }
     
     private void Update()
     {
-        Vector3 mousePosition = UICamera.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mousePosition = TimeLine.Instance.timeLineCamera.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0;
         transform.position = mousePosition;
     }
