@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 95da7177a6bab42dd9e2a84a0be5a0a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6406027800523233441
+    second: girl pose spritesheet_0
+  - first:
+      213: -6402166330792342596
+    second: girl pose spritesheet_1
+  - first:
+      213: 5422914363104388292
+    second: girl pose spritesheet_2
+  - first:
+      213: -713934017103791677
+    second: girl pose spritesheet_3
+  - first:
+      213: 4350705509157721395
+    second: girl pose spritesheet_4
+  - first:
+      213: -7579272180858154928
+    second: girl pose spritesheet_5
+  - first:
+      213: 7580472070251946454
+    second: girl pose spritesheet_6
+  - first:
+      213: -5252802945927276984
+    second: girl pose spritesheet_7
+  - first:
+      213: 4912154635110635495
+    second: girl pose spritesheet_8
+  - first:
+      213: 7350730518782504379
+    second: girl pose spritesheet_9
+  - first:
+      213: -6468655790157934864
+    second: girl pose spritesheet_10
+  - first:
+      213: -6151165566677650578
+    second: girl pose spritesheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 90
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: girl pose spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 659
+        width: 276
+        height: 239
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8d67f0858c6e850800000000000000
+      internalID: 6406027800523233441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl pose spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 659
+        width: 276
+        height: 239
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb082c64afe627a0800000000000000
+      internalID: -6402166330792342596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl pose spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 659
+        width: 276
+        height: 239
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c46334a1ef024b40800000000000000
+      internalID: 5422914363104388292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl pose spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 466
+        width: 218
+        height: 152
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9f5754bc89716f0800000000000000
+      internalID: -713934017103791677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl pose spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 466
+        width: 218
+        height: 152
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3355eab0c9fc06c30800000000000000
+      internalID: 4350705509157721395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl pose spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 466
+        width: 218
+        height: 152
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05013f3bb1401d690800000000000000
+      internalID: -7579272180858154928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl pose spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 299
+        width: 278
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d123215f2f333960800000000000000
+      internalID: 7580472070251946454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl pose spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 297
+        width: 278
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84611ec1d8b4a17b0800000000000000
+      internalID: -5252802945927276984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl pose spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 300
+        width: 278
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e7de8b6d9a7b2440800000000000000
+      internalID: 4912154635110635495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl pose spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 45
+        width: 142
+        height: 191
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd67a3067a030660800000000000000
+      internalID: 7350730518782504379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl pose spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 34
+        width: 142
+        height: 191
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fecc5dc4d7ba36a0800000000000000
+      internalID: -6468655790157934864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl pose spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 56
+        width: 142
+        height: 191
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e637093e18ba2aaa0800000000000000
+      internalID: -6151165566677650578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 66d834015dc1f43dcbc90d99c62a3d6d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      girl pose spritesheet_0: 6406027800523233441
+      girl pose spritesheet_1: -6402166330792342596
+      girl pose spritesheet_10: -6468655790157934864
+      girl pose spritesheet_11: -6151165566677650578
+      girl pose spritesheet_2: 5422914363104388292
+      girl pose spritesheet_3: -713934017103791677
+      girl pose spritesheet_4: 4350705509157721395
+      girl pose spritesheet_5: -7579272180858154928
+      girl pose spritesheet_6: 7580472070251946454
+      girl pose spritesheet_7: -5252802945927276984
+      girl pose spritesheet_8: 4912154635110635495
+      girl pose spritesheet_9: 7350730518782504379
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
