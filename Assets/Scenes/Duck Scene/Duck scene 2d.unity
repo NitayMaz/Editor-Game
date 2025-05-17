@@ -152,6 +152,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6310103778778480190, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
+      propertyPath: minDurationForClip
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310103778778480190, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: 'tracks.Array.data[1]'
       value: 
       objectReference: {fileID: 1998783871}
