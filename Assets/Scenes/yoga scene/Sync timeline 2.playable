@@ -320,7 +320,7 @@ MonoBehaviour:
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
-  m_RemoveStartOffset: 1
+  m_RemoveStartOffset: 0
   m_ApplyFootIK: 0
   m_Loop: 0
   m_Version: 1
@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: 1d17a2a88b065445d9bb95b2d155d782, type: 2}
+  m_Clip: {fileID: 7400000, guid: 8dd61ba22a36840148077e80b6918c5a, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
@@ -359,7 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: 85195f0bc06744278aae330d0e12cc74, type: 2}
+  m_Clip: {fileID: 7400000, guid: 93c91117f9fdf41879194319ed7195f7, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
@@ -1049,12 +1049,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Version: 0
   m_Tracks:
+  - {fileID: 8366429010673239781}
   - {fileID: -7812370087797595295}
   - {fileID: -1664917589274946648}
   - {fileID: -2641016536320675873}
   - {fileID: 519308310013537686}
   - {fileID: 8307932407437115428}
-  - {fileID: 8366429010673239781}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 30
@@ -1376,7 +1376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: 6ba71e81bb95743bfa920b89c0117e90, type: 2}
+  m_Clip: {fileID: 7400000, guid: c01167d081e274b7fbaac7c65581c1ba, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
@@ -1398,7 +1398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: de5e2c545a15c4bfab7b9d01d2f68c52, type: 2}
+  m_Clip: {fileID: 7400000, guid: d02845adfc0184ed4b42df36d6fdff7e, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
@@ -1469,7 +1469,7 @@ MonoBehaviour:
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
-  m_RemoveStartOffset: 1
+  m_RemoveStartOffset: 0
   m_ApplyFootIK: 0
   m_Loop: 0
   m_Version: 1
@@ -1633,7 +1633,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: instructor pose1
+    m_DisplayName: fakatza pose1
   - m_Version: 1
     m_Start: 2.6666666666666665
     m_ClipIn: 0.033333333333332334
@@ -1702,7 +1702,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: instructor pose2
+    m_DisplayName: fakatza pose2
   - m_Version: 1
     m_Start: 5.3
     m_ClipIn: 0
@@ -1753,7 +1753,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: instructor pose3
+    m_DisplayName: fakatza pose3
   - m_Version: 1
     m_Start: 8.366666666666665
     m_ClipIn: 0
@@ -1822,7 +1822,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 0
-    m_DisplayName: instructor pose4
+    m_DisplayName: fakatza pose4
   m_Markers:
     m_Objects: []
   m_InfiniteClipPreExtrapolation: 0
@@ -2105,7 +2105,7 @@ MonoBehaviour:
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
-  m_RemoveStartOffset: 1
+  m_RemoveStartOffset: 0
   m_ApplyFootIK: 0
   m_Loop: 0
   m_Version: 1
@@ -2127,7 +2127,7 @@ MonoBehaviour:
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
-  m_RemoveStartOffset: 1
+  m_RemoveStartOffset: 0
   m_ApplyFootIK: 0
   m_Loop: 0
   m_Version: 1
