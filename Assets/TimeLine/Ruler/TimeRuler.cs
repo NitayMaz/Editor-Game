@@ -51,7 +51,6 @@ public class TimeRuler : MonoBehaviour
         // position small ticks, -0.001f is to avoid floating point precision errors
         for (float i = smallTickFrequency; i < timeCovered - 0.001f; i += smallTickFrequency)
         {
-            Debug.Log("small tick at " + i);
             float tickXPos = TimeLine.Instance.GetXPositionForTime(i);
             if (bigTickIndices.Contains(TimeLine.SnapTo(i, 0.01f)))
             {

@@ -161,7 +161,6 @@ GameObject:
   - component: {fileID: 7995377358996654131}
   - component: {fileID: 8713234255133472900}
   - component: {fileID: 2074126602498651617}
-  - component: {fileID: 61466845664329956}
   m_Layer: 5
   m_Name: track rectangle
   m_TagString: Untagged
@@ -260,10 +259,7 @@ MonoBehaviour:
   entireClipTransform: {fileID: 1623261229305128124}
   clipHandle: {fileID: 432371537136355994}
   text: {fileID: 5911023362259718490}
-  snapPace: 1
-  paceJumps: 0.1
   minMovementToDrag: 0.1
-  applyColor: 1
 --- !u!61 &2074126602498651617
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -310,22 +306,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.7980433, y: 0.6333333}
   m_EdgeRadius: 0
---- !u!114 &61466845664329956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4804306696975934928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cd6ec502ec2bc14797f6a036a83453d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 0.35686275, g: 0.35686275, b: 0.35686275, a: 1}
-  outlineWidth: 3
-  outlineColorClicked: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidthClicked: 7
 --- !u!1 &7732691730566119981
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,12 +23,7 @@ public class UIManager : MonoBehaviour
 
     public void CutButtonClicked()
     {
-        TimeLine.Instance.CutSelectedClip();
-    }
-    
-    public void DeleteButtonClicked()
-    {
-        TimeLine.Instance.DeleteSelectedClip();
+        MyCursor.Instance?.CutButtonClicked();
     }
 
     public void ResetClicked()

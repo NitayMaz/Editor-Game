@@ -1601,10 +1601,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7781678444132716059, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
-      propertyPath: UICamera
-      value: 
-      objectReference: {fileID: 314550106}
     - target: {fileID: 8795488037287717010, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
       propertyPath: m_Name
       value: Cursor

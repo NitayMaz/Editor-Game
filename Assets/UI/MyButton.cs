@@ -15,10 +15,10 @@ public class MyButton : MonoBehaviour
 
     public void OnMouseDown()
     {
-        MyCursor.Instance?.ButtonClicked();
         switch (buttonType)
         {
             case buttonType.PlayPause:
+                MyCursor.Instance?.ButtonClicked();
                 UIManager.Instance.PlayPauseButtonClicked();
                 break;
             case buttonType.Cut:
@@ -26,6 +26,7 @@ public class MyButton : MonoBehaviour
                 animator.SetTrigger("IsPressed");
                 break;
             case buttonType.Reset:
+                MyCursor.Instance?.ButtonClicked();
                 UIManager.Instance.ResetClicked();
                 animator.SetTrigger("IsPressed");
                 break;
