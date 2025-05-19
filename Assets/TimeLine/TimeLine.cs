@@ -89,7 +89,7 @@ public class TimeLine : MonoBehaviour
         isPlaying = false;
         if (sceneCoroutine != null)
             StopCoroutine(sceneCoroutine);
-        UIManager.Instance.ChangeToPlayButton();
+        TimelineUIManager.Instance.ChangeToPlayButton();
         //snapping
         currentTime = SnapTo(currentTime, snappingJump);
         PositionPointerHead(GetXPositionForTime(currentTime));
@@ -118,7 +118,7 @@ public class TimeLine : MonoBehaviour
         currentTime = maxTrackLength;
         MovePointerHeadX(GetXPositionForTime(currentTime));
         ApplyTimelinePosition(currentTime);
-        UIManager.Instance.ChangeToPlayButton();
+        TimelineUIManager.Instance.ChangeToPlayButton();
         isPlaying = false;
         if(StageManager.Instance)
             StageManager.Instance.TimeLineDone();

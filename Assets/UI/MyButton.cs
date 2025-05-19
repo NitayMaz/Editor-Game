@@ -19,15 +19,15 @@ public class MyButton : MonoBehaviour
         {
             case buttonType.PlayPause:
                 MyCursor.Instance?.ButtonClicked();
-                UIManager.Instance.PlayPauseButtonClicked();
+                TimelineUIManager.Instance.PlayPauseButtonClicked();
                 break;
             case buttonType.Cut:
-                UIManager.Instance.CutButtonClicked();
+                TimelineUIManager.Instance.CutButtonClicked();
                 animator.SetTrigger("IsPressed");
                 break;
             case buttonType.Reset:
                 MyCursor.Instance?.ButtonClicked();
-                UIManager.Instance.ResetClicked();
+                TimelineUIManager.Instance.ResetClicked();
                 animator.SetTrigger("IsPressed");
                 break;
             default:

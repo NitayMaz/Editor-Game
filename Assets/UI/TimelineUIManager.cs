@@ -1,10 +1,8 @@
-using System;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+public class TimelineUIManager : MonoBehaviour
 {
-    public static UIManager Instance;
+    public static TimelineUIManager Instance;
     [SerializeField] private GameObject playPauseButton;
     private Animator playPauseButtonAnimator;
     private bool playButtonShowing = true;

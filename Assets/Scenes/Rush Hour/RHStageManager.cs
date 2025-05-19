@@ -7,4 +7,10 @@ public class RHStageManager : StageManager
         base.StageFailed();
         TimeLine.Instance.StopPlaying();
     }
+    
+    public override void StageSuccess()
+    {
+        base.StageSuccess();
+        ShowStageSuccessUI();
+    }
 }
