@@ -82,6 +82,8 @@ public class TimeLine : MonoBehaviour
     {
         currentTime = 0;
         PositionPointerHead(leftEdgeXvalue);
+        if(StageManager.Instance)
+            StageManager.Instance.StageReset();
     }
 
     public void StopPlaying()

@@ -461,6 +461,10 @@ PrefabInstance:
       propertyPath: smallTickFrequency
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 5246320862991685358, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5568775703685376976, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 1
@@ -508,6 +512,10 @@ PrefabInstance:
     - target: {fileID: 6308058634740011375, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_LocalScale.x
       value: 19.083801
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520405141492457513, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6701152617922213559, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_LocalPosition.x

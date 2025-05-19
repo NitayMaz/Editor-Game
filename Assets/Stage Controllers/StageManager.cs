@@ -30,6 +30,11 @@ public class StageManager : MonoBehaviour
         }
     }
 
+    public virtual void StageReset()
+    {
+        
+    }
+
     public virtual void TimeLineDone()
     {
         
