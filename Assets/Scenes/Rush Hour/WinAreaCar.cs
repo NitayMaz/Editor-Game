@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class WinArea : MonoBehaviour
+public class WinAreaCar : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
