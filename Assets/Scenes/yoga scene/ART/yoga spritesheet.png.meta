@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 2458f5b345b3b4139a84b97c36484429
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5095491646074991659
+    second: yoga spritesheet_0
+  - first:
+      213: -1237936997769484539
+    second: yoga spritesheet_1
+  - first:
+      213: -3535716011914254071
+    second: yoga spritesheet_2
+  - first:
+      213: -3766335688073396824
+    second: yoga spritesheet_3
+  - first:
+      213: 295280115527873546
+    second: yoga spritesheet_4
+  - first:
+      213: -4372275354687717687
+    second: yoga spritesheet_5
+  - first:
+      213: -7939741686529336102
+    second: yoga spritesheet_6
+  - first:
+      213: -25448614116401521
+    second: yoga spritesheet_7
+  - first:
+      213: -7166499206929114086
+    second: yoga spritesheet_8
+  - first:
+      213: -4763176431010713787
+    second: yoga spritesheet_9
+  - first:
+      213: 9216884263480460740
+    second: yoga spritesheet_10
+  - first:
+      213: 6835794602318520811
+    second: yoga spritesheet_11
+  - first:
+      213: -4898268946309248672
+    second: yoga spritesheet_12
+  - first:
+      213: 1153186633808811443
+    second: yoga spritesheet_13
+  - first:
+      213: 315669506299396017
+    second: yoga spritesheet_14
+  - first:
+      213: -3460174287004689709
+    second: yoga spritesheet_15
+  - first:
+      213: -2833111400275088451
+    second: yoga spritesheet_16
+  - first:
+      213: 2281851108224591556
+    second: yoga spritesheet_17
+  - first:
+      213: -2931050943802120927
+    second: yoga spritesheet_18
+  - first:
+      213: 883888333842548005
+    second: yoga spritesheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: yoga spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1277
+        width: 134
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6076c93bc11bf436c99fbb615231e90d
+      internalID: -1620632549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1277
+        width: 272
+        height: 118
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012451fe87f444a7f98ed20363838a48
+      internalID: 318549149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 1277
+        width: 241
+        height: 166
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2df6924631a348cb981471f90657cc6
+      internalID: 1686082202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1277
+        width: 285
+        height: 253
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246b1794a17d44076a4e3978d1d8f744
+      internalID: -310728781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 970
+        width: 134
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd5572e5d4b1413a91601af232ca1bc
+      internalID: -483834295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 970
+        width: 272
+        height: 118
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104680b86efac46a7b02e97e8126d236
+      internalID: 1063956832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 970
+        width: 241
+        height: 166
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de33692432145430c9e2f198324536f1
+      internalID: -1694816251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 970
+        width: 285
+        height: 253
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90b6110f8f7a4022a3966e32445501c
+      internalID: 23237149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 682
+        width: 142
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a205a325c74410ca3cd2b96f5a85ca
+      internalID: -1048741388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 650
+        width: 272
+        height: 121
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc3db182753a41188699ec224cfa021
+      internalID: 844926261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 632
+        width: 244
+        height: 165
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872b4ba22d2c84b0ca9ed46e0b705dce
+      internalID: -1218314074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 648
+        width: 285
+        height: 253
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2afa0f1d469d4526b9acd7c4f9985ec
+      internalID: -1665217810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 351
+        width: 134
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd6b6fe5c71e40bb82c07cde3d2661c
+      internalID: 1776319550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 359
+        width: 272
+        height: 121
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affee06d0c4884eda967bb04c68fedc8
+      internalID: -667512708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 352
+        width: 208
+        height: 165
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eea9801bc51041f890fef9dae79128e
+      internalID: -1872458609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 343
+        width: 285
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4184bc478153045cd8d973f7015b60f3
+      internalID: -1102212611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 45
+        width: 134
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc8a8eac00eb41bb8b499d4dcfb96d0
+      internalID: 1978770126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 45
+        width: 272
+        height: 114
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1138b582e922b4f42885e03d159c7965
+      internalID: 322053488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 45
+        width: 208
+        height: 165
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4117f7afa0ba45f09ecc8afee88e98a
+      internalID: 584945490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 45
+        width: 285
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb7f04321ced43ae8286e8d30735cdc
+      internalID: -410951655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e7177dbaa4cf545168d0c8c3256c82fd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      yoga spritesheet_0: -1620632549
+      yoga spritesheet_1: 318549149
+      yoga spritesheet_10: -1218314074
+      yoga spritesheet_11: -1665217810
+      yoga spritesheet_12: 1776319550
+      yoga spritesheet_13: -667512708
+      yoga spritesheet_14: -1872458609
+      yoga spritesheet_15: -1102212611
+      yoga spritesheet_16: 1978770126
+      yoga spritesheet_17: 322053488
+      yoga spritesheet_18: 584945490
+      yoga spritesheet_19: -410951655
+      yoga spritesheet_2: 1686082202
+      yoga spritesheet_3: -310728781
+      yoga spritesheet_4: -483834295
+      yoga spritesheet_5: 1063956832
+      yoga spritesheet_6: -1694816251
+      yoga spritesheet_7: 23237149
+      yoga spritesheet_8: -1048741388
+      yoga spritesheet_9: 844926261
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

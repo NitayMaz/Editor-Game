@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 0fdeb3a5613514736bf002c5399b6e06
+guid: 4a3b147ea5160427194ee2b0acdcae15
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 558674731984879258
-    second: tables bottom_0
+      213: -3920859407467332807
+    second: soccer scene spritesheet_0
   - first:
-      213: 4859911011772179310
-    second: tables bottom_1
+      213: 3135981226293185548
+    second: soccer scene spritesheet_1
   - first:
-      213: 8677354851945494345
-    second: tables bottom_2
+      213: 1375334798258762463
+    second: soccer scene spritesheet_2
+  - first:
+      213: -2110223603965635054
+    second: soccer scene spritesheet_3
+  - first:
+      213: 8409695131288185330
+    second: soccer scene spritesheet_4
+  - first:
+      213: -1523179989050641533
+    second: soccer scene spritesheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +61,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,67 +115,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tables bottom_0
+      name: soccer scene spritesheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 415
-        height: 184
+        x: 69
+        y: 317
+        width: 96
+        height: 233
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9ef1f075bfc0c700800000000000000
-      internalID: 558674731984879258
+      spriteID: 93b39ab742f4699c0800000000000000
+      internalID: -3920859407467332807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tables bottom_1
+      name: soccer scene spritesheet_1
       rect:
         serializedVersion: 2
-        x: 558
-        y: 0
-        width: 423
-        height: 184
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 179
+        y: 317
+        width: 194
+        height: 236
+      alignment: 9
+      pivot: {x: 0.5567651, y: 0.5000001}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e63a0b8f05fd17340800000000000000
-      internalID: 4859911011772179310
+      spriteID: c0ccf776f4e358b20800000000000000
+      internalID: 3135981226293185548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tables bottom_2
+      name: soccer scene spritesheet_2
       rect:
         serializedVersion: 2
-        x: 1103
-        y: 0
-        width: 422
-        height: 184
+        x: 74
+        y: 107
+        width: 46
+        height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 947393463482c6870800000000000000
-      internalID: 8677354851945494345
+      spriteID: fd2727156bb261310800000000000000
+      internalID: 1375334798258762463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccer scene spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 50
+        width: 110
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216dbf800daf6b2e0800000000000000
+      internalID: -2110223603965635054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccer scene spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 45
+        width: 76
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f9a3c95a2d35b470800000000000000
+      internalID: 8409695131288185330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccer scene spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 117
+        width: 84
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38337afbed39cdae0800000000000000
+      internalID: -1523179989050641533
       vertices: []
       indices: 
       edges: []
@@ -175,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: a2c893f19f0724859b44286053fee2e6
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tables bottom_0: 558674731984879258
-      tables bottom_1: 4859911011772179310
-      tables bottom_2: 8677354851945494345
+      soccer scene spritesheet_0: -3920859407467332807
+      soccer scene spritesheet_1: 3135981226293185548
+      soccer scene spritesheet_2: 1375334798258762463
+      soccer scene spritesheet_3: -2110223603965635054
+      soccer scene spritesheet_4: 8409695131288185330
+      soccer scene spritesheet_5: -1523179989050641533
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
