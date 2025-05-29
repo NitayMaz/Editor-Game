@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 46a1f8e3f13d340ebb4996fa33883155
+guid: 0fdeb3a5613514736bf002c5399b6e06
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2861890589472816092
-    second: matress_0
+      213: 558674731984879258
+    second: tables bottom_0
   - first:
-      213: 3484489067142895738
-    second: matress_1
+      213: 4859911011772179310
+    second: tables bottom_1
   - first:
-      213: 2611447656905896585
-    second: matress_2
-  - first:
-      213: 8942962906826183661
-    second: matress_3
+      213: 8677354851945494345
+    second: tables bottom_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,12 +52,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 90
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,79 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: matress_0
-      rect:
-        serializedVersion: 2
-        x: 343
-        y: 364
-        width: 468
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cdb7f83045a77b720800000000000000
-      internalID: 2861890589472816092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: matress_1
+      name: tables bottom_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 198
-        width: 474
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a78d8ce48546b5030800000000000000
-      internalID: 3484489067142895738
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: matress_2
-      rect:
-        serializedVersion: 2
-        x: 669
-        y: 196
-        width: 464
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 982f663dec9bd3420800000000000000
-      internalID: 2611447656905896585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: matress_3
-      rect:
-        serializedVersion: 2
-        x: 257
         y: 0
-        width: 547
-        height: 103
+        width: 415
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de39ed4c169cb1c70800000000000000
-      internalID: 8942962906826183661
+      spriteID: a9ef1f075bfc0c700800000000000000
+      internalID: 558674731984879258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tables bottom_1
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 0
+        width: 423
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e63a0b8f05fd17340800000000000000
+      internalID: 4859911011772179310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tables bottom_2
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 0
+        width: 422
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947393463482c6870800000000000000
+      internalID: 8677354851945494345
       vertices: []
       indices: 
       edges: []
@@ -200,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -209,11 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      matress_0: 2861890589472816092
-      matress_1: 3484489067142895738
-      matress_2: 2611447656905896585
-      matress_3: 8942962906826183661
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

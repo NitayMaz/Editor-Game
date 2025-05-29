@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: d47da5cc6cb194702ba03c3a91eb8ebb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1555616330561752966
+    second: yoga scene foreground_0
+  - first:
+      213: -119018476550551810
+    second: yoga scene foreground_1
+  - first:
+      213: -5079843818066988637
+    second: yoga scene foreground_2
+  - first:
+      213: 3947745346055953749
+    second: yoga scene foreground_3
+  - first:
+      213: 6047010096746971001
+    second: yoga scene foreground_4
+  - first:
+      213: 6674896611458968038
+    second: yoga scene foreground_5
+  - first:
+      213: -6892769401087423812
+    second: yoga scene foreground_6
+  - first:
+      213: 5992751012514522512
+    second: yoga scene foreground_7
+  - first:
+      213: 6932094017843816012
+    second: yoga scene foreground_8
+  - first:
+      213: -3167653424077162821
+    second: yoga scene foreground_9
+  - first:
+      213: -1202207769079340259
+    second: yoga scene foreground_10
+  - first:
+      213: -251556167026671690
+    second: yoga scene foreground_11
+  - first:
+      213: 3866450944269074923
+    second: yoga scene foreground_12
+  - first:
+      213: 3869727743144740930
+    second: yoga scene foreground_13
+  - first:
+      213: -7850064988161939574
+    second: yoga scene foreground_14
+  - first:
+      213: -6320156411291816942
+    second: yoga scene foreground_15
+  - first:
+      213: -8225412255990029795
+    second: yoga scene foreground_16
+  - first:
+      213: 6799148932995214618
+    second: yoga scene foreground_17
+  - first:
+      213: 7480367362013756048
+    second: yoga scene foreground_18
+  - first:
+      213: 4531465708062636790
+    second: yoga scene foreground_19
+  - first:
+      213: -2124781793981386810
+    second: yoga scene foreground_20
+  - first:
+      213: 3715200475119062457
+    second: yoga scene foreground_21
+  - first:
+      213: 18526739798457723
+    second: yoga scene foreground_22
+  - first:
+      213: 3338304224269284757
+    second: yoga scene foreground_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 90
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: yoga scene foreground_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 265
+        height: 760
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70f11a7037596ae0800000000000000
+      internalID: -1555616330561752966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_1
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 725
+        width: 134
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef60f7f7359295ef0800000000000000
+      internalID: -119018476550551810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_2
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 717
+        width: 193
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a137ad26f4c089b0800000000000000
+      internalID: -5079843818066988637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_3
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 714
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ddd57e97539c630800000000000000
+      internalID: 3947745346055953749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_4
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 675
+        width: 113
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97fbdc105ab4be350800000000000000
+      internalID: 6047010096746971001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_5
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 664
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9687e5a1ff1ac50800000000000000
+      internalID: 6674896611458968038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_6
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 622
+        width: 58
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba8089cfb6f750a0800000000000000
+      internalID: -6892769401087423812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_7
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 610
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0956a408b478a2350800000000000000
+      internalID: 5992751012514522512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_8
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 596
+        width: 63
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46e03b08ceb33060800000000000000
+      internalID: 6932094017843816012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_9
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 399
+        width: 159
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb6b4566efb3a04d0800000000000000
+      internalID: -3167653424077162821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_10
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 412
+        width: 116
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13afc15766e05fe0800000000000000
+      internalID: -1202207769079340259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_11
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 409
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bff057bffa428cf0800000000000000
+      internalID: -251556167026671690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_12
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 389
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1c1a206a468a530800000000000000
+      internalID: 3866450944269074923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_13
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 383
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248cd9331e804b530800000000000000
+      internalID: 3869727743144740930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_14
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 377
+        width: 63
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8760e41c77fe0390800000000000000
+      internalID: -7850064988161939574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_15
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 0
+        width: 388
+        height: 596
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c2b04ca3b4a48a0800000000000000
+      internalID: -6320156411291816942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_16
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 237
+        width: 95
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12e19e122779dd80800000000000000
+      internalID: -8225412255990029795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_17
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 237
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1de72e5eed6b5e50800000000000000
+      internalID: 6799148932995214618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_18
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 244
+        width: 84
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a714aab7a9fc760800000000000000
+      internalID: 7480367362013756048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_19
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 231
+        width: 134
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6faffe08d0003ee30800000000000000
+      internalID: 4531465708062636790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_20
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 252
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cfa58847324382e0800000000000000
+      internalID: -2124781793981386810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_21
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 252
+        width: 55
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd85dce52b0f8330800000000000000
+      internalID: 3715200475119062457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_22
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 40
+        width: 112
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d7880c8f1d14000800000000000000
+      internalID: 18526739798457723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yoga scene foreground_23
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 37
+        width: 152
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595b1cf310a045e20800000000000000
+      internalID: 3338304224269284757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      yoga scene foreground_0: -1555616330561752966
+      yoga scene foreground_1: -119018476550551810
+      yoga scene foreground_10: -1202207769079340259
+      yoga scene foreground_11: -251556167026671690
+      yoga scene foreground_12: 3866450944269074923
+      yoga scene foreground_13: 3869727743144740930
+      yoga scene foreground_14: -7850064988161939574
+      yoga scene foreground_15: -6320156411291816942
+      yoga scene foreground_16: -8225412255990029795
+      yoga scene foreground_17: 6799148932995214618
+      yoga scene foreground_18: 7480367362013756048
+      yoga scene foreground_19: 4531465708062636790
+      yoga scene foreground_2: -5079843818066988637
+      yoga scene foreground_20: -2124781793981386810
+      yoga scene foreground_21: 3715200475119062457
+      yoga scene foreground_22: 18526739798457723
+      yoga scene foreground_23: 3338304224269284757
+      yoga scene foreground_3: 3947745346055953749
+      yoga scene foreground_4: 6047010096746971001
+      yoga scene foreground_5: 6674896611458968038
+      yoga scene foreground_6: -6892769401087423812
+      yoga scene foreground_7: 5992751012514522512
+      yoga scene foreground_8: 6932094017843816012
+      yoga scene foreground_9: -3167653424077162821
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
