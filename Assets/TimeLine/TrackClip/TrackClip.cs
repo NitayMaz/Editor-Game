@@ -153,12 +153,13 @@ public class TrackClip : MonoBehaviour
 
     public void CutClip(float currentTime)
     {
+        //snapping
+        currentTime = TimeLine.SnapTo(currentTime, TimeLine.Instance.snappingJump);
         float firstPartDuration = currentTime - startTime;
         if (firstPartDuration < TimeLine.Instance.minDurationForClip ||
             duration - firstPartDuration < TimeLine.Instance.minDurationForClip)
         {
             Debug.Log("clip is too short to cut, you can change it under the timeline object");
-            TimeLine.Instance.SelectTrackClip(null);
             return;
         }
 
@@ -184,11 +185,6 @@ public class TrackClip : MonoBehaviour
             startTime = startTime + firstPartDuration,
         };
         parentTrack.ReplaceCutClip(this, firstPartData, secondPartData);
-    }
-
-    public void DeleteClip()
-    {
-        parentTrack.DeleteSelectedClip(this);
     }
 
     private void OnMouseDown()

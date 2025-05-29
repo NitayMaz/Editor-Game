@@ -174,7 +174,6 @@ public class Track : MonoBehaviour
 
         clips.InsertRange(clipInd, new[] { firstPartClip, secondPartClip });
         DeleteSelectedClip(replacedClip);
-        TimeLine.Instance.SelectTrackClip(null);
     }
 
     public void DeleteSelectedClip(TrackClip clip)

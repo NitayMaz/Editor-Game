@@ -461,6 +461,10 @@ PrefabInstance:
       propertyPath: smallTickFrequency
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 5246320862991685358, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5568775703685376976, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 1
@@ -509,6 +513,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 19.083801
       objectReference: {fileID: 0}
+    - target: {fileID: 6520405141492457513, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6701152617922213559, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.488
@@ -528,34 +536,6 @@ PrefabInstance:
     - target: {fileID: 7737031680851976569, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: 'tracks.Array.data[2]'
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7744942761890935489, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

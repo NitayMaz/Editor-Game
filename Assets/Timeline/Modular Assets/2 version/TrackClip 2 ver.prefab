@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 6833111257106531848}
   - component: {fileID: 7151892682225527450}
   - component: {fileID: 8492991101227175005}
-  - component: {fileID: 4832921894505090649}
   m_Layer: 5
   m_Name: track oval
-  m_TagString: Untagged
+  m_TagString: clip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -108118519
   m_SortingLayer: 1
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: c9ad682e2fd2041cd98c2f2b6f65aaee, type: 3}
   m_Color: {r: 1, g: 0.5518868, b: 0.5518868, a: 1}
   m_FlipX: 0
@@ -111,8 +110,6 @@ MonoBehaviour:
   entireClipTransform: {fileID: 6213148794238288879}
   clipHandle: {fileID: 3810336550525287892}
   text: {fileID: 4307772230060184015}
-  snapPace: 1
-  paceJumps: 0.1
   minMovementToDrag: 0.1
 --- !u!61 &8492991101227175005
 BoxCollider2D:
@@ -160,23 +157,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.24921, y: 1.203789}
   m_EdgeRadius: 0
---- !u!114 &4832921894505090649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2182467108400288199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cd6ec502ec2bc14797f6a036a83453d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 0.35686275, g: 0.35686275, b: 0.35686275, a: 1}
-  outlineWidth: 3
-  outlineColorClicked: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidthClicked: 7
-  _mainTexture2D: {fileID: 0}
 --- !u!1 &3711666386789079083
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,7 +493,7 @@ GameObject:
   - component: {fileID: 6213148794238288879}
   m_Layer: 5
   m_Name: TrackClip 2 ver
-  m_TagString: Untagged
+  m_TagString: clip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

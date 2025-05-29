@@ -15,18 +15,19 @@ public class MyButton : MonoBehaviour
 
     public void OnMouseDown()
     {
-        MyCursor.Instance?.ButtonClicked();
         switch (buttonType)
         {
             case buttonType.PlayPause:
-                UIManager.Instance.PlayPauseButtonClicked();
+                MyCursor.Instance?.ButtonClicked();
+                TimelineUIManager.Instance.PlayPauseButtonClicked();
                 break;
             case buttonType.Cut:
-                UIManager.Instance.CutButtonClicked();
+                TimelineUIManager.Instance.CutButtonClicked();
                 animator.SetTrigger("IsPressed");
                 break;
             case buttonType.Reset:
-                UIManager.Instance.ResetClicked();
+                MyCursor.Instance?.ButtonClicked();
+                TimelineUIManager.Instance.ResetClicked();
                 animator.SetTrigger("IsPressed");
                 break;
             default:

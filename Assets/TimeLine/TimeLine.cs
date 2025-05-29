@@ -26,7 +26,6 @@ public class TimeLine : MonoBehaviour
     
     [Tooltip("keep snapping in 5s so like either 0.5, 0.1, 0.05, 0.01 etc")]
     public float snappingJump = 0.1f;
-    private TrackClip selectedClip;
     public float minDurationForClip = 0.5f;
     
     private void Awake()
@@ -83,6 +82,8 @@ public class TimeLine : MonoBehaviour
     {
         currentTime = 0;
         PositionPointerHead(leftEdgeXvalue);
+        if(StageManager.Instance)
+            StageManager.Instance.StageReset();
     }
 
     public void StopPlaying()
@@ -90,7 +91,7 @@ public class TimeLine : MonoBehaviour
         isPlaying = false;
         if (sceneCoroutine != null)
             StopCoroutine(sceneCoroutine);
-        UIManager.Instance.ChangeToPlayButton();
+        TimelineUIManager.Instance.ChangeToPlayButton();
         //snapping
         currentTime = SnapTo(currentTime, snappingJump);
         PositionPointerHead(GetXPositionForTime(currentTime));
@@ -119,7 +120,7 @@ public class TimeLine : MonoBehaviour
         currentTime = maxTrackLength;
         MovePointerHeadX(GetXPositionForTime(currentTime));
         ApplyTimelinePosition(currentTime);
-        UIManager.Instance.ChangeToPlayButton();
+        TimelineUIManager.Instance.ChangeToPlayButton();
         isPlaying = false;
         if(StageManager.Instance)
             StageManager.Instance.TimeLineDone();
@@ -167,6 +168,11 @@ public class TimeLine : MonoBehaviour
         return leftEdgeXvalue + (time * trackLengthFor1Second);
     }
     
+    public float GetTimeForXPosition(float xValue)
+    {
+        return (xValue - leftEdgeXvalue) / trackLengthFor1Second;
+    }
+    
     private void CancelInteractions()
     {
         foreach (var track in tracks)
@@ -195,25 +201,6 @@ public class TimeLine : MonoBehaviour
     public void ClipUpdated()
     {
         ApplyTimelinePosition(currentTime);
-    }
-
-    public void SelectTrackClip(TrackClip clip) // called from clip outline
-    {
-        selectedClip?.GetComponent<ClipOutline>().ResetOutline();
-        selectedClip = clip;
-    }
-
-    public void CutSelectedClip()
-    {
-        if (!selectedClip || !selectedClip.IsActive(currentTime) || isPlaying)
-            return;
-        selectedClip.CutClip(currentTime);
-    }
-
-    public void DeleteSelectedClip()
-    {
-        selectedClip?.DeleteClip();
-        SelectTrackClip(null);
     }
     
     public static float SnapTo(float value, float snapValue)

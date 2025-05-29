@@ -13,6 +13,7 @@ public class Waiter_WaiterScene : TrackControlled
         waiterCollisionEffect.Play(); //particle!
         Debug.Log(other.name.ToString());
         StartInteraction();
+        StageManager.Instance?.StageFailed();
     }
 
 
@@ -22,7 +23,6 @@ public class Waiter_WaiterScene : TrackControlled
         base.StartInteraction();
         animator.enabled = false;
         transform.position = pos;
-        Debug.Log(pos);
     }
 
     public override void StopInteraction()
