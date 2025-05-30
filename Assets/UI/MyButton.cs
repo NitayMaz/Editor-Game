@@ -5,7 +5,7 @@ public enum buttonType
 {
     PlayPause,
     Cut,
-    Reset
+    Undo
 }
 
 public class MyButton : MonoBehaviour
@@ -25,9 +25,9 @@ public class MyButton : MonoBehaviour
                 TimelineUIManager.Instance.CutButtonClicked();
                 animator.SetTrigger("IsPressed");
                 break;
-            case buttonType.Reset:
+            case buttonType.Undo:
                 MyCursor.Instance?.ButtonClicked();
-                TimelineUIManager.Instance.ResetClicked();
+                TimelineUIManager.Instance.UndoButtonClicked();
                 animator.SetTrigger("IsPressed");
                 break;
             default:
