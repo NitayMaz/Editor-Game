@@ -26,7 +26,7 @@ public class TrackClip : MonoBehaviour
     private float textOffsetLeft;
 
     [SerializeField] private float minMovementToDrag = 0.1f;
-    private float startDragMouseXPosition;
+    private float startDragMouseXPosition; // for dragging(calculating delta)
     private float startDragClipStartTime;
     private bool isDragging = false;
     private bool clicked = false;
@@ -119,6 +119,11 @@ public class TrackClip : MonoBehaviour
     {
         //calculate new start time, then snap it, and then clamp it so it doesn't go over another clip or out of bounds
         float newStartTime = startDragClipStartTime + deltaX / TimeLine.Instance.trackLengthFor1Second;
+        ChangeClipStartTime(newStartTime);
+    }
+    
+    private void ChangeClipStartTime(float newStartTime)
+    {
         newStartTime = TimeLine.SnapTo(newStartTime, TimeLine.Instance.snappingJump);
         newStartTime = Mathf.Clamp(newStartTime, parentTrack.GetPreviousClipEndTime(this),
             parentTrack.GetNextClipStartTime(this) - duration);
@@ -227,6 +232,14 @@ public class TrackClip : MonoBehaviour
         if (isDragging && MyCursor.Instance != null)
             MyCursor.Instance.SwitchToNormalCursor();
         clicked = false;
-        isDragging = false;
+        if (isDragging)
+        {
+            isDragging = false;
+            UndoManager.Push(() =>
+            {
+                Debug.Log("Undoing clip drag");
+                ChangeClipStartTime(startDragClipStartTime);
+            });
+        }
     }
 }

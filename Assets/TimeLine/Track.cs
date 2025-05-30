@@ -154,7 +154,13 @@ public class Track : MonoBehaviour
             return;
         }
         Color clipColor = replacedClip.GetComponentInChildren<SpriteRenderer>().color;
-        //ugly ass code, but it's better than starting to separate the init function rn
+        var (firstNewClip, secondNewClip) = CreateCutClips(firstPart, secondPart, clipColor, clipInd);
+        RemoveSelectedClip(replacedClip);
+        PushCutUndo(firstNewClip, secondNewClip, replacedClip);
+    }
+
+    private (TrackClip first, TrackClip second) CreateCutClips(TrackClipInitData firstPart, TrackClipInitData secondPart, Color clipColor, int insertIndex)
+    {
         Vector2 firstClipPos = new Vector2(
             transform.position.x + TimeLine.Instance.trackLengthFor1Second * firstPart.startTime,
             transform.position.y);
@@ -170,13 +176,11 @@ public class Track : MonoBehaviour
         secondPartClip.Init(secondPart.animationClip, clipColor, secondPart.duration, secondPart.pace,
             secondPart.startTime,
             secondPart.animationStartPoint, secondPart.animationEndPoint, this);
-        
-
-        clips.InsertRange(clipInd, new[] { firstPartClip, secondPartClip });
-        DeleteSelectedClip(replacedClip);
+        clips.InsertRange(insertIndex, new[] { firstPartClip, secondPartClip });
+        return (firstPartClip, secondPartClip);
     }
 
-    public void DeleteSelectedClip(TrackClip clip)
+    private void RemoveSelectedClip(TrackClip clip)
     {
         if (clips.Count == 1)
         {
@@ -185,8 +189,27 @@ public class Track : MonoBehaviour
         }
 
         clips.Remove(clip);
-        Destroy(clip.transform.parent.gameObject);
+        clip.transform.parent.gameObject.SetActive(false); //disable but don't delete, otherwise this can cause issues with undo
         TimeLine.Instance.ClipUpdated();
+    }
+
+    private void PushCutUndo(TrackClip firstPart, TrackClip secondPart, TrackClip replacedClip)
+    {
+        UndoManager.Push(() =>
+        {
+            Debug.Log("Undoing clip cut");
+            int insertIndex = clips.IndexOf(firstPart);
+            if (insertIndex < 0)
+            {
+                Debug.LogError("Trying to undo clip cut but can't find first cut part!");
+                return;
+            }
+            replacedClip.transform.parent.gameObject.SetActive(true); //enable the replaced clip
+            clips.Insert(insertIndex, replacedClip);
+            RemoveSelectedClip(firstPart);
+            RemoveSelectedClip(secondPart);
+        });
+        
     }
 }
 
