@@ -3932,27 +3932,43 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1355743158591401301, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
       propertyPath: defaultColor.b
-      value: 0.8490566
+      value: 0.972549
       objectReference: {fileID: 0}
     - target: {fileID: 1355743158591401301, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
       propertyPath: defaultColor.g
-      value: 0.64209694
+      value: 0.77254903
       objectReference: {fileID: 0}
     - target: {fileID: 1355743158591401301, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
       propertyPath: defaultColor.r
-      value: 0.23629406
+      value: 0.38039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616468706597252124, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.99717385
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616468706597252124, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0488163
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616468706597252124, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0767
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616468706597252124, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.4035
       objectReference: {fileID: 0}
     - target: {fileID: 4006254966715190512, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
       propertyPath: defaultColor.b
-      value: 0.53333336
+      value: 0.59607846
       objectReference: {fileID: 0}
     - target: {fileID: 4006254966715190512, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
       propertyPath: defaultColor.g
-      value: 0.5882353
+      value: 0.6431373
       objectReference: {fileID: 0}
     - target: {fileID: 4006254966715190512, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
       propertyPath: defaultColor.r
-      value: 0.2627451
+      value: 0.27058825
       objectReference: {fileID: 0}
     - target: {fileID: 4527747321600973589, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
       propertyPath: defaultColor.b
@@ -4013,6 +4029,18 @@ PrefabInstance:
     - target: {fileID: 6428146187535911795, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
       propertyPath: m_Name
       value: TimeLine (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740723500643591026, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5896226
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740723500643591026, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8412409
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740723500643591026, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
