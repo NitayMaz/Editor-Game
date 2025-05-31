@@ -800,10 +800,10 @@ PrefabInstance:
     - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
       propertyPath: m_PlayableAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 0e394e388b7b2416c8721bbdf06f3693, type: 2}
+      objectReference: {fileID: 11400000, guid: acddf31e678ba4f6ca0b813848f1e552, type: 2}
     - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 13
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
       propertyPath: m_SceneBindings.Array.data[7].key
@@ -830,6 +830,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -9091225055666726320, guid: 0e394e388b7b2416c8721bbdf06f3693, type: 2}
     - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: m_SceneBindings.Array.data[13].key
+      value: 
+      objectReference: {fileID: -5002561719173133559, guid: acddf31e678ba4f6ca0b813848f1e552, type: 2}
+    - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: m_SceneBindings.Array.data[14].key
+      value: 
+      objectReference: {fileID: -4428131963991503948, guid: acddf31e678ba4f6ca0b813848f1e552, type: 2}
+    - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
       propertyPath: m_SceneBindings.Array.data[7].value
       value: 
       objectReference: {fileID: 7469445559581513347}
@@ -853,6 +861,14 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[12].value
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: m_SceneBindings.Array.data[13].value
+      value: 
+      objectReference: {fileID: 59772233}
+    - target: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
+      propertyPath: m_SceneBindings.Array.data[14].value
+      value: 
+      objectReference: {fileID: 124594186}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4116721294418857870, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
