@@ -406,15 +406,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4527747321600973589, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: defaultColor.b
-      value: 0.66629606
+      value: 0.53333336
       objectReference: {fileID: 0}
     - target: {fileID: 4527747321600973589, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: defaultColor.g
-      value: 0.6096476
+      value: 0.42745098
       objectReference: {fileID: 0}
     - target: {fileID: 4527747321600973589, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: defaultColor.r
-      value: 0.9433962
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6310103778778480190, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: snappingJump
@@ -654,7 +654,7 @@ GameObject:
   - component: {fileID: 220121678}
   - component: {fileID: 220121677}
   m_Layer: 0
-  m_Name: yoga scene foreground
+  m_Name: ' foreground'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2454,7 +2454,7 @@ Transform:
   m_GameObject: {fileID: 1105067300}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.37, y: 0.45, z: 4.25}
+  m_LocalPosition: {x: -0.23, y: 0.45, z: 4.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3271,7 +3271,7 @@ GameObject:
   - component: {fileID: 1636146850}
   - component: {fileID: 1636146849}
   m_Layer: 0
-  m_Name: yoga scene background
+  m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
