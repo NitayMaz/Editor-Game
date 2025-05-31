@@ -36,6 +36,7 @@ public class TimeLine : MonoBehaviour
             Destroy(this.gameObject);
         }
         Instance = this;
+        UndoManager.Clear(); // clear undo actions from previous scenes
         trackLengthFor1Second = (bgSpriteRenderer.bounds.max.x - bgSpriteRenderer.bounds.min.x) / timeLineSeconds;
         leftEdgeXvalue = bgSpriteRenderer.bounds.min.x;
     }

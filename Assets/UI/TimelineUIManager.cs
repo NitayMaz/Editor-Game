@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimelineUIManager : MonoBehaviour
 {
@@ -27,6 +28,13 @@ public class TimelineUIManager : MonoBehaviour
     public void ResetClicked()
     {
         TimeLine.Instance.ResetLevel();
+    }
+    
+    public void UndoButtonClicked()
+    {
+        if(TimeLine.Instance.isPlaying)
+            return;
+        UndoManager.Undo();
     }
 
     public void PlayPauseButtonClicked()

@@ -4,7 +4,7 @@ public class ClipHandle : MonoBehaviour
 {
     [SerializeField] private TrackClip parentClip;
     [SerializeField] private SpriteRenderer spriteRenderer;
-    
+    private float startDragXPosition;
     
     private void OnMouseDrag()
     {
@@ -18,12 +18,19 @@ public class ClipHandle : MonoBehaviour
     {
         if(MyCursor.Instance!=null)
             MyCursor.Instance.SwitchToHoldingCursor();
+        startDragXPosition = TimeLine.Instance.timeLineCamera.ScreenToWorldPoint(Input.mousePosition).x;
     }
     
     private void OnMouseUp()
     {
         if(MyCursor.Instance != null)
             MyCursor.Instance.SwitchToNormalCursor();
+        //push undo action for stretching
+        UndoManager.Push(() =>
+        {
+            Debug.Log("undoing stretch");
+            parentClip.SetDurationByPosition(startDragXPosition);
+        });
     }
     
 }
