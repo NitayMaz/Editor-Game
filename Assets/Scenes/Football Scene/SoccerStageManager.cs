@@ -6,9 +6,8 @@ public class SoccerStageManager : StageManager
     
     public override void StageSuccess()
     {
-        Debug.Log("Stage Success");
         ballRigidbody.linearDamping = 2f;
         base.StageSuccess();
-        ShowStageSuccessUI();
+        Invoke(nameof(ShowStageSuccessUI), 2f);
     }
 }
