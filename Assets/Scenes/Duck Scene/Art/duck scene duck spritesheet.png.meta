@@ -1,0 +1,271 @@
+fileFormatVersion: 2
+guid: 15686187ba24a41c1aec25593b6909d9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3411679490838289002
+    second: duck scene duck spritesheet copy_0
+  - first:
+      213: 7161063405840258355
+    second: duck scene duck spritesheet copy_1
+  - first:
+      213: -1759271360235119995
+    second: duck scene duck spritesheet copy_2
+  - first:
+      213: -3066558807246497300
+    second: duck scene duck spritesheet copy_3
+  - first:
+      213: -5939519227557138495
+    second: duck scene duck spritesheet copy_4
+  - first:
+      213: -2635157959792733326
+    second: duck scene duck spritesheet copy_5
+  - first:
+      213: 3465630028192912156
+    second: duck scene duck spritesheet copy_6
+  - first:
+      213: 7572284017869437541
+    second: duck scene duck spritesheet copy_7
+  - first:
+      213: 2146023071499221729
+    second: duck scene duck spritesheet copy_8
+  - first:
+      213: -3124584596531712517
+    second: duck scene duck spritesheet copy_9
+  - first:
+      213: -7879810908278392869
+    second: duck scene duck spritesheet copy_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 110
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: duck scene duck spritesheet copy_0
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 492
+        width: 96
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6952915349747a0d0800000000000000
+      internalID: -3411679490838289002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck scene duck spritesheet copy_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 268
+        width: 136
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33558270a35316360800000000000000
+      internalID: 7161063405840258355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck scene duck spritesheet copy_2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 280
+        width: 133
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58adaa5d400d597e0800000000000000
+      internalID: -1759271360235119995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck scene duck spritesheet copy_6
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 41
+        width: 258
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c139d512624681030800000000000000
+      internalID: 3465630028192912156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck scene duck spritesheet copy_8
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 41
+        width: 258
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eaf0880d9438cd10800000000000000
+      internalID: 2146023071499221729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a24adb97246554cb9a44cd0110c7c601
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      duck scene duck spritesheet copy_0: -3411679490838289002
+      duck scene duck spritesheet copy_1: 7161063405840258355
+      duck scene duck spritesheet copy_10: -7879810908278392869
+      duck scene duck spritesheet copy_2: -1759271360235119995
+      duck scene duck spritesheet copy_3: -3066558807246497300
+      duck scene duck spritesheet copy_4: -5939519227557138495
+      duck scene duck spritesheet copy_5: -2635157959792733326
+      duck scene duck spritesheet copy_6: 3465630028192912156
+      duck scene duck spritesheet copy_7: 7572284017869437541
+      duck scene duck spritesheet copy_8: 2146023071499221729
+      duck scene duck spritesheet copy_9: -3124584596531712517
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
