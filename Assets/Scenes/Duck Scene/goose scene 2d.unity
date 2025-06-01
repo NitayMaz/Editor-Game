@@ -154,7 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controlledByTimeLine: 1
   duckExplodes: {fileID: 1825702310}
-  duckExplodesOffset: {x: 0, y: 0}
+  lastPosition: {x: 0, y: 0}
+  isDead: 0
 --- !u!95 &59772233
 Animator:
   serializedVersion: 7
@@ -168,7 +169,7 @@ Animator:
   m_Controller: {fileID: 22100000, guid: b55f469d35b7d4d50ac729812f6158b0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0

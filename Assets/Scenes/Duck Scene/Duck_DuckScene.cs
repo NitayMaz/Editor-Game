@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 
 public class Duck_DuckScene : TrackControlled
 {
     [SerializeField] ParticleSystem duckExplodes;
-    [SerializeField] Vector2 duckExplodesOffset;
+    [SerializeField] private Vector2 lastPosition;
+    [SerializeField] private bool isDead = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -11,22 +13,26 @@ public class Duck_DuckScene : TrackControlled
             return;
         if (other.gameObject.CompareTag("WinArea"))
             return;
-        duckExplodes.transform.position = transform.position + (Vector3)duckExplodesOffset;
+        if (isDead) // to avoid second collision when moving transform
+            return;
+        duckExplodes.transform.position = transform.position;
+        lastPosition = transform.position;
 
         duckExplodes.Play(); //particle!
-
+        isDead = true;
         StartInteraction();
     }
 
     public override void StartInteraction()
     {
-        base.StartInteraction();
-        gameObject.SetActive(false);
+        base.StartInteraction(); // turns on animator, resets position to start
+        transform.position = lastPosition; // recover last position
     }
+    
 
     public override void StopInteraction()
     {
         base.StopInteraction();
-        gameObject.SetActive(true);
+        isDead = false;
     }
 }
