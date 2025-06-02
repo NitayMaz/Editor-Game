@@ -12,7 +12,7 @@ public class TrackControlled : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public void SetAnimationFrame(AnimationClip animationClip, float time)
+    public virtual void SetAnimationFrame(AnimationClip animationClip, float time)
     {
         if (!controlledByTimeLine)
             return;

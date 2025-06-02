@@ -216,7 +216,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1328691330260186668, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.02
+      value: -7.99
       objectReference: {fileID: 0}
     - target: {fileID: 3720087868684684061, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: m_IsActive
@@ -1095,10 +1095,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.5035515, y: -2.2718766}
-      - {x: 0.5815563, y: -0.046921127}
-      - {x: -2.0667846, y: 1.4132627}
-      - {x: -2.1475513, y: -0.6448765}
+    - - {x: -0.34901428, y: -1.6281023}
+      - {x: -0.4972005, y: 1.362422}
+      - {x: -0.88346386, y: 1.7003913}
+      - {x: -1.7883961, y: 2.4746199}
+      - {x: -1.7473676, y: 0.5382762}
   m_UseDelaunayMesh: 0
 --- !u!1 &1095384372
 GameObject:
@@ -1373,9 +1374,9 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 1
-  m_AngularDamping: 0.05
+  m_AngularDamping: 1
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 86c73931b481c51458e98b59c753559c, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
