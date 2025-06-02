@@ -25,7 +25,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 507467596015492046}
-    m_Duration: 4.033333333333333
+    m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -5002561719173133559}
     m_EaseInDuration: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 0
-    m_DisplayName: goose walk
+    m_DisplayName: goose walk2
   m_Markers:
     m_Objects: []
   m_InfiniteClipPreExtrapolation: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
   m_RemoveStartOffset: 1
-  m_ApplyFootIK: 1
+  m_ApplyFootIK: 0
   m_Loop: 0
   m_Version: 1
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
@@ -295,8 +295,8 @@ MonoBehaviour:
     m_Start: 3.066666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 1744081250912146094}
-    m_Duration: 1.5333333333333334
-    m_TimeScale: 1
+    m_Duration: 1.4499999999999997
+    m_TimeScale: 1.057471264367816
     m_ParentTrack: {fileID: -4428131963991503948}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
@@ -414,7 +414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030f85c3f73729f4f976f66ffb23b875, type: 3}
   m_Name: AnimationPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 7400000, guid: 3819992fafa4849589385ce8ca1129b4, type: 2}
+  m_Clip: {fileID: 7400000, guid: 925a302a144d24d2a9c5c6927dae4013, type: 2}
   m_Position: {x: 0, y: 0, z: 0}
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
@@ -442,7 +442,7 @@ MonoBehaviour:
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
   m_RemoveStartOffset: 1
-  m_ApplyFootIK: 1
+  m_ApplyFootIK: 0
   m_Loop: 0
   m_Version: 1
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
   m_RemoveStartOffset: 1
-  m_ApplyFootIK: 1
+  m_ApplyFootIK: 0
   m_Loop: 0
   m_Version: 1
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
