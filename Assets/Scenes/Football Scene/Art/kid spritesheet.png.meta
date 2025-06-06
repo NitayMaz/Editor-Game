@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 88b03fc3acf2846e39026e25ed4dea70
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3564077653516088081
+    second: soccer scene kid spritesheet_0
+  - first:
+      213: 245300659025213970
+    second: soccer scene kid spritesheet_1
+  - first:
+      213: -3913023052641765381
+    second: soccer scene kid spritesheet_2
+  - first:
+      213: 8018051048667542222
+    second: soccer scene kid spritesheet_3
+  - first:
+      213: -2270894027180860022
+    second: soccer scene kid spritesheet_4
+  - first:
+      213: -4164739095284101786
+    second: soccer scene kid spritesheet_5
+  - first:
+      213: 7988392371951680838
+    second: soccer scene kid spritesheet_6
+  - first:
+      213: -7088083073625654827
+    second: soccer scene kid spritesheet_7
+  - first:
+      213: -5410178340163884707
+    second: soccer scene kid spritesheet_8
+  - first:
+      213: 3728530025329113556
+    second: soccer scene kid spritesheet_9
+  - first:
+      213: 3693831620375134532
+    second: soccer scene kid spritesheet_10
+  - first:
+      213: -2797812881627724542
+    second: soccer scene kid spritesheet_11
+  - first:
+      213: 6410791541472448184
+    second: soccer scene kid spritesheet_12
+  - first:
+      213: 976231011557664008
+    second: soccer scene kid spritesheet_13
+  - first:
+      213: -5312945423448214361
+    second: soccer scene kid spritesheet_14
+  - first:
+      213: -9033422856745554813
+    second: soccer scene kid spritesheet_15
+  - first:
+      213: -3464498067737201376
+    second: soccer scene kid spritesheet_16
+  - first:
+      213: -4910423894840868392
+    second: soccer scene kid spritesheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 90
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: f_sleeve
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 157
+        width: 32
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113fbb91eb5267130800000000000000
+      internalID: 3564077653516088081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b_sleeve
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 156
+        width: 32
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21afd5456ab776300800000000000000
+      internalID: 245300659025213970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neck
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 136
+        width: 17
+        height: 24
+      alignment: 9
+      pivot: {x: 0.46747366, y: 0.14288013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf77f55044622b9c0800000000000000
+      internalID: -3913023052641765381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 119
+        width: 68
+        height: 69
+      alignment: 9
+      pivot: {x: 0.4024189, y: 0.07526298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2f6c282f6d54f60800000000000000
+      internalID: 8018051048667542222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b_leg_t
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 122
+        width: 17
+        height: 51
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d145bf9e92c70e0800000000000000
+      internalID: -2270894027180860022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_leg_t
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 122
+        width: 17
+        height: 51
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66dc86bcbdfd336c0800000000000000
+      internalID: -4164739095284101786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_pants
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 117
+        width: 40
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64dbe98b9887cde60800000000000000
+      internalID: 7988392371951680838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b_hand_t
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 99
+        width: 20
+        height: 48
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d97512bff112ad90800000000000000
+      internalID: -7088083073625654827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_hand_t
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 99
+        width: 20
+        height: 48
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59e407c67f2be4b0800000000000000
+      internalID: -5410178340163884707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccer scene kid spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 37
+        width: 59
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9be1ead466eb330800000000000000
+      internalID: 3728530025329113556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head2
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 32
+        width: 71
+        height: 72
+      alignment: 9
+      pivot: {x: 0.38317785, y: 0.06608036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441c098b940234330800000000000000
+      internalID: 3693831620375134532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b_leg_b
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 62
+        width: 17
+        height: 51
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2054192f10c2c29d0800000000000000
+      internalID: -2797812881627724542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_leg_b
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 62
+        width: 17
+        height: 51
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be4b8ee0f4b7f850800000000000000
+      internalID: 6410791541472448184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b_pants
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 63
+        width: 39
+        height: 41
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8056d96cee44c8d00800000000000000
+      internalID: 976231011557664008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b_hand_b
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 36
+        width: 18
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4f45c5940a446b0800000000000000
+      internalID: -5312945423448214361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_hand_b
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 36
+        width: 18
+        height: 56
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c69cdd5c5d2a280800000000000000
+      internalID: -9033422856745554813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_shoe
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 27
+        width: 41
+        height: 17
+      alignment: 9
+      pivot: {x: 0.18913008, y: 0.9064892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0253f73fc51abefc0800000000000000
+      internalID: -3464498067737201376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: b_shoe
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 27
+        width: 41
+        height: 17
+      alignment: 9
+      pivot: {x: 0.17414893, y: 0.93358856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d18b63fb7baadbb0800000000000000
+      internalID: -4910423894840868392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0db1eb22b1edd4eafaa3555607dc21d8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      b_hand_b: -5312945423448214361
+      b_hand_t: -7088083073625654827
+      b_leg_b: -2797812881627724542
+      b_leg_t: -2270894027180860022
+      b_pants: 976231011557664008
+      b_shoe: -4910423894840868392
+      b_sleeve: 245300659025213970
+      f_hand_b: -9033422856745554813
+      f_hand_t: -5410178340163884707
+      f_leg_b: 6410791541472448184
+      f_leg_t: -4164739095284101786
+      f_pants: 7988392371951680838
+      f_shoe: -3464498067737201376
+      f_sleeve: 3564077653516088081
+      head1: 8018051048667542222
+      head2: 3693831620375134532
+      neck: -3913023052641765381
+      soccer scene kid spritesheet_9: 3728530025329113556
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
