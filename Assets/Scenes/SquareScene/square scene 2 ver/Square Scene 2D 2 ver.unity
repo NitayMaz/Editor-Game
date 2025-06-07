@@ -942,6 +942,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5354073441537900011}
     - target: {fileID: 6310103778778480190, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: timeLineSeconds
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6310103778778480190, guid: 2321c47dec3a243609778468e24c106e, type: 3}
       propertyPath: timeLineDirector
       value: 
       objectReference: {fileID: 4749929540408962050}
