@@ -639,6 +639,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32d280f113f89e440b820e26d681ba14, type: 3}
+--- !u!1 &424202523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8206894364706085509, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+  m_PrefabInstance: {fileID: 1141866731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &547961713
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +731,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1049532569}
     m_Modifications:
+    - target: {fileID: 4442488027228349440, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
+      propertyPath: m_Name
+      value: Track Goose
+      objectReference: {fileID: 0}
     - target: {fileID: 4527747321600973589, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: defaultColor.b
       value: 0.8352941
@@ -905,13 +914,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786169474}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.61, y: -3.37, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.2527651, w: 0.9675276}
+  m_LocalPosition: {x: -5.57, y: -3.02, z: 0}
   m_LocalScale: {x: 1.818658, y: 1.4740837, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -29.282}
 --- !u!61 &786169477
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1219,7 +1228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlledByTimeLine: 1
-  duckExplodes: {fileID: 1825702310}
+  duckExplodes: {fileID: 1982344278}
   lastPosition: {x: 0, y: 0}
   isDead: 0
 --- !u!58 &1003082201
@@ -1603,11 +1612,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 591654531991955213, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
   m_PrefabInstance: {fileID: 1141866731}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1141866733 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8206894364706085509, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
-  m_PrefabInstance: {fileID: 1141866731}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1141866734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1620,7 +1624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a46315c518db042b72f5006879d9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageSuccessUI: {fileID: 1141866733}
+  stageSuccessUI: {fileID: 424202523}
 --- !u!1 &1289398066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,7 +2054,7 @@ GameObject:
   - component: {fileID: 1647138959}
   - component: {fileID: 1647138960}
   m_Layer: 5
-  m_Name: Track1 (1)
+  m_Name: Track cars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2086,11 +2090,6 @@ MonoBehaviour:
   clipPrefab: {fileID: 7941987899486846078, guid: 2bc21cf25da3c4ecd90d0132dccceaf2, type: 3}
   defaultColor: {r: 1, g: 0.42745098, b: 0.53333336, a: 1}
   clipColors: []
---- !u!198 &1825702310 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 573212950480720953, guid: 32c9149ed120d43c99c21188dc260380, type: 3}
-  m_PrefabInstance: {fileID: 8558151743937057120}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1867966461
 GameObject:
   m_ObjectHideFlags: 0
@@ -2240,6 +2239,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &1982344278 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 573212950480720953, guid: 32c9149ed120d43c99c21188dc260380, type: 3}
+  m_PrefabInstance: {fileID: 8558151743937057120}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1990606046
 GameObject:
   m_ObjectHideFlags: 0

@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 0.6
+    m_Start: 0.35
     m_ClipIn: 0
     m_Asset: {fileID: -4880035914018798587}
     m_Duration: 1.15
@@ -241,11 +241,11 @@ MonoBehaviour:
     m_Recordable: 0
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
-    m_PostExtrapolationTime: 0.5666666666666669
-    m_PreExtrapolationTime: 0.6
+    m_PostExtrapolationTime: 0.5
+    m_PreExtrapolationTime: 0.35
     m_DisplayName: Green car move
   - m_Version: 1
-    m_Start: 2.316666666666667
+    m_Start: 2
     m_ClipIn: 0
     m_Asset: {fileID: 7126725866930468252}
     m_Duration: 1.15
@@ -292,11 +292,11 @@ MonoBehaviour:
     m_Recordable: 0
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
-    m_PostExtrapolationTime: 0.5333333333333332
+    m_PostExtrapolationTime: 0.5
     m_PreExtrapolationTime: 0
     m_DisplayName: Green car move
   - m_Version: 1
-    m_Start: 4
+    m_Start: 3.65
     m_ClipIn: 0
     m_Asset: {fileID: -8487883082870272829}
     m_Duration: 1.1500000000000004
