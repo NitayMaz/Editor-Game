@@ -42,7 +42,6 @@ public class StageManager : MonoBehaviour
 
     public virtual void StageFailed()
     {
-        
     }
     
     public virtual void StageSuccess()

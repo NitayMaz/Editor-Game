@@ -220,7 +220,7 @@ Animator:
   m_GameObject: {fileID: 4892909}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 09e0e466df2e342c58b24e9d143328d3, type: 2}
+  m_Controller: {fileID: 9100000, guid: c401ca955cb1f4adca69a6ee70e94fb9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -991,7 +991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 591654531991955213, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2435220452800951349, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1152,6 +1152,10 @@ PrefabInstance:
       propertyPath: timeLineCamera
       value: 
       objectReference: {fileID: 5354073441537900011}
+    - target: {fileID: 6310103778778480190, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: timeLineSeconds
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6310103778778480190, guid: 2321c47dec3a243609778468e24c106e, type: 3}
       propertyPath: timeLineDirector
       value: 

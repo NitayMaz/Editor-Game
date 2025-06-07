@@ -5,6 +5,6 @@ public class DuckStageManager : StageManager
     public override void StageSuccess()
     {
         base.StageSuccess();
-        ShowStageSuccessUI();
+        Invoke(nameof(ShowStageSuccessUI), 1f);
     }
 }
