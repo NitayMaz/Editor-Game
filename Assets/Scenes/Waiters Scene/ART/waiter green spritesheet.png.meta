@@ -171,6 +171,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -759,7 +772,33 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      waiter green spritesheet_0: 3849605036795783306
+      waiter green spritesheet_1: 4102663453472801224
+      waiter green spritesheet_10: 4027209346340810717
+      waiter green spritesheet_11: 7018193667548563940
+      waiter green spritesheet_12: -4058732002054660634
+      waiter green spritesheet_13: -6872057291019416867
+      waiter green spritesheet_14: 5176712694139435751
+      waiter green spritesheet_15: -2594845950896900356
+      waiter green spritesheet_16: -5909430191721364632
+      waiter green spritesheet_17: -3660078279860019355
+      waiter green spritesheet_18: 9075008131662364385
+      waiter green spritesheet_19: -1796788375025966455
+      waiter green spritesheet_2: -9130946256802800426
+      waiter green spritesheet_20: 1843990274817414050
+      waiter green spritesheet_21: 3678046511609484597
+      waiter green spritesheet_22: -2750925564077562619
+      waiter green spritesheet_23: -6850764079696527505
+      waiter green spritesheet_24: 3385370546877524509
+      waiter green spritesheet_25: 2804608328056546904
+      waiter green spritesheet_3: 5112746640065679636
+      waiter green spritesheet_4: 359766129238064137
+      waiter green spritesheet_5: -1273096794482377821
+      waiter green spritesheet_6: -5260671552592891012
+      waiter green spritesheet_7: -8929830718948290289
+      waiter green spritesheet_8: 7960173036438673503
+      waiter green spritesheet_9: -7572433950637214558
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
