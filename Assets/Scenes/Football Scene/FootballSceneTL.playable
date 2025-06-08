@@ -17,7 +17,7 @@ MonoBehaviour:
   m_EulerAngles: {x: 0, y: 0, z: 0}
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
-  m_RemoveStartOffset: 1
+  m_RemoveStartOffset: 0
   m_ApplyFootIK: 1
   m_Loop: 0
   m_Version: 1
@@ -68,7 +68,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: -8085288779979494819}
-    m_Duration: 1
+    m_Duration: 1.5
     m_TimeScale: 1
     m_ParentTrack: {fileID: 3932339265700786697}
     m_EaseInDuration: 0
