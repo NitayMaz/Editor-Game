@@ -199,9 +199,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: 6558400439769271907, guid: b22839eed9fff4d6b9296591975a1d4e, type: 3}
   m_Color: {r: 0, g: 1, b: 0.17926908, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 2}
@@ -664,7 +664,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: -5906252479039597869, guid: b22839eed9fff4d6b9296591975a1d4e, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -836,7 +836,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1936975911042763733, guid: 36aefc32566f32142966fdc24402c8f2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4e47ac7a483974d63b0ccafe7868cb0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -933,7 +933,7 @@ GameObject:
   m_Component:
   - component: {fileID: 394064298}
   m_Layer: 0
-  m_Name: ------------WAITERS------------
+  m_Name: ------------CHARACTERS------------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1041,7 +1041,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: 1008858071727018304, guid: b22839eed9fff4d6b9296591975a1d4e, type: 3}
   m_Color: {r: 0.95568347, g: 1, b: 0, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -1682,9 +1682,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: 6558400439769271907, guid: b22839eed9fff4d6b9296591975a1d4e, type: 3}
   m_Color: {r: 0, g: 0.43849897, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 2}
