@@ -1351,6 +1351,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 397117044226206038}
     m_Modifications:
+    - target: {fileID: 1328691330260186668, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720087868684684061, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4006254966715190512, guid: 2321c47dec3a243609778468e24c106e, type: 3}
       propertyPath: clipPrefab
       value: 
