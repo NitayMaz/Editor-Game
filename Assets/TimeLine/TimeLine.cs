@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
@@ -207,5 +208,44 @@ public class TimeLine : MonoBehaviour
     public static float SnapTo(float value, float snapValue)
     {
         return Mathf.Round(value / snapValue) * snapValue;
+    }
+
+    public void DeleteAllClips()
+    {
+    }
+    
+    public List<TrackInitData> GetClipsData()
+    {
+        List<TrackInitData> savedClipsData = new List<TrackInitData>();
+        foreach (var track in tracks)
+        {
+            savedClipsData.Add(track.GetClipsData());
+        }
+
+        return savedClipsData;
+    }
+    
+    public void LoadSavedClips(List<TrackInitData> savedTracksData)
+    {
+        if (savedTracksData.Count != tracks.Length)
+        {
+            Debug.LogError("Saved clips data does not match the number of tracks in the scene.");
+            return;
+        }
+        //stop playing and delete all current clips
+        StopPlaying();
+        foreach (var track in tracks)
+        {
+            track.DeleteAllClips();
+        }
+
+        //load saved clips
+        for (int i = 0; i < tracks.Length; i++)
+        {
+            tracks[i].InitClips(savedTracksData[i].clipsInitData);
+        }
+        
+        // Reset time after loading clips
+        ResetTime();
     }
 }

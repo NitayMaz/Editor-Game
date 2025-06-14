@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1060db5f97bb41b1077a41057a490, type: 3}
+  m_Name: Waiters Scene 2D (2 waiter ver)_solution
+  m_EditorClassIdentifier: 
+  data:
+  - clipsInitData:
+    - animationClip: {fileID: 7400000, guid: e874db0592e27424581bc1de195bc048, type: 2}
+      duration: 2
+      pace: 1.5
+      animationStartPoint: 0
+      animationEndPoint: 1
+      startTime: 0
+  - clipsInitData:
+    - animationClip: {fileID: 7400000, guid: 6723a726c50504d3bb8cdbc7a181a68c, type: 2}
+      duration: 2.5
+      pace: 1
+      animationStartPoint: 0
+      animationEndPoint: 1
+      startTime: 1.1

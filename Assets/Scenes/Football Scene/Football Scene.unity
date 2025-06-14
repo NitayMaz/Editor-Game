@@ -382,6 +382,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &251789572 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7137384533402762196, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+  m_PrefabInstance: {fileID: 4322773572955528420}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &282731694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -484,6 +489,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7821240649295785967, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874000985339060145, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1657,6 +1666,11 @@ PolygonCollider2D:
       - {x: -1.8358204, y: 2.1426485}
       - {x: -1.7473676, y: 0.5382762}
   m_UseDelaunayMesh: 0
+--- !u!1 &976574942 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8544133027006411394, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+  m_PrefabInstance: {fileID: 4322773572955528420}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1095384372
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,6 +2045,11 @@ Transform:
   - {fileID: 1339921828}
   m_Father: {fileID: 733756879}
   m_LocalEulerAnglesHint: {x: -54.4, y: 0, z: 40.6}
+--- !u!1 &1256178989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6363212884171101381, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+  m_PrefabInstance: {fileID: 4322773572955528420}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1258921359
 GameObject:
   m_ObjectHideFlags: 0
@@ -3423,9 +3442,33 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: menu
+      value: 
+      objectReference: {fileID: 976574942}
+    - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: UIcursor
+      value: 
+      objectReference: {fileID: 1256178989}
+    - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 976574942}
+    - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: menuButton
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: ballRigidbody
       value: 
       objectReference: {fileID: 1134809217}
+    - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: pauseMenuButton
+      value: 
+      objectReference: {fileID: 251789572}
+    - target: {fileID: 553615767490812256, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HidePauseMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 591654531991955213, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_Name
       value: StageManager
@@ -3433,6 +3476,10 @@ PrefabInstance:
     - target: {fileID: 591654531991955213, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4610477483461954930, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseStageSuccessUI
       objectReference: {fileID: 0}
     - target: {fileID: 6203370228575287425, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3472,10 +3519,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6203370228575287425, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8206894364706085509, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

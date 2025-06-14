@@ -985,6 +985,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 553615767490812256, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 456312109}
+    - target: {fileID: 553615767490812256, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HidePauseMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 591654531991955213, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_Name
       value: StageManager
@@ -1007,11 +1015,27 @@ PrefabInstance:
       objectReference: {fileID: 456312109}
     - target: {fileID: 4610477483461954930, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResetLevel
+      value: CloseStageSuccessUI
       objectReference: {fileID: 0}
     - target: {fileID: 4610477483461954930, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: StageManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5181809872738174434, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 456312109}
+    - target: {fileID: 5181809872738174434, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5679746378374704605, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 456312109}
+    - target: {fileID: 5679746378374704605, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetGame
       objectReference: {fileID: 0}
     - target: {fileID: 6203370228575287425, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1057,6 +1081,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9188787270636538767, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 456312109}
+    - target: {fileID: 9188787270636538767, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadSceneSolution
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
     m_RemovedGameObjects: []
@@ -1084,6 +1116,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageSuccessUI: {fileID: 827360074}
+  pauseMenu: {fileID: 506591951}
+  pauseMenuButton: {fileID: 878515654}
+  UIcursor: {fileID: 1170687198}
+--- !u!1 &506591951 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8544133027006411394, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+  m_PrefabInstance: {fileID: 456312107}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &536400099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1158,11 @@ Transform:
 --- !u!1 &827360074 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8206894364706085509, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+  m_PrefabInstance: {fileID: 456312107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &878515654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7137384533402762196, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
   m_PrefabInstance: {fileID: 456312107}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &997890438
@@ -1160,6 +1205,10 @@ PrefabInstance:
       propertyPath: timeLineDirector
       value: 
       objectReference: {fileID: 4749929540408962050}
+    - target: {fileID: 6310103778778480190, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: SlowestAllowedPace
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6319984926148865414, guid: 2321c47dec3a243609778468e24c106e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.87
@@ -1352,6 +1401,11 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &1170687198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6363212884171101381, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+  m_PrefabInstance: {fileID: 456312107}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1272604562
 GameObject:
   m_ObjectHideFlags: 0

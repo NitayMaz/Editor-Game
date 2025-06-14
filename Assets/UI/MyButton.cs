@@ -6,7 +6,8 @@ public enum buttonType
     PlayPause,
     Cut,
     Undo,
-    Reset
+    Reset,
+    OpenPauseMenu
 }
 
 public class MyButton : MonoBehaviour
@@ -35,6 +36,9 @@ public class MyButton : MonoBehaviour
                 MyCursor.Instance?.ButtonClicked();
                 TimelineUIManager.Instance.ResetClicked();
                 animator.SetTrigger("IsPressed");
+                break;
+            case buttonType.OpenPauseMenu:
+                StageManager.Instance.ShowPauseMenu();
                 break;
             default:
                 Debug.LogError("Button type not recognized");

@@ -6,6 +6,7 @@ public class WinZone : MonoBehaviour
     {
         if (!TimeLine.Instance.isPlaying)
             return;
+        Debug.Log("WinZone Triggered by: " + other.name);
         StageManager.Instance.StageSuccess();
     }
 }

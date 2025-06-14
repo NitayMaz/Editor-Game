@@ -43,6 +43,7 @@ public class Track : MonoBehaviour
                 animationStartPoint = (float)(clip.clipIn * clip.timeScale) / animationClip.length,
                 animationEndPoint = (float)((clip.clipIn + clip.duration) * clip.timeScale) / animationClip.length,
                 startTime = (float)clip.start,
+                pace = 1
             };
             if (clipsInitData.Count !=
                 0) // check if the following clip is a duplicate of the last one, if so extend the last one instead of adding.
@@ -62,7 +63,7 @@ public class Track : MonoBehaviour
         InitClips(clipsInitData);
     }
 
-    private void InitClips(List<TrackClipInitData> clipsInitData)
+    public void InitClips(List<TrackClipInitData> clipsInitData)
     {
         for (int i = 0; i<clipsInitData.Count; i++)
         {
@@ -74,7 +75,7 @@ public class Track : MonoBehaviour
             TrackClip clip = clipObject.GetComponentInChildren<TrackClip>();
             clips.Add(clip);
             Color clipColor = clipColors.Count > i ? clipColors[i] : defaultColor;
-            clip.Init(clipData.animationClip, clipColor, clipData.duration, 1, clipData.startTime,
+            clip.Init(clipData.animationClip, clipColor, clipData.duration, clipData.pace, clipData.startTime,
                 clipData.animationStartPoint, clipData.animationEndPoint, this);
         }
 
@@ -209,16 +210,31 @@ public class Track : MonoBehaviour
             RemoveSelectedClip(firstPart);
             RemoveSelectedClip(secondPart);
         });
-        
     }
+    public TrackInitData GetClipsData()
+    {
+        List<TrackClipInitData> clipsData = new List<TrackClipInitData>();
+        foreach (var clip in clips)
+        {
+            clipsData.Add(clip.GetClipInitData());
+        }
+        return  new TrackInitData { clipsInitData = clipsData };
+    }
+
+    public void DeleteAllClips()
+    {
+        foreach (var clip in clips)
+        {
+            Destroy(clip.transform.parent.gameObject);
+        }
+        clips.Clear();
+    }
+
+    
 }
 
-public class TrackClipInitData
+[Serializable]
+public class TrackInitData
 {
-    public AnimationClip animationClip;
-    public float duration;
-    public float pace;
-    public float animationStartPoint;
-    public float animationEndPoint;
-    public float startTime;
+    public List<TrackClipInitData> clipsInitData;
 }

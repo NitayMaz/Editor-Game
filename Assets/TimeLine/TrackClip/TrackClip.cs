@@ -191,6 +191,19 @@ public class TrackClip : MonoBehaviour
         };
         parentTrack.ReplaceCutClip(this, firstPartData, secondPartData);
     }
+    
+    public TrackClipInitData GetClipInitData()
+    {
+        return new TrackClipInitData
+        {
+            animationClip = animationClip,
+            duration = duration,
+            pace = pace,
+            animationStartPoint = clipAnimationStartPoint,
+            animationEndPoint = clipAnimationEndPoint,
+            startTime = startTime
+        };
+    }
 
     private void OnMouseDown()
     {
@@ -242,4 +255,15 @@ public class TrackClip : MonoBehaviour
             });
         }
     }
+}
+
+[Serializable]
+public class TrackClipInitData
+{
+    public AnimationClip animationClip;
+    public float duration;
+    public float pace;
+    public float animationStartPoint;
+    public float animationEndPoint;
+    public float startTime;
 }
