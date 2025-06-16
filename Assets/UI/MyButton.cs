@@ -44,5 +44,7 @@ public class MyButton : MonoBehaviour
                 Debug.LogError("Button type not recognized");
                 break;
         }
+
+        SoundManager.Instance?.PlayAudio(AudioClips.MouseClick);
     }
 }
