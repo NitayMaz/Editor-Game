@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 0f8f87a41e17e44b9bbcec8fcd6c175f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6433853845149005335
+    second: netivim 1_0
+  - first:
+      213: 4304536967034896142
+    second: netivim 1_1
+  - first:
+      213: -159261466301689793
+    second: netivim 1_2
+  - first:
+      213: -860962170647901675
+    second: netivim 1_3
+  - first:
+      213: -4535256090693060091
+    second: netivim 1_4
+  - first:
+      213: -318673139146083139
+    second: netivim 1_5
+  - first:
+      213: 7884795396708139532
+    second: netivim 1_6
+  - first:
+      213: 7212727087821082442
+    second: netivim 1_7
+  - first:
+      213: 8359547842364181650
+    second: netivim 1_8
+  - first:
+      213: -1613026865384088469
+    second: netivim 1_9
+  - first:
+      213: -4694389532070229658
+    second: netivim 1_10
+  - first:
+      213: -8851201874482325573
+    second: netivim 1_11
+  - first:
+      213: -7674234057675138751
+    second: netivim 1_12
+  - first:
+      213: 8078864971076628276
+    second: netivim 1_13
+  - first:
+      213: -896100058454381811
+    second: netivim 1_14
+  - first:
+      213: 588561537386240067
+    second: netivim 1_15
+  - first:
+      213: -4497768573369387454
+    second: netivim 1_16
+  - first:
+      213: 648899613655628889
+    second: netivim 1_17
+  - first:
+      213: -5830911369195507633
+    second: netivim 1_18
+  - first:
+      213: 8530713478781171020
+    second: netivim 1_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 92
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: netivim 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 747
+        width: 64
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71633e0fbf3a94950800000000000000
+      internalID: 6433853845149005335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_1
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 752
+        width: 71
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ff6aaa099ccbb30800000000000000
+      internalID: 4304536967034896142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 704
+        width: 82
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f301eaa4a803acdf0800000000000000
+      internalID: -159261466301689793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_3
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 700
+        width: 77
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a8b75a77f3d04f0800000000000000
+      internalID: -860962170647901675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_4
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 659
+        width: 68
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a30d44d988f01c0800000000000000
+      internalID: -4535256090693060091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_5
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 641
+        width: 85
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db43db5e778d39bf0800000000000000
+      internalID: -318673139146083139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 609
+        width: 71
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c028c6b43ab6c6d60800000000000000
+      internalID: 7884795396708139532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_7
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 579
+        width: 89
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4fc96b5211c81460800000000000000
+      internalID: 7212727087821082442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_8
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 562
+        width: 70
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c000bc874130470800000000000000
+      internalID: 8359547842364181650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_9
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 532
+        width: 75
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c9e93bc906d99e0800000000000000
+      internalID: -1613026865384088469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_10
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 508
+        width: 90
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66944afa79d2adeb0800000000000000
+      internalID: -4694389532070229658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_11
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 238
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb795347ac63a2580800000000000000
+      internalID: -8851201874482325573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_12
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 200
+        width: 110
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 149911dc8c4af7590800000000000000
+      internalID: -7674234057675138751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_13
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 178
+        width: 117
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f6e5533e4ed1070800000000000000
+      internalID: 8078864971076628276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_14
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 154
+        width: 96
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0bae9c9eb96093f0800000000000000
+      internalID: -896100058454381811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_15
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 115
+        width: 111
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3485d54999dfa2800800000000000000
+      internalID: 588561537386240067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_16
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 102
+        width: 117
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246f66e0057b491c0800000000000000
+      internalID: -4497768573369387454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_17
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 61
+        width: 93
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95cf4d6b2ca510900800000000000000
+      internalID: 648899613655628889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_18
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 40
+        width: 108
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40b052d001741fa0800000000000000
+      internalID: -5830911369195507633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: netivim 1_19
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 0
+        width: 123
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45736716be236670800000000000000
+      internalID: 8530713478781171020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      netivim 1_0: 6433853845149005335
+      netivim 1_1: 4304536967034896142
+      netivim 1_10: -4694389532070229658
+      netivim 1_11: -8851201874482325573
+      netivim 1_12: -7674234057675138751
+      netivim 1_13: 8078864971076628276
+      netivim 1_14: -896100058454381811
+      netivim 1_15: 588561537386240067
+      netivim 1_16: -4497768573369387454
+      netivim 1_17: 648899613655628889
+      netivim 1_18: -5830911369195507633
+      netivim 1_19: 8530713478781171020
+      netivim 1_2: -159261466301689793
+      netivim 1_3: -860962170647901675
+      netivim 1_4: -4535256090693060091
+      netivim 1_5: -318673139146083139
+      netivim 1_6: 7884795396708139532
+      netivim 1_7: 7212727087821082442
+      netivim 1_8: 8359547842364181650
+      netivim 1_9: -1613026865384088469
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
