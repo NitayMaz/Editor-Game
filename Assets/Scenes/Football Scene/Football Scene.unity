@@ -3503,6 +3503,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 976574942}
     - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1297393777}
+    - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: UIcursor
       value: 
       objectReference: {fileID: 1256178989}

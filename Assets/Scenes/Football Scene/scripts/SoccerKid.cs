@@ -40,6 +40,12 @@ public class SoccerKid : TrackControlled
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.Sleep();
+        GetComponent<Animator>().SetBool("Goal", false);
         base.StopInteraction();
+    }
+
+    public void Goal()
+    {
+        GetComponent<Animator>().SetBool("Goal", true);
     }
 }
