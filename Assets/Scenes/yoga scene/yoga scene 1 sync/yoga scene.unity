@@ -2296,6 +2296,8 @@ MonoBehaviour:
   UIcursor: {fileID: 134091014}
   TimeToCheckYogaPosition: 0.5
   duckExplodes: {fileID: 829462142}
+  yogaGirl: {fileID: 1933439113}
+  yogaNPCs: {fileID: 1113685320}
 --- !u!1 &808191341
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,7 +2598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1113685317
 Transform:
   m_ObjectHideFlags: 0
