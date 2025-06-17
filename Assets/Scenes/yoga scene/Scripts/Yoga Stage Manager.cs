@@ -8,11 +8,12 @@ public class YogaStageManager : StageManager
         poseEntered =
             new bool[Enum.GetValues(typeof(YogaParticipant)).Length, 4]; // 4 poses for each participant(in the enum)
 
-    [SerializeField]
-    private float
+    [SerializeField] private float
         TimeToCheckYogaPosition = 0.3f; // time to wait before checking if all participants are in the position
 
     [SerializeField] ParticleSystem duckExplodes;
+    [SerializeField] private Yoga_Girl yogaGirl;
+    [SerializeField] private Yoga_Npc yogaNPCs;
 
     public override void StageReset()
     {
@@ -22,6 +23,8 @@ public class YogaStageManager : StageManager
 
     public override void TimeLineDone()
     {
+        yogaGirl.StartInteraction();
+        yogaNPCs.StartInteraction();
         ShowStageSuccessUI();
     }
 
@@ -31,6 +34,10 @@ public class YogaStageManager : StageManager
         //particle?
         duckExplodes.Play();
         TimeLine.Instance.StopPlaying();
+        yogaGirl.StartInteraction();
+        yogaNPCs.StartInteraction();
+        yogaGirl.GetComponent<Animator>().SetBool("Fail", true);
+        yogaNPCs.GetComponent<Animator>().SetBool("Fail", true);
     }
 
     public void RegisterPosition(YogaParticipant participant, int positionIndex)

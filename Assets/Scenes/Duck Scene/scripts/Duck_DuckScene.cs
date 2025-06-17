@@ -12,7 +12,13 @@ public class Duck_DuckScene : TrackControlled
         if (!TimeLine.Instance.isPlaying)
             return;
         if (other.gameObject.CompareTag("WinArea"))
+        {
+            lastPosition = transform.position;
+            // StageManager.Instance.StageSuccess();
+            StartInteraction();
+            transform.GetComponent<Animator>().SetBool("PassedRoad", true);
             return;
+        }
         if (isDead) // to avoid second collision when moving transform
             return;
         duckExplodes.transform.position = transform.position;
@@ -34,5 +40,6 @@ public class Duck_DuckScene : TrackControlled
     {
         base.StopInteraction();
         isDead = false;
+        transform.GetComponent<Animator>().SetBool("PassedRoad", false);
     }
 }

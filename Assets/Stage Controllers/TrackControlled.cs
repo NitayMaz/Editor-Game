@@ -32,5 +32,6 @@ public class TrackControlled : MonoBehaviour
     {
         controlledByTimeLine = true;
         animator.enabled = false;
+        
     }
 }

@@ -19,6 +19,7 @@ public class Yoga_Girl : TrackControlled
 
     public override void StopInteraction()
     {
+        animator.SetBool("Fail", false);
         base.StopInteraction();
         animationsReached.Clear(); // clear positions reach when resetting/restrating timeline
     }

@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public enum AudioClips
 {
     BackgroundMusic,
@@ -39,6 +38,11 @@ public class SoundManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
         InitializeDictionaries();
+    }
+
+    private void Start()
+    {
+        PlayAudio(AudioClips.BackgroundMusic);
     }
 
     private void InitializeDictionaries()
@@ -104,6 +108,7 @@ public class SoundManager : MonoBehaviour
         else
         {
             audioSource.loop = true;
+            audioSource.clip = clip.clips[0];
             audioSource.Play();
         }
     }

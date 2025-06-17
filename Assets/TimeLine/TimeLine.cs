@@ -96,7 +96,7 @@ public class TimeLine : MonoBehaviour
         TimelineUIManager.Instance.ChangeToPlayButton();
         //snapping
         currentTime = SnapTo(currentTime, snappingJump);
-        PositionPointerHead(GetXPositionForTime(currentTime));
+        MovePointerHeadX(GetXPositionForTime(currentTime));
     }
     
     public void PlayScene()
