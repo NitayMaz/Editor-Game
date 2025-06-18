@@ -2631,7 +2631,18 @@ AnimationClip:
     path: front legs
   m_ScaleCurves: []
   m_FloatCurves: []
-  m_PPtrCurves: []
+  m_PPtrCurves:
+  - serializedVersion: 2
+    curve:
+    - time: 0
+      value: {fileID: 3693831620375134532, guid: 88b03fc3acf2846e39026e25ed4dea70, type: 3}
+    - time: 1.5
+      value: {fileID: 3693831620375134532, guid: 88b03fc3acf2846e39026e25ed4dea70, type: 3}
+    attribute: m_Sprite
+    path: body/neck/head2
+    classID: 212
+    script: {fileID: 0}
+    flags: 2
   m_SampleRate: 30
   m_WrapMode: 0
   m_Bounds:
@@ -2864,13 +2875,24 @@ AnimationClip:
       isPPtrCurve: 0
       isIntCurve: 0
       isSerializeReferenceCurve: 0
-    pptrCurveMapping: []
+    - serializedVersion: 2
+      path: 1492328947
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    pptrCurveMapping:
+    - {fileID: 3693831620375134532, guid: 88b03fc3acf2846e39026e25ed4dea70, type: 3}
+    - {fileID: 3693831620375134532, guid: 88b03fc3acf2846e39026e25ed4dea70, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.5
+    m_StopTime: 1.5333333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

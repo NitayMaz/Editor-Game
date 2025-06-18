@@ -2292,6 +2292,9 @@ MonoBehaviour:
   kickAngleAboveGround: 30
   kickForceModifier: 1.05
   ballTransform: {fileID: 1134809215}
+  ballRB: {fileID: 1134809217}
+  minXForFail: 8
+  ballVelocityForFail: 0.2
 --- !u!95 &1297393778
 Animator:
   serializedVersion: 7
@@ -2300,7 +2303,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297393776}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: d76c09325260a6845bfccaac35029d58, type: 2}
   m_CullingMode: 0
