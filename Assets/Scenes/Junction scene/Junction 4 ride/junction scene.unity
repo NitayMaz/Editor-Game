@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 10150824}
   - component: {fileID: 10150825}
   - component: {fileID: 10150826}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: character red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 9218317d903ed416cb592c890a4a32cf, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -1274,7 +1274,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: a07bd7d2147a14766aa565902c5883db, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -3468,7 +3468,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: fe0ab02cf93a641b8aa4f1dafa4db5ca, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -3913,7 +3913,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 4c21982d4cc1d4cbfac67479282c3fc6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0

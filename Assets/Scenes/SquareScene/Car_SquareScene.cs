@@ -11,9 +11,17 @@ public class Car_SquareScene : TrackControlled
             return;
         waiterCollisionEffect.transform.position = transform.position;
         waiterCollisionEffect.Play(); //particle!
+        StartInteraction();
+        other.GetComponent<TrackControlled>().StartInteraction();
         StageManager.Instance?.StageFailed();
     }
     
+    public override void StartInteraction()
+    {
+        Vector3 pos = transform.position;
+        base.StartInteraction();
+        transform.position = pos;
+    }
 
     public override void StopInteraction()
     {

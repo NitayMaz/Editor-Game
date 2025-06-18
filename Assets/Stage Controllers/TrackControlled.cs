@@ -22,6 +22,8 @@ public class TrackControlled : MonoBehaviour
 
     public virtual void StartInteraction()
     {
+        if (!controlledByTimeLine)
+            return;
         controlledByTimeLine = false;
         animator.enabled = true;
         animator.Rebind();

@@ -12,7 +12,6 @@ public class SquareStageManager : StageManager
     public override void StageFailed()
     {
         stageFailed = true;
-        TimeLine.Instance.StopPlaying();
     }
 
     public override void TimeLineDone()
