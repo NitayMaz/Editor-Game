@@ -1119,6 +1119,9 @@ MonoBehaviour:
   pauseMenu: {fileID: 506591951}
   pauseMenuButton: {fileID: 878515654}
   UIcursor: {fileID: 1170687198}
+  waiters:
+  - {fileID: 229129098}
+  - {fileID: 4892914}
 --- !u!1 &506591951 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8544133027006411394, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}

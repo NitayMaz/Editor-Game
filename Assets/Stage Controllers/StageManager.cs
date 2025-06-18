@@ -69,7 +69,6 @@ public class StageManager : MonoBehaviour
     protected void ShowStageSuccessUI()
     {
         stageSuccessUI.SetActive(true);
-        TimeLine.Instance.StopPlaying();
         enableUICursor();
         Debug.Log("Stage Success UI shown");
     }

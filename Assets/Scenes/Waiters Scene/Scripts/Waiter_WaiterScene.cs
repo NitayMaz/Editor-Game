@@ -11,8 +11,8 @@ public class Waiter_WaiterScene : TrackControlled
             return;
         waiterCollisionEffect.transform.position = transform.position;
         waiterCollisionEffect.Play(); //particle!
-        Debug.Log(other.name.ToString());
         StartInteraction();
+        other.GetComponent<Waiter_WaiterScene>().StartInteraction();
         StageManager.Instance?.StageFailed();
     }
 
@@ -21,12 +21,22 @@ public class Waiter_WaiterScene : TrackControlled
     {
         Vector3 pos = transform.position;
         base.StartInteraction();
-        animator.enabled = false;
         transform.position = pos;
     }
 
     public override void StopInteraction()
     {
         base.StopInteraction();
+    }
+    
+    public void ResetAnimator()
+    {
+        animator.SetBool("Success", false);
+    }
+    
+    public void StageSuccess()
+    {
+        StartInteraction();
+        animator.SetBool("Success", true);
     }
 }
