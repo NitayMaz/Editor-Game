@@ -12,7 +12,9 @@ public class Car_SquareScene : TrackControlled
         waiterCollisionEffect.transform.position = transform.position;
         waiterCollisionEffect.Play(); //particle!
         StartInteraction();
-        other.GetComponent<TrackControlled>().StartInteraction();
+        //can hit both duck and other rider
+        other.GetComponent<Car_SquareScene>()?.StartInteraction();
+        other.GetComponent<Duck_DuckScene>()?.StartInteraction();
         StageManager.Instance?.StageFailed();
     }
     

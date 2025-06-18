@@ -4,7 +4,6 @@ using UnityEngine;
 public class Duck_DuckScene : TrackControlled
 {
     [SerializeField] ParticleSystem duckExplodes;
-    [SerializeField] private Vector2 lastPosition;
     [SerializeField] private bool isDead = false;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -13,7 +12,6 @@ public class Duck_DuckScene : TrackControlled
             return;
         if (other.gameObject.CompareTag("WinArea"))
         {
-            lastPosition = transform.position;
             // StageManager.Instance.StageSuccess();
             StartInteraction();
             transform.GetComponent<Animator>().SetBool("PassedRoad", true);
@@ -22,7 +20,6 @@ public class Duck_DuckScene : TrackControlled
         if (isDead) // to avoid second collision when moving transform
             return;
         duckExplodes.transform.position = transform.position;
-        lastPosition = transform.position;
 
         duckExplodes.Play(); //particle!
         isDead = true;
@@ -31,6 +28,7 @@ public class Duck_DuckScene : TrackControlled
 
     public override void StartInteraction()
     {
+        Vector3 lastPosition = transform.position;
         base.StartInteraction(); // turns on animator, resets position to start
         transform.position = lastPosition; // recover last position
     }
