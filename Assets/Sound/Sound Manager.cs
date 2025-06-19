@@ -5,10 +5,14 @@ using UnityEngine;
 public enum AudioClips
 {
     BackgroundMusic,
+    BackgroundAmbience,
     DuckQuack,
     CarHonk,
     YogaFail,
     MouseClick,
+    BallKick,
+    SceneSuccess,
+    SceneFail,
     //...
 }
 
@@ -83,6 +87,9 @@ public class SoundManager : MonoBehaviour
             case AudioClips.BackgroundMusic:
                 PlaySound(audioSourceDictionary[AudioSources.BackgroundMusic].source, audioClipDictionary[clipToPlay], true);
                 break;
+            // case AudioClips.BackgroundAmbience:
+            //     PlaySound(audioSourceDictionary[AudioSources.BackgroundMusic].source, audioClipDictionary[clipToPlay], true);
+            //     break;
             case AudioClips.DuckQuack:
                 PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
                 break;
@@ -92,7 +99,16 @@ public class SoundManager : MonoBehaviour
             case AudioClips.YogaFail:
                 PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
                 break;
+            case AudioClips.BallKick:
+                PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
+                break;
             case AudioClips.MouseClick:
+                PlaySound(audioSourceDictionary[AudioSources.UI].source, audioClipDictionary[clipToPlay]);
+                break;
+            case AudioClips.SceneFail:
+                PlaySound(audioSourceDictionary[AudioSources.UI].source, audioClipDictionary[clipToPlay]);
+                break;
+            case AudioClips.SceneSuccess:
                 PlaySound(audioSourceDictionary[AudioSources.UI].source, audioClipDictionary[clipToPlay]);
                 break;
         }
