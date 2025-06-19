@@ -20,7 +20,8 @@ public enum AudioSources
 {
     BackgroundMusic,
     SoundEffects,
-    UI
+    UI,
+    AmbienceMusic
 }
 
 public class SoundManager : MonoBehaviour
@@ -47,6 +48,7 @@ public class SoundManager : MonoBehaviour
     private void Start()
     {
         PlayAudio(AudioClips.BackgroundMusic);
+        PlayAudio(AudioClips.BackgroundAmbience);
     }
 
     private void InitializeDictionaries()
@@ -87,9 +89,9 @@ public class SoundManager : MonoBehaviour
             case AudioClips.BackgroundMusic:
                 PlaySound(audioSourceDictionary[AudioSources.BackgroundMusic].source, audioClipDictionary[clipToPlay], true);
                 break;
-            // case AudioClips.BackgroundAmbience:
-            //     PlaySound(audioSourceDictionary[AudioSources.BackgroundMusic].source, audioClipDictionary[clipToPlay], true);
-            //     break;
+            case AudioClips.BackgroundAmbience:
+                PlaySound(audioSourceDictionary[AudioSources.AmbienceMusic].source, audioClipDictionary[clipToPlay], true);
+                break;
             case AudioClips.DuckQuack:
                 PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
                 break;
@@ -106,10 +108,10 @@ public class SoundManager : MonoBehaviour
                 PlaySound(audioSourceDictionary[AudioSources.UI].source, audioClipDictionary[clipToPlay]);
                 break;
             case AudioClips.SceneFail:
-                PlaySound(audioSourceDictionary[AudioSources.UI].source, audioClipDictionary[clipToPlay]);
+                PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
                 break;
             case AudioClips.SceneSuccess:
-                PlaySound(audioSourceDictionary[AudioSources.UI].source, audioClipDictionary[clipToPlay]);
+                PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
                 break;
         }
         
