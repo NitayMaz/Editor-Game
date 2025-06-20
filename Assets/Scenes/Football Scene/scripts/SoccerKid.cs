@@ -10,10 +10,12 @@ public class SoccerKid : TrackControlled
     [SerializeField]private Rigidbody2D ballRB;
     [SerializeField]private float minXForFail;
     [SerializeField] private float ballVelocityForFail;
+    [SerializeField] private float delayBeforeWinAnim = 0.5f;
     private Vector3 originalBallPosition;
     private float speedX = 0f;
     private float lastXPosition = 0f;
     private bool kickedBall = false;
+    private bool scored = false;
 
     private void Start()
     {
@@ -27,7 +29,7 @@ public class SoccerKid : TrackControlled
         lastXPosition = transform.position.x;
         
         //check failure
-        if (kickedBall && (ballTransform.position.x > minXForFail || ballRB.linearVelocity.magnitude < ballVelocityForFail))
+        if (kickedBall && !scored && (ballTransform.position.x > minXForFail || ballRB.linearVelocity.magnitude < ballVelocityForFail))
         {
             animator.SetBool("Fail", true);
         }
@@ -52,10 +54,17 @@ public class SoccerKid : TrackControlled
         ballRB.Sleep();
         GetComponent<Animator>().SetBool("Goal", false);
         kickedBall = false;
+        scored = false;
         base.StopInteraction();
     }
 
     public void Goal()
+    {
+        scored = true;
+        Invoke(nameof(PlayWinAnimation), delayBeforeWinAnim);
+    }
+
+    private void PlayWinAnimation()
     {
         GetComponent<Animator>().SetBool("Goal", true);
     }

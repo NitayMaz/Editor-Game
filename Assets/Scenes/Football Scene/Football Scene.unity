@@ -2295,6 +2295,7 @@ MonoBehaviour:
   ballRB: {fileID: 1134809217}
   minXForFail: 8
   ballVelocityForFail: 0.2
+  delayBeforeWinAnim: 0.25
 --- !u!95 &1297393778
 Animator:
   serializedVersion: 7
