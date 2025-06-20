@@ -13,6 +13,9 @@ public enum AudioClips
     BallKick,
     SceneSuccess,
     SceneFail,
+    ScissorsCut,
+    DuckRunOver,
+    BikeBellRing,
     //...
 }
 
@@ -36,7 +39,7 @@ public class SoundManager : MonoBehaviour
     {
         if (Instance != null)
         {
-            Debug.LogError("Audio Manager already exists in scene, probably the one from last scene carried over, this is fine.");
+            Debug.Log("Audio Manager already exists in scene, probably the one from last scene carried over, this is fine.");
             Destroy(gameObject);
             return;
         }
@@ -47,6 +50,7 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("SoundManager started, playing background music and ambience.");
         PlayAudio(AudioClips.BackgroundMusic);
         PlayAudio(AudioClips.BackgroundAmbience);
     }
@@ -113,12 +117,22 @@ public class SoundManager : MonoBehaviour
             case AudioClips.SceneSuccess:
                 PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
                 break;
+            case AudioClips.ScissorsCut:
+                PlaySound(audioSourceDictionary[AudioSources.UI].source, audioClipDictionary[clipToPlay]);
+                break;
+            case AudioClips.DuckRunOver:
+                PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
+                    break;
+            case AudioClips.BikeBellRing:
+                PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
+                break;
         }
         
     }
     
     private void PlaySound(AudioSource audioSource, AudioClipObject clip, bool loops = false)
     {
+        audioSource.volume = clip.volume;
         if (!loops)
         {
             audioSource.PlayOneShot(clip.clips[UnityEngine.Random.Range(0, clip.clips.Length)]);
@@ -142,6 +156,7 @@ public class AudioClipObject
 {
     public AudioClips soundName;
     public AudioClip[] clips;
+    [Range(0f, 1f)] public float volume = 0.5f;
 }
 
 [Serializable]

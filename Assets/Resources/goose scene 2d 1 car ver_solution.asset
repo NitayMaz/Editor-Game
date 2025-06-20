@@ -15,17 +15,17 @@ MonoBehaviour:
   data:
   - clipsInitData:
     - animationClip: {fileID: 7400000, guid: 925a302a144d24d2a9c5c6927dae4013, type: 2}
-      duration: 2
+      duration: 1.7
       pace: 1
       animationStartPoint: 0
-      animationEndPoint: 0.375
+      animationEndPoint: 0.3167702
       startTime: 0
     - animationClip: {fileID: 7400000, guid: 925a302a144d24d2a9c5c6927dae4013, type: 2}
-      duration: 2
+      duration: 2.2
       pace: 1.5
-      animationStartPoint: 0.375
-      animationEndPoint: 0.9375
-      startTime: 2.7
+      animationStartPoint: 0.3167702
+      animationEndPoint: 0.931677
+      startTime: 2.6000001
   - clipsInitData:
     - animationClip: {fileID: 7400000, guid: 030a6aae8cec847598a044cc51d422e2, type: 2}
       duration: 1.15

@@ -105,6 +105,7 @@ public class TimeLine : MonoBehaviour
             return;
         isPlaying = true;
         ResetTime();
+        StageManager.Instance?.OnStagePlay();
         sceneCoroutine = StartCoroutine(RunScene());
     }
     

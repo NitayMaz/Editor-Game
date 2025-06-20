@@ -44,6 +44,10 @@ public class StageManager : MonoBehaviour
         
     }
 
+    public virtual void OnStagePlay()
+    {
+    }
+
     public virtual void StageReset()
     {
     }
@@ -68,6 +72,7 @@ public class StageManager : MonoBehaviour
 
     protected void ShowStageSuccessUI()
     {
+        SoundManager.Instance.PlayAudio(AudioClips.SceneSuccess);
         stageSuccessUI.SetActive(true);
         enableUICursor();
         Debug.Log("Stage Success UI shown");
@@ -162,5 +167,10 @@ public class StageManager : MonoBehaviour
     {
         UIcursor.SetActive(false);
         MyCursor.Instance.gameObject.SetActive(true);
+    }
+
+    public void PlayClickSound()
+    {
+        SoundManager.Instance.PlayAudio(AudioClips.MouseClick);
     }
 }

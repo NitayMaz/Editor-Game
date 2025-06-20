@@ -5,29 +5,30 @@ using UnityEngine;
 public class YogaStageManager : StageManager
 {
     [SerializeField] private float timeToShowSuccessUI = 1f;
-    
-    private bool[,]
-        poseEntered =
-            new bool[Enum.GetValues(typeof(YogaParticipant)).Length, 4]; // 4 poses for each participant(in the enum)
+
+    private int[] poseEntered;
 
     [SerializeField] private float
         TimeToCheckYogaPosition = 0.3f; // time to wait before checking if all participants are in the position
 
     [SerializeField] ParticleSystem duckExplodes;
     [SerializeField] private Yoga_Girl yogaGirl;
+    [SerializeField] private Yoga_Girl yogaGirl2;
     [SerializeField] private Yoga_Npc yogaNPCs;
-
+    [SerializeField] private int peopleInScene = 2;
+    
     public override void StageReset()
     {
         base.StageReset();
-        Array.Clear(poseEntered, 0, poseEntered.Length); // reset values in array to false
+        poseEntered = new int[4]; // 4 poses for each participant, all initialized to 0
     }
 
     public override void TimeLineDone()
     {
         yogaGirl.StartInteraction();
+        yogaGirl2?.StartInteraction();
         yogaNPCs.StartInteraction();
-        Invoke(nameof(ShowStageSuccessUI),timeToShowSuccessUI);
+        Invoke(nameof(ShowStageSuccessUI), timeToShowSuccessUI);
     }
 
     public override void StageFailed()
@@ -36,39 +37,39 @@ public class YogaStageManager : StageManager
         //particle?
         duckExplodes.Play();
         TimeLine.Instance.StopPlaying();
-        yogaGirl.StartInteraction();
-        yogaNPCs.StartInteraction();
         yogaGirl.GetComponent<Animator>().SetBool("Fail", true);
+        yogaGirl2?.GetComponent<Animator>().SetBool("Fail", true);
         yogaNPCs.GetComponent<Animator>().SetBool("Fail", true);
+        yogaGirl.StartInteraction();
+        yogaGirl2?.StartInteraction();
+        yogaNPCs.StartInteraction();
     }
 
     public void RegisterPosition(YogaParticipant participant, int positionIndex)
     {
         Debug.Log("Registering position for participant: " + participant + ", position index: " + positionIndex);
-        if (positionIndex < 0 || positionIndex >= poseEntered.GetLength(1))
+        if (positionIndex < 0 || positionIndex >= 4)
         {
             Debug.LogError("Invalid position index: " + positionIndex);
             return;
         }
 
-        poseEntered[(int)participant, positionIndex] = true;
+        poseEntered[positionIndex]++;
         StartCoroutine(CheckPositionSynch(positionIndex));
     }
 
     private IEnumerator CheckPositionSynch(int posInd)
     {
         yield return new WaitForSeconds(TimeToCheckYogaPosition);
-        //check for each of the participants in the enum if they reach the position, if they didn't, fail.
-        Debug.Log("Checking if all participants reached position index: " + posInd);
-        foreach (YogaParticipant participant in Enum.GetValues(typeof(YogaParticipant)))
-        {
-            if (!poseEntered[(int)participant, posInd])
-                StageFailed();
-        }
+        //check all participants reached the position
+        Debug.Log("Checking if all participants reached position index: " + posInd + "pos values is: " + poseEntered[posInd]);
+        if (poseEntered[posInd] != peopleInScene)
+            StageFailed();
+        
     }
 }
 
-public enum YogaParticipant
+public enum YogaParticipant //kinda useless as for now
 {
     Girl = 0,
     NPCs = 1

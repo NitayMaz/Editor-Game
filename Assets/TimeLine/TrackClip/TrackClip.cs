@@ -189,6 +189,7 @@ public class TrackClip : MonoBehaviour
             animationEndPoint = clipAnimationEndPoint,
             startTime = startTime + firstPartDuration,
         };
+        SoundManager.Instance.PlayAudio(AudioClips.ScissorsCut);
         parentTrack.ReplaceCutClip(this, firstPartData, secondPartData);
     }
     
