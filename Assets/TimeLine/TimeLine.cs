@@ -209,10 +209,6 @@ public class TimeLine : MonoBehaviour
     {
         return Mathf.Round(value / snapValue) * snapValue;
     }
-
-    public void DeleteAllClips()
-    {
-    }
     
     public List<TrackInitData> GetClipsData()
     {
