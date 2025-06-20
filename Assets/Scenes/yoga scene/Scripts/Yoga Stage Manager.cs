@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class YogaStageManager : StageManager
 {
+    [SerializeField] private float timeToShowSuccessUI = 1f;
+    
     private bool[,]
         poseEntered =
             new bool[Enum.GetValues(typeof(YogaParticipant)).Length, 4]; // 4 poses for each participant(in the enum)
@@ -25,7 +27,7 @@ public class YogaStageManager : StageManager
     {
         yogaGirl.StartInteraction();
         yogaNPCs.StartInteraction();
-        ShowStageSuccessUI();
+        Invoke(nameof(ShowStageSuccessUI),timeToShowSuccessUI);
     }
 
     public override void StageFailed()

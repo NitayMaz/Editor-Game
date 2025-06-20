@@ -1977,6 +1977,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1141866736}
   pauseMenuButton: {fileID: 1141866735}
   UIcursor: {fileID: 1141866733}
+  timeToShowSuccessUI: 1
 --- !u!1 &1141866735 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7137384533402762196, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}

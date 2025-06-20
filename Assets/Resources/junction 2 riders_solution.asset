@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - clipsInitData:
-    - animationClip: {fileID: 7400000, guid: 99ae0f9e584a444b9b151e25d2959bb7, type: 2}
+    - animationClip: {fileID: 7400000, guid: 1e3a7fd87ec6c456ca72c407a2498d53, type: 2}
       duration: 2
       pace: 1
       animationStartPoint: 0
       animationEndPoint: 1
-      startTime: 0
+      startTime: 0.2
   - clipsInitData:
-    - animationClip: {fileID: 7400000, guid: 1e3a7fd87ec6c456ca72c407a2498d53, type: 2}
-      duration: 2.25
+    - animationClip: {fileID: 7400000, guid: d2716d22a073a4342ba5f267812c6808, type: 2}
+      duration: 5.5
       pace: 1
-      animationStartPoint: 0
-      animationEndPoint: 0.7875
-      startTime: 1.75
+      animationStartPoint: 0.15247525
+      animationEndPoint: 0.96930695
+      startTime: 0

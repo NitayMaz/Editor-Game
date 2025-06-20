@@ -3,6 +3,7 @@ using UnityEngine;
 public class SquareStageManager : StageManager
 {
     private bool stageFailed = false;
+    [SerializeField] private float timeToShowSuccessUI = 0f;
 
     public override void StageReset()
     {
@@ -17,7 +18,7 @@ public class SquareStageManager : StageManager
     public override void TimeLineDone()
     {
         if(!stageFailed)
-            ShowStageSuccessUI();
+            Invoke(nameof(ShowStageSuccessUI), timeToShowSuccessUI);
     }
     
     

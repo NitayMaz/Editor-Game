@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class WaitersStageManager : StageManager
 {
+    [SerializeField] private float timeToShowSuccessUI = 1f;
     [SerializeField] private Waiter_WaiterScene[] waiters;
     private bool stageFailed = false;
+    
 
     public override void StageReset()
     {
@@ -23,7 +25,7 @@ public class WaitersStageManager : StageManager
     {
         if (!stageFailed)
         {
-            ShowStageSuccessUI();
+            Invoke(nameof(ShowStageSuccessUI), timeToShowSuccessUI);
             foreach (var waiter in waiters)
             {
                 waiter.StageSuccess();

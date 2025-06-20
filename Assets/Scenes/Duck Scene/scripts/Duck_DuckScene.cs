@@ -15,6 +15,7 @@ public class Duck_DuckScene : TrackControlled
             // StageManager.Instance.StageSuccess();
             StartInteraction();
             transform.GetComponent<Animator>().SetBool("PassedRoad", true);
+            StageManager.Instance.StageSuccess();
             return;
         }
         if (isDead) // to avoid second collision when moving transform
