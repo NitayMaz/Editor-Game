@@ -19,18 +19,27 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: {x: 13.23, y: -4.02, z: 0}
+        time: 1
+        value: {x: 9.807693, y: -1.8307694, z: -2.3076923}
         inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: -12.969999, y: 5.5150003, z: 0}
+        outSlope: {x: -9.726922, y: 3.8346162, z: 2.3076923}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 2
-        value: {x: -12.71, y: 7.01, z: 0}
-        inSlope: {x: -12.969999, y: 5.5150003, z: -0}
+        value: {x: 0.08077035, y: 2.003847, z: 0}
+        inSlope: {x: -9.726922, y: 3.8346162, z: 2.3076923}
+        outSlope: {x: -9.726925, y: 3.834615, z: 2.3076923}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 3
+        value: {x: -9.646154, y: 5.838462, z: 2.3076923}
+        inSlope: {x: -9.726925, y: 3.834615, z: 2.3076923}
         outSlope: {x: Infinity, y: Infinity, z: Infinity}
         tangentMode: 0
         weightedMode: 0
@@ -65,7 +74,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2
+    m_StopTime: 3
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -86,18 +95,27 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 13.23
+        time: 1
+        value: 9.807693
         inSlope: 0
-        outSlope: -12.969999
+        outSlope: -9.726922
         tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 2
-        value: -12.71
-        inSlope: -12.969999
+        value: 0.08077035
+        inSlope: -9.726922
+        outSlope: -9.726925
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 3
+        value: -9.646154
+        inSlope: -9.726925
         outSlope: Infinity
         tangentMode: 69
         weightedMode: 0
@@ -116,18 +134,27 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: -4.02
+        time: 1
+        value: -1.8307694
         inSlope: 0
-        outSlope: 5.5150003
+        outSlope: 3.8346162
         tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 2
-        value: 7.01
-        inSlope: 5.5150003
+        value: 2.003847
+        inSlope: 3.8346162
+        outSlope: 3.834615
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 3
+        value: 5.838462
+        inSlope: 3.834615
         outSlope: Infinity
         tangentMode: 69
         weightedMode: 0
@@ -146,10 +173,10 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 0
+        time: 1
+        value: -2.3076923
         inSlope: 0
-        outSlope: 0
+        outSlope: 2.3076923
         tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
@@ -157,7 +184,16 @@ AnimationClip:
       - serializedVersion: 3
         time: 2
         value: 0
-        inSlope: -0
+        inSlope: 2.3076923
+        outSlope: 2.3076923
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 3
+        value: 2.3076923
+        inSlope: 2.3076923
         outSlope: Infinity
         tangentMode: 69
         weightedMode: 0
