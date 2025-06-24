@@ -2298,7 +2298,9 @@ MonoBehaviour:
   TimeToCheckYogaPosition: 0.5
   duckExplodes: {fileID: 829462142}
   yogaGirl: {fileID: 1933439113}
+  yogaGirl2: {fileID: 0}
   yogaNPCs: {fileID: 1113685320}
+  peopleInScene: 2
 --- !u!1 &808191341
 GameObject:
   m_ObjectHideFlags: 0
