@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -5707184802173702839, guid: f42a92718fe92432dbb0d2f8c950de15, type: 3}
+      value: {fileID: -8566156722576121068, guid: 247f1d1b08dbb4b3ea6975d10c7ea95b, type: 3}
     attribute: m_Sprite
     path: grandma
     classID: 212
@@ -30,7 +30,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -2606884113254640496, guid: fe8b7508e29b04a0384c5b212ac8661b, type: 3}
+      value: {fileID: 6386126490088098891, guid: eaf8919f45deb4205b4b0a24d047eb6a, type: 3}
     attribute: m_Sprite
     path: instructor
     classID: 212
@@ -39,7 +39,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -7268631054044879280, guid: ad75d4723d3ed4b9fb468768893ecabe, type: 3}
+      value: {fileID: -1148466800824863400, guid: 7e1301641ebf1480f9929705236eb696, type: 3}
     attribute: m_Sprite
     path: woman
     classID: 212
@@ -80,9 +80,9 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -5707184802173702839, guid: f42a92718fe92432dbb0d2f8c950de15, type: 3}
-    - {fileID: -2606884113254640496, guid: fe8b7508e29b04a0384c5b212ac8661b, type: 3}
-    - {fileID: -7268631054044879280, guid: ad75d4723d3ed4b9fb468768893ecabe, type: 3}
+    - {fileID: -8566156722576121068, guid: 247f1d1b08dbb4b3ea6975d10c7ea95b, type: 3}
+    - {fileID: 6386126490088098891, guid: eaf8919f45deb4205b4b0a24d047eb6a, type: 3}
+    - {fileID: -1148466800824863400, guid: 7e1301641ebf1480f9929705236eb696, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
