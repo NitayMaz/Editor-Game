@@ -2426,6 +2426,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayClickSound
       objectReference: {fileID: 0}
+    - target: {fileID: 5872972654849686539, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5872972654849686539, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6203370228575287425, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.2197413
@@ -2465,6 +2473,14 @@ PrefabInstance:
     - target: {fileID: 6203370228575287425, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933837902024682009, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.78571427
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933837902024682009, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.6571429
       objectReference: {fileID: 0}
     - target: {fileID: 8206894364706085509, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_IsActive
@@ -4140,7 +4156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &695534569
 Transform:
   m_ObjectHideFlags: 0
@@ -4227,7 +4243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &708204928
 Transform:
   m_ObjectHideFlags: 0
@@ -4434,7 +4450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &747044807
 Transform:
   m_ObjectHideFlags: 0
