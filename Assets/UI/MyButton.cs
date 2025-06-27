@@ -38,7 +38,7 @@ public class MyButton : MonoBehaviour
                 animator.SetTrigger("IsPressed");
                 break;
             case buttonType.OpenPauseMenu:
-                StageManager.Instance.ShowPauseMenu();
+                MenuUiCordinator.Instance.OpenPauseMenu();
                 break;
             default:
                 Debug.LogError("Button type not recognized");

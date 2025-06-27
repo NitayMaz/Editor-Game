@@ -9,10 +9,6 @@ using UnityEditor;
 public class StageManager : MonoBehaviour
 {
     public static StageManager Instance;
-    [SerializeField] private GameObject stageSuccessUI;
-    [SerializeField] private GameObject pauseMenu;
-    [SerializeField] private GameObject pauseMenuButton;
-    [SerializeField] private GameObject UIcursor;
 
     private void Awake()
     {
@@ -28,18 +24,11 @@ public class StageManager : MonoBehaviour
 
     private void Start()
     {
-        if (stageSuccessUI == null || pauseMenu == null || pauseMenuButton == null || UIcursor == null)
-        {
-            Debug.LogError("StageManager is not properly initialized. Please assign all UI elements in the inspector.");
-        }
-        stageSuccessUI.SetActive(false);
-        pauseMenu.SetActive(false);
-        pauseMenuButton.SetActive(true);
-        UIcursor.SetActive(false);
+        MenuUiCordinator.Instance.CloseStageSuccessUI();
         OnStart();
     }
 
-    public virtual void OnStart()
+    protected virtual void OnStart()
     {
         
     }
@@ -70,13 +59,14 @@ public class StageManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    protected void ShowStageSuccessUI()
+
+    public void ShowStageSuccessUI()
     {
+        // this is so i don't have to change every stage manager now that we have the menu ui cordinator
         SoundManager.Instance.PlayAudio(AudioClips.SceneSuccess);
-        stageSuccessUI.SetActive(true);
-        enableUICursor();
-        Debug.Log("Stage Success UI shown");
+        MenuUiCordinator.Instance.ShowStageSuccessUI();
     }
+    
 
     public void ResetLevel()
     {
@@ -123,54 +113,7 @@ public class StageManager : MonoBehaviour
 
         TimeLine.Instance.LoadSavedClips(sceneSolution.data);
         Debug.Log("Scene solution loaded from " + solutionFileName);
-        HidePauseMenu(); // exit pause menu
         UndoManager.Clear(); // clear undo stack after loading solution
     }
 
-    // ##################### UI BS ########################
-    public void ShowPauseMenu()
-    {
-        if (pauseMenu.activeSelf)
-            return;
-        
-        TimeLine.Instance.StopPlaying();
-        enableUICursor();
-        stageSuccessUI.SetActive(false);
-        pauseMenu.SetActive(true);
-        pauseMenuButton.SetActive(false);
-
-    }
-
-    public void HidePauseMenu()
-    {
-        if(!pauseMenu.activeSelf)
-            return;
-        disableUICursor();
-        pauseMenu.SetActive(false);
-        pauseMenuButton.SetActive(true);
-        
-    }
-    
-    public void CloseStageSuccessUI()
-    {
-        stageSuccessUI.SetActive(false);
-        disableUICursor();
-    }
-
-    private void enableUICursor()
-    {
-        UIcursor.SetActive(true);
-        MyCursor.Instance.gameObject.SetActive(false);
-    }
-    
-    private void disableUICursor()
-    {
-        UIcursor.SetActive(false);
-        MyCursor.Instance.gameObject.SetActive(true);
-    }
-
-    public void PlayClickSound()
-    {
-        SoundManager.Instance.PlayAudio(AudioClips.MouseClick);
-    }
 }

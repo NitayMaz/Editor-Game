@@ -34,6 +34,10 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioSourceObject[] audioSources;
     private Dictionary<AudioClips, AudioClipObject> audioClipDictionary;
     private Dictionary<AudioSources, AudioSourceObject> audioSourceDictionary;
+    public float musicVolume = 0.75f;
+    public float soundEffectsVolume = 0.75f;
+    private AudioClipObject currentBackgroundMusicClip = null;
+    private AudioClipObject currentAmbienceClip = null;
     
     private void Awake()
     {
@@ -46,11 +50,13 @@ public class SoundManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
         InitializeDictionaries();
+        audioSourceDictionary[AudioSources.BackgroundMusic].source.loop = true;
+        audioSourceDictionary[AudioSources.AmbienceMusic].source.loop = true;
     }
 
     private void Start()
     {
-        Debug.Log("SoundManager started, playing background music and ambience.");
+        
         PlayAudio(AudioClips.BackgroundMusic);
         PlayAudio(AudioClips.BackgroundAmbience);
     }
@@ -90,64 +96,103 @@ public class SoundManager : MonoBehaviour
         //add sounds here.
         switch (clipToPlay)
         {
+            // BGM
             case AudioClips.BackgroundMusic:
-                PlaySound(audioSourceDictionary[AudioSources.BackgroundMusic].source, audioClipDictionary[clipToPlay], true);
+                PlaySound(AudioSources.BackgroundMusic, clipToPlay);
                 break;
+            //Ambience / follies
             case AudioClips.BackgroundAmbience:
-                PlaySound(audioSourceDictionary[AudioSources.AmbienceMusic].source, audioClipDictionary[clipToPlay], true);
+                PlaySound(AudioSources.AmbienceMusic, clipToPlay);
                 break;
+            // Sound Effects
             case AudioClips.DuckQuack:
-                PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
                 break;
             case AudioClips.CarHonk:
-                PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
                 break;
             case AudioClips.YogaFail:
-                PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
                 break;
             case AudioClips.BallKick:
-                PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
-                break;
-            case AudioClips.MouseClick:
-                PlaySound(audioSourceDictionary[AudioSources.UI].source, audioClipDictionary[clipToPlay]);
-                break;
-            case AudioClips.SceneFail:
-                PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
-                break;
-            case AudioClips.SceneSuccess:
-                PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
-                break;
-            case AudioClips.ScissorsCut:
-                PlaySound(audioSourceDictionary[AudioSources.UI].source, audioClipDictionary[clipToPlay]);
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
                 break;
             case AudioClips.DuckRunOver:
-                PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
-                    break;
-            case AudioClips.BikeBellRing:
-                PlaySound(audioSourceDictionary[AudioSources.SoundEffects].source, audioClipDictionary[clipToPlay]);
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
                 break;
+            case AudioClips.BikeBellRing:
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
+                break;
+            // UI/Scene Sounds
+            case AudioClips.MouseClick:
+                PlaySound(AudioSources.UI, clipToPlay);
+                break;
+            case AudioClips.SceneFail:
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
+                break;
+            case AudioClips.SceneSuccess:
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
+                break;
+            case AudioClips.ScissorsCut:
+                PlaySound(AudioSources.UI, clipToPlay);
+                break;
+            
         }
         
     }
     
-    private void PlaySound(AudioSource audioSource, AudioClipObject clip, bool loops = false)
+    //function is hella ugly but i just need it to work
+    private void PlaySound(AudioSources audioSource, AudioClips clip)
     {
-        audioSource.volume = clip.volume;
-        if (!loops)
+        if(audioSource == AudioSources.BackgroundMusic || audioSource == AudioSources.AmbienceMusic)
         {
-            audioSource.PlayOneShot(clip.clips[UnityEngine.Random.Range(0, clip.clips.Length)]);
+            if (audioSource == AudioSources.BackgroundMusic)
+            {
+                currentBackgroundMusicClip = audioClipDictionary[clip];
+            }
+            if (audioSource == AudioSources.AmbienceMusic)
+            {
+                currentAmbienceClip = audioClipDictionary[clip];
+            }
+            AudioSource source = audioSourceDictionary[audioSource].source;
+            source.clip = audioClipDictionary[clip].clips[0];
+            source.volume = audioClipDictionary[clip].volume * musicVolume;
+            source.Play();
         }
-        else
+        else //sound effect or ui
         {
-            audioSource.loop = true;
-            audioSource.clip = clip.clips[0];
-            audioSource.Play();
+            AudioSource source = audioSourceDictionary[audioSource].source;
+            AudioClipObject audioClip = audioClipDictionary[clip];
+            source.volume = audioClip.volume * soundEffectsVolume;
+            source.PlayOneShot(audioClip.clips[UnityEngine.Random.Range(0, audioClip.clips.Length)]);
         }
     }
     
     public void StopSound(AudioSources audioSource)
     {
         audioSourceDictionary[audioSource].source.Stop();
+        if(audioSource == AudioSources.BackgroundMusic)
+            currentBackgroundMusicClip = null;
+        if(audioSource == AudioSources.AmbienceMusic)
+            currentAmbienceClip = null;
+    }
+
+    public void ChangeMusicVolume(float newVolume)
+    {
+        musicVolume = newVolume;
+        if (currentBackgroundMusicClip != null)
+        {
+            audioSourceDictionary[AudioSources.BackgroundMusic].source.volume = currentBackgroundMusicClip.volume * musicVolume;
+        }
+        if (currentAmbienceClip != null)
+        {
+            audioSourceDictionary[AudioSources.AmbienceMusic].source.volume = currentAmbienceClip.volume * musicVolume;
+        }
+    }
+    
+    public void ChangeSoundEffectsVolume(float newVolume)
+    {
+        soundEffectsVolume = newVolume;
     }
 }
 
@@ -164,5 +209,4 @@ public class AudioSourceObject
 {
     public AudioSources audioSourceName;
     public AudioSource source;
-    public bool loop = false; //an audio source that loops will only play one sound at a time, 2 looping sounds require 2 seperate sources.
 }
