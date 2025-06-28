@@ -10,11 +10,8 @@ public class YogaStageManager : StageManager
 
     [SerializeField] private float
         TimeToCheckYogaPosition = 0.3f; // time to wait before checking if all participants are in the position
-
-    [SerializeField] ParticleSystem duckExplodes;
     [SerializeField] private Yoga_Girl yogaGirl;
     [SerializeField] private Yoga_Npc yogaNPCs;
-    [SerializeField] private int peopleInScene = 2;
     
     public override void StageReset()
     {
@@ -32,9 +29,10 @@ public class YogaStageManager : StageManager
     public override void StageFailed()
     {
         base.StageFailed();
-        //particle?
-        duckExplodes.Play();
         TimeLine.Instance.StopPlaying();
+        
+        //failure sound???
+        
         yogaGirl.StartInteraction();
         yogaNPCs.StartInteraction();
         //girl fail is always the same, npcs fail is different for each pose
