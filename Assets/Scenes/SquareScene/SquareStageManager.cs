@@ -5,12 +5,6 @@ public class SquareStageManager : StageManager
     private bool stageFailed = false;
     [SerializeField] private float timeToShowSuccessUI = 0f;
 
-    public override void OnStagePlay()
-    {
-        base.OnStagePlay();
-        SoundManager.Instance.PlayAudio(AudioClips.BikeBellRing);
-    }
-
     public override void StageReset()
     {
         stageFailed = false;
@@ -18,6 +12,7 @@ public class SquareStageManager : StageManager
 
     public override void StageFailed()
     {
+        base.StageFailed();
         stageFailed = true;
     }
 

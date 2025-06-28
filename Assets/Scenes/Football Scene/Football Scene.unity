@@ -3523,9 +3523,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: StageAmbience
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: ballRigidbody
       value: 
       objectReference: {fileID: 1134809217}
+    - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: StageStartSound
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: pauseMenuButton
       value: 

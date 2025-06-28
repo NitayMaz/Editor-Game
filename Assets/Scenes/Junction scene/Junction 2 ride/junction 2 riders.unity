@@ -539,9 +539,9 @@ GameObject:
   - component: {fileID: 280049976}
   - component: {fileID: 280049975}
   - component: {fileID: 280049978}
-  - component: {fileID: 280049979}
   - component: {fileID: 280049980}
   - component: {fileID: 280049981}
+  - component: {fileID: 280049982}
   m_Layer: 0
   m_Name: character blue
   m_TagString: Untagged
@@ -641,20 +641,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &280049979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280049974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5572c036e72d1b84891da668cc5b8abc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controlledByTimeLine: 1
-  waiterCollisionEffect: {fileID: 1063405395}
 --- !u!50 &280049980
 Rigidbody2D:
   serializedVersion: 5
@@ -733,6 +719,19 @@ PolygonCollider2D:
       - {x: 0.66178656, y: -0.50711393}
       - {x: -0.6015355, y: 0.41822422}
   m_UseDelaunayMesh: 0
+--- !u!114 &280049982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280049974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad97f755c5dac4d4b8ad5e0ed941bc24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlledByTimeLine: 1
 --- !u!1001 &311089260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1050,6 +1049,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901f1dee114d91242916a384016c45e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StageAmbience: 1
+  StageStartSound: 11
+  StageFailSound: 10
   timeToShowSuccessUI: 0
 --- !u!1 &520814083
 GameObject:

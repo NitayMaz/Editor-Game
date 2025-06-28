@@ -9,6 +9,10 @@ using UnityEditor;
 public class StageManager : MonoBehaviour
 {
     public static StageManager Instance;
+    [SerializeField] private AudioClips StageAmbience = AudioClips.ParkAmbience;
+    [SerializeField] private AudioClips StageStartSound = AudioClips.NoClip;
+    [SerializeField] private AudioClips StageFailSound = AudioClips.NoClip;
+    
 
     private void Awake()
     {
@@ -25,16 +29,18 @@ public class StageManager : MonoBehaviour
     private void Start()
     {
         MenuUiCordinator.Instance.CloseStageSuccessUI();
+        SoundManager.Instance.StopSound(AudioSources.AmbienceMusic);
+        SoundManager.Instance.PlayAudio(StageAmbience);
         OnStart();
     }
 
     protected virtual void OnStart()
     {
-        
     }
 
     public virtual void OnStagePlay()
     {
+        SoundManager.Instance.PlayAudio(StageStartSound);
     }
 
     public virtual void StageReset()
@@ -47,6 +53,7 @@ public class StageManager : MonoBehaviour
 
     public virtual void StageFailed()
     {
+        SoundManager.Instance.PlayAudio(StageFailSound);
     }
 
     public virtual void StageSuccess()

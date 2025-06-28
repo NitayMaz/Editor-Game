@@ -2,20 +2,31 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum AudioClips
+public enum AudioClips // Important! NEVER change the value of each entry. The values are used so we can delete/shuffle stuff in the enum.(must be unique)
 {
-    BackgroundMusic,
-    BackgroundAmbience,
-    DuckQuack,
-    CarHonk,
-    YogaFail,
-    MouseClick,
-    BallKick,
-    SceneSuccess,
-    SceneFail,
-    ScissorsCut,
-    DuckRunOver,
-    BikeBellRing,
+    NoClip= -1,
+    //BGM
+    BackgroundMusic=0,
+    //Ambiences
+    ParkAmbience=1,
+    RestaurantAmbience=14,
+    FountainAmbience=16,
+    // General/UI sounds
+    MouseClick=5,
+    SceneSuccess=7,
+    ScissorsCut=9,
+    // scene start sounds
+    CarHonk=3,
+    BikeBellRing=11,
+    RestaurantBell=13,
+    FootballWhistle=15,
+    // other scene sounds
+    BallKick=6,
+    DuckRunOver=10,
+    //missing sounds - meaning we still need the clip from itai
+    YogaFail=4,
+    //not sure if we need this
+    DuckQuack=2,
     //...
 }
 
@@ -38,15 +49,17 @@ public class SoundManager : MonoBehaviour
     public float soundEffectsVolume = 0.75f;
     private AudioClipObject currentBackgroundMusicClip = null;
     private AudioClipObject currentAmbienceClip = null;
-    
+
     private void Awake()
     {
         if (Instance != null)
         {
-            Debug.Log("Audio Manager already exists in scene, probably the one from last scene carried over, this is fine.");
+            Debug.Log(
+                "Audio Manager already exists in scene, probably the one from last scene carried over, this is fine.");
             Destroy(gameObject);
             return;
         }
+
         Instance = this;
         DontDestroyOnLoad(gameObject);
         InitializeDictionaries();
@@ -56,9 +69,7 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
-        
         PlayAudio(AudioClips.BackgroundMusic);
-        PlayAudio(AudioClips.BackgroundAmbience);
     }
 
     private void InitializeDictionaries()
@@ -85,23 +96,25 @@ public class SoundManager : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning($"Duplicate audio source name found: {source.audioSourceName}. Only the first one will be used.");
+                Debug.LogWarning(
+                    $"Duplicate audio source name found: {source.audioSourceName}. Only the first one will be used.");
             }
         }
-        
     }
-    
+
     public void PlayAudio(AudioClips clipToPlay)
     {
         //add sounds here.
         switch (clipToPlay)
         {
+            case AudioClips.NoClip:
+                return;
             // BGM
             case AudioClips.BackgroundMusic:
                 PlaySound(AudioSources.BackgroundMusic, clipToPlay);
                 break;
             //Ambience / follies
-            case AudioClips.BackgroundAmbience:
+            case AudioClips.ParkAmbience:
                 PlaySound(AudioSources.AmbienceMusic, clipToPlay);
                 break;
             // Sound Effects
@@ -127,33 +140,52 @@ public class SoundManager : MonoBehaviour
             case AudioClips.MouseClick:
                 PlaySound(AudioSources.UI, clipToPlay);
                 break;
-            case AudioClips.SceneFail:
-                PlaySound(AudioSources.SoundEffects, clipToPlay);
-                break;
             case AudioClips.SceneSuccess:
                 PlaySound(AudioSources.SoundEffects, clipToPlay);
                 break;
             case AudioClips.ScissorsCut:
                 PlaySound(AudioSources.UI, clipToPlay);
                 break;
-            
+            case AudioClips.RestaurantBell:
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
+                break;
+            case AudioClips.RestaurantAmbience:
+                PlaySound(AudioSources.AmbienceMusic, clipToPlay);
+                break;
+            case AudioClips.FootballWhistle:
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
+                break;
+            case AudioClips.FountainAmbience:
+                PlaySound(AudioSources.AmbienceMusic, clipToPlay);
+                break;
         }
-        
     }
-    
+
     //function is hella ugly but i just need it to work
     private void PlaySound(AudioSources audioSource, AudioClips clip)
     {
-        if(audioSource == AudioSources.BackgroundMusic || audioSource == AudioSources.AmbienceMusic)
+        if (!audioSourceDictionary.ContainsKey(audioSource))
+        {
+            Debug.LogError($"Audio source {audioSource} is not properly included in the Sound Manager sources list.");
+            return;
+        }
+        if(!audioClipDictionary.ContainsKey(clip) || audioClipDictionary[clip].clips.Length == 0 || audioClipDictionary[clip].clips[0] == null)
+        {
+            Debug.LogError($"Audio clip {clip} is not properly included in the Sound Manager sounds list.");
+            return;
+        }
+        if (audioSource == AudioSources.BackgroundMusic || audioSource == AudioSources.AmbienceMusic)
         {
             if (audioSource == AudioSources.BackgroundMusic)
             {
                 currentBackgroundMusicClip = audioClipDictionary[clip];
             }
+
             if (audioSource == AudioSources.AmbienceMusic)
             {
                 currentAmbienceClip = audioClipDictionary[clip];
             }
+
             AudioSource source = audioSourceDictionary[audioSource].source;
             source.clip = audioClipDictionary[clip].clips[0];
             source.volume = audioClipDictionary[clip].volume * musicVolume;
@@ -167,13 +199,13 @@ public class SoundManager : MonoBehaviour
             source.PlayOneShot(audioClip.clips[UnityEngine.Random.Range(0, audioClip.clips.Length)]);
         }
     }
-    
+
     public void StopSound(AudioSources audioSource)
     {
         audioSourceDictionary[audioSource].source.Stop();
-        if(audioSource == AudioSources.BackgroundMusic)
+        if (audioSource == AudioSources.BackgroundMusic)
             currentBackgroundMusicClip = null;
-        if(audioSource == AudioSources.AmbienceMusic)
+        if (audioSource == AudioSources.AmbienceMusic)
             currentAmbienceClip = null;
     }
 
@@ -182,14 +214,16 @@ public class SoundManager : MonoBehaviour
         musicVolume = newVolume;
         if (currentBackgroundMusicClip != null)
         {
-            audioSourceDictionary[AudioSources.BackgroundMusic].source.volume = currentBackgroundMusicClip.volume * musicVolume;
+            audioSourceDictionary[AudioSources.BackgroundMusic].source.volume =
+                currentBackgroundMusicClip.volume * musicVolume;
         }
+
         if (currentAmbienceClip != null)
         {
             audioSourceDictionary[AudioSources.AmbienceMusic].source.volume = currentAmbienceClip.volume * musicVolume;
         }
     }
-    
+
     public void ChangeSoundEffectsVolume(float newVolume)
     {
         soundEffectsVolume = newVolume;

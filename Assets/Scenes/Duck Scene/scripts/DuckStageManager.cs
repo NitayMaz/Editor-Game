@@ -7,7 +7,6 @@ public class DuckStageManager : StageManager
     public override void OnStagePlay()
     {
         base.OnStagePlay();
-        SoundManager.Instance.PlayAudio(AudioClips.CarHonk);
     }
 
     public override void StageSuccess()

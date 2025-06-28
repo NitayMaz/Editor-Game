@@ -1759,6 +1759,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a46315c518db042b72f5006879d9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StageAmbience: -1
+  StageStartSound: 3
+  StageFailSound: 10
   timeToShowSuccessUI: 1
 --- !u!1 &1289398066
 GameObject:

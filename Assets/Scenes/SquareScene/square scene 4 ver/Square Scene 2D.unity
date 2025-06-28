@@ -971,6 +971,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5530247319367241133, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
+      propertyPath: sounds.Array.data[13].volume
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 6905870719498306371, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
       propertyPath: m_Name
       value: Sound Manager
@@ -1340,6 +1344,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901f1dee114d91242916a384016c45e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StageAmbience: 16
+  StageStartSound: 11
+  StageFailSound: -1
   timeToShowSuccessUI: 0
 --- !u!1 &536400099
 GameObject:

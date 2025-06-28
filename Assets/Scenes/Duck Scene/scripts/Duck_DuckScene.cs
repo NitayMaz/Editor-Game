@@ -30,7 +30,7 @@ public class Duck_DuckScene : TrackControlled
     public override void StartInteraction()
     {
         if(isDead)
-            SoundManager.Instance.PlayAudio(AudioClips.DuckRunOver);
+            StageManager.Instance.StageFailed();
         Vector3 lastPosition = transform.position;
         base.StartInteraction(); // turns on animator, resets position to start
         transform.position = lastPosition; // recover last position
