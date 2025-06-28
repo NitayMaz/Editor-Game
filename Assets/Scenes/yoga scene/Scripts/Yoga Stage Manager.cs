@@ -6,27 +6,25 @@ public class YogaStageManager : StageManager
 {
     [SerializeField] private float timeToShowSuccessUI = 1f;
 
-    private int[] poseEntered;
+    private bool[,] poseEntered;
 
     [SerializeField] private float
         TimeToCheckYogaPosition = 0.3f; // time to wait before checking if all participants are in the position
 
     [SerializeField] ParticleSystem duckExplodes;
     [SerializeField] private Yoga_Girl yogaGirl;
-    [SerializeField] private Yoga_Girl yogaGirl2;
     [SerializeField] private Yoga_Npc yogaNPCs;
     [SerializeField] private int peopleInScene = 2;
     
     public override void StageReset()
     {
         base.StageReset();
-        poseEntered = new int[4]; // 4 poses for each participant, all initialized to 0
+        poseEntered = new bool[Enum.GetValues(typeof(YogaParticipant)).Length, 4]; // 4 poses for each participant, initalized to false
     }
 
     public override void TimeLineDone()
     {
         yogaGirl.StartInteraction();
-        yogaGirl2?.StartInteraction();
         yogaNPCs.StartInteraction();
         Invoke(nameof(ShowStageSuccessUI), timeToShowSuccessUI);
     }
@@ -37,12 +35,12 @@ public class YogaStageManager : StageManager
         //particle?
         duckExplodes.Play();
         TimeLine.Instance.StopPlaying();
-        yogaGirl.GetComponent<Animator>().SetBool("Fail", true);
-        yogaGirl2?.GetComponent<Animator>().SetBool("Fail", true);
-        yogaNPCs.GetComponent<Animator>().SetBool("Fail", true);
         yogaGirl.StartInteraction();
-        yogaGirl2?.StartInteraction();
         yogaNPCs.StartInteraction();
+        //girl fail is always the same, npcs fail is different for each pose
+        yogaGirl.GetComponent<Animator>().SetBool("Fail", true);
+        int lastNpcPose = GetNpcPose();
+        yogaNPCs.GetComponent<Animator>().SetBool($"Fail{lastNpcPose}", true);
     }
 
     public void RegisterPosition(YogaParticipant participant, int positionIndex)
@@ -54,7 +52,7 @@ public class YogaStageManager : StageManager
             return;
         }
 
-        poseEntered[positionIndex]++;
+        poseEntered[(int)participant, positionIndex] = true;
         StartCoroutine(CheckPositionSynch(positionIndex));
     }
 
@@ -62,10 +60,26 @@ public class YogaStageManager : StageManager
     {
         yield return new WaitForSeconds(TimeToCheckYogaPosition);
         //check all participants reached the position
-        Debug.Log("Checking if all participants reached position index: " + posInd + "pos values is: " + poseEntered[posInd]);
-        if (poseEntered[posInd] != peopleInScene)
-            StageFailed();
-        
+        Debug.Log("Checking if all participants reached position index: " + posInd);
+        foreach (YogaParticipant participant in Enum.GetValues(typeof(YogaParticipant)))
+        {
+            if (!poseEntered[(int)participant, posInd])
+                StageFailed();
+        }
+    }
+
+    private int GetNpcPose()
+    {
+        int lastNpcPose = 0;
+        for (int i = 3; i > 0; i--)
+        {
+            if(poseEntered[(int)YogaParticipant.NPCs, i])
+            {
+                lastNpcPose = i;
+                break;
+            }
+        }
+        return lastNpcPose + 1; // 1-based index for animator
     }
 }
 

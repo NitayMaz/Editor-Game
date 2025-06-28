@@ -19,7 +19,10 @@ public class Yoga_Npc : TrackControlled
 
     public override void StopInteraction()
     {
-        animator.SetBool("Fail", false);
+        animator.SetBool("Fail1", false);
+        animator.SetBool("Fail2", false);
+        animator.SetBool("Fail3", false);
+        animator.SetBool("Fail4", false);
         base.StopInteraction();
         animationsReached.Clear(); // clear positions reach when resetting/restrating timeline
     }
