@@ -32,6 +32,7 @@ public class SoccerKid : TrackControlled
         if (kickedBall && !scored && (ballTransform.position.x > minXForFail || ballRB.linearVelocity.magnitude < ballVelocityForFail))
         {
             animator.SetBool("Fail", true);
+            StageManager.Instance.StageFailed();
         }
     }
     

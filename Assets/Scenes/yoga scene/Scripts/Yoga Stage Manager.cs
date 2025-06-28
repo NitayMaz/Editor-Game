@@ -30,9 +30,6 @@ public class YogaStageManager : StageManager
     {
         base.StageFailed();
         TimeLine.Instance.StopPlaying();
-        
-        //failure sound???
-        
         yogaGirl.StartInteraction();
         yogaNPCs.StartInteraction();
         //girl fail is always the same, npcs fail is different for each pose

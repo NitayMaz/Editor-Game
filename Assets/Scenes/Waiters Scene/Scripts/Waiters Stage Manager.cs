@@ -18,6 +18,7 @@ public class WaitersStageManager : StageManager
 
     public override void StageFailed()
     {
+        base.StageFailed();
         stageFailed = true;
     }
 
