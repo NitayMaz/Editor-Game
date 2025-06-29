@@ -613,7 +613,7 @@ MonoBehaviour:
   - soundName: 14
     clips:
     - {fileID: 8300000, guid: abe4942e809fd6e4283c68f49ad590de, type: 3}
-    volume: 0.5
+    volume: 0.8
   - soundName: 15
     clips:
     - {fileID: 8300000, guid: 7082324532c94da4e8b8c36eec7caeee, type: 3}
@@ -621,7 +621,7 @@ MonoBehaviour:
   - soundName: 16
     clips:
     - {fileID: 8300000, guid: bf0c5f6f50294784083f15a755c4a9dd, type: 3}
-    volume: 0.5
+    volume: 0.3
   audioSources:
   - audioSourceName: 0
     source: {fileID: 408531650784482996}

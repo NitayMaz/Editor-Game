@@ -102,4 +102,13 @@ public class MyCursor : MonoBehaviour
         }
         return null;
     }
+
+    public void Hide()
+    {
+        GetComponent<SpriteRenderer>().enabled = false;
+    }
+    public void Show()
+    {
+        GetComponent<SpriteRenderer>().enabled = true;
+    }
 }

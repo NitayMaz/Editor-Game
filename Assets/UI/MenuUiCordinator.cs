@@ -98,13 +98,15 @@ public class MenuUiCordinator : MonoBehaviour
     private void enableUICursor()
     {
         UIcursor.SetActive(true);
-        MyCursor.Instance.gameObject.SetActive(false);
+        // MyCursor.Instance.gameObject.SetActive(false);
+        MyCursor.Instance.Hide();
     }
     
     private void disableUICursor()
     {
         UIcursor.SetActive(false);
-        MyCursor.Instance.gameObject.SetActive(true);
+        // MyCursor.Instance.gameObject.SetActive(true);
+        MyCursor.Instance.Show();
     }
 
     public void PlayClickSound()
