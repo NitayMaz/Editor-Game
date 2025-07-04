@@ -20,6 +20,7 @@ public class TimeLine : MonoBehaviour
     
     private float currentTime = 0;
     public bool isPlaying = false;
+    public bool inTutorial = false;
     private Coroutine sceneCoroutine;
     
     [SerializeField] private SpriteRenderer bgSpriteRenderer;

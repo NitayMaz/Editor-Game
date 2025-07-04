@@ -21,7 +21,8 @@ public class MyButton : MonoBehaviour
         {
             case buttonType.PlayPause:
                 MyCursor.Instance?.ButtonClicked();
-                TimelineUIManager.Instance.PlayPauseButtonClicked();
+                if(!TimeLine.Instance.inTutorial)
+                    TimelineUIManager.Instance.PlayPauseButtonClicked();
                 break;
             case buttonType.Cut:
                 TimelineUIManager.Instance.CutButtonClicked();
