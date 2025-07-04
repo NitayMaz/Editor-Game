@@ -1292,6 +1292,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &553931258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2595762043640394628, guid: 872c40502964946b1839b68c85bafc0b, type: 3}
+  m_PrefabInstance: {fileID: 845468237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!331 &553931261
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553931258}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 15d0c3709176029428a0da2f8cecf0b5, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c9ad682e2fd2041cd98c2f2b6f65aaee, type: 3}
+  m_MaskAlphaCutoff: 0.819
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
+  m_MaskSource: 1
 --- !u!1 &597306992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1474,6 +1534,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 397117044226206038}
     m_Modifications:
+    - target: {fileID: 492756437173968393, guid: 872c40502964946b1839b68c85bafc0b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1355743158591401301, guid: 872c40502964946b1839b68c85bafc0b, type: 3}
       propertyPath: defaultColor.b
       value: 0.972549
@@ -1578,10 +1642,17 @@ PrefabInstance:
       propertyPath: defaultColor.r
       value: 0.9647059
       objectReference: {fileID: 0}
+    - target: {fileID: 7728423118253838225, guid: 872c40502964946b1839b68c85bafc0b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2595762043640394628, guid: 872c40502964946b1839b68c85bafc0b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 553931261}
   m_SourcePrefab: {fileID: 100100000, guid: 872c40502964946b1839b68c85bafc0b, type: 3}
 --- !u!1 &882600715
 GameObject:
@@ -1900,7 +1971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3143467412995855585, guid: 55bdb9ce822714bcbadc6aee352b846c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.16
+      value: -12.12
       objectReference: {fileID: 0}
     - target: {fileID: 3143467412995855585, guid: 55bdb9ce822714bcbadc6aee352b846c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1942,6 +2013,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8080571344768112637, guid: 55bdb9ce822714bcbadc6aee352b846c, type: 3}
+      propertyPath: waiterCollisionEffect
+      value: 
+      objectReference: {fileID: 1027109418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1973,7 +2048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1231783392
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2145,7 +2220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3143467412995855585, guid: bfc07b8b66c4944beaa3b46116df4d61, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.48
+      value: -4.45
       objectReference: {fileID: 0}
     - target: {fileID: 3143467412995855585, guid: bfc07b8b66c4944beaa3b46116df4d61, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2183,6 +2258,18 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3156390338309746725, guid: bfc07b8b66c4944beaa3b46116df4d61, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433497373628844829, guid: bfc07b8b66c4944beaa3b46116df4d61, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8080571344768112637, guid: bfc07b8b66c4944beaa3b46116df4d61, type: 3}
+      propertyPath: waiterCollisionEffect
+      value: 
+      objectReference: {fileID: 1027109418}
     - target: {fileID: 8197912874509087575, guid: bfc07b8b66c4944beaa3b46116df4d61, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
@@ -2497,7 +2584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3143467412995855585, guid: ccfc76813db96468fb164b140c237646, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.22
+      value: 12.2
       objectReference: {fileID: 0}
     - target: {fileID: 3143467412995855585, guid: ccfc76813db96468fb164b140c237646, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2539,6 +2626,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8080571344768112637, guid: ccfc76813db96468fb164b140c237646, type: 3}
+      propertyPath: waiterCollisionEffect
+      value: 
+      objectReference: {fileID: 1027109418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2566,6 +2657,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3ee0c81200a661b43a74227e59456a38, type: 2}
+    - target: {fileID: 3507862571321098508, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4083751368844497329, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2583,24 +2678,12 @@ PrefabInstance:
       value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 4106843625654252917, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 4106843625654252917, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4129410222357993467, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
-      propertyPath: m_Name
-      value: rider red
-      objectReference: {fileID: 0}
-    - target: {fileID: 4106843625654252917, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4106843625654252917, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.98
+      value: 7.64
       objectReference: {fileID: 0}
     - target: {fileID: 4106843625654252917, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2634,6 +2717,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4106843625654252917, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4129410222357993467, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
       propertyPath: m_Name
       value: rider red
@@ -2642,6 +2729,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7152370017823766121, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
+      propertyPath: waiterCollisionEffect
+      value: 
+      objectReference: {fileID: 1027109418}
     - target: {fileID: 7292153504379596805, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 0
@@ -2679,6 +2770,10 @@ SceneRoots:
   - {fileID: 4892910}
   - {fileID: 439950133}
   - {fileID: 1886687355}
+  - {fileID: 1722060962964634890}
+  - {fileID: 1535921158}
+  - {fileID: 2097384587}
+  - {fileID: 1061528477}
   - {fileID: 1272604563}
   - {fileID: 1231783393}
   - {fileID: 882600717}
@@ -2688,7 +2783,3 @@ SceneRoots:
   - {fileID: 456312107}
   - {fileID: 377365911}
   - {fileID: 1894229027}
-  - {fileID: 1722060962964634890}
-  - {fileID: 1535921158}
-  - {fileID: 2097384587}
-  - {fileID: 1061528477}
