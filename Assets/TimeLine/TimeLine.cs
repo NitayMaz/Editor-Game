@@ -29,6 +29,10 @@ public class TimeLine : MonoBehaviour
     public float snappingJump = 0.1f;
     public float minDurationForClip = 0.5f;
     
+    [SerializeField] private SpriteRenderer[] spriteToDarkenOnPlay;
+    [SerializeField] private Color darkenedColor = new Color(60f/255f, 61f/255f, 83f/255f);
+    private Color originalColor;
+    
     private void Awake()
     {
         if (Instance != null)
@@ -46,6 +50,11 @@ public class TimeLine : MonoBehaviour
     {
         InitTracks();
         ResetTime();
+        if (spriteToDarkenOnPlay.Length > 0)
+        {
+            originalColor = spriteToDarkenOnPlay[0].color; // assuming all sprites have the same color
+        }
+        PlayScene();
     }
 
     private void InitTracks()
@@ -91,6 +100,7 @@ public class TimeLine : MonoBehaviour
     public void StopPlaying()
     {
         isPlaying = false;
+        RestoreColorOnPause();
         if (sceneCoroutine != null)
             StopCoroutine(sceneCoroutine);
         TimelineUIManager.Instance.ChangeToPlayButton();
@@ -104,6 +114,7 @@ public class TimeLine : MonoBehaviour
         if(isPlaying)
             return;
         isPlaying = true;
+        DarkenOnPlay();
         ResetTime();
         StageManager.Instance?.OnStagePlay();
         sceneCoroutine = StartCoroutine(RunScene());
@@ -125,6 +136,7 @@ public class TimeLine : MonoBehaviour
         ApplyTimelinePosition(currentTime);
         TimelineUIManager.Instance.ChangeToPlayButton();
         isPlaying = false;
+        RestoreColorOnPause();
         if(StageManager.Instance)
             StageManager.Instance.TimeLineDone();
     }
@@ -209,6 +221,21 @@ public class TimeLine : MonoBehaviour
     public static float SnapTo(float value, float snapValue)
     {
         return Mathf.Round(value / snapValue) * snapValue;
+    }
+
+    private void DarkenOnPlay()
+    {
+        foreach (SpriteRenderer sprite in spriteToDarkenOnPlay)
+        {
+            sprite.color = darkenedColor;
+        }
+    }
+    private void RestoreColorOnPause()
+    {
+        foreach (SpriteRenderer sprite in spriteToDarkenOnPlay)
+        {
+            sprite.color = originalColor;
+        }
     }
     
     public List<TrackInitData> GetClipsData()
