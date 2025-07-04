@@ -44,6 +44,11 @@ public class TimeLine : MonoBehaviour
         UndoManager.Clear(); // clear undo actions from previous scenes
         trackLengthFor1Second = (bgSpriteRenderer.bounds.max.x - bgSpriteRenderer.bounds.min.x) / timeLineSeconds;
         leftEdgeXvalue = bgSpriteRenderer.bounds.min.x;
+        
+        //setting game framerate and physics rate
+        Application.targetFrameRate = 60;
+        QualitySettings.vSyncCount = 0; // disable vSync, important for mainly webGL
+        Time.fixedDeltaTime = 1f / 60f; // physics updates at 60fps
     }
 
     private void Start()
@@ -54,7 +59,7 @@ public class TimeLine : MonoBehaviour
         {
             originalColor = spriteToDarkenOnPlay[0].color; // assuming all sprites have the same color
         }
-        PlayScene();
+        
     }
 
     private void InitTracks()

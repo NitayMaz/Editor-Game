@@ -38,7 +38,8 @@ public class SoccerKid : TrackControlled
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (kickedBall || !TimeLine.Instance.isPlaying)
+            return;
         Debug.Log("adding force to: " + other.name);
         Vector2 kickDirection = new Vector2(speedX, Mathf.Tan(kickAngleAboveGround * Mathf.Deg2Rad) * speedX);
         ballRB.AddForce(kickDirection * speedX * kickForceModifier, ForceMode2D.Impulse);
