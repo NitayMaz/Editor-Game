@@ -157,6 +157,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0.012199879, y: 0.1854999}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &101439527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7812750760522095195, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+  m_PrefabInstance: {fileID: 1677542921}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &122166198
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,7 +254,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1877,7 +1882,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: fdb0397b1eeb146328f8943373011b23, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.972549, g: 0.9647059, b: 0.8352941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2066,7 +2071,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2374,7 +2379,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: fdb0397b1eeb146328f8943373011b23, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.972549, g: 0.9647059, b: 0.8352941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2476,7 +2481,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2798,7 +2803,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: fdb0397b1eeb146328f8943373011b23, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.972549, g: 0.9647059, b: 0.8352941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3027,7 +3032,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: fdb0397b1eeb146328f8943373011b23, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.972549, g: 0.9647059, b: 0.8352941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3220,7 +3225,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: fdb0397b1eeb146328f8943373011b23, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.972549, g: 0.9647059, b: 0.8352941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3621,6 +3626,10 @@ PrefabInstance:
       value: -10.46
       objectReference: {fileID: 0}
     - target: {fileID: 6310103778778480190, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: timelineMask
+      value: 
+      objectReference: {fileID: 101439527}
+    - target: {fileID: 6310103778778480190, guid: 2321c47dec3a243609778468e24c106e, type: 3}
       propertyPath: timeLineCamera
       value: 
       objectReference: {fileID: 5354073441537900011}
@@ -3679,6 +3688,10 @@ PrefabInstance:
     - target: {fileID: 6428146187535911795, guid: 2321c47dec3a243609778468e24c106e, type: 3}
       propertyPath: m_Name
       value: TimeLine (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7812750760522095195, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7874000985339060145, guid: 2321c47dec3a243609778468e24c106e, type: 3}
       propertyPath: m_IsActive
@@ -4004,7 +4017,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4182,7 +4195,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4438,7 +4451,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4622,7 +4635,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: fdb0397b1eeb146328f8943373011b23, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.972549, g: 0.9647059, b: 0.8352941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4938,7 +4951,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: fdb0397b1eeb146328f8943373011b23, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.972549, g: 0.9647059, b: 0.8352941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5040,7 +5053,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
