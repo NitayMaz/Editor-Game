@@ -32,6 +32,8 @@ public class TimeLine : MonoBehaviour
     [SerializeField] private SpriteRenderer[] spriteToDarkenOnPlay;
     [SerializeField] private Color darkenedColor = new Color(60f/255f, 61f/255f, 83f/255f);
     private Color originalColor;
+
+    [SerializeField] private GameObject timelineMask;
     
     private void Awake()
     {
@@ -58,6 +60,7 @@ public class TimeLine : MonoBehaviour
         if (spriteToDarkenOnPlay.Length > 0)
         {
             originalColor = spriteToDarkenOnPlay[0].color; // assuming all sprites have the same color
+            timelineMask.SetActive(false);
         }
         
     }
@@ -234,6 +237,7 @@ public class TimeLine : MonoBehaviour
         {
             sprite.color = darkenedColor;
         }
+        timelineMask.SetActive(true);
     }
     private void RestoreColorOnPause()
     {
@@ -241,6 +245,7 @@ public class TimeLine : MonoBehaviour
         {
             sprite.color = originalColor;
         }
+        timelineMask.SetActive(false);
     }
     
     public List<TrackInitData> GetClipsData()
