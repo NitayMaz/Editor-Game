@@ -10,6 +10,7 @@ public class MenuUiCordinator : MonoBehaviour
     [SerializeField] private Slider musicVolumeSlider;
     [SerializeField] private Slider sfxVolumeSlider;
     [SerializeField] private GameObject UIcursor;
+    [SerializeField] private GameObject clickBlocker;
     
     private void Awake()
     {
@@ -28,11 +29,8 @@ public class MenuUiCordinator : MonoBehaviour
         pauseMenuButton.SetActive(true);
         UIcursor.SetActive(false);
     }
-
-    public void NextStageButtonClicked() // temporary
-    {
-        StageManager.Instance.MoveToNextStage();
-    }
+    
+    
     
     public void OpenPauseMenu()
     {
@@ -41,12 +39,10 @@ public class MenuUiCordinator : MonoBehaviour
             return;
         TimeLine.Instance.StopPlaying();
         enableUICursor();
+        clickBlocker.SetActive(true);
         pauseMenu.SetActive(true);
         pauseMenuButton.SetActive(false);
-        Debug.Log("Pause menu opened");
-        Debug.Log("Music volume: " + SoundManager.Instance.musicVolume);
         musicVolumeSlider.value = SoundManager.Instance.musicVolume;
-        Debug.Log("SFX volume: " + SoundManager.Instance.soundEffectsVolume);
         sfxVolumeSlider.value = SoundManager.Instance.soundEffectsVolume;
     }
     
@@ -58,6 +54,7 @@ public class MenuUiCordinator : MonoBehaviour
         disableUICursor();
         pauseMenu.SetActive(false);
         pauseMenuButton.SetActive(true);
+        clickBlocker.SetActive(false);
         
     }
     
@@ -98,14 +95,12 @@ public class MenuUiCordinator : MonoBehaviour
     private void enableUICursor()
     {
         UIcursor.SetActive(true);
-        // MyCursor.Instance.gameObject.SetActive(false);
         MyCursor.Instance.Hide();
     }
     
     private void disableUICursor()
     {
         UIcursor.SetActive(false);
-        // MyCursor.Instance.gameObject.SetActive(true);
         MyCursor.Instance.Show();
     }
 
