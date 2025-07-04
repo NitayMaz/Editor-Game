@@ -1,0 +1,723 @@
+fileFormatVersion: 2
+guid: 3a4838dd4e55e49789de85e22f620381
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4022085768787573467
+    second: biker blank spritesheet_0
+  - first:
+      213: 6820552613575452330
+    second: biker blank spritesheet_1
+  - first:
+      213: -6830061620115322004
+    second: biker blank spritesheet_2
+  - first:
+      213: -5707067826636798745
+    second: biker blank spritesheet_3
+  - first:
+      213: -7710537611034529604
+    second: biker blank spritesheet_4
+  - first:
+      213: -4230780500388482006
+    second: biker blank spritesheet_5
+  - first:
+      213: 1669674707921024046
+    second: biker blank spritesheet_6
+  - first:
+      213: 8069053789906785368
+    second: biker blank spritesheet_7
+  - first:
+      213: -6810266793403772124
+    second: biker blank spritesheet_8
+  - first:
+      213: -6312993068647939787
+    second: biker blank spritesheet_9
+  - first:
+      213: -5094143071648249852
+    second: biker blank spritesheet_10
+  - first:
+      213: 8212925864842390380
+    second: biker blank spritesheet_11
+  - first:
+      213: -3133439057722963135
+    second: biker blank spritesheet_12
+  - first:
+      213: -7346842991156474975
+    second: biker blank spritesheet_13
+  - first:
+      213: -1435322331638219813
+    second: biker blank spritesheet_14
+  - first:
+      213: 1255940241415851507
+    second: biker blank spritesheet_15
+  - first:
+      213: 7644336789365158410
+    second: biker blank spritesheet_16
+  - first:
+      213: -1842060084486434136
+    second: biker blank spritesheet_17
+  - first:
+      213: 4739652654652252357
+    second: biker blank spritesheet_18
+  - first:
+      213: 2046847962391568198
+    second: biker blank spritesheet_19
+  - first:
+      213: -943375263703504436
+    second: biker blank spritesheet_20
+  - first:
+      213: 4502152476810217784
+    second: biker blank spritesheet_21
+  - first:
+      213: 4451133580600491938
+    second: biker blank spritesheet_22
+  - first:
+      213: -2616242602522687476
+    second: biker blank spritesheet_23
+  - first:
+      213: 7729139742244434839
+    second: biker blank spritesheet_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 90
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: neck
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 245
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdabcb062b151d730800000000000000
+      internalID: 4022085768787573467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: body1
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 213
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6e608177877ae50800000000000000
+      internalID: 6820552613575452330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: body2
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 212
+        width: 55
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b4ffac42fb631a0800000000000000
+      internalID: -6830061620115322004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: body side
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 216
+        width: 44
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4c04c8c0c6cc0b0800000000000000
+      internalID: -5707067826636798745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: body front
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 208
+        width: 59
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb07ffa15eaaef490800000000000000
+      internalID: -7710537611034529604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: body back
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 200
+        width: 58
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24f1bfec8f3945c0800000000000000
+      internalID: -4230780500388482006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leg top
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 106
+        width: 22
+        height: 63
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e243610fc40eb2710800000000000000
+      internalID: 1669674707921024046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biker blank spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 115
+        width: 33
+        height: 37
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854d9e49ba90bff60800000000000000
+      internalID: 8069053789906785368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biker blank spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 114
+        width: 36
+        height: 34
+      alignment: 9
+      pivot: {x: 0.14603212, y: 0.7958881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42397890f621d71a0800000000000000
+      internalID: -6810266793403772124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biker blank spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 113
+        width: 75
+        height: 33
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4088363cdd7fd49b0800000000000000
+      internalID: -5094143071648249852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hand semi
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 82
+        width: 55
+        height: 64
+      alignment: 9
+      pivot: {x: 0.902407, y: 0.92965317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b6c846f8c2af170800000000000000
+      internalID: 8212925864842390380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hand semi2
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 97
+        width: 50
+        height: 40
+      alignment: 9
+      pivot: {x: 0.09759399, y: 0.8521061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b861757c9c384d0800000000000000
+      internalID: -3133439057722963135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hand side
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 92
+        width: 55
+        height: 54
+      alignment: 9
+      pivot: {x: 0.8902122, y: 0.872599}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1abcc8b8935ca0a90800000000000000
+      internalID: -7346842991156474975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hand front
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 82
+        width: 70
+        height: 67
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fdc5bccefefd6110800000000000000
+      internalID: 1255940241415851507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leg bottom
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 15
+        width: 20
+        height: 66
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a027f89fec3261a60800000000000000
+      internalID: 7644336789365158410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biker blank spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 30
+        width: 39
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5171971, y: 0.8353393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a29241ec10bf66e0800000000000000
+      internalID: -1842060084486434136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biker blank spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 30
+        width: 32
+        height: 41
+      alignment: 9
+      pivot: {x: 0.62575245, y: 0.8108019}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0e8474af0a6c140800000000000000
+      internalID: 4739652654652252357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biker blank spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 35
+        width: 24
+        height: 26
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fd49b806dd76c10800000000000000
+      internalID: 2046847962391568198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: biker blank spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 31
+        width: 45
+        height: 27
+      alignment: 9
+      pivot: {x: 0.23172946, y: 0.92227894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9ef05223578e2f0800000000000000
+      internalID: -943375263703504436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm semi
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 28
+        width: 26
+        height: 19
+      alignment: 9
+      pivot: {x: 0.6078914, y: 0.84801304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8390be003dbda7e30800000000000000
+      internalID: 4502152476810217784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm back
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 19
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af318f886a95cd30800000000000000
+      internalID: 4451133580600491938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm side
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 22
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c084466e63d31bbd0800000000000000
+      internalID: -2616242602522687476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm front
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 18
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79375d315ab634b60800000000000000
+      internalID: 7729139742244434839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c20668170d9994d8ab28c4d6abc5e479
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      biker blank spritesheet_10: -5094143071648249852
+      biker blank spritesheet_14: -1435322331638219813
+      biker blank spritesheet_17: -1842060084486434136
+      biker blank spritesheet_18: 4739652654652252357
+      biker blank spritesheet_19: 2046847962391568198
+      biker blank spritesheet_20: -943375263703504436
+      biker blank spritesheet_7: 8069053789906785368
+      biker blank spritesheet_8: -6810266793403772124
+      biker blank spritesheet_9: -6312993068647939787
+      body back: -4230780500388482006
+      body front: -7710537611034529604
+      body side: -5707067826636798745
+      body1: 6820552613575452330
+      body2: -6830061620115322004
+      hand front: 1255940241415851507
+      hand semi: 8212925864842390380
+      hand semi2: -3133439057722963135
+      hand side: -7346842991156474975
+      leg bottom: 7644336789365158410
+      leg top: 1669674707921024046
+      neck: 4022085768787573467
+      palm back: 4451133580600491938
+      palm front: 7729139742244434839
+      palm semi: 4502152476810217784
+      palm side: -2616242602522687476
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
