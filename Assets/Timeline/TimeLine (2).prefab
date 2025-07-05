@@ -836,6 +836,10 @@ PrefabInstance:
       value: TimeLine (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7737031680851976569, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: timelineMask
+      value: 
+      objectReference: {fileID: 6891563479027272132, guid: 9bff017e260464b078f3cd08fc289192, type: 3}
+    - target: {fileID: 7737031680851976569, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: tracks.Array.size
       value: 2
       objectReference: {fileID: 0}

@@ -2320,9 +2320,13 @@ MonoBehaviour:
   FastetAllowedPace: 0.5
   SlowestAllowedPace: 2
   isPlaying: 0
+  inTutorial: 0
   bgSpriteRenderer: {fileID: 5783792114924925096}
   snappingJump: 0.1
   minDurationForClip: 0.2
+  spriteToDarkenOnPlay: []
+  darkenedColor: {r: 0.23529412, g: 0.23921569, b: 0.3254902, a: 1}
+  timelineMask: {fileID: 6891563479027272132, guid: 9bff017e260464b078f3cd08fc289192, type: 3}
 --- !u!1 &8062467916836336611
 GameObject:
   m_ObjectHideFlags: 0
