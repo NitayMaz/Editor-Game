@@ -219,7 +219,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is a clip. It represents movement for the Track's character
+  m_text: 'Clips shows each character''s action.
+
+    Move them around to change
+    its timing.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
   m_sharedMaterial: {fileID: -8945605417731502179, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
@@ -254,7 +257,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -284,7 +287,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0.2, y: 0.44, z: 0.1, w: 0}
+  m_margin: {x: 0.2, y: 0.44, z: -0.15786019, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -717,10 +720,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click the ruler to preview the scene.
-
-    Characters don''t interact
-    in preview mode.'
+  m_text: Use the ruler to preview the scene. No interations here, its just a look
+    at how things line up.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
   m_sharedMaterial: {fileID: -8945605417731502179, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
@@ -1547,9 +1548,9 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.59999996, y: 0.59999996, z: 0.59999996, w: 0.59999996}
+    border: {x: 0.45, y: 0.45, z: 0.45, w: 0.45}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.81, y: 6.92}
+    oldSize: {x: 6.69, y: 6.82}
     newSize: {x: 5.75, y: 2.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 1
@@ -2036,7 +2037,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In the game you use this Timeline to fix everyday situations
+  m_text: 'This is the Timeline.
+
+    Here''s where you fix and fine-tune everyday
+    situations'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
   m_sharedMaterial: {fileID: -8945605417731502179, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
@@ -2071,7 +2075,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2306,8 +2310,8 @@ Transform:
   m_GameObject: {fileID: 925982085}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.6689, y: -2.2497, z: 0}
-  m_LocalScale: {x: 1.0039355, y: 1.7697145, z: 1}
+  m_LocalPosition: {x: -15.6689, y: -2.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 476469285}
@@ -2382,8 +2386,8 @@ SpriteRenderer:
   m_Color: {r: 0.972549, g: 0.9647059, b: 0.8352941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 19.233334, y: 0.7111111}
+  m_DrawMode: 1
+  m_Size: {x: 19.23, y: 1.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2446,7 +2450,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is a Track. it controls a specific character in the scene
+  m_text: This line is called a Track. it follows a specific character in the scene.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
   m_sharedMaterial: {fileID: -8945605417731502179, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
@@ -2481,7 +2485,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3035,8 +3039,8 @@ SpriteRenderer:
   m_Color: {r: 0.972549, g: 0.9647059, b: 0.8352941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 19.233334, y: 0.7111111}
+  m_DrawMode: 1
+  m_Size: {x: 21.3, y: 3.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3051,8 +3055,8 @@ Transform:
   m_GameObject: {fileID: 1106376125}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.6395, y: -2.5563, z: 0}
-  m_LocalScale: {x: 1.1063869, y: 5.219487, z: 1}
+  m_LocalPosition: {x: -17.6395, y: -2.34, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1275696429}
@@ -3977,12 +3981,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'If you make a mistake,
+  m_text: 'if you need a fix,
 
-    Undo to revert last action,
-
-    Or reset
-    to start the level over'
+    Use Undo to go back a step, or Reset to start
+    from scratch.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
   m_sharedMaterial: {fileID: -8945605417731502179, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
@@ -4017,7 +4019,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4158,9 +4160,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'We will explain further features as they come up.
-
-    Have fun editing!'
+  m_text: "That\u2019s it for now. more tools will come later.\nHave fun, and happy
+    editing!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
   m_sharedMaterial: {fileID: -8945605417731502179, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
@@ -4195,7 +4196,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4415,8 +4416,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "After the tutorial, hit play to play the scene. \nCharacters will interact
-    in play mode."
+  m_text: When you're ready, Hit Play and watch the pieces of the scene come together.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
   m_sharedMaterial: {fileID: -8945605417731502179, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
@@ -4451,7 +4451,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -5018,7 +5018,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Drag clips on the track to make movement start at different times
+  m_text: Drag the clip on the track to start actions earlier or later.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
   m_sharedMaterial: {fileID: -8945605417731502179, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
@@ -5053,7 +5053,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -5229,9 +5229,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome to the EDITOR
-
-    (Click the box to continue..)'
+  m_text: "Welcome to the Editor!\nLet\u2019s go over the basics before you get started."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
   m_sharedMaterial: {fileID: -8945605417731502179, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
@@ -5386,7 +5384,7 @@ SpriteRenderer:
   m_SortingLayerID: -108118519
   m_SortingLayer: 1
   m_SortingOrder: 12
-  m_Sprite: {fileID: -3768358655043489562, guid: 66798619d6fd94673b69f6aad9152bf2, type: 3}
+  m_Sprite: {fileID: -8222229377061495707, guid: 29c2c24fdf4634fbea9898b7ca5f2fdf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
