@@ -41,7 +41,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8347726586781145607}
   serializedVersion: 8
-  lengthInSec: 2
+  lengthInSec: 1.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -115,8 +115,8 @@ ParticleSystem:
     enabled: 1
     startLifetime:
       serializedVersion: 2
-      minMaxState: 3
-      scalar: 0.7
+      minMaxState: 0
+      scalar: 0.5
       minScalar: 0.5
       maxCurve:
         serializedVersion: 2
@@ -664,7 +664,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 0
+    type: 2
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -980,7 +980,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 3
-        scalar: 20
+        scalar: 30
         minScalar: 50
         maxCurve:
           serializedVersion: 2
@@ -1046,8 +1046,8 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 1
-          inSlope: -2
-          outSlope: -2
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
@@ -1486,7 +1486,7 @@ ParticleSystem:
     startFrame:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.03
+      scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1545,11 +1545,8 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 1375194149573437663, guid: 2f774eb3c7ecc4aa6b5f9e7e73050b18, type: 3}
-    - sprite: {fileID: 6490752048648602237, guid: 2f774eb3c7ecc4aa6b5f9e7e73050b18, type: 3}
+    - sprite: {fileID: -5993135398987470447, guid: 2f774eb3c7ecc4aa6b5f9e7e73050b18, type: 3}
     - sprite: {fileID: 3263447090610206315, guid: 2f774eb3c7ecc4aa6b5f9e7e73050b18, type: 3}
-    - sprite: {fileID: 822146886023089738, guid: 2f774eb3c7ecc4aa6b5f9e7e73050b18, type: 3}
-    - sprite: {fileID: 8603377802385070603, guid: 2f774eb3c7ecc4aa6b5f9e7e73050b18, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -2751,7 +2748,7 @@ ParticleSystem:
     strength:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 1.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -2917,7 +2914,7 @@ ParticleSystem:
     scrollSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -3235,21 +3232,21 @@ ParticleSystem:
         m_RotationOrder: 4
     sizeAmount:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0.3
+      minMaxState: 1
+      scalar: 0.5
       minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0
+          value: 1
           inSlope: 0
           outSlope: 0
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
+          inWeight: 0
+          outWeight: 0
         - serializedVersion: 3
           time: 1
           value: 0
@@ -3257,8 +3254,8 @@ ParticleSystem:
           outSlope: 0
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
+          inWeight: 0
+          outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
