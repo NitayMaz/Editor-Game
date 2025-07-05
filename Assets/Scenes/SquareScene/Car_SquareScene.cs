@@ -9,13 +9,14 @@ public class Car_SquareScene : TrackControlled
     {
         if(!TimeLine.Instance.isPlaying)
             return;
+        Car_SquareScene otherCar = other.GetComponent<Car_SquareScene>();
         waiterCollisionEffect.transform.position = transform.position;
         waiterCollisionEffect?.Play(); //particle!
+        SoundManager.Instance.PlayAudio(AudioClips.BikeAccident);
         StartInteraction();
-        //can hit both duck and other rider
-        other.GetComponent<Car_SquareScene>()?.StartInteraction();
-        other.GetComponent<Duck_DuckScene>()?.StartInteraction();
         StageManager.Instance?.StageFailed();
+    
+        
     }
     
     public override void StartInteraction()

@@ -427,6 +427,14 @@ PrefabInstance:
       propertyPath: defaultColor.r
       value: 0.09411766
       objectReference: {fileID: 0}
+    - target: {fileID: 6008979026401668753, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.538889
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008979026401668753, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.0409997
+      objectReference: {fileID: 0}
     - target: {fileID: 6310103778778480190, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: snappingJump
       value: 0.15
@@ -3645,12 +3653,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: StageAmbience
-      value: -1
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: ballRigidbody
       value: 
       objectReference: {fileID: 1134809217}
+    - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: StageFailSound
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 230226825801033840, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: StageStartSound
       value: 15

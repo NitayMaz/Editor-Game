@@ -11,12 +11,14 @@ public class Tutorial : MonoBehaviour
     private void Start()
     {
         TimeLine.Instance.inTutorial = true;
+        SoundManager.Instance.PlayAudio(AudioClips.TutorialPop);
         index = 0;
         objectsToTurnOn[index].SetActive(true);
     }
 
     private void OnMouseDown()
     {
+        SoundManager.Instance.PlayAudio(AudioClips.MouseClick);
         Next();
     }
 
