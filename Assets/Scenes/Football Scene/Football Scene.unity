@@ -432,6 +432,10 @@ PrefabInstance:
       value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 6310103778778480190, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
+      propertyPath: timelineMask
+      value: 
+      objectReference: {fileID: 282731696}
+    - target: {fileID: 6310103778778480190, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: timeLineCamera
       value: 
       objectReference: {fileID: 5354073443160309642}
@@ -495,6 +499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeLine (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931548261199014384, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.444
+      objectReference: {fileID: 0}
     - target: {fileID: 7821240649295785967, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -514,6 +522,11 @@ PrefabInstance:
 --- !u!4 &282731695 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6319984926148865414, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
+  m_PrefabInstance: {fileID: 282731694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &282731696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7571817969338997110, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
   m_PrefabInstance: {fileID: 282731694}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &284385623

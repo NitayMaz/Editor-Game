@@ -1542,6 +1542,10 @@ PrefabInstance:
       value: Track3
       objectReference: {fileID: 0}
     - target: {fileID: 6310103778778480190, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
+      propertyPath: timelineMask
+      value: 
+      objectReference: {fileID: 2102114066}
+    - target: {fileID: 6310103778778480190, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
       propertyPath: timeLineCamera
       value: 
       objectReference: {fileID: 5354073441537900011}
@@ -1641,6 +1645,11 @@ PrefabInstance:
 --- !u!4 &2102114065 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6319984926148865414, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
+  m_PrefabInstance: {fileID: 2102114064}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2102114066 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4148501669267215759, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
   m_PrefabInstance: {fileID: 2102114064}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2123255147 stripped
