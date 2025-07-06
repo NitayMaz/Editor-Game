@@ -1,100 +1,28 @@
 fileFormatVersion: 2
-guid: 9447867f546604e268d50fafd8d2f3c4
+guid: 227451bde70e94755b60e2dac42aa0b4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1673732733077124514
-    second: trees_0
+      213: 3946391794131190661
+    second: bike accident_0
   - first:
-      213: 3611188691014843535
-    second: trees_1
+      213: 19054779413329237
+    second: bike accident_1
   - first:
-      213: 2249915519335348110
-    second: trees_2
+      213: -6683924003638793755
+    second: bike accident_2
   - first:
-      213: 5223556475179290604
-    second: trees_3
+      213: -8887297013047264045
+    second: bike accident_3
   - first:
-      213: 384058854656272681
-    second: trees_4
+      213: -2771722377650996685
+    second: bike accident_4
   - first:
-      213: 3818217323743452925
-    second: trees_5
+      213: -347606873623937017
+    second: bike accident_5
   - first:
-      213: -7523560045513598774
-    second: trees_6
-  - first:
-      213: -271311362049036883
-    second: trees_7
-  - first:
-      213: -497406288967409369
-    second: trees_8
-  - first:
-      213: 7915683653226457324
-    second: trees_9
-  - first:
-      213: -8841855405480785529
-    second: trees_10
-  - first:
-      213: 6531415816565926178
-    second: trees_11
-  - first:
-      213: 2802346070031776116
-    second: trees_12
-  - first:
-      213: 3116032067696762471
-    second: trees_13
-  - first:
-      213: -8539622112099020976
-    second: trees_14
-  - first:
-      213: -1537803357559071896
-    second: trees_15
-  - first:
-      213: -3876429424177951372
-    second: trees_16
-  - first:
-      213: 9046655360673312808
-    second: trees_17
-  - first:
-      213: 1114657928566864944
-    second: trees_18
-  - first:
-      213: 381843284206519744
-    second: trees_19
-  - first:
-      213: 3027295232775142562
-    second: trees_20
-  - first:
-      213: 5487042185335195102
-    second: trees_21
-  - first:
-      213: 7588890171676177223
-    second: trees_22
-  - first:
-      213: -7100747956489266585
-    second: trees_23
-  - first:
-      213: 1574713697239743433
-    second: trees_24
-  - first:
-      213: 2276063022627186540
-    second: trees_25
-  - first:
-      213: 9170239918798356355
-    second: trees_26
-  - first:
-      213: 2767215598838526711
-    second: trees_27
-  - first:
-      213: 5248613880748234862
-    second: trees_28
-  - first:
-      213: -2542009397884166255
-    second: trees_29
-  - first:
-      213: -3470732261894058639
-    second: trees_30
+      213: -1588303858874747909
+    second: bike accident_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -141,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 92
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -190,35 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trees_0
+      name: bike accident_0
       rect:
         serializedVersion: 2
-        x: 46
-        y: 498
-        width: 449
-        height: 302
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e5a8ef372f4b5c8e0800000000000000
-      internalID: -1673732733077124514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: trees_1
-      rect:
-        serializedVersion: 2
-        x: 620
-        y: 301
-        width: 531
-        height: 257
+        x: 0
+        y: 18
+        width: 99
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,74 +133,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8cf8d84bf48d1230800000000000000
-      internalID: 3611188691014843535
+      spriteID: 583c4b98d6664c630800000000000000
+      internalID: 3946391794131190661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees_2
+      name: bike accident_1
       rect:
         serializedVersion: 2
-        x: 1290
-        y: 627
-        width: 519
-        height: 173
+        x: 109
+        y: 121
+        width: 45
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e873f988e3e493f10800000000000000
-      internalID: 2249915519335348110
+      spriteID: 555743e8832b34000800000000000000
+      internalID: 19054779413329237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees_28
+      name: bike accident_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 171
+        y: 113
+        width: 14
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e92769188eed33a0800000000000000
+      internalID: -6683924003638793755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bike accident_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 106
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc7deb147af9a480800000000000000
+      internalID: -8887297013047264045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bike accident_4
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 112
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a7c18ce2dd889d0800000000000000
+      internalID: -2771722377650996685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bike accident_5
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 11
+        width: 66
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7004920e36d0d2bf0800000000000000
+      internalID: -347606873623937017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bike accident_6
+      rect:
+        serializedVersion: 2
+        x: 220
         y: 0
-        width: 233
-        height: 313
+        width: 75
+        height: 82
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e68de252482d6d840800000000000000
-      internalID: 5248613880748234862
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: trees_30
-      rect:
-        serializedVersion: 2
-        x: 1543
-        y: 0
-        width: 301
-        height: 353
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17d0153856b75dfc0800000000000000
-      internalID: -3470732261894058639
+      spriteID: bf373683e0635f9e0800000000000000
+      internalID: -1588303858874747909
       vertices: []
       indices: 
       edges: []
@@ -303,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -313,37 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      trees_0: -1673732733077124514
-      trees_1: 3611188691014843535
-      trees_10: -8841855405480785529
-      trees_11: 6531415816565926178
-      trees_12: 2802346070031776116
-      trees_13: 3116032067696762471
-      trees_14: -8539622112099020976
-      trees_15: -1537803357559071896
-      trees_16: -3876429424177951372
-      trees_17: 9046655360673312808
-      trees_18: 1114657928566864944
-      trees_19: 381843284206519744
-      trees_2: 2249915519335348110
-      trees_20: 3027295232775142562
-      trees_21: 5487042185335195102
-      trees_22: 7588890171676177223
-      trees_23: -7100747956489266585
-      trees_24: 1574713697239743433
-      trees_25: 2276063022627186540
-      trees_26: 9170239918798356355
-      trees_27: 2767215598838526711
-      trees_28: 5248613880748234862
-      trees_29: -2542009397884166255
-      trees_3: 5223556475179290604
-      trees_30: -3470732261894058639
-      trees_4: 384058854656272681
-      trees_5: 3818217323743452925
-      trees_6: -7523560045513598774
-      trees_7: -271311362049036883
-      trees_8: -497406288967409369
-      trees_9: 7915683653226457324
+      bike accident_0: 3946391794131190661
+      bike accident_1: 19054779413329237
+      bike accident_2: -6683924003638793755
+      bike accident_3: -8887297013047264045
+      bike accident_4: -2771722377650996685
+      bike accident_5: -347606873623937017
+      bike accident_6: -1588303858874747909
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
