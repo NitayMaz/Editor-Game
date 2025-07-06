@@ -1,0 +1,742 @@
+fileFormatVersion: 2
+guid: 02e73f80c3e9f45ea9f3925a245bca99
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1459390889376597354
+    second: rider hair spritesheet_0
+  - first:
+      213: 754483967801184715
+    second: rider hair spritesheet_1
+  - first:
+      213: -1952984759598821557
+    second: rider hair spritesheet_2
+  - first:
+      213: -3404479584411057869
+    second: rider hair spritesheet_3
+  - first:
+      213: -6161943912253279744
+    second: rider hair spritesheet_4
+  - first:
+      213: 640015732768665638
+    second: rider hair spritesheet_5
+  - first:
+      213: -5881696910920448067
+    second: rider hair spritesheet_6
+  - first:
+      213: 7035495942562102006
+    second: rider hair spritesheet_7
+  - first:
+      213: -7981371709954911227
+    second: rider hair spritesheet_8
+  - first:
+      213: -2463487295665352031
+    second: rider hair spritesheet_9
+  - first:
+      213: 5759991794546984734
+    second: rider hair spritesheet_10
+  - first:
+      213: 7736607211390843936
+    second: rider hair spritesheet_11
+  - first:
+      213: -505105485968942343
+    second: rider hair spritesheet_12
+  - first:
+      213: 5659869230359432205
+    second: rider hair spritesheet_13
+  - first:
+      213: 7844748645712308794
+    second: rider hair spritesheet_14
+  - first:
+      213: -7072955506153193282
+    second: rider hair spritesheet_15
+  - first:
+      213: -539653688902732890
+    second: rider hair spritesheet_16
+  - first:
+      213: -1843735494362655790
+    second: rider hair spritesheet_17
+  - first:
+      213: 521271427169640362
+    second: rider hair spritesheet_18
+  - first:
+      213: 4473771937770303703
+    second: rider hair spritesheet_19
+  - first:
+      213: -8203880952920730915
+    second: rider hair spritesheet_20
+  - first:
+      213: 4973743212990275432
+    second: rider hair spritesheet_21
+  - first:
+      213: -7661466804576341160
+    second: rider hair spritesheet_22
+  - first:
+      213: 6648393146653023386
+    second: rider hair spritesheet_23
+  - first:
+      213: 3742351091819371438
+    second: rider hair spritesheet_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rider hair spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 373
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65cbbd184cc04410800000000000000
+      internalID: 1459390889376597354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 342
+        width: 61
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc15489db27787a00800000000000000
+      internalID: 754483967801184715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 370
+        width: 61
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f4c5065ba95e4e0800000000000000
+      internalID: -1952984759598821557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 338
+        width: 58
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3310c1e0bdbd0c0d0800000000000000
+      internalID: -3404479584411057869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 387
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0023340c8a06c7aa0800000000000000
+      internalID: -6161943912253279744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 349
+        width: 48
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62076520beac1e800800000000000000
+      internalID: 640015732768665638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 414
+        width: 54
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7031472d3006ea0800000000000000
+      internalID: -5881696910920448067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 347
+        width: 34
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fabd1bb84a13a160800000000000000
+      internalID: 7035495942562102006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 216
+        width: 54
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50419c787b87c3190800000000000000
+      internalID: -7981371709954911227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 204
+        width: 61
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2dd215b5fefcdd0800000000000000
+      internalID: -2463487295665352031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 204
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e174327f40a9fef40800000000000000
+      internalID: 5759991794546984734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 218
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02c3da9b443fd5b60800000000000000
+      internalID: 7736607211390843936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 202
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa58b69c318df8f0800000000000000
+      internalID: -505105485968942343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 161
+        width: 73
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0cccb6e315eb8e40800000000000000
+      internalID: 5659869230359432205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 200
+        width: 51
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3aa8eb74552edc60800000000000000
+      internalID: 7844748645712308794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 214
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb08897f070d7dd90800000000000000
+      internalID: -7072955506153193282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 183
+        width: 55
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3393344d3c288f0800000000000000
+      internalID: -539653688902732890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 70
+        width: 54
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d31cbe165cb966e0800000000000000
+      internalID: -1843735494362655790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 35
+        width: 38
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aafd108e99deb3700800000000000000
+      internalID: 521271427169640362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 34
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0f8e4dfd7061e30800000000000000
+      internalID: 4473771937770303703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 60
+        width: 61
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd211954db5f52e80800000000000000
+      internalID: -8203880952920730915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 57
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f9b46a919460540800000000000000
+      internalID: 4973743212990275432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 29
+        width: 39
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853b7ce88800da590800000000000000
+      internalID: -7661466804576341160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 83
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c15699756d34c50800000000000000
+      internalID: 6648393146653023386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rider hair spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 21
+        width: 42
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab50bc7d708fe330800000000000000
+      internalID: 3742351091819371438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
