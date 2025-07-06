@@ -1430,6 +1430,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 591654531991955213, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 456312109}
+    - targetCorrespondingSourceObject: {fileID: 4815781926311313851, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
 --- !u!1 &456312108 stripped
 GameObject:
@@ -4668,8 +4671,8 @@ Transform:
   m_GameObject: {fileID: 1965780208}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.1, y: -2.31, z: 0}
-  m_LocalScale: {x: 0.3573077, y: 1.5386487, z: 1}
+  m_LocalPosition: {x: -9.83, y: -2.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 878734744}
@@ -4744,8 +4747,8 @@ SpriteRenderer:
   m_Color: {r: 0.972549, g: 0.9647059, b: 0.8352941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 19.233334, y: 0.7111111}
+  m_DrawMode: 1
+  m_Size: {x: 6.95, y: 1.15}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5572,7 +5575,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
