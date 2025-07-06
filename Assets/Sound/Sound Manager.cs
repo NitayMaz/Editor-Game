@@ -11,18 +11,27 @@ public enum AudioClips // Important! NEVER change the value of each entry. The v
     ParkAmbience=1,
     RestaurantAmbience=14,
     FountainAmbience=16,
+    DuckAmbience=24,
+    FootballAmbience=25, 
     // General/UI sounds
     MouseClick=5,
     SceneSuccess=7,
     ScissorsCut=9,
+    TutorialPop=19,
     // scene start sounds
     CarHonk=3,
     BikeBellRing=11,
     RestaurantBell=13,
     FootballWhistle=15,
+    YogaBowl = 17,
     // other scene sounds
     BallKick=6,
     DuckRunOver=10,
+    BikeAccident=18,
+    FootBallSuccess=20,
+    FootBallFail=21,
+    FootBallHe=22,
+    YogaWin=23,
     //missing sounds - meaning we still need the clip from itai
     YogaFail=4,
     //not sure if we need this
@@ -157,6 +166,33 @@ public class SoundManager : MonoBehaviour
                 break;
             case AudioClips.FountainAmbience:
                 PlaySound(AudioSources.AmbienceMusic, clipToPlay);
+                break;
+            case AudioClips.DuckAmbience:
+                PlaySound(AudioSources.AmbienceMusic, clipToPlay);
+                break;
+            case AudioClips.FootballAmbience:
+                PlaySound(AudioSources.AmbienceMusic, clipToPlay);
+                break;
+            case AudioClips.YogaBowl:
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
+                break;
+            case AudioClips.TutorialPop:
+                PlaySound(AudioSources.UI, clipToPlay);
+                break;
+            case AudioClips.FootBallSuccess:
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
+                break;
+            case AudioClips.FootBallFail:
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
+                break;
+            case AudioClips.FootBallHe:
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
+                break;
+            case AudioClips.YogaWin:
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
+                break;
+            case AudioClips.BikeAccident:
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
                 break;
         }
     }

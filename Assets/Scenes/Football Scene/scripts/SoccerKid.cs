@@ -16,6 +16,7 @@ public class SoccerKid : TrackControlled
     private float lastXPosition = 0f;
     private bool kickedBall = false;
     private bool scored = false;
+    private bool failed = false;
 
     private void Start()
     {
@@ -29,9 +30,11 @@ public class SoccerKid : TrackControlled
         lastXPosition = transform.position.x;
         
         //check failure
-        if (kickedBall && !scored && (ballTransform.position.x > minXForFail || ballRB.linearVelocity.magnitude < ballVelocityForFail))
+        if (kickedBall && !failed && !scored && (ballTransform.position.x > minXForFail || ballRB.linearVelocity.magnitude < ballVelocityForFail))
         {
+            failed = true;
             animator.SetBool("Fail", true);
+            SoundManager.Instance.PlayAudio(AudioClips.FootBallFail);
             StageManager.Instance.StageFailed();
         }
     }
@@ -45,6 +48,7 @@ public class SoccerKid : TrackControlled
         ballRB.AddForce(kickDirection * speedX * kickForceModifier, ForceMode2D.Impulse);
         kickedBall = true;
         SoundManager.Instance.PlayAudio(AudioClips.BallKick);
+        SoundManager.Instance.PlayAudio(AudioClips.FootBallHe);
         base.StartInteraction();
     }
     
@@ -58,6 +62,7 @@ public class SoccerKid : TrackControlled
         GetComponent<Animator>().SetBool("Goal", false);
         kickedBall = false;
         scored = false;
+        failed = false;
         base.StopInteraction();
     }
 
@@ -70,6 +75,7 @@ public class SoccerKid : TrackControlled
     private void PlayWinAnimation()
     {
         GetComponent<Animator>().SetBool("Goal", true);
+        SoundManager.Instance.PlayAudio(AudioClips.FootBallSuccess);
     }
 
 }
