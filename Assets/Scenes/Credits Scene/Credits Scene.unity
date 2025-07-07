@@ -627,6 +627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlledByTimeLine: 1
+  isActive: 0
 --- !u!50 &457870803
 Rigidbody2D:
   serializedVersion: 5
@@ -780,7 +781,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<color=#F6C16D>Special Thanks</color>\nEric Lerner\nRutu Modan\nGideon
-    Rimmer\nIdan Rooze\nChat GPT\nBeyonce\nAnd everyone who supported and \nhelped
+    Rimmer\nIdan Rooze\nChat GPT\nBeyonc\xE9\nAnd everyone who supported and \nhelped
     us along the way <3"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6895add2ddd3f4d4cb3cc54f8c615564, type: 2}
@@ -1429,6 +1430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlledByTimeLine: 1
+  isActive: 0
 --- !u!50 &698819500
 Rigidbody2D:
   serializedVersion: 5
@@ -1575,6 +1577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlledByTimeLine: 1
+  isActive: 0
 --- !u!50 &852300803
 Rigidbody2D:
   serializedVersion: 5
@@ -1746,7 +1749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<color=#F6C16D>Code &  Developement</color>
+  m_text: '<color=#F6C16D>Code & Developement</color>
 
     Nitay Mazig
 
@@ -2364,7 +2367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<color=#F6C16D>With Instruction From</color>
+  m_text: '<color=#F6C16D>With Guidance by</color>
 
 '
   m_isRightToLeft: 0
@@ -3823,7 +3826,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6310103778778480190, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
       propertyPath: snappingJump
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6310103778778480190, guid: 6d75104f5af8e416a9029fa6e31eb4c8, type: 3}
       propertyPath: timeLineCamera
