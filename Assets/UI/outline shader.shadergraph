@@ -1551,13 +1551,19 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"9b7b3820bddee44f09e89ef2c8ba606a\",\"type\":3}}",
+        "m_SerializedTexture": "",
         "m_Guid": ""
     },
     "isMainTexture": false,
     "useTilingAndOffset": false,
     "m_Modifiable": true,
     "m_DefaultType": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalSpriteUnlitSubTarget",
+    "m_ObjectId": "346a1634deae4168a5d4f1cb869e6319"
 }
 
 {
@@ -4356,7 +4362,7 @@
     "m_ObjectId": "d3b7d3fae8574dd7b44db164aebc0b9a",
     "m_Datas": [],
     "m_ActiveSubTarget": {
-        "m_Id": "ea9e9416f0944a56af0c5929e8e1d25e"
+        "m_Id": "346a1634deae4168a5d4f1cb869e6319"
     },
     "m_AllowMaterialOverride": true,
     "m_SurfaceType": 1,
@@ -5013,12 +5019,6 @@
         "x": 0.0,
         "y": 0.5
     }
-}
-
-{
-    "m_SGVersion": 2,
-    "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalUnlitSubTarget",
-    "m_ObjectId": "ea9e9416f0944a56af0c5929e8e1d25e"
 }
 
 {
