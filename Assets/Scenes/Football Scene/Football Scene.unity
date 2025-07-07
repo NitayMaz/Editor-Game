@@ -3391,6 +3391,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!223 &1983720922 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 3964350031015016019, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+  m_PrefabInstance: {fileID: 4322773572955528420}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2046344951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3727,6 +3732,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CloseStageSuccessUI
       objectReference: {fileID: 0}
+    - target: {fileID: 4810574763994761040, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810574763994761040, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810574763994761040, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810574763994761040, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6203370228575287425, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.2197413
@@ -3767,6 +3788,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6482164876379299676, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1983720922}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
