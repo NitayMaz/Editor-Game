@@ -1419,7 +1419,7 @@ MonoBehaviour:
   - {fileID: 1723193041}
   - {fileID: 1036195037}
   clipBlocker: {fileID: 2017955803}
-  indToTurnOffBlocker: 5
+  indToTurnOffBlocker: 4
 --- !u!61 &487948428
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5080,7 +5080,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2017955804}
-  - component: {fileID: 2017955805}
   - component: {fileID: 2017955806}
   m_Layer: 5
   m_Name: Junction2 Clip Prefab(Clone) (2)
@@ -5098,33 +5097,13 @@ Transform:
   m_GameObject: {fileID: 2017955803}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.204416, y: -0.7498951, z: -0.04631973}
+  m_LocalPosition: {x: -4.204416, y: -0.7498951, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 909099401}
   m_Father: {fileID: 2127218687}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1818360610 &2017955805
-ScaleConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2017955803}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Weight: 1
-  m_ScaleAtRest: {x: 1, y: 1, z: 1}
-  m_ScaleOffset: {x: 1, y: 1, z: 1}
-  m_AffectScalingX: 1
-  m_AffectScalingY: 1
-  m_AffectScalingZ: 1
-  m_Active: 1
-  m_IsLocked: 1
-  m_Sources:
-  - sourceTransform: {fileID: 0}
-    weight: 1
 --- !u!114 &2017955806
 MonoBehaviour:
   m_ObjectHideFlags: 0
