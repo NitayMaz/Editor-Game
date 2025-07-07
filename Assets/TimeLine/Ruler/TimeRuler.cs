@@ -27,11 +27,13 @@ public class TimeRuler : MonoBehaviour
 
         // Stretch ruler sprite to match the background width
         float backgroundWidth = backgroundBounds.size.x;
-        float spriteOriginalWidth = GetComponent<SpriteRenderer>().sprite.bounds.size.x;
-
-        Vector3 scale = transform.localScale;
-        scale.x = backgroundWidth / spriteOriginalWidth;
-        transform.localScale = scale;
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.size = new Vector2(backgroundWidth, spriteRenderer.size.y);
+        // float spriteOriginalWidth = GetComponent<SpriteRenderer>().sprite.bounds.size.x;
+        //
+        // Vector3 scale = transform.localScale;
+        // scale.x = backgroundWidth / spriteOriginalWidth;
+        // transform.localScale = scale;
     }
 
     private void PositionTicks()
