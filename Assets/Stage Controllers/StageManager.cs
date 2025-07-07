@@ -114,7 +114,7 @@ public class StageManager : MonoBehaviour
         SceneSolution sceneSolution = Resources.Load<SceneSolution>(solutionFileName);
         if (sceneSolution == null)
         {
-            Debug.LogError("No solution found for this scene at " + solutionFileName);
+            Debug.LogWarning("No solution found for this scene at " + solutionFileName);
             return;
         }
 
