@@ -15,11 +15,15 @@ public class Duck_DuckScene : TrackControlled
             // StageManager.Instance.StageSuccess();
             StartInteraction();
             transform.GetComponent<Animator>().SetBool("PassedRoad", true);
+            SoundManager.Instance.PlayAudio(AudioClips.DuckQuack);
             StageManager.Instance.StageSuccess();
             return;
         }
         if (isDead) // to avoid second collision when moving transform
             return;
+        
+        
+        //collision with car/bike
         duckExplodes.transform.position = transform.position;
 
         duckExplodes.Play(); //particle!

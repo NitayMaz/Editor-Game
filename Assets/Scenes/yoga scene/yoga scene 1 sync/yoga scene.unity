@@ -847,7 +847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StageAmbience: 1
   StageStartSound: 17
-  StageFailSound: -1
+  StageFailSound: 4
   timeToShowSuccessUI: 1
   TimeToCheckYogaPosition: 0.3
   yogaGirl: {fileID: 1933439113}
@@ -2031,6 +2031,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 591654531991955213, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 808072994}
+    - targetCorrespondingSourceObject: {fileID: 4815781926311313851, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
 --- !u!1 &1933439108
 GameObject:
