@@ -1855,6 +1855,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1741270506}
     m_Modifications:
+    - target: {fileID: 2020633600344059015, guid: 55bdb9ce822714bcbadc6aee352b846c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3039712897020425839, guid: 55bdb9ce822714bcbadc6aee352b846c, type: 3}
       propertyPath: m_Name
       value: rider green
@@ -2434,6 +2438,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1741270506}
     m_Modifications:
+    - target: {fileID: 1111014703060569363, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2292454307626732981, guid: 26434afac6bcb4a6e9fdbbd159de463e, type: 3}
       propertyPath: m_Controller
       value: 
