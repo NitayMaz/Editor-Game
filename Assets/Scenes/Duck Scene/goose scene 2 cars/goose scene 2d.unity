@@ -540,12 +540,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5530247319367241133, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530247319367241133, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
+      propertyPath: sounds.Array.data[2].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530247319367241133, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
       propertyPath: sounds.Array.data[3].volume
-      value: 0.37
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530247319367241133, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
+      propertyPath: sounds.Array.data[7].volume
+      value: 0.31
       objectReference: {fileID: 0}
     - target: {fileID: 5530247319367241133, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
       propertyPath: sounds.Array.data[8].volume
-      value: 0.09
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530247319367241133, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
+      propertyPath: sounds.Array.data[14].volume
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530247319367241133, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
+      propertyPath: sounds.Array.data[17].volume
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 6905870719498306371, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
       propertyPath: m_Name
@@ -1954,6 +1974,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 591654531991955213, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1141866734}
+    - targetCorrespondingSourceObject: {fileID: 4815781926311313851, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
 --- !u!1 &1141866732 stripped
 GameObject:
