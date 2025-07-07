@@ -203,7 +203,7 @@ Transform:
   m_GameObject: {fileID: 5638608339968910196}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.52, y: -4.45, z: 0}
+  m_LocalPosition: {x: -9.538889, y: -4.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -537,11 +537,11 @@ Transform:
   m_GameObject: {fileID: 8223090959713635980}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6833334, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -9.538889, y: -2.82, z: 0}
+  m_LocalScale: {x: 1, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7936270350804769230}
+  m_Father: {fileID: 3136923158758176113}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7756035693544115144
 SpriteRenderer:
@@ -680,12 +680,10 @@ Transform:
   m_GameObject: {fileID: 8295073259070490902}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.52, y: -3.64, z: 0}
+  m_LocalPosition: {x: -9.538889, y: -3.64, z: 0}
   m_LocalScale: {x: 1, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6008979026401668753}
-  - {fileID: 2770091584618813761}
+  m_Children: []
   m_Father: {fileID: 3136923158758176113}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &9086720539968919388
@@ -825,11 +823,11 @@ Transform:
   m_GameObject: {fileID: 9154944865183011161}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.6749997, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -9.538889, y: -4.45, z: 0}
+  m_LocalScale: {x: 1, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7936270350804769230}
+  m_Father: {fileID: 3136923158758176113}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4087793625768788786
 SpriteRenderer:
@@ -971,7 +969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 254609293376182232, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.52
+      value: -9.538889
       objectReference: {fileID: 0}
     - target: {fileID: 254609293376182232, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1095,7 +1093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6701152617922213559, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.52
+      value: -9.538889
       objectReference: {fileID: 0}
     - target: {fileID: 6701152617922213559, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1109,6 +1107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeLine (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7737031680851976569, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      propertyPath: timelineMask
+      value: 
+      objectReference: {fileID: 4148501669267215759}
     - target: {fileID: 7737031680851976569, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       propertyPath: tracks.Array.size
       value: 3
@@ -1169,7 +1171,13 @@ PrefabInstance:
       addedObject: {fileID: 3409148013816262018}
     - targetCorrespondingSourceObject: {fileID: 1677061275783981622, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       insertIndex: 0
+      addedObject: {fileID: 6008979026401668753}
+    - targetCorrespondingSourceObject: {fileID: 1677061275783981622, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      insertIndex: 1
       addedObject: {fileID: 7936270350804769230}
+    - targetCorrespondingSourceObject: {fileID: 1677061275783981622, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 2770091584618813761}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8062467916836336611, guid: 2b2aa40d686c62e4686a69bb1b8551b2, type: 3}
       insertIndex: -1
@@ -1564,11 +1572,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: timeline mask
       objectReference: {fileID: 0}
+    - target: {fileID: 6891563479027272132, guid: 9bff017e260464b078f3cd08fc289192, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bff017e260464b078f3cd08fc289192, type: 3}
+--- !u!1 &4148501669267215759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6891563479027272132, guid: 9bff017e260464b078f3cd08fc289192, type: 3}
+  m_PrefabInstance: {fileID: 7363860591312657483}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8565682724575604520 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1220153614198584163, guid: 9bff017e260464b078f3cd08fc289192, type: 3}
