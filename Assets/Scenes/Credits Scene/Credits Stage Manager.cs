@@ -1,0 +1,25 @@
+using UnityEngine;
+
+public class CreditsStageManager : StageManager
+{
+    private bool stageFailed = false;
+    [SerializeField] private float timeToShowSuccessUI = 0f;
+
+    public override void StageReset()
+    {
+        stageFailed = false;
+    }
+
+    public override void StageFailed()
+    {
+        base.StageFailed();
+        stageFailed = true;
+    }
+
+    public override void TimeLineDone()
+    {
+        if(!stageFailed)
+            Invoke(nameof(ShowStageSuccessUI), timeToShowSuccessUI);
+    }
+    
+}
