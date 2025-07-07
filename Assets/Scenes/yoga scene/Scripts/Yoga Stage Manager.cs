@@ -12,11 +12,13 @@ public class YogaStageManager : StageManager
         TimeToCheckYogaPosition = 0.3f; // time to wait before checking if all participants are in the position
     [SerializeField] private Yoga_Girl yogaGirl;
     [SerializeField] private Yoga_Npc yogaNPCs;
+    private bool failed = false;
     
     public override void StageReset()
     {
         base.StageReset();
         poseEntered = new bool[Enum.GetValues(typeof(YogaParticipant)).Length, 4]; // 4 poses for each participant, initalized to false
+        failed = false;
     }
 
     public override void TimeLineDone()
@@ -28,6 +30,8 @@ public class YogaStageManager : StageManager
 
     public override void StageFailed()
     {
+        if (failed) return; // prevent multiple calls
+        failed = true;
         base.StageFailed();
         TimeLine.Instance.StopPlaying();
         yogaGirl.StartInteraction();
