@@ -929,6 +929,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4527747321600973589, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
+      propertyPath: clipPrefab
+      value: 
+      objectReference: {fileID: 7941987899486846078, guid: 391b77c71f90a9a4c90e2481c332988c, type: 3}
+    - target: {fileID: 4527747321600973589, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: defaultColor.b
       value: 0.8352941
       objectReference: {fileID: 0}

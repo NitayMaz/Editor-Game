@@ -11128,7 +11128,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 2000
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.2627451, g: 0.5882353, b: 0.53333336, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12976,6 +12976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1907163670070498343}
   fadeOutDuration: 0.5
+  lastStage: 0
 --- !u!1001 &8847422617814637925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13031,6 +13032,18 @@ PrefabInstance:
     - target: {fileID: 2284524343341581164, guid: 45560d3876225854bb1a56414833be99, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775693280568817287, guid: 45560d3876225854bb1a56414833be99, type: 3}
+      propertyPath: m_Color.b
+      value: 0.53333336
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775693280568817287, guid: 45560d3876225854bb1a56414833be99, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 2775693280568817287, guid: 45560d3876225854bb1a56414833be99, type: 3}
+      propertyPath: m_Color.r
+      value: 0.2627451
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
