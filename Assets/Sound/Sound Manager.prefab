@@ -658,10 +658,6 @@ MonoBehaviour:
     clips:
     - {fileID: 8300000, guid: ee6e64bfe4ebbf4468e0cc93b2dacbe2, type: 3}
     volume: 0.5
-  - soundName: 4
-    clips:
-    - {fileID: 8300000, guid: 47499f1c3e32ab8409fd283e2b7362ce, type: 3}
-    volume: 0.5
   audioSources:
   - audioSourceName: 0
     source: {fileID: 408531650784482996}

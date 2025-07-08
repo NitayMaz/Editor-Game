@@ -7,6 +7,10 @@ public class Tutorial : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private List<GameObject> objectsToTurnOn;
     private int index = 0;
+    //hard coding of the century
+    [SerializeField] private GameObject darkPanel;
+    [SerializeField] private GameObject clipBlocker;
+    [SerializeField] private int indToTurnOffBlocker = 5;
 
     private void Start()
     {
@@ -26,6 +30,10 @@ public class Tutorial : MonoBehaviour
     private void Next()
     {
         objectsToTurnOn[index].SetActive(false);
+        if (index == indToTurnOffBlocker)
+        {
+            clipBlocker.SetActive(false);
+        }
         index++;
         if(index == objectsToTurnOn.Count)
         {
@@ -39,6 +47,7 @@ public class Tutorial : MonoBehaviour
     {
         animator.SetTrigger("Close");
         TimeLine.Instance.inTutorial = false;
+        Destroy(darkPanel, 0.5f);
         Destroy(gameObject, 0.5f);
     }
 

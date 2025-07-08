@@ -72,6 +72,11 @@ public class TrackClip : MonoBehaviour
         float newDuration = (rightedgeX - spriteRenderer.bounds.min.x) / TimeLine.Instance.trackLengthFor1Second;
         //snap duration
         newDuration = TimeLine.SnapTo(newDuration, TimeLine.Instance.snappingJump);
+        if (newDuration != duration)
+        {
+            Debug.Log("Clip dragged");
+            DestroyOnDrag.Instance?.Destroy();
+        }
         //first see that we're not running into the next clip, if so the duration is the maximum that won't run into the next clip
         float newEndTime = startTime + newDuration;
         if (newEndTime > parentTrack.GetNextClipStartTime(this))
@@ -127,7 +132,6 @@ public class TrackClip : MonoBehaviour
         newStartTime = TimeLine.SnapTo(newStartTime, TimeLine.Instance.snappingJump);
         newStartTime = Mathf.Clamp(newStartTime, parentTrack.GetPreviousClipEndTime(this),
             parentTrack.GetNextClipStartTime(this) - duration);
-        
         startTime = newStartTime;
         entireClipTransform.position = new Vector3(TimeLine.Instance.GetXPositionForTime(startTime),
             entireClipTransform.position.y, entireClipTransform.position.z);
