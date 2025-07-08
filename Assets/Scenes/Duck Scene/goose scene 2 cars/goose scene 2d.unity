@@ -1168,6 +1168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeLine (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7571817969338997110, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

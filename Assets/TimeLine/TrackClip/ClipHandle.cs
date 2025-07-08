@@ -26,10 +26,11 @@ public class ClipHandle : MonoBehaviour
         if(MyCursor.Instance != null)
             MyCursor.Instance.SwitchToNormalCursor();
         //push undo action for stretching
+        float oldStartDragXPosition = startDragXPosition;
         UndoManager.Push(() =>
         {
             Debug.Log("undoing stretch");
-            parentClip.SetDurationByPosition(startDragXPosition);
+            parentClip.SetDurationByPosition(oldStartDragXPosition);
         });
     }
     

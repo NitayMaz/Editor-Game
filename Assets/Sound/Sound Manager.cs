@@ -32,8 +32,8 @@ public enum AudioClips // Important! NEVER change the value of each entry. The v
     FootBallFail=21,
     FootBallHe=22,
     YogaWin=23,
-    //missing sounds - meaning we still need the clip from itai
     YogaFail=4,
+    WaiterCrash=26,
     //not sure if we need this
     DuckQuack=2,
     //...
@@ -192,6 +192,9 @@ public class SoundManager : MonoBehaviour
                 PlaySound(AudioSources.SoundEffects, clipToPlay);
                 break;
             case AudioClips.BikeAccident:
+                PlaySound(AudioSources.SoundEffects, clipToPlay);
+                break;
+            case AudioClips.WaiterCrash:
                 PlaySound(AudioSources.SoundEffects, clipToPlay);
                 break;
         }
