@@ -1496,6 +1496,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6482164876379299676, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1279304501}
     - target: {fileID: 7933837902024682009, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 0.78571427
@@ -3454,6 +3458,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!223 &1279304501 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 3964350031015016019, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+  m_PrefabInstance: {fileID: 456312107}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1347042442
 GameObject:
   m_ObjectHideFlags: 0
@@ -5917,6 +5926,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4586477572218394640, guid: 39cc1603dcffb43b79322a494081ed33, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4968027510250849195, guid: 39cc1603dcffb43b79322a494081ed33, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7983298371913189956, guid: 39cc1603dcffb43b79322a494081ed33, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
