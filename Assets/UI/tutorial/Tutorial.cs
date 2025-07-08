@@ -47,7 +47,7 @@ public class Tutorial : MonoBehaviour
     {
         animator.SetTrigger("Close");
         TimeLine.Instance.inTutorial = false;
-        Destroy(darkPanel, 0.5f);
+        Destroy(darkPanel, 0.3f);
         Destroy(gameObject, 0.5f);
     }
 
