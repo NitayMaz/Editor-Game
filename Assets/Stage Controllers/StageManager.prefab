@@ -12055,7 +12055,7 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 64, y: 64}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.15, y: 0.85}
 --- !u!222 &602754510546392314
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12107,7 +12107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorImage: {fileID: 4810574763994761040}
-  offset: {x: 30, y: -30}
+  canvas: {fileID: 3964350031015016019}
 --- !u!1 &7018646970604660031
 GameObject:
   m_ObjectHideFlags: 0

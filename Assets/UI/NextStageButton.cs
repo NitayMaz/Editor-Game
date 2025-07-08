@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NextStageButton : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] private float fadeOutDuration = 0.5f;
+    [SerializeField] private bool lastStage = false;
 
     private void OnMouseOver()
     {
@@ -26,6 +28,10 @@ public class NextStageButton : MonoBehaviour
     private IEnumerator MoveToNextStage()
     {
         yield return new WaitForSeconds(fadeOutDuration);
+        if (lastStage)
+        {
+            SceneManager.LoadScene(0);
+        }
         StageManager.Instance.MoveToNextStage();
     }
 }

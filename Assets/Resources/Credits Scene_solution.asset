@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb1060db5f97bb41b1077a41057a490, type: 3}
+  m_Name: Credits Scene_solution
+  m_EditorClassIdentifier: 
+  data:
+  - clipsInitData:
+    - animationClip: {fileID: 7400000, guid: 6e6690fdb46fabf4f9f10f9fb57a40fe, type: 2}
+      duration: 8.833333
+      pace: 1
+      animationStartPoint: 0
+      animationEndPoint: 1
+      startTime: 0
+  - clipsInitData:
+    - animationClip: {fileID: 7400000, guid: 7ef73da45f07ae049ae31a7e6e7f8464, type: 2}
+      duration: 9
+      pace: 1
+      animationStartPoint: 0
+      animationEndPoint: 1
+      startTime: 4.75
+  - clipsInitData:
+    - animationClip: {fileID: 7400000, guid: 9985e14e305d6ce4cbf17c6522e30d6e, type: 2}
+      duration: 9
+      pace: 1
+      animationStartPoint: 0
+      animationEndPoint: 1
+      startTime: 9.75
