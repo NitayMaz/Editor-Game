@@ -74,7 +74,6 @@ public class TrackClip : MonoBehaviour
         newDuration = TimeLine.SnapTo(newDuration, TimeLine.Instance.snappingJump);
         if (newDuration != duration)
         {
-            Debug.Log("Clip dragged");
             DestroyOnDrag.Instance?.Destroy();
         }
         //first see that we're not running into the next clip, if so the duration is the maximum that won't run into the next clip
@@ -253,10 +252,11 @@ public class TrackClip : MonoBehaviour
         if (isDragging)
         {
             isDragging = false;
+            float oldStartDragClipStartTime = startDragClipStartTime;
             UndoManager.Push(() =>
             {
                 Debug.Log("Undoing clip drag");
-                ChangeClipStartTime(startDragClipStartTime);
+                ChangeClipStartTime(oldStartDragClipStartTime);
             });
         }
     }
