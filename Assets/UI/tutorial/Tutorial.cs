@@ -29,6 +29,10 @@ public class Tutorial : MonoBehaviour
 
     private void Next()
     {
+        if (index > objectsToTurnOn.Count)
+        {
+            return;
+        }
         objectsToTurnOn[index].SetActive(false);
         if (index == indToTurnOffBlocker)
         {
