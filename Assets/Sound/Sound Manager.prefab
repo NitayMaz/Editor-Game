@@ -589,7 +589,7 @@ MonoBehaviour:
   - soundName: 6
     clips:
     - {fileID: 8300000, guid: 13821b3a96f6d4c0588a24c71a8e9afe, type: 3}
-    volume: 0.5
+    volume: 0.44
   - soundName: 7
     clips:
     - {fileID: 8300000, guid: 3bb4301a407c8d9439cb413dd6a45a11, type: 3}
@@ -617,7 +617,7 @@ MonoBehaviour:
   - soundName: 15
     clips:
     - {fileID: 8300000, guid: 7082324532c94da4e8b8c36eec7caeee, type: 3}
-    volume: 0.5
+    volume: 0.14
   - soundName: 16
     clips:
     - {fileID: 8300000, guid: f04a18859f447a1448c62c88efb8c3dc, type: 3}
@@ -629,7 +629,7 @@ MonoBehaviour:
   - soundName: 25
     clips:
     - {fileID: 8300000, guid: 7a0db75277fb6f444afbaf7fbdbe9012, type: 3}
-    volume: 0.5
+    volume: 0.43
   - soundName: 19
     clips:
     - {fileID: 8300000, guid: e54d3cde7bcb06446bd6b0415e9369be, type: 3}
@@ -645,15 +645,15 @@ MonoBehaviour:
   - soundName: 20
     clips:
     - {fileID: 8300000, guid: 2c0cc435d8245124b8e86693367e8116, type: 3}
-    volume: 0.5
+    volume: 0.35
   - soundName: 21
     clips:
     - {fileID: 8300000, guid: f1d1ad91ea366894f81f4089aef524bc, type: 3}
-    volume: 0.5
+    volume: 0.28
   - soundName: 22
     clips:
     - {fileID: 8300000, guid: ad2e1c94b46a25146ad27c6e65cb17f3, type: 3}
-    volume: 0.5
+    volume: 0.37
   - soundName: 23
     clips:
     - {fileID: 8300000, guid: ee6e64bfe4ebbf4468e0cc93b2dacbe2, type: 3}
@@ -661,6 +661,10 @@ MonoBehaviour:
   - soundName: 26
     clips:
     - {fileID: 8300000, guid: a350c2a364755b3498582124c851795a, type: 3}
+    volume: 0.5
+  - soundName: 4
+    clips:
+    - {fileID: 8300000, guid: 47499f1c3e32ab8409fd283e2b7362ce, type: 3}
     volume: 0.5
   audioSources:
   - audioSourceName: 0

@@ -750,6 +750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeLine (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7756035693544115144, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: m_Size.x
+      value: 17.3
+      objectReference: {fileID: 0}
     - target: {fileID: 7812750760522095195, guid: 2321c47dec3a243609778468e24c106e, type: 3}
       propertyPath: m_IsActive
       value: 0

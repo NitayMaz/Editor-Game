@@ -25,6 +25,10 @@ public class YogaStageManager : StageManager
     {
         yogaGirl.StartInteraction();
         yogaNPCs.StartInteraction();
+        if (!failed)
+        {
+            SoundManager.Instance.PlayAudio(AudioClips.YogaWin);
+        }
         Invoke(nameof(ShowStageSuccessUI), timeToShowSuccessUI);
     }
 
