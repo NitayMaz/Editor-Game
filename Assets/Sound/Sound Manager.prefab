@@ -572,15 +572,15 @@ MonoBehaviour:
   - soundName: 1
     clips:
     - {fileID: 8300000, guid: b6fe4245e85514d459a300a132e4bbd4, type: 3}
-    volume: 0.5
+    volume: 0
   - soundName: 2
     clips:
     - {fileID: 8300000, guid: 266550c20cc8c6d4d9085e5d7cca0f95, type: 3}
-    volume: 0.8
+    volume: 1
   - soundName: 3
     clips:
     - {fileID: 8300000, guid: f8829fe7e0e5b43b48e7f03221ebb5fd, type: 3}
-    volume: 0.5
+    volume: 0.2
   - soundName: 5
     clips:
     - {fileID: 8300000, guid: bec4f558714414fabbd7f1df49c2ef5c, type: 3}
@@ -593,15 +593,15 @@ MonoBehaviour:
   - soundName: 7
     clips:
     - {fileID: 8300000, guid: 3bb4301a407c8d9439cb413dd6a45a11, type: 3}
-    volume: 0.5
+    volume: 0.7
   - soundName: 9
     clips:
     - {fileID: 8300000, guid: fd0cba0c0864e40a3b99c2c9bca2299b, type: 3}
-    volume: 0.5
+    volume: 0.27
   - soundName: 10
     clips:
     - {fileID: 8300000, guid: b558a00a78540427295ba775e23deee4, type: 3}
-    volume: 0.12
+    volume: 0.1
   - soundName: 11
     clips:
     - {fileID: 8300000, guid: c44d86f4eb224284d83a3645aa2d4185, type: 3}
@@ -609,11 +609,11 @@ MonoBehaviour:
   - soundName: 13
     clips:
     - {fileID: 8300000, guid: c09950aacb14c46f3857b2d31e518762, type: 3}
-    volume: 0.5
+    volume: 0.11
   - soundName: 14
     clips:
     - {fileID: 8300000, guid: 63fca306eef06ef44a0a48bb29a6559a, type: 3}
-    volume: 0.8
+    volume: 0.63
   - soundName: 15
     clips:
     - {fileID: 8300000, guid: 7082324532c94da4e8b8c36eec7caeee, type: 3}
@@ -625,7 +625,7 @@ MonoBehaviour:
   - soundName: 24
     clips:
     - {fileID: 8300000, guid: 0a9e75da54c16ef44a7f1b8152eee914, type: 3}
-    volume: 0.35
+    volume: 0.25
   - soundName: 25
     clips:
     - {fileID: 8300000, guid: 7a0db75277fb6f444afbaf7fbdbe9012, type: 3}
@@ -637,7 +637,7 @@ MonoBehaviour:
   - soundName: 17
     clips:
     - {fileID: 8300000, guid: 7ad446426bd39c64499f6fe03d9b6e85, type: 3}
-    volume: 0.5
+    volume: 0.56
   - soundName: 18
     clips:
     - {fileID: 8300000, guid: ff96f51764cd4594e990cba13ee1a579, type: 3}
