@@ -15,11 +15,11 @@ MonoBehaviour:
   data:
   - clipsInitData:
     - animationClip: {fileID: 7400000, guid: 7cdf934f5472245a79c486833d8e8eac, type: 2}
-      duration: 3.3333333
-      pace: 1.5
+      duration: 4
+      pace: 1.25
       animationStartPoint: 0
       animationEndPoint: 1
-      startTime: 3.5
+      startTime: 3
   - clipsInitData:
     - animationClip: {fileID: 7400000, guid: 78a419d39932847b48d10e03649b13a8, type: 2}
       duration: 3.2
@@ -29,8 +29,8 @@ MonoBehaviour:
       startTime: 0
   - clipsInitData:
     - animationClip: {fileID: 7400000, guid: 05513533d7a55432e89908856e86c3b7, type: 2}
-      duration: 3.3333333
-      pace: 1.5
+      duration: 5
+      pace: 1
       animationStartPoint: 0
       animationEndPoint: 1
-      startTime: 3.7
+      startTime: 3

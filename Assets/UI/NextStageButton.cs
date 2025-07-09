@@ -32,6 +32,9 @@ public class NextStageButton : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
-        StageManager.Instance.MoveToNextStage();
+        else
+        {
+            StageManager.Instance.MoveToNextStage();
+        }
     }
 }

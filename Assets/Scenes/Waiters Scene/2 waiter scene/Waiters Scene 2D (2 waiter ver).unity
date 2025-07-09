@@ -2879,6 +2879,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeLine (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7812750760522095195, guid: 2321c47dec3a243609778468e24c106e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7874000985339060145, guid: 2321c47dec3a243609778468e24c106e, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -4004,10 +4008,6 @@ PrefabInstance:
     - target: {fileID: 5021252077501031078, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5530247319367241133, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
-      propertyPath: sounds.Array.data[13].volume
-      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6905870719498306371, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
       propertyPath: m_Name

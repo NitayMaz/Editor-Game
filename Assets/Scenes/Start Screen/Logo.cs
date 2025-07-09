@@ -16,6 +16,13 @@ public class Logo : TrackControlled
             controlledByTimeLine = true;
             animator.enabled = false;
         }
+
+        if (time == 1)
+        {
+            animator.SetBool("Q", true);
+            controlledByTimeLine = false;
+            animator.enabled = true;
+        }
         base.SetAnimationFrame(animationClip, time);
     }
     
