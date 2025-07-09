@@ -52,6 +52,9 @@ public class TimeLine : MonoBehaviour
         Application.targetFrameRate = 60;
         QualitySettings.vSyncCount = 0; // disable vSync, important for mainly webGL
         Time.fixedDeltaTime = 1f / 60f; // physics updates at 60fps
+        //hide cursor
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     private void Start()
