@@ -80,7 +80,11 @@ public class MenuUiCordinator : MonoBehaviour
         StageManager.Instance.ResetGame();
         ClosePauseMenu();
     }
-    
+
+    public void QuitGameButtonClicked()
+    {
+        Application.Quit();
+    }
     
     public void ShowStageSuccessUI()
     {
@@ -108,4 +112,5 @@ public class MenuUiCordinator : MonoBehaviour
     {
         SoundManager.Instance.PlayAudio(AudioClips.MouseClick);
     }
+    
 }
