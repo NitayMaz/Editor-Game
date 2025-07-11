@@ -2956,8 +2956,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2035726044438949406, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_text
-      value: Each <color=#F6C16D>Clip</color> has a <color=#F6C16D>Handle</color>,
-        drag it to change the speed of the movement.
+      value: Each <color=#F6C16D>Clip</color> has a <color=#F6C16D>Handle</color>.
+        Drag it to change the speed of the movement.
       objectReference: {fileID: 0}
     - target: {fileID: 3241245437585794786, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3017,7 +3017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8187786069978637379, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8828980429066140732, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3046,7 +3046,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3241245437585794786, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 374011296}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2188680127740705422, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
 --- !u!4 &1529353605 stripped
 Transform:
