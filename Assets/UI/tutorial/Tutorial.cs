@@ -11,6 +11,7 @@ public class Tutorial : MonoBehaviour
     [SerializeField] private GameObject darkPanel;
     [SerializeField] private GameObject clipBlocker;
     [SerializeField] private int indToTurnOffBlocker = 5;
+    [SerializeField] private GameObject tutorialButtons;
 
     private void Start()
     {
@@ -53,6 +54,8 @@ public class Tutorial : MonoBehaviour
         TimeLine.Instance.inTutorial = false;
         Destroy(darkPanel, 0.3f);
         Destroy(gameObject, 0.5f);
+        Destroy(tutorialButtons, 0.3f);
+        
     }
 
 }
