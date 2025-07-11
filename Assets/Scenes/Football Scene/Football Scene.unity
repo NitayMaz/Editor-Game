@@ -2954,6 +2954,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 396863268062568897, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 691458212092235945, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1394073385974015406, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: darkPanel
       value: 
@@ -2962,6 +2970,10 @@ PrefabInstance:
       propertyPath: clipBlocker
       value: 
       objectReference: {fileID: 374011295}
+    - target: {fileID: 1394073385974015406, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: tutorialButtons
+      value: 
+      objectReference: {fileID: 1529353606}
     - target: {fileID: 1394073385974015406, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: indToTurnOffBlocker
       value: 0
@@ -2978,6 +2990,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Each <color=#F6C16D>Clip</color> has a <color=#F6C16D>Handle</color>.
         Drag it to change the speed of the movement.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3096167216992079474, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3241245437585794786, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3019,6 +3035,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3382098218630712953, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4492290361683114066, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3034,6 +3054,10 @@ PrefabInstance:
     - target: {fileID: 7482016521397048809, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_Name
       value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042383291159860086, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.99
       objectReference: {fileID: 0}
     - target: {fileID: 8187786069978637379, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_IsActive
@@ -3062,6 +3086,7 @@ PrefabInstance:
     - {fileID: 6459077201352430674, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
     - {fileID: 5031594736368594156, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
     - {fileID: 8393507164500742562, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+    - {fileID: 3347626336276539807, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3241245437585794786, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       insertIndex: -1
@@ -3074,6 +3099,11 @@ PrefabInstance:
 --- !u!4 &1529353605 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3241245437585794786, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+  m_PrefabInstance: {fileID: 1529353604}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1529353606 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1092303399282487734, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
   m_PrefabInstance: {fileID: 1529353604}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1582460873
