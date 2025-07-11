@@ -417,15 +417,15 @@ PrefabInstance:
       objectReference: {fileID: 1915074708877929437, guid: a700948d6687a1f40928cdad9cf38302, type: 3}
     - target: {fileID: 4527747321600973589, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: defaultColor.b
-      value: 0.972549
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4527747321600973589, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: defaultColor.g
-      value: 0.77254903
+      value: 0.82953256
       objectReference: {fileID: 0}
     - target: {fileID: 4527747321600973589, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: defaultColor.r
-      value: 0.38039216
+      value: 0.495283
       objectReference: {fileID: 0}
     - target: {fileID: 6008979026401668753, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4142,6 +4142,10 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 1983720922}
+    - target: {fileID: 7312747621188279817, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.39
+      objectReference: {fileID: 0}
     - target: {fileID: 9184662421711795088, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_IsActive
       value: 0
