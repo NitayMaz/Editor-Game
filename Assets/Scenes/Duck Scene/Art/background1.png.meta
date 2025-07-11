@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: adc3938bba06840119edc8d2ddf14dc1
+guid: c995ce69f417b44168c528a4a34cdcda
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2354956888552295029
-    second: tutorial hover1_0
+      213: 5756380681857427472
+    second: background1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tutorial hover1_0
+      name: background1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 520
-        height: 234
+        width: 1920
+        height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 57ac48320dc7ea020800000000000000
-      internalID: 2354956888552295029
+      spriteID: 01868064bb5c2ef40800000000000000
+      internalID: 5756380681857427472
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tutorial hover1_0: 2354956888552295029
+      background1_0: 5756380681857427472
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
