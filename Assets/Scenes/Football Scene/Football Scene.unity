@@ -417,15 +417,15 @@ PrefabInstance:
       objectReference: {fileID: 1915074708877929437, guid: a700948d6687a1f40928cdad9cf38302, type: 3}
     - target: {fileID: 4527747321600973589, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: defaultColor.b
-      value: 0.6156863
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4527747321600973589, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: defaultColor.g
-      value: 0.69411767
+      value: 0.82953256
       objectReference: {fileID: 0}
     - target: {fileID: 4527747321600973589, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: defaultColor.r
-      value: 0.09411766
+      value: 0.495283
       objectReference: {fileID: 0}
     - target: {fileID: 6008979026401668753, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2956,8 +2956,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2035726044438949406, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_text
-      value: Each <color=#F6C16D>Clip</color> has a <color=#F6C16D>Handle</color>,
-        drag it to change the speed of the movement.
+      value: Each <color=#F6C16D>Clip</color> has a <color=#F6C16D>Handle</color>.
+        Drag it to change the speed of the movement.
       objectReference: {fileID: 0}
     - target: {fileID: 3241245437585794786, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3017,7 +3017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8187786069978637379, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8828980429066140732, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3046,7 +3046,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3241245437585794786, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 374011296}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2188680127740705422, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
 --- !u!4 &1529353605 stripped
 Transform:
@@ -3743,6 +3746,63 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 3964350031015016019, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
   m_PrefabInstance: {fileID: 4322773572955528420}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2004051545
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3018989988837960574, guid: dcd95b2e3bc7649f7a43c7cc665a86de, type: 3}
+      propertyPath: m_Name
+      value: dust particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674257203590116923, guid: dcd95b2e3bc7649f7a43c7cc665a86de, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674257203590116923, guid: dcd95b2e3bc7649f7a43c7cc665a86de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674257203590116923, guid: dcd95b2e3bc7649f7a43c7cc665a86de, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674257203590116923, guid: dcd95b2e3bc7649f7a43c7cc665a86de, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.000001498028
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674257203590116923, guid: dcd95b2e3bc7649f7a43c7cc665a86de, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674257203590116923, guid: dcd95b2e3bc7649f7a43c7cc665a86de, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674257203590116923, guid: dcd95b2e3bc7649f7a43c7cc665a86de, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674257203590116923, guid: dcd95b2e3bc7649f7a43c7cc665a86de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 1980
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674257203590116923, guid: dcd95b2e3bc7649f7a43c7cc665a86de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674257203590116923, guid: dcd95b2e3bc7649f7a43c7cc665a86de, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dcd95b2e3bc7649f7a43c7cc665a86de, type: 3}
 --- !u!1 &2046344951
 GameObject:
   m_ObjectHideFlags: 0
@@ -4139,6 +4199,10 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 1983720922}
+    - target: {fileID: 7312747621188279817, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.39
+      objectReference: {fileID: 0}
     - target: {fileID: 9184662421711795088, guid: 8e35cf21dbae5604cabea7b6779be87c, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4297,6 +4361,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1464978166}
+  - {fileID: 2004051545}
   - {fileID: 284385623}
   - {fileID: 493388893}
   - {fileID: 1662019222}

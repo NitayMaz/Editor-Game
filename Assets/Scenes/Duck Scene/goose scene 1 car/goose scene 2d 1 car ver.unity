@@ -740,9 +740,17 @@ PrefabInstance:
         Don''t forget the <color=#F6C16D>Undo</color>
         button reverts cuts too.'
       objectReference: {fileID: 0}
+    - target: {fileID: 8072994323471836849, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.07
+      objectReference: {fileID: 0}
     - target: {fileID: 8187786069978637379, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8397992859258905884, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 8834059799523798617, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_text
@@ -763,7 +771,16 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3241245437585794786, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 631853133}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2188680127740705422, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1988806035018910020, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 714509152351363412, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
 --- !u!1 &428054280 stripped
 GameObject:
