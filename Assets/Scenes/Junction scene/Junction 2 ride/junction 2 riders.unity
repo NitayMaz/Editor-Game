@@ -3050,6 +3050,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1394073385974015406, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: tutorialButtons
+      value: 
+      objectReference: {fileID: 2612419660185174627}
     - target: {fileID: 1973990001119296263, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_text
       value: After this tutorial, Hit <color=#F6C16D>Play</color> and watch the full
@@ -3215,6 +3219,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8042383291159860086, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.99
+      objectReference: {fileID: 0}
     - target: {fileID: 8072994323471836849, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.1
@@ -3244,13 +3252,19 @@ PrefabInstance:
     - {fileID: 2150556645848977655, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
     - {fileID: 5803019320977328761, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
     - {fileID: 8544824148254975301, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3347626336276539807, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2188680127740705422, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+--- !u!1 &2612419660185174627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1092303399282487734, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+  m_PrefabInstance: {fileID: 2612419660185174626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!320 &4749929540408962050 stripped
 PlayableDirector:
   m_CorrespondingSourceObject: {fileID: 4749929540604137261, guid: 4499915357b4b0d4a80455c159c5102f, type: 3}
