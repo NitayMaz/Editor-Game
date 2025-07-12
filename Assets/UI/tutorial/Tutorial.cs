@@ -4,21 +4,36 @@ using UnityEngine;
 
 public class Tutorial : MonoBehaviour
 {
+    //hardcoding
+    
     [SerializeField] private Animator animator;
-    [SerializeField] private List<GameObject> objectsToTurnOn;
+    public static Tutorial Instance;
     private int index = 0;
-    //hard coding of the century
-    [SerializeField] private GameObject darkPanel;
-    [SerializeField] private GameObject clipBlocker;
-    [SerializeField] private int indToTurnOffBlocker = 5;
-    [SerializeField] private GameObject tutorialButtons;
+    [SerializeField] private List<ObjectsToTurnOnOff> objectsToTurnOnOff;
+    [SerializeField] private bool isFirstTutorial = false;
+    [SerializeField] private int rulerPanelIndex = 0;
+    [SerializeField] private int dragClipPanelIndex = 0;
+    [SerializeField] private int panelIndexToPlayScene = 0;
+    [SerializeField] private int panelToPressPlay = 0;
+    
+    
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Debug.LogError("Trying to Initialize Multiple Tutorials");
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
 
     private void Start()
     {
         TimeLine.Instance.inTutorial = true;
         SoundManager.Instance.PlayAudio(AudioClips.TutorialPop);
         index = 0;
-        objectsToTurnOn[index].SetActive(true);
+        TurnOnObjects(index);
     }
 
     private void OnMouseDown()
@@ -28,34 +43,79 @@ public class Tutorial : MonoBehaviour
     }
 
 
-    private void Next()
+    public void Next()
     {
-        if (index > objectsToTurnOn.Count)
+        if (index >= objectsToTurnOnOff.Count)
         {
             return;
         }
-        objectsToTurnOn[index].SetActive(false);
-        if (index == indToTurnOffBlocker)
-        {
-            clipBlocker.SetActive(false);
-        }
+        TurnOffObjects(index);
         index++;
-        if(index == objectsToTurnOn.Count)
+        if(index == objectsToTurnOnOff.Count)
         {
             CloseTutorial();
             return;
         }
-        objectsToTurnOn[index].SetActive(true);
+        TurnOnObjects(index);
+        if (index == panelIndexToPlayScene)
+        {
+            TimeLine.Instance.PlayScene();
+        }
+    }
+    
+    private void TurnOnObjects(int ind)
+    {
+        foreach (var obj in objectsToTurnOnOff[ind].objectsToTurnOn)
+        {
+            obj.SetActive(true);
+        }
+    }
+    
+    private void TurnOffObjects(int ind)
+    {
+        Debug.Log($"Turning off objects for index {ind}");
+        foreach (var obj in objectsToTurnOnOff[ind].objectsToTurnOff)
+        {
+            obj.SetActive(false);
+        }
     }
 
     private void CloseTutorial()
     {
         animator.SetTrigger("Close");
         TimeLine.Instance.inTutorial = false;
-        Destroy(darkPanel, 0.3f);
-        Destroy(gameObject, 0.5f);
-        Destroy(tutorialButtons, 0.3f);
-        
+        Destroy(gameObject, 0.3f);
     }
 
+    public void RulerDragged()
+    {
+        if (isFirstTutorial && index == rulerPanelIndex)
+        {
+            Next();
+        }
+    }
+    
+    public void ClipDragged()
+    {
+        if (isFirstTutorial && index == dragClipPanelIndex)
+        {
+            Next();
+        }
+    }
+
+    public void PlayPressedTutorial()
+    {
+        if(isFirstTutorial && index == panelToPressPlay)
+        {
+            Next();
+            TimelineUIManager.Instance.PlayPauseButtonClicked();
+        }
+    }
+}
+
+[Serializable]
+public class ObjectsToTurnOnOff
+{
+    public List<GameObject> objectsToTurnOn;
+    public List<GameObject> objectsToTurnOff;
 }

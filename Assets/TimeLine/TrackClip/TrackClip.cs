@@ -268,6 +268,8 @@ public class TrackClip : MonoBehaviour
                 Debug.Log("Undoing clip drag");
                 ChangeClipStartTime(oldStartDragClipStartTime);
             });
+            if(Tutorial.Instance != null) 
+                Tutorial.Instance.ClipDragged();
         }
     }
 }

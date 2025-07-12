@@ -69,7 +69,7 @@ public class TimeRuler : MonoBehaviour
         {
             TimeLine.Instance.StopPlaying();
         }
-
+        
         if (MyCursor.Instance != null)
             MyCursor.Instance.SwitchToHoldingCursor();
 
@@ -83,5 +83,9 @@ public class TimeRuler : MonoBehaviour
     {
         if (MyCursor.Instance != null)
             MyCursor.Instance.SwitchToNormalCursor();
+        if (Tutorial.Instance != null)
+        {
+            Tutorial.Instance.RulerDragged();
+        }
     }
 }

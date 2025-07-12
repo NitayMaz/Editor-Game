@@ -21,8 +21,12 @@ public class MyButton : MonoBehaviour
         {
             case buttonType.PlayPause:
                 MyCursor.Instance?.ButtonClicked();
-                if(!TimeLine.Instance.inTutorial)
-                    TimelineUIManager.Instance.PlayPauseButtonClicked();
+                if (TimeLine.Instance.inTutorial && Tutorial.Instance != null)
+                {
+                    Tutorial.Instance.PlayPressedTutorial();
+                    return;
+                }
+                TimelineUIManager.Instance.PlayPauseButtonClicked();
                 break;
             case buttonType.Cut:
                 TimelineUIManager.Instance.CutButtonClicked();
@@ -39,6 +43,8 @@ public class MyButton : MonoBehaviour
                 animator.SetTrigger("IsPressed");
                 break;
             case buttonType.OpenPauseMenu:
+                if (TimeLine.Instance.inTutorial)
+                    return;
                 MenuUiCordinator.Instance.OpenPauseMenu();
                 break;
             default:

@@ -1895,7 +1895,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2180395279255761401}
-  - component: {fileID: 6846838582178212067}
   m_Layer: 5
   m_Name: Junction2 Clip Prefab(Clone) (2)
   m_TagString: clip
@@ -1919,18 +1918,6 @@ Transform:
   - {fileID: 8837009971712745208}
   m_Father: {fileID: 3241245437585794786}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6846838582178212067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3276214690674179380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2567c20131da2ac46a8e0fb86b49dbd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3347626336276539807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,14 +2435,14 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3338604058782474599}
+  - {fileID: 5410598706042173523}
   - {fileID: 8828980429066140732}
   - {fileID: 8397992859258905884}
   - {fileID: 6164716654791034166}
   - {fileID: 7898651003857576476}
   - {fileID: 2153984513672523120}
-  - {fileID: 6767793399563894382}
   - {fileID: 3067344684629399458}
-  - {fileID: 5410598706042173523}
+  - {fileID: 6767793399563894382}
   m_Father: {fileID: 3241245437585794786}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1253232923070322003
@@ -2548,20 +2535,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8362451456456596254}
-  objectsToTurnOn:
-  - {fileID: 8187786069978637379}
-  - {fileID: 4492290361683114066}
-  - {fileID: 5031594736368594156}
-  - {fileID: 6459077201352430674}
-  - {fileID: 8219613178507889270}
-  - {fileID: 1008876400755239848}
-  - {fileID: 2554419565944215337}
-  - {fileID: 2753179958403521592}
-  - {fileID: 643141537827419018}
-  darkPanel: {fileID: 5168986598302504511}
-  clipBlocker: {fileID: 3276214690674179380}
-  indToTurnOffBlocker: 4
-  tutorialButtons: {fileID: 0}
+  objectsToTurnOnOff: []
+  isFirstTutorial: 0
+  rulerPanelIndex: 0
+  dragClipPanelIndex: 0
 --- !u!61 &6806812472286909658
 BoxCollider2D:
   m_ObjectHideFlags: 0
