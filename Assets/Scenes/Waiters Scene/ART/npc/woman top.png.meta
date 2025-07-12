@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fc6845dd337304ab8ad617881101aa8e
+guid: fb9e6f89d900e45908cd39a6d4463dc6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6395316258168902898
-    second: duck npc2_0
+      213: 4760661555079685068
+    second: woman top_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: duck npc2_0
+      name: woman top_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 97
-        height: 127
+        width: 87
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e0bef8d3fb54f37a0800000000000000
-      internalID: -6395316258168902898
+      spriteID: cc322661674411240800000000000000
+      internalID: 4760661555079685068
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      duck npc2_0: -6395316258168902898
+      woman top_0: 4760661555079685068
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
