@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fc6845dd337304ab8ad617881101aa8e
+guid: a5c8ec79a8ec144cc98c868a02130bda
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6395316258168902898
-    second: duck npc2_0
+      213: 3675375570936935262
+    second: savta_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: duck npc2_0
+      name: savta_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 97
-        height: 127
+        width: 114
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e0bef8d3fb54f37a0800000000000000
-      internalID: -6395316258168902898
+      spriteID: e5338d9db9e810330800000000000000
+      internalID: 3675375570936935262
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      duck npc2_0: -6395316258168902898
+      savta_0: 3675375570936935262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
