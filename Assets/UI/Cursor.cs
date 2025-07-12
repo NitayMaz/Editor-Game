@@ -84,6 +84,10 @@ public class MyCursor : MonoBehaviour
             {
                 animator.SetTrigger("CutClip");
                 hoveredClip.CutClip(TimeLine.Instance.GetTimeForXPosition(mousePos.x));
+                if (TimeLine.Instance.inTutorial && Tutorial.Instance != null)
+                {
+                    Tutorial.Instance.ClipCut();
+                }
             }
             StopCutting(); //regardless of wheter we cut or not, on click we return to the regular cursor
         }

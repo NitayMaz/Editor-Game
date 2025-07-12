@@ -74,17 +74,8 @@ public class TrackClip : MonoBehaviour
         newDuration = TimeLine.SnapTo(newDuration, TimeLine.Instance.snappingJump);
         if (newDuration != duration)
         {
-            if (DestroyOnDrag.Instance != null) //without this fucker the build imploded
-            {
-                try
-                {
-                    DestroyOnDrag.Instance.Destroy();
-                }
-                catch (Exception e)
-                {
-                    Debug.LogError("DestroyOnDrag failed: " + e);
-                }
-            }
+            if(Tutorial.Instance != null)
+                Tutorial.Instance.ClipStretched();
         }
         //first see that we're not running into the next clip, if so the duration is the maximum that won't run into the next clip
         float newEndTime = startTime + newDuration;

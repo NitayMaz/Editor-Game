@@ -15,6 +15,8 @@ public class Tutorial : MonoBehaviour
     [SerializeField] private int dragClipPanelIndex = 0;
     [SerializeField] private int panelIndexToPlayScene = 0;
     [SerializeField] private int panelToPressPlay = 0;
+    [SerializeField] private bool isFootballTutorial = false;
+    [SerializeField] private bool isDuckTutorial = false;
     
     
     private void Awake()
@@ -109,6 +111,31 @@ public class Tutorial : MonoBehaviour
         {
             Next();
             TimelineUIManager.Instance.PlayPauseButtonClicked();
+        }
+    }
+
+    public void ClipStretched()
+    {
+        if (isFootballTutorial)
+        {
+            Next();
+        }
+    }
+
+    public void ClipCutButtonClicked()
+    {
+        if (isDuckTutorial)
+        {
+            Next();
+        }
+        
+    }
+
+    public void ClipCut()
+    {
+        if (isDuckTutorial)
+        {
+            Next();
         }
     }
 }

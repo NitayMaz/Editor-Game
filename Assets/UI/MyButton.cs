@@ -31,6 +31,8 @@ public class MyButton : MonoBehaviour
             case buttonType.Cut:
                 TimelineUIManager.Instance.CutButtonClicked();
                 animator.SetTrigger("IsPressed");
+                if (TimeLine.Instance.inTutorial && Tutorial.Instance != null)
+                    Tutorial.Instance.ClipCutButtonClicked();
                 break;
             case buttonType.Undo:
                 MyCursor.Instance?.ButtonClicked();
