@@ -3289,6 +3289,10 @@ PrefabInstance:
       propertyPath: 'objectsToTurnOnOff.Array.data[0].objectsToTurnOff.Array.data[3]'
       value: 
       objectReference: {fileID: 538215727}
+    - target: {fileID: 1869479688526548569, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2035726044438949406, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_text
       value: Each <color=#F6C16D>Clip</color> has a <color=#F6C16D>Handle</color>.

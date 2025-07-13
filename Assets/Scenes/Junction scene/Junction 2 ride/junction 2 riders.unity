@@ -3415,19 +3415,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 757207374534755505, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_text
+      value: Use the <color=#F6C16D>Ruler</color> to preview the scene. Characters
+        won't interact in preview mode. <sprite index=0>
+      objectReference: {fileID: 0}
+    - target: {fileID: 757207374534755505, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_fontSize
-      value: 5.7
+      value: 5.55
       objectReference: {fileID: 0}
     - target: {fileID: 757207374534755505, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_fontSizeBase
-      value: 5.7
+      value: 5.55
       objectReference: {fileID: 0}
     - target: {fileID: 960372829841436425, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_text
       value: 'Drag the <color=#F6C16D>Clip</color> on the
 
         <color=#F6C16D>Track</color>
-        to change its timing in the scene.'
+        to change its timing in the scene. <sprite index=0>'
       objectReference: {fileID: 0}
     - target: {fileID: 960372829841436425, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_fontSize
@@ -3645,6 +3650,10 @@ PrefabInstance:
       propertyPath: 'objectsToTurnOnOff.Array.data[8].objectsToTurnOff.Array.data[1]'
       value: 
       objectReference: {fileID: 1889150973}
+    - target: {fileID: 1869479688526548569, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1973990001119296263, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_text
       value: That's it for now! Hit <color=#F6C16D>Play</color> to watch the full
@@ -3653,6 +3662,11 @@ PrefabInstance:
     - target: {fileID: 1988806035018910020, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035726044438949406, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_text
+      value: "Welcome, Editor!\nLet\u2019s go over the basics before you jump in.
+        <sprite index=0>"
       objectReference: {fileID: 0}
     - target: {fileID: 2035726044438949406, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_VerticalAlignment
@@ -3676,11 +3690,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2259379493486965701, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.262
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 2459639646789540218, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2507164561452800733, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.119999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2507164561452800733, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.72700006
       objectReference: {fileID: 0}
     - target: {fileID: 2554419565944215337, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_IsActive
@@ -3710,13 +3732,24 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 3067344684629399458, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3094470195592342037, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_text
+      value: 'In case you mess up,
+
+        <color=#F6C16D>Undo</color> to go back
+        a step or <color=#F6C16D>Reset</color> to start from scratch. <sprite index=0>'
+      objectReference: {fileID: 0}
     - target: {fileID: 3094470195592342037, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_fontSize
-      value: 5.7
+      value: 5.23
       objectReference: {fileID: 0}
     - target: {fileID: 3094470195592342037, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_fontSizeBase
-      value: 5.7
+      value: 5.23
       objectReference: {fileID: 0}
     - target: {fileID: 3096167216992079474, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_SortingOrder
@@ -3724,7 +3757,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3141085424560732065, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_text
-      value: Each <color=#F6C16D>Clip</color> represents a movement of the character.
+      value: 'Each <color=#F6C16D>Clip</color> represents a movement of
+
+        the
+        character. <sprite index=0>'
       objectReference: {fileID: 0}
     - target: {fileID: 3141085424560732065, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_fontSize
@@ -3826,6 +3862,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5043243212015151187, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5043243212015151187, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.727
+      objectReference: {fileID: 0}
     - target: {fileID: 5088247465558970095, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.11
@@ -3840,8 +3884,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5772625321472787465, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_text
-      value: The scenes here all need your intervention. Edit them to change their
-        outcome!
+      value: The scenes here need your intervention.Edit them to change their outcome!
+        <sprite index=0>
       objectReference: {fileID: 0}
     - target: {fileID: 5772625321472787465, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_fontSize
@@ -3909,7 +3953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7262485747066725093, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.234
+      value: -0.22
       objectReference: {fileID: 0}
     - target: {fileID: 7300916059561098811, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_IsTrigger
@@ -3922,6 +3966,11 @@ PrefabInstance:
     - target: {fileID: 7482016521397048809, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_Name
       value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661014941530172330, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_text
+      value: "This line is called a <color=#F6C16D>Track.</color> \nIt represents
+        a specific character in the scene. <sprite index=0>"
       objectReference: {fileID: 0}
     - target: {fileID: 7935905770969814226, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_IsActive
@@ -3955,6 +4004,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8834059799523798617, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_text
+      value: "This is the <color=#F6C16D>Timeline.</color> \nHere you will affect
+        the flow of each situation. <sprite index=0>"
+      objectReference: {fileID: 0}
     - target: {fileID: 8986181252256049008, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_LocalPosition.z
       value: -6
@@ -3985,13 +4039,7 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 910580226}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2188680127740705422, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1988806035018910020, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 7935905770969814226, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 14773770507739994, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
