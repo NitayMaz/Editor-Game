@@ -22,22 +22,22 @@ MonoBehaviour:
       startTime: 0
   - clipsInitData:
     - animationClip: {fileID: 7400000, guid: 653796a26c16de94683ce8a65675bcc5, type: 2}
-      duration: 1.6666666
-      pace: 1.5
+      duration: 2.5
+      pace: 1
       animationStartPoint: 0
       animationEndPoint: 1
-      startTime: 0.5
+      startTime: 0.6
   - clipsInitData:
     - animationClip: {fileID: 7400000, guid: 1a120ccc182d5bb4cae619603c1ceb39, type: 2}
       duration: 1.5
       pace: 1
       animationStartPoint: 0
       animationEndPoint: 1
-      startTime: 1.5
+      startTime: 1
   - clipsInitData:
     - animationClip: {fileID: 7400000, guid: 83313fc981bf52645bd2ea7db75f2cb5, type: 2}
-      duration: 1.6666666
-      pace: 1.5
+      duration: 2.5
+      pace: 1
       animationStartPoint: 0
       animationEndPoint: 1
-      startTime: 1.3000001
+      startTime: 0.4
