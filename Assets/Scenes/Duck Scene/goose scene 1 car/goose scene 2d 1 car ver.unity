@@ -758,12 +758,16 @@ PrefabInstance:
       propertyPath: 'objectsToTurnOnOff.Array.data[2].objectsToTurnOff.Array.data[2]'
       value: 
       objectReference: {fileID: 428054280}
+    - target: {fileID: 1869479688526548569, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2035726044438949406, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_text
-      value: 'You have a new tool! <color=#F6C16D>Cut</color>!
+      value: 'You have a new tool! <color=#F6C16D>Cut!</color>
 
         You can click
-        the button, then a clip, to cut it.'
+        the button, then a clip, to cut it. <sprite index=0>'
       objectReference: {fileID: 0}
     - target: {fileID: 3096167216992079474, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_SortingOrder
@@ -823,7 +827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5031594736368594156, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5168986598302504511, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_IsActive
@@ -870,7 +874,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8834059799523798617, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_text
-      value: Cutting a clip splits the movement in two, creating new clips.
+      value: Cutting a clip splits the movement in two, creating new clips. <sprite
+        index=0>
       objectReference: {fileID: 0}
     - target: {fileID: 8986181252256049008, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -894,7 +899,16 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3241245437585794786, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 631853133}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2188680127740705422, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1988806035018910020, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 714509152351363412, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
 --- !u!1 &428054280 stripped
 GameObject:
