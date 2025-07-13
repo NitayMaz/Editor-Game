@@ -2071,6 +2071,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5530247319367241133, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
+      propertyPath: sounds.Array.data[8].volume
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530247319367241133, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
+      propertyPath: sounds.Array.data[9].volume
+      value: 0.36
+      objectReference: {fileID: 0}
     - target: {fileID: 6905870719498306371, guid: eec09fb10e7bd944188a6896dfcdeb70, type: 3}
       propertyPath: m_Name
       value: Sound Manager
@@ -4038,10 +4046,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6164716654791034166, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 910580226}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 14773770507739994, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
 --- !u!1 &2612419660185174627 stripped
 GameObject:
