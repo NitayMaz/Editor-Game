@@ -767,7 +767,11 @@ PrefabInstance:
       value: 'You have a new tool! <color=#F6C16D>Cut!</color>
 
         You can click
-        the button, then a clip, to cut it. <sprite index=0>'
+        the button, then a clip, to cut it. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2188680127740705422, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3096167216992079474, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_SortingOrder
@@ -866,7 +870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8187786069978637379, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8397992859258905884, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -874,8 +878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8834059799523798617, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_text
-      value: Cutting a clip splits the movement in two, creating new clips. <sprite
-        index=0>
+      value: Cutting a clip splits the movement in two, creating new clips.
       objectReference: {fileID: 0}
     - target: {fileID: 8986181252256049008, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -899,7 +902,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3241245437585794786, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 631853133}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2188680127740705422, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
 --- !u!1 &428054280 stripped
 GameObject:
@@ -3723,6 +3729,8 @@ SceneRoots:
   - {fileID: 1916914602}
   - {fileID: 1003082198}
   - {fileID: 1867966462}
+  - {fileID: 813324246}
+  - {fileID: 1243367856}
   - {fileID: 1880111851}
   - {fileID: 885817408}
   - {fileID: 1289398067}
@@ -3733,5 +3741,3 @@ SceneRoots:
   - {fileID: 786169476}
   - {fileID: 547961716}
   - {fileID: 428054279}
-  - {fileID: 813324246}
-  - {fileID: 1243367856}
