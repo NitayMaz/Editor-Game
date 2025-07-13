@@ -3892,7 +3892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5772625321472787465, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       propertyPath: m_text
-      value: The scenes here need your intervention.Edit them to change their outcome!
+      value: The scenes here need your intervention. Edit them to change their outcome!
         <sprite index=0>
       objectReference: {fileID: 0}
     - target: {fileID: 5772625321472787465, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
@@ -4046,7 +4046,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6164716654791034166, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 910580226}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2952469158820867512, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bd0aa27fdc4155443803ceaf3f96075b, type: 3}
 --- !u!1 &2612419660185174627 stripped
 GameObject:
