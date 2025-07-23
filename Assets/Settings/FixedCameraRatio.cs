@@ -1,9 +1,30 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
 public class FixedAspectRatio : MonoBehaviour
 {
+    private int screenWidth;
+    private int screenHeight;
+    
     private void Start()
+    {
+        screenWidth = Screen.width;
+        screenHeight = Screen.height;
+        AdjustResolution();
+    }
+
+    private void Update()
+    {
+        if (Screen.width != screenWidth || Screen.height != screenHeight)
+        {
+            screenWidth = Screen.width;
+            screenHeight = Screen.height;
+            AdjustResolution();
+        }
+    }
+
+    private void AdjustResolution()
     {
         float targetAspect = 16f / 9f;
         float windowAspect = (float)Screen.width / Screen.height;
