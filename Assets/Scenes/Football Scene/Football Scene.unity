@@ -540,8 +540,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8180449356800783511, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
+      propertyPath: m_Size.x
+      value: 19.067484
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180449356800783511, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
+      propertyPath: m_Offset.x
+      value: 9.533742
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180449356800783511, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
       propertyPath: m_SpriteTilingProperty.drawMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180449356800783511, guid: 8f9eb26c1eb8249cbb0efe4afc0dc147, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 18.68
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1251,6 +1263,7 @@ GameObject:
   - component: {fileID: 493388892}
   - component: {fileID: 493388891}
   - component: {fileID: 493388894}
+  - component: {fileID: 493388895}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1376,6 +1389,18 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &493388895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493388890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439499a9b43eeb443be7c1eda1861ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &538215727
 GameObject:
   m_ObjectHideFlags: 0
@@ -4367,6 +4392,7 @@ GameObject:
   - component: {fileID: 5354073443160309642}
   - component: {fileID: 4341388930215569300}
   - component: {fileID: 3742957401366498790}
+  - component: {fileID: 5354073443160309643}
   m_Layer: 0
   m_Name: TimeLineCamera
   m_TagString: Untagged
@@ -4910,6 +4936,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &5354073443160309643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3128628314460658253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439499a9b43eeb443be7c1eda1861ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7393290739892703335
 GameObject:
   m_ObjectHideFlags: 0

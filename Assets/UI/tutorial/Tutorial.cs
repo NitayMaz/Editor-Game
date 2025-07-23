@@ -44,6 +44,15 @@ public class Tutorial : MonoBehaviour
         Next();
     }
 
+    private void OnMouseEnter()
+    {
+        animator.SetBool("inHover", true);
+    }
+
+    private void OnMouseExit()
+    {
+        animator.SetBool("inHover", false);
+    }
 
     public void Next()
     {
