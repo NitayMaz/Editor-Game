@@ -15,7 +15,6 @@ public class InactivityReset : MonoBehaviour
         else
         {
             timer += Time.unscaledDeltaTime;
-            Debug.Log($"Inactivity Timer: {timer} seconds");
             if (timer >= inactivityDuration)
             {
                 RestartGame();
